@@ -1,0 +1,42 @@
+{
+    "Metadata": {
+        "title": "Industry5 - Industry 5.0 - Innovations, Technologies, and Transformations in Modern Manufacturing",
+        "description": "Discover the latest trends and solutions in the field of Industry 5.0 on the Industry5 website. We provide comprehensive information on innovative technologies, digital transformation strategies, and practical advice for companies striving for excellence in production.",
+        "keywords": "Industry 5.0, industrial innovations, digital transformation, production technologies, automated industry, modern manufacturing",
+        "postNotFound": "Article not found",
+        "blog_title": "Industry5 Blog: Explore the World of Industry 5.0",
+        "blog_desc": "Explore the world of Industry 5.0 on our blog! Delve into innovative content, uncover the secrets of production efficiency and modern technologies.",
+        "blog_keywords": "Industry 5.0, Production technologies, Innovations in industry, Production efficiency, Process automation, Production management, Enterprise digitalization, Production data analysis, Modern industrial solutions, AI in industry"
+    },
+    "LocaleSwitcher": {
+        "label": "Change language",
+        "locale": "{locale, select, pl {Polish} en {English} other {Unknown}}"
+    },
+    "Error": {
+        "title": "Something went wrong!",
+        "description": "<p>We've unfortunately encountered an error.</p><p>You can try to <retry>reload the page</retry> you were visiting.</p>"
+    },
+    "NotFound": {
+        "title": "Sorry we couldn&apos;t find this page.",
+        "description": "But dont worry, you can find plenty of other things on our homepage.",
+        "action": "Back to homepage"
+    },
+    "Navbar": {
+        "home": "Home",
+        "blog": "Blog",
+        "contact": "Contact",
+        "europe": "European Union",
+        "europeDesc": "Discover the purpose, mission, and actions of the European Union - the foundation of unity and cooperation in Europe.",
+        "europe-app": "EU Applications",
+        "europeAppDesc": "Get tips and support in the process of applying for financial assistance from EU funds and implementing projects.",
+        "industry": "Industry 5.0",
+        "title": "Digital Transformation Strategies",
+        "desc": "Advice and practical tips for businesses on how to start digital transformation.",
+        "title2": "History",
+        "title3": "Industry 5.0",
+        "title4": "Future of Industry",
+        "desc2": "Discover key moments in the history of industry.",
+        "desc3": "Comprehensive knowledge about the future of development.",
+        "desc4": "A look into the future."
+    }
+}

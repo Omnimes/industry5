@@ -1,0 +1,42 @@
+{
+  "Metadata": {
+    "title": "Industry5 - Przemysł 5.0 - Innowacje, Technologie i Transformacje w Nowoczesnej Produkcji",
+    "description": "Odkryj najnowsze trendy i rozwiązania w dziedzinie Przemysłu 5.0 na stronie Industry5. Zapewniamy kompleksowe informacje dotyczące innowacyjnych technologii, strategii transformacji cyfrowej oraz praktyczne porady dla przedsiębiorstw dążących do doskonałości w produkcji.",
+    "keywords": "Przemysł 5.0, innowacje przemysłowe, transformacja cyfrowa, technologie produkcji, przemysł automatyczny, nowoczesna produkcja",
+    "postNotFound": "Artykułu nie znaleziono",
+    "blog_title": "Industry5 Blog: Odkrywaj Świat Przemysłu 5.0",
+    "blog_desc": "Odkryj świat Przemysłu 5.0 na naszym blogu! Eksploruj innowacyjne treści, zgłębiaj tajniki efektywności produkcyjnej i nowoczesnych technologii.",
+    "blog_keywords": "Przemysł 5.0, Technologie produkcyjne, Innowacje w przemyśle, Efektywność produkcji, Automatyzacja procesów, Zarządzanie produkcją, Digitalizacja przedsiębiorstwa, Analiza danych produkcyjnych, Nowoczesne rozwiązania przemysłowe, AI w przemyśle"
+  },
+  "LocaleSwitcher": {
+    "label": "Zmień język",
+    "locale": "{locale, select, pl {Polski} en {Angielski} other {Nieznany}}"
+  },
+  "Error": {
+    "title": "Coś poszło nie tak!",
+    "description": "<p>Niestety, wystąpił błąd.</p><p>Możesz spróbować <retry>ponownie załadować stronę</retry>, którą odwiedzałeś/odwiedzałaś.</p>"
+  },
+  "NotFound": {
+    "title": "Przepraszamy, nie znaleźliśmy tej strony.",
+    "description": "Ale nie martw się, na naszej stronie głównej znajdziesz mnóstwo innych rzeczy.",
+    "action": "Powrót do strony głównej"
+  },
+  "Navbar": {
+    "home": "Strona Główna",
+    "blog": "Blog",
+    "contact": "Kontakt",
+    "europe": "Unia Europejska",
+    "europeDesc": "Odkryj cel, misję i działania Unii Europejskiej - fundament jedności i współpracy w Europie.",
+    "europe-app": "Wnioski Unijne",
+    "europeAppDesc": "Otrzymaj wskazówki i wsparcie w procesie składania wniosków o środki finansowe z funduszy unijnych i realizację projektów.",
+    "industry": "Przemysł 5.0",
+    "title": "Strategie transformacji cyfrowej",
+    "desc": "Porady i praktyczne wskazówki dla przedsiębiorstw, jak zacząć transformację cyfrową.",
+    "title2": "Historia",
+    "title3": "Przemysł 5.0",
+    "title4": "Przyszłość Przemysłu",
+    "desc2": "Odkryj kluczowe momenty w historii przemysłu.",
+    "desc3": "Kompleksowa wiedza na temat przyszłości rozwoju.",
+    "desc4": "Spojrzenie w przyszłość."
+  }
+}
