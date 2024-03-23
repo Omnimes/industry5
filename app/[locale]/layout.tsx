@@ -116,12 +116,13 @@ export default function LocaleLayout({ children, params: { locale } }: Props) {
           fontSans.variable,
           fontHeading.variable
         )}
+        suppressHydrationWarning
       >
         <NextIntlClientProvider messages={messages}>
           <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
             <div className="relative flex min-h-screen flex-col">
               <Navbar />
-              <div className="flex-1">{children}</div>
+              {children}
             </div>
             <TailwindIndicator />
           </ThemeProvider>

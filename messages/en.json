@@ -38,5 +38,11 @@
         "desc2": "Discover key moments in the history of industry.",
         "desc3": "Comprehensive knowledge about the future of development.",
         "desc4": "A look into the future."
+    },
+    "Hero": {
+        "title": "Industry 5.0 - Comprehensive Knowledge about Future Development",
+        "desc": "Discover the latest technologies, transformative strategies, and practical insights driving the evolution of modern production.",
+        "button1": "Learn More",
+        "button2": "EU Applications"
     }
 }
