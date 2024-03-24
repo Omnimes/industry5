@@ -11,7 +11,7 @@ module.exports = {
     './src/layouts/**/*.{js,ts,tsx}',
     './src/data/**/*.mdx',
   ],
-  // darkMode: 'class',
+  darkMode: 'class',
   theme: {
     container: {
       center: true,
