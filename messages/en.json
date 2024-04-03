@@ -44,5 +44,17 @@
         "desc": "Discover the latest technologies, transformative strategies, and practical insights driving the evolution of modern production.",
         "button1": "Learn More",
         "button2": "EU Applications"
+    },
+    "Blog": {
+        "blog_title": "Industry5 Blog: Explore the World of Industry 5.0",
+        "blog_desc": "Discover the world of Industry 5.0 on our blog! Explore innovative content, delve into the secrets of production efficiency, and modern technologies.",
+        "blog_keywords": "Industry 5.0, Production technologies, Innovations in industry, Production efficiency, Process automation, Production management, Digitalization of enterprises, Production data analysis, Modern industrial solutions",
+        "NotFound": "Sorry, no posts published",
+        "desc": "New Horizons of Industry 5.0 Within Your Reach, educate and inspire yourself with our articles!",
+        "ReadMore": "View Article"
+    },
+    "PostLayout": {
+        "allPost": "See all posts",
+        "publish": "Published on"
     }
 }

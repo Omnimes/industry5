@@ -12,6 +12,7 @@ import {
 } from "./navigation-menu"
 import { forwardRef, ElementRef, ComponentPropsWithoutRef } from "react";
 import { useTranslations } from "next-intl"
+import { siteConfig } from "@/data/config/site"
 
 const components: { title: string, description: string, href: string }[] = [
     {
@@ -41,7 +42,7 @@ export function NavigationMenuBar() {
                                 <NavigationMenuLink asChild>
                                     <a
                                         className="from-muted/50 to-muted flex size-full select-none flex-col justify-end rounded-md bg-gradient-to-b p-6 no-underline outline-none focus:shadow-md"
-                                        href="/"
+                                        href="/strategy"
                                     >
                                         <Logo />
                                         <div className="mb-2 mt-4 text-lg font-medium">
@@ -53,15 +54,13 @@ export function NavigationMenuBar() {
                                     </a>
                                 </NavigationMenuLink>
                             </li>
-                            <ListItem href="/" title={t('title2')}>
-                                {t("desc2")}
-                            </ListItem>
-                            <ListItem href="/" title={t('title3')}>
-                                {t("desc3")}
-                            </ListItem>
-                            <ListItem href="/" title={t('title4')}>
-                                {t("desc4")}
-                            </ListItem>
+                            {siteConfig.subNav.map(item => {
+                                return (
+                                    <ListItem key={item.title} href={item.href} title={t(item.title)}>
+                                        {t(item.desc)}
+                                    </ListItem>
+                                )
+                            })}
                         </ul>
                     </NavigationMenuContent>
                 </NavigationMenuItem>
@@ -82,7 +81,7 @@ export function NavigationMenuBar() {
                     </NavigationMenuContent>
                 </NavigationMenuItem>
                 <NavigationMenuItem>
-                    <Link href="/" legacyBehavior passHref>
+                    <Link href="/blog" legacyBehavior passHref>
                         <NavigationMenuLink
                             className="font-medium"
                         >
@@ -92,7 +91,7 @@ export function NavigationMenuBar() {
                 </NavigationMenuItem>
 
                 <NavigationMenuItem>
-                    <Link href="/" legacyBehavior passHref>
+                    <Link href="/contact" legacyBehavior passHref>
                         <NavigationMenuLink className="font-medium">
                             {t('contact')}
                         </NavigationMenuLink>

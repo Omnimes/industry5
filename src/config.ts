@@ -32,6 +32,22 @@ export const pathnames = {
   '/eu-applications': {
     en: '/eu-applications',
     pl: '/wnioski-unijne'
+  },
+  '/future': {
+    en: '/future',
+    pl: '/przyszlosc'
+  },
+  'history': {
+    en: '/history',
+    pl: '/historia'
+  },
+  'industry': {
+    en: '/industry',
+    pl: 'przemysl'
+  },
+  'strategy': {
+    en: 'strategy',
+    pl: 'strategia'
   }
 } satisfies Pathnames<typeof locales>;
 

@@ -32,4 +32,22 @@ export const siteConfig = {
       href: "/eu-applications",
     },
   ],
+
+  subNav: [
+    {
+      title: "title4",
+      href: "/future",
+      desc: "desc2"
+    },
+    {
+      title: "title2",
+      href: "/history",
+      desc: "desc3"
+    },
+    {
+      title: "title3",
+      href: "/industry",
+      desc: "desc4"
+    }
+  ]
 }
