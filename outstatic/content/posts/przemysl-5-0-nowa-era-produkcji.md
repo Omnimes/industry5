@@ -1,6 +1,6 @@
 ---
 title: 'Przemysł 5.0: Nowa Era Produkcji'
-status: 'draft'
+status: 'published'
 author:
   name: 'Piotr Sierant'
   picture: 'https://avatars.githubusercontent.com/u/94246053?v=4'
