@@ -1,0 +1,13 @@
+{
+  "title": "posts",
+  "type": "object",
+  "properties": {
+    "lang": {
+      "required": true,
+      "description": "lang post",
+      "fieldType": "String",
+      "dataType": "string",
+      "title": "lang"
+    }
+  }
+}
