@@ -6,12 +6,14 @@ author:
   picture: 'https://avatars.githubusercontent.com/u/94246053?v=4'
 slug: 'przemysl-5-0-nowa-era-produkcji'
 description: 'W ostatnich latach światowy przemysł przeszedł przez wiele ewolucji, ale teraz stoi przed kolejnym przełomem - erą Przemysłu 5.0. Ta nowa era produkcji nie tylko rewolucjonizuje sposoby wytwarzania, ale także zmienia sposób myślenia o produkcji jako takiej.'
-coverImage: '/images/industry-I2Nj.jpg'
+coverImage: '/images/industry-UyMT.jpg'
 lang: 'pl'
 publishedAt: '2024-04-06T13:56:42.293Z'
 ---
 
 W ostatnich latach światowy przemysł przeszedł przez wiele ewolucji, ale teraz stoi przed kolejnym przełomem - erą Przemysłu 5.0. Ta nowa era produkcji nie tylko rewolucjonizuje sposoby wytwarzania, ale także zmienia sposób myślenia o produkcji jako takiej.
+
+![](/images/industry-E3Nz.jpg)
 
 ### Co to jest Przemysł 5.0?
 
