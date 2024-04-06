@@ -1,0 +1,25 @@
+{
+  "commit": "efe187071f04be6b152f1eeb260eeef48a199244",
+  "generated": "Sat, 06 Apr 2024 14:21:21 GMT",
+  "metadata": [
+    {
+      "__outstatic": {
+        "commit": "024d3b17365ec94f1d2f339c8ca4fe400f077e86",
+        "hash": "791281785",
+        "path": "outstatic/content/posts/przemysl-5-0-nowa-era-produkcji.md"
+      },
+      "author": {
+        "name": "Piotr Sierant",
+        "picture": "https://avatars.githubusercontent.com/u/94246053?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/blog-post-1-EzND.jpg",
+      "description": "W ostatnich latach światowy przemysł przeszedł przez wiele ewolucji, ale teraz stoi przed kolejnym przełomem - erą Przemysłu 5.0. Ta nowa era produkcji nie tylko rewolucjonizuje sposoby wytwarzania, ale także zmienia sposób myślenia o produkcji jako takiej.",
+      "lang": "pl",
+      "publishedAt": "2024-04-06T13:56:42.293Z",
+      "slug": "przemysl-5-0-nowa-era-produkcji",
+      "status": "published",
+      "title": "Przemysł 5.0: Nowa Era Produkcji"
+    }
+  ]
+}
