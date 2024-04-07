@@ -1,7 +1,6 @@
 import "@/styles/mdx.css"
 import MDXServer from "@/lib/mdx-server"
 import MDXComponent from "@/components/mdx/mdx-component"
-import { notFound } from "next/navigation"
 import { Metadata } from "next";
 import { OstDocument } from "outstatic";
 import { absoluteUrl, cn, ogUrl } from "@/lib/utils"

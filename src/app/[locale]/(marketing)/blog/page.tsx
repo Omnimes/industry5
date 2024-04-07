@@ -3,10 +3,11 @@ import { LayoutPosts } from "@/layouts/LayoutPosts";
 import { getLocalePrimaryDialects } from "@/lib/locales";
 import { getTranslations } from 'next-intl/server';
 import { unstable_setRequestLocale } from "next-intl/server";
-import { load } from 'outstatic/server';
-import markdownToHtml from '@/lib/markdownToHtml'
+import { getDocuments, load } from 'outstatic/server';
 
 export const revalidate = 900;
+const POSTS_PER_PAGE = 10;
+
 export async function generateMetadata({ params: { locale } }: { params: { locale: string } }) {
   const t = await getTranslations({ locale, namespace: "Blog" });
   const title = t('blog_title');
@@ -37,11 +38,14 @@ async function getData(locale: string) {
       'author'
     ])
     .sort({ publishedAt: -1 })
-    .limit(10)
+    .limit(POSTS_PER_PAGE)
     .toArray()
 
+  const postsLength = getDocuments('posts').length
+
   return {
-    allPosts
+    allPosts,
+    postsLength
   }
 }
 
@@ -49,7 +53,15 @@ export default async function BlogPage({ params: { locale } }: { params: { local
   // Enable static rendering
   unstable_setRequestLocale(locale);
   const t = await getTranslations('Blog');
-  const { allPosts } = await getData(locale);
+  const { allPosts, postsLength } = await getData(locale);
+
+  const pageNumber = 1
+
+  const pagination = {
+    currentPage: pageNumber,
+    totalPages: Math.ceil(postsLength / POSTS_PER_PAGE),
+  }
+
   return (
     <div className="container max-w-screen-lg px-4 py-6 lg:px-0 lg:py-10">
       <div className="flex flex-col items-start gap-4 md:flex-row md:justify-between md:gap-8">
@@ -63,7 +75,7 @@ export default async function BlogPage({ params: { locale } }: { params: { local
         </div>
       </div>
       <hr className="my-8" />
-      <LayoutPosts posts={allPosts} />
+      <LayoutPosts posts={allPosts} pagination={pagination} />
     </div>
   );
 }

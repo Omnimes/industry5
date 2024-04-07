@@ -15,7 +15,7 @@ const nextConfig = {
         hostname: "avatars.githubusercontent.com",
       }
     ]
-  }
+  },
 };
 
 export default withNextIntl(nextConfig);

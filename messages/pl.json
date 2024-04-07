@@ -59,5 +59,10 @@
     "by": "przez",
     "postNotFound": "Artykułu nie znaleziono",
     "postNotFoundDesc": "Przepraszamy, ale nie udało się odnaleźć tego artykułu lub może on znajdować się pod innym adresem URL. Możesz przeczytać inne dostępne artykuły w tym języku, przechodząc do wszystkich postów."
+  },
+  "Pagination": {
+    "next": "Następna",
+    "prev": "Poprzedni",
+    "of": "z"
   }
 }
