@@ -3,18 +3,18 @@ const withNextIntl = createNextIntlPlugin();
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    images: {
-    // remotePatterns: ['raw.githubusercontent.com']
-      remotePatterns: [
+  // swcMinify: false,
+  images: {
+    remotePatterns: [
       {
         protocol: "https",
-        hostname: 'raw.githubusercontent.com',
+        hostname: "raw.githubusercontent.com",
       },
-      // {
-      //   protocol: "http",
-      //   hostname: "localhost",
-      //   },
-      ]
+      {
+        protocol: "https",
+        hostname: "avatars.githubusercontent.com",
+      }
+    ]
   }
 };
 

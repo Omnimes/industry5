@@ -2,6 +2,7 @@ declare module 'rehype-citation' {
   const rehypeCitation: any;
   export default rehypeCitation;
 }
+declare module 'remark-html';
 
 export interface NavItem {
   title: string
@@ -10,31 +11,15 @@ export interface NavItem {
   external?: boolean
 }
 
-type Meta = {
-  id: string,
-  title: string,
-  description: string,
-  date: string,
-  tags: string,
-  image: string,
-  authors: AuthorObject,
+type Posts = {
+  posts: Post[]
 }
 
-type BlogPost = {
-  meta: Meta,
-  content: ReactElement<any, string | JSXElementConstructor<any>>,
+type Post = {
+  title: string;
+  description: string;
+  publishedAt: string;
+  status: string;
+  coverImage: string;
+  slug: string;
 }
-
-type AuthorObject = {
-  meta: AuthorMeta,
-  content: ReactElement<any, string | JSXElementConstructor<any>>,
-}[]
-
-type AuthorMeta = {
-  linkedin: any;
-  name: string,
-  avatar: string,
-  occupation: string,
-  company: string,
-}
-

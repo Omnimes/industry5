@@ -55,6 +55,9 @@
     },
     "PostLayout": {
         "allPost": "See all posts",
-        "publish": "Published on"
+        "publish": "Published on",
+        "by": "by",
+        "postNotFound": "Article not found",
+        "postNotFoundDesc": "We're sorry, but the article could not be found or it may be located at a different URL. You can read other available articles in this language by going to all posts."
     }
 }

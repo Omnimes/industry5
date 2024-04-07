@@ -23,3 +23,11 @@ export function formatDate(input: string | number): string {
 export function absoluteUrl(path: string) {
   return `${process.env.SITE_URL}${path}`
 }
+
+export function ogUrl(title: string) {
+  // Get domain only without last slash
+  const siteUrl = absoluteUrl('/')
+    .replace(/(^\w+:|^)\/\//, '')
+    .replace(/\/$/, '')
+  return absoluteUrl(`/api/og?title=${title}&siteUrl=${siteUrl}`)
+}

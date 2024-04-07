@@ -2,19 +2,14 @@
 import { usePathname } from 'next/navigation'
 import Image from "next/image"
 import Link from "next/link"
-import { formatDate, getFormattedDate } from "@/lib/utils";
+import { getFormattedDate } from "@/lib/utils";
 import { useLocale, useTranslations } from 'next-intl';
-import { Meta } from '../../types';
+import { OstDocument } from "outstatic";
 
-type Props = {
-    posts: Meta[]
-}
-export const LayoutPosts = ({ posts }: Props) => {
-
+export const LayoutPosts = ({ posts }: { posts: OstDocument[] }) => {
     const pathname = usePathname();
     const basePath = pathname.split('/')[2];
     const lang = useLocale();
-
     const t = useTranslations("Blog")
 
     return (
@@ -23,30 +18,30 @@ export const LayoutPosts = ({ posts }: Props) => {
                 <div className="grid gap-10 sm:grid-cols-2">
                     {posts.map((post, index) => (
                         <article
-                            key={post.id}
+                            key={post.title}
                             className="group relative flex flex-col space-y-2"
                         >
-                            {post.image && (
+                            {post.coverImage &&
                                 <Image
-                                    src={post.image}
+                                    src={post.coverImage}
                                     alt={post.title}
                                     width={804}
                                     height={452}
                                     className="bg-muted rounded-md border transition-colors"
                                     priority={index <= 1}
                                 />
-                            )}
+                            }
                             <h2 className="text-2xl font-extrabold">{post.title}</h2>
                             {post.description && (
                                 <p className="text-muted-foreground">{post.description}</p>
                             )}
-                            {post.date && (
+                            {post.publishedAt && (
                                 <p className="text-muted-foreground text-sm">
-                                    {getFormattedDate(post.date, lang)}
+                                    {getFormattedDate(post.publishedAt, lang)}
                                 </p>
                             )}
                             <Link
-                                href={`/${basePath}/${post.id}`}
+                                href={`/${basePath}/${post.slug}`}
                                 className="absolute inset-0">
                                 <span className="sr-only">{t("ReadMore")}</span>
                             </Link>

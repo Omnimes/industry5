@@ -9,9 +9,9 @@ export const pathnames = {
   '/faq': '/faq',
   '/blog': '/blog',
 
-  '/blog/[articleSlug]-[articleId]': {
-    en: '/blog/[articleSlug]-[articleId]',
-    pl: '/blog/[articleSlug]-[articleId]',
+  '/blog/[slug]': {
+    en: '/blog/[slug]',
+    pl: '/blog/[slug]'
   },
   '/contact': {
     en: '/contact',
