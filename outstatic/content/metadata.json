@@ -1,6 +1,6 @@
 {
-  "commit": "4d204115a92826a0a7096dd1c92bbbcdadf8c14b",
-  "generated": "2024-04-07T16:09:32.685Z",
+  "commit": "de9f938dddac0867d8ebcc140c31ef9354ec0acf",
+  "generated": "2024-04-07T16:48:37.951Z",
   "metadata": [
     {
       "__outstatic": {
@@ -20,6 +20,25 @@
       "slug": "przemysl-5-0-nowa-era-produkcji",
       "status": "published",
       "title": "Przemysł 5.0: Nowa Era Produkcji"
+    },
+    {
+      "__outstatic": {
+        "commit": "de9f938dddac0867d8ebcc140c31ef9354ec0acf",
+        "hash": "2206720412",
+        "path": "outstatic/content/posts/test.md"
+      },
+      "author": {
+        "name": "Piotr Sierant",
+        "picture": "https://avatars.githubusercontent.com/u/94246053?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "",
+      "description": "",
+      "lang": "pl",
+      "publishedAt": "2024-04-07T17:00:22.165Z",
+      "slug": "test",
+      "status": "draft",
+      "title": "test"
     }
   ]
 }
