@@ -1,6 +1,6 @@
 {
-  "commit": "de9f938dddac0867d8ebcc140c31ef9354ec0acf",
-  "generated": "2024-04-07T16:48:37.951Z",
+  "commit": "aefa969d34c71bc00491ca83360041a6298c34e4",
+  "generated": "2024-04-07T16:49:45.720Z",
   "metadata": [
     {
       "__outstatic": {
@@ -23,8 +23,8 @@
     },
     {
       "__outstatic": {
-        "commit": "de9f938dddac0867d8ebcc140c31ef9354ec0acf",
-        "hash": "2206720412",
+        "commit": "aefa969d34c71bc00491ca83360041a6298c34e4",
+        "hash": "2419087439",
         "path": "outstatic/content/posts/test.md"
       },
       "author": {
@@ -37,7 +37,7 @@
       "lang": "pl",
       "publishedAt": "2024-04-07T17:00:22.165Z",
       "slug": "test",
-      "status": "draft",
+      "status": "published",
       "title": "test"
     }
   ]
