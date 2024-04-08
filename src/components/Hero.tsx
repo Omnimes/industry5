@@ -22,7 +22,7 @@ export const Hero = () => {
                             {t("desc")}
                         </p>
                         <div className="mt-10 flex flex-wrap items-center justify-center gap-x-6">
-                            <Button asChild className="bg-gradient-to-r from-slate-600 to-slate-800  text-white">
+                            <Button asChild className="bg-gradient-to-r from-slate-600 to-slate-800 text-white">
                                 <Link href="#industry">{t("button1")}</Link>
                             </Button>
                             <Button variant="link" asChild className="text-white">

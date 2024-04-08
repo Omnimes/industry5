@@ -12,10 +12,11 @@ export default function MarketingLayout({ children, params: { locale } }: Props)
     unstable_setRequestLocale(locale);
 
     return (
-        <div className="relative flex min-h-screen flex-col">
+        <main className="relative flex min-h-screen flex-col">
             <Navbar />
             {children}
             <TailwindIndicator />
-        </div>
+            {/* tutaj footer */}
+        </main>
     )
 }
