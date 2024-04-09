@@ -37,17 +37,17 @@ export const siteConfig = {
     {
       title: "title4",
       href: "/future",
-      desc: "desc2"
+      desc: "desc4"
     },
     {
       title: "title2",
       href: "/history",
-      desc: "desc3"
+      desc: "desc2"
     },
     {
       title: "title3",
       href: "/industry",
-      desc: "desc4"
+      desc: "desc3"
     }
   ]
 }

@@ -2,6 +2,7 @@ import { unstable_setRequestLocale } from "next-intl/server";
 import { ReactNode } from "react";
 import { Navbar } from "@/components/navbar/navbar"
 import { TailwindIndicator } from "@/components/tailwind-indicator"
+import { Footer } from "@/components/Footer";
 
 type Props = {
     children: ReactNode;
@@ -16,6 +17,7 @@ export default function MarketingLayout({ children, params: { locale } }: Props)
             <Navbar />
             {children}
             <TailwindIndicator />
+            <Footer />
             {/* tutaj footer */}
         </main>
     )

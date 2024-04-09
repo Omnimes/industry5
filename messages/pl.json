@@ -64,5 +64,9 @@
     "next": "Następna",
     "prev": "Poprzedni",
     "of": "z"
+  },
+  "Footer": {
+    "Copyright": "Prawa autorskie © Industry5",
+    "reserved": "| Wszelkie prawa zastrzeżone"
   }
 }

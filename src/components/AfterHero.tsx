@@ -40,26 +40,24 @@ export const AfterHero = () => {
             </h4> */}
             <section className="lg:flex lg:justify-center lg:py-16">
                 <div
-                    className="overflow-hidden bg-white lg:mx-8 lg:flex lg:w-full lg:max-w-6xl lg:rounded-xl lg:shadow-md dark:bg-gray-900">
+                    className="overflow-hidden lg:mx-8 lg:flex lg:w-full lg:max-w-6xl lg:rounded-xl lg:shadow-md">
                     <div className="lg:w-1/2">
-                        <Image src={"/images/industry.jpg"} alt={"test"} width={1000} height={1000} className="h-64 object-cover lg:h-full " />
+                        <Image src={"/images/2.png"} alt={"przemysł 5.0 tł"} width={1152} height={768} className="h-64 object-cover lg:h-full" />
                     </div>
 
-                    <div className="max-w-xl px-6 py-12 lg:w-1/2 lg:max-w-5xl">
-                        <h2 className="text-2xl font-semibold text-gray-800 md:text-3xl dark:text-white">
-                            {/* Co to jest <span className="text-blue-500">przemysł 5.0</span>? */}
-                            Temat
+                    <div className="mx-auto w-full px-0 py-8 text-left md:w-11/12 md:px-6 md:text-center lg:w-1/2 lg:max-w-5xl lg:text-left">
+                        <h2 className="font-heading mb-6 text-2xl tracking-normal text-gray-900 sm:text-3xl md:text-center md:text-4xl md:leading-none md:tracking-tight lg:flex lg:flex-col lg:text-left dark:text-white">
+                            {/* Co to jest przemysł 5.0</span>? */}
+                            Czym dokładnie jest Przemysł 5.0?
                         </h2>
 
-                        <p className="mt-4 text-gray-500 dark:text-gray-300">
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                            Quidem modi reprehenderit vitae exercitationem aliquid dolores ullam temporibus enim expedita aperiam
-                            mollitia iure consectetur dicta tenetur, porro consequuntur saepe accusantium consequatur.
+                        <p className="md:text-md mb-0 px-0 text-gray-600">
+                            Przemysł 5.0 nie tylko wykorzystuje zaawansowane technologie cyfrowe, takie jak sztuczna inteligencja, analiza danych czy internet rzeczy, ale również kładzie duży nacisk na rozwój umiejętności pracowników oraz bezpieczeństwo danych i systemów. W skrócie, Przemysł 5.0 to rewolucyjne podejście do produkcji, które integruje ludzi, maszyny i technologie, zmieniając sposób, w jaki produkowane są towary i usługi.
                         </p>
 
-                        <div className="mt-6 inline-flex w-full sm:w-auto">
+                        <div className="mr-auto mt-6 w-fit md:ml-auto lg:mr-0">
                             <a href="#" className="inline-flex w-full items-center justify-center rounded-lg bg-gray-800 px-6 py-2 text-sm text-white duration-300 hover:bg-gray-700 focus:ring focus:ring-gray-300 focus:ring-opacity-80">
-                                Start Now
+                                Czytaj więcej
                             </a>
                         </div>
                     </div>
