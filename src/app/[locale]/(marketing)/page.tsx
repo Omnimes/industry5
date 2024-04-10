@@ -13,7 +13,7 @@ export default function Home({ params: { locale } }: { params: { locale: string 
             <Hero />
             <AfterHero />
             <Content />
-            {/* <Content2 /> */}
+            <Content2 />
             {/* <Content3 /> */}
             <TailwindIndicator />
         </main>

@@ -1,66 +1,59 @@
+import Image from "next/image"
+
 export const Content2 = () => {
     return (
-        <div className="mx-auto px-4 py-16 sm:max-w-xl md:max-w-full md:px-24 lg:max-w-screen-xl lg:px-8 lg:py-20">
-            <div className="mb-10 max-w-xl sm:text-center md:mx-auto md:mb-12 lg:max-w-2xl">
-
-                <h2 className="mb-6 max-w-lg font-sans text-3xl font-bold leading-none tracking-tight text-gray-900 sm:text-4xl md:mx-auto">
-                    The quick, brown fox jumps over a lazy dog
+        <section className="mx-auto max-w-7xl px-4 py-24">
+            <div className="mx-auto w-full text-left md:w-11/12 md:text-center xl:w-9/12">
+                <h2 className="font-heading mb-6 text-2xl tracking-normal text-gray-900 sm:text-3xl md:text-4xl md:leading-none md:tracking-tight lg:flex lg:flex-col lg:text-5xl dark:text-white">
+                    Jakie korzyści niesie ze sobą wprowadzenie
+                    <span className="block w-full bg-gradient-to-r from-green-400 to-purple-500 bg-clip-text text-transparent lg:inline">Przemysłu 5.0?
+                    </span>
                 </h2>
-                <p className="text-base text-gray-700 md:text-lg">
-                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                    accusantium doloremque rem aperiam, eaque ipsa quae.
+                <p className="mb-6 px-0 text-lg text-gray-600 md:text-xl">
+                    Przemysł 5.0 to koncepcja rozwoju przemysłu, która stawia na harmonię między człowiekiem a technologią, przekształcając tradycyjne środowisko produkcyjne. Oto kilka korzyści, które niesie ze sobą wprowadzenie Przemysłu 5.0
                 </p>
             </div>
-            <div className="grid max-w-screen-lg gap-8 sm:mx-auto lg:grid-cols-2">
+            <div className="grid max-w-screen-lg gap-8 sm:mx-auto lg:grid-cols-2 lg:py-16">
                 <div className="grid grid-cols-2 gap-5">
-                    <img
-                        className="col-span-2 h-56 w-full rounded object-cover shadow-lg"
-                        src="https://images.pexels.com/photos/3182746/pexels-photo-3182746.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
-                        alt=""
-                    />
-                    <img
-                        className="h-48 w-full rounded object-cover shadow-lg"
-                        src="https://images.pexels.com/photos/3184296/pexels-photo-3184296.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
-                        alt=""
-                    />
-                    <img
-                        className="h-48 w-full rounded object-cover shadow-lg"
-                        src="https://images.pexels.com/photos/3184338/pexels-photo-3184338.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
-                        alt=""
-                    />
+                    <Image src={"/images/4.png"} alt={"przemysł 5.0 tł"} width={1260} height={750} className="col-span-2 h-56 w-full rounded object-cover shadow-lg" />
+                    <Image src={"/images/5.png"} alt={"przemysł 5.0 tł"} width={1260} height={750} className="h-48 w-full rounded object-cover shadow-lg" />
+                    <Image src={"/images/6.png"} alt={"przemysł 5.0 tł"} width={1260} height={750} className="h-48 w-full rounded object-cover shadow-lg" />
                 </div>
                 <div className="flex flex-col justify-center">
                     <div className="mb-4 border-b pb-4">
-                        <h6 className="mb-2 font-semibold leading-5">
-                            Sit error voluptatem accusantium
-                        </h6>
-                        <p className="text-sm text-gray-900">
-                            Sportacus andrew weatherall goose Refined gentlemen super mario
-                            des lynam alpha trion zap rowsdower, omar sharif old.
+                        <h4 className="mb-2 font-semibold leading-5">
+                            Zwiększona elastyczność produkcyjna
+                        </h4>
+                        <p className="text-sm text-gray-600">
+                            Dzięki wykorzystaniu zaawansowanych technologii, takich jak IoT czy AI, przemysł 5.0 umożliwia elastyczne dostosowanie procesów produkcyjnych do zmieniających się potrzeb rynku.
                         </p>
                     </div>
                     <div className="mb-4 border-b pb-4">
-                        <h6 className="mb-2 font-semibold leading-5">
-                            Cheese on toast airedale the big cheese
-                        </h6>
-                        <p className="text-sm text-gray-900">
-                            Chase ball of string eat plants, meow, and throw up because I ate
-                            plants going to catch the red dot today going to catch the red dot
-                            today. I could pee on this if I had the energy.
+                        <h4 className="mb-2 font-semibold leading-5">
+                            Personalizacja i indywidualizacja produkcji
+                        </h4>
+                        <p className="text-sm text-gray-600">
+                            Dzięki możliwościom analizy danych oraz produkcji na żądanie, Przemysł 5.0 umożliwia dostosowanie produktów do indywidualnych preferencji klientów, co może przyczynić się do zwiększenia konkurencyjności firm.
+                        </p>
+                    </div>
+                    <div className="mb-4 border-b pb-4">
+                        <h4 className="mb-2 font-semibold leading-5">
+                            Bezpieczeństwo i ergonomia pracy
+                        </h4>
+                        <p className="text-sm text-gray-600">
+                            Przemysł 5.0 stawia na współpracę między ludźmi a robotami, co może zmniejszyć ryzyko wypadków przy jednoczesnym zwiększeniu ergonomii pracy.
                         </p>
                     </div>
                     <div>
-                        <h6 className="mb-2 font-semibold leading-5">
-                            A flower in my garden, a mystery
-                        </h6>
-                        <p className="text-sm text-gray-900">
-                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                            accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-                            quae doloremque laudantium.
+                        <h4 className="mb-2 font-semibold leading-5">
+                            Tworzenie nowych miejsc pracy
+                        </h4>
+                        <p className="text-sm text-gray-600">
+                            Choć automatyzacja może prowadzić do zmian w strukturze zatrudnienia, wprowadzenie Przemysłu 5.0 otwiera również nowe możliwości zatrudnienia, zwłaszcza w obszarach związanych z obsługą, programowaniem czy zarządzaniem technologią.
                         </p>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     );
 };

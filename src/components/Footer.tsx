@@ -20,7 +20,7 @@ export const Footer = () => {
                     <Logo />
                     <ul
                         role="list"
-                        className="flex flex-col items-center justify-center gap-4 py-4 sm:flex-row sm:gap-8"
+                        className="flex flex-col flex-wrap items-center justify-center gap-4 py-4 sm:flex-row sm:gap-8"
                     >
                         {siteConfig.mainNav.map(item => {
                             return (

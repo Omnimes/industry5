@@ -38,26 +38,36 @@ export const AfterHero = () => {
             {/* <h4>
                 Czy możemy uznać to za kolejną rewolucję czy jedynie ewolucję założeń Przemysłu 4.0?
             </h4> */}
-            <section className="lg:flex lg:justify-center lg:py-16">
+            <section className="mx-auto lg:flex lg:justify-center lg:py-16">
                 <div
-                    className="overflow-hidden lg:mx-8 lg:flex lg:w-full lg:max-w-6xl lg:rounded-xl lg:shadow-md">
+                    className="overflow-hidden rounded-t-md lg:flex lg:w-full lg:max-w-5xl lg:rounded-xl lg:shadow-md">
                     <div className="lg:w-1/2">
                         <Image src={"/images/2.png"} alt={"przemysł 5.0 tł"} width={1152} height={768} className="h-64 object-cover lg:h-full" />
                     </div>
 
                     <div className="mx-auto w-full px-0 py-8 text-left md:w-11/12 md:px-6 md:text-center lg:w-1/2 lg:max-w-5xl lg:text-left">
-                        <h2 className="font-heading mb-6 text-2xl tracking-normal text-gray-900 sm:text-3xl md:text-center md:text-4xl md:leading-none md:tracking-tight lg:flex lg:flex-col lg:text-left dark:text-white">
-                            {/* Co to jest przemysł 5.0</span>? */}
+                        <h3 className="font-heading mb-3 text-2xl tracking-normal text-gray-900 sm:text-3xl md:text-center md:text-4xl md:leading-none md:tracking-tight lg:flex lg:flex-col lg:text-left dark:text-white">
                             Czym dokładnie jest Przemysł 5.0?
-                        </h2>
+                        </h3>
 
-                        <p className="md:text-md mb-0 px-0 text-gray-600">
+                        <p className="md:text-md mb-3 px-0 text-gray-600">
                             Przemysł 5.0 nie tylko wykorzystuje zaawansowane technologie cyfrowe, takie jak sztuczna inteligencja, analiza danych czy internet rzeczy, ale również kładzie duży nacisk na rozwój umiejętności pracowników oraz bezpieczeństwo danych i systemów. W skrócie, Przemysł 5.0 to rewolucyjne podejście do produkcji, które integruje ludzi, maszyny i technologie, zmieniając sposób, w jaki produkowane są towary i usługi.
                         </p>
 
-                        <div className="mr-auto mt-6 w-fit md:ml-auto lg:mr-0">
-                            <a href="#" className="inline-flex w-full items-center justify-center rounded-lg bg-gray-800 px-6 py-2 text-sm text-white duration-300 hover:bg-gray-700 focus:ring focus:ring-gray-300 focus:ring-opacity-80">
+                        <div className="flex w-full items-center justify-start md:justify-center lg:justify-start">
+                            <a
+                                href="/"
+                                aria-label=""
+                                className="inline-flex items-center font-semibold text-gray-900 transition-colors duration-200 dark:text-white"
+                            >
                                 Czytaj więcej
+                                <svg
+                                    className="ml-2 inline-block w-3"
+                                    fill="currentColor"
+                                    viewBox="0 0 12 12"
+                                >
+                                    <path d="M9.707,5.293l-5-5A1,1,0,0,0,3.293,1.707L7.586,6,3.293,10.293a1,1,0,1,0,1.414,1.414l5-5A1,1,0,0,0,9.707,5.293Z" />
+                                </svg>
                             </a>
                         </div>
                     </div>
