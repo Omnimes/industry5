@@ -95,10 +95,10 @@ export const Footer = () => {
 
                     <div className="text-center">
                         <span className="text-sm tracking-wide">
-                            {tr("Copyright")}
+                            {tr("Copyright")}&nbsp;
                             <span id="year">
-                                2024
-                            </span>
+                                - 2024
+                            </span>&nbsp;
                             {tr("reserved")}
                         </span>
                     </div>

@@ -66,7 +66,20 @@
         "of": "of"
     },
     "Footer": {
-      "Copyright": "Copyright © Industry5",
-      "reserved": "| All right reserved"
+        "Copyright": "Copyright © Industry5",
+        "reserved": "| All right reserved"
+    },
+    "Form": {
+        "name": "Name and surname",
+        "email": "Email",
+        "message": "Message",
+        "descName": "Enter your name and surname",
+        "descEmail": "Enter your email address",
+        "descMessage": "Enter your message",
+        "submit": "Submit",
+        "SuccessForm": "Your message has been successfully sent.",
+        "SuccessFormMessage": "Thank you for getting in touch! Our team will contact you shortly.",
+        "ErrorForm": "Unfortunately, the message could not be sent.",
+        "ErrorFormMessage": "Please try again or contact us directly - info@industry5.pl."
     }
 }

@@ -1,3 +1,5 @@
+import Image from "next/image";
+import photo from "../../public/images/photo.webp";
 export const Content3 = () => {
   return (
     <section className="mx-auto max-w-7xl px-4">
@@ -5,15 +7,11 @@ export const Content3 = () => {
         <div className="flex flex-col justify-center">
           <h2 className="font-heading mb-6 block w-full text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl sm:leading-none md:text-center md:text-4xl
           md:leading-none md:tracking-tight lg:flex lg:flex-col lg:text-left lg:text-5xl dark:text-white">
-            The quick, brown fox jumps over a lazy dog
+            Odkryj Potencjał Przemysłu 5.0
           </h2>
           <p className=" mb-6 block w-full px-0 text-lg text-gray-600 md:text-center md:text-xl lg:text-left">
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-            accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-            quae. explicabo.
-          </p>
-          <p className="mb-6 px-0 text-lg font-bold uppercase tracking-widest md:text-center md:text-xl lg:text-left">
-            Features
+            Poznaj innowacyjne podejścia, które zmieniają oblicze przemysłu, kładąc nacisk na postęp ludzki i zrównoważony rozwój.
+            Odkryj jak Przemysł 5.0 przynosi korzyści dla społeczeństwa i środowiska, otwierając nowe możliwości dla biznesu i przemysłu.
           </p>
           <div className="grid space-y-3 sm:grid-cols-2 sm:gap-2 sm:space-y-0">
             <ul className="space-y-3">
@@ -33,7 +31,7 @@ export const Content3 = () => {
                     />
                   </svg>
                 </span>
-                A slice of heaven
+                Decentralizacja
               </li>
               <li className="flex">
                 <span className="mr-1">
@@ -51,7 +49,7 @@ export const Content3 = () => {
                     />
                   </svg>
                 </span>
-                Disrupt inspire
+                Zmiana orientacji gospodarczej
               </li>
               <li className="flex">
                 <span className="mr-1">
@@ -69,7 +67,7 @@ export const Content3 = () => {
                     />
                   </svg>
                 </span>
-                Preliminary thinking
+                Zrównoważony rozwój
               </li>
             </ul>
             <ul className="space-y-3">
@@ -89,7 +87,7 @@ export const Content3 = () => {
                     />
                   </svg>
                 </span>
-                Flipboard curmudgeon
+                Transformacja cyfrowa
               </li>
               <li className="flex">
                 <span className="mr-1">
@@ -107,7 +105,7 @@ export const Content3 = () => {
                     />
                   </svg>
                 </span>
-                Storage shed
+                Nacisk na postęp ludzki i dobrostan
               </li>
               <li className="flex">
                 <span className="mr-1">
@@ -125,16 +123,18 @@ export const Content3 = () => {
                     />
                   </svg>
                 </span>
-                Satoshi Nakamoto
+                Nowe wskaźniki
               </li>
             </ul>
           </div>
         </div>
         <div>
-          <img
+          <Image
             className="h-56 w-full rounded object-cover shadow-lg sm:h-96"
-            src="https://images.pexels.com/photos/927022/pexels-photo-927022.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=3&amp;h=750&amp;w=1260"
+            src={photo.src}
             alt=""
+            width={1260}
+            height={750}
           />
         </div>
       </div>

@@ -1,4 +1,9 @@
-export const sendEmail = async (data: any, locale: string) => {
+type FormData = {
+    name: string;
+    email: string;
+    message: string;
+}
+export const sendEmail = async (data: FormData) => {
     try {
         const res = await fetch(`/api/form`, {
             method: "POST",

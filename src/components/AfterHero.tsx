@@ -51,7 +51,8 @@ export const AfterHero = () => {
                         </h3>
 
                         <p className="md:text-md mb-3 px-0 text-gray-600">
-                            Przemysł 5.0 nie tylko wykorzystuje zaawansowane technologie cyfrowe, takie jak sztuczna inteligencja, analiza danych czy internet rzeczy, ale również kładzie duży nacisk na rozwój umiejętności pracowników oraz bezpieczeństwo danych i systemów. W skrócie, Przemysł 5.0 to rewolucyjne podejście do produkcji, które integruje ludzi, maszyny i technologie, zmieniając sposób, w jaki produkowane są towary i usługi.
+                            Przemysł 5.0 to rewolucyjne podejście do produkcji, które integruje ludzi, maszyny i technologie, zmieniając sposób, w jaki produkowane są towary i usługi.
+                            Przemysł 5.0 nie tylko wykorzystuje zaawansowane technologie cyfrowe, takie jak sztuczna inteligencja, analiza danych czy internet rzeczy, ale również kładzie duży nacisk na rozwój umiejętności pracowników oraz bezpieczeństwo danych i systemów.
                         </p>
 
                         <div className="flex w-full items-center justify-start md:justify-center lg:justify-start">

@@ -68,5 +68,18 @@
   "Footer": {
     "Copyright": "Prawa autorskie © Industry5",
     "reserved": "| Wszelkie prawa zastrzeżone"
+  },
+  "Form": {
+    "name": "Imię i nazwisko",
+    "email": "Email",
+    "message": "Wiadomość",
+    "descName": "Wprowadź swoje imię i nazwisko",
+    "descEmail": "Wprowadź swój adres email",
+    "descMessage": "Wprowadź swoją wiadomość",
+    "submit": "Wyślij",
+    "SuccessForm": "Twoja wiadomość została pomyślnie wysłana.",
+    "SuccessFormMessage": "Dziękujemy za kontakt! Nasz zespół skontaktuje się z Tobą wkrótce.",
+    "ErrorForm": "Niestety, nie udało się wysłać wiadomości.",
+    "ErrorFormMessage": "Prosimy spróbować ponownie lub skontaktować się z nami bezpośrednio - info@industry5.pl."
   }
 }

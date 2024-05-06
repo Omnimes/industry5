@@ -3,20 +3,11 @@ import nodemailer from 'nodemailer'
 import Mail from 'nodemailer/lib/mailer'
 
 export async function POST(request: NextRequest) {
-  const { name, lastName, company, email, phone, country, message } = await request.json()
-  if (!name || !lastName || !email || !message || !company || !phone || !country) {
+  const { name, email, message } = await request.json();
+
+  if (!name || !email || !message) {
     const errorMessage = 'Wiadomość nie może zostać wysłana z powodu brakujących danych.'
     return NextResponse.json({ error: errorMessage }, { status: 500 })
-  }
-
-  const number = () => {
-    if (country == 'england') return '+44' + phone
-    if (country == 'poland') return '+48' + phone
-    if (country == 'switzerland') return '+41' + phone
-    if (country == 'germany') return '+49' + phone
-    if (country == 'spain') return '+34' + phone
-    if (country == 'france') return '+33' + phone
-    if (country == 'italy') return '+39' + phone
   }
 
   const transport = nodemailer.createTransport({
@@ -31,20 +22,17 @@ export async function POST(request: NextRequest) {
   })
 
   const mailOptions: Mail.Options = {
-    from: `${name} ${lastName} - ${email}`,
+    from: `${name} - ${email}`,
     to: process.env.MY_EMAIL as string,
     sender: email,
     replyTo: email,
     subject: `Message from ${name} (${email})`,
     text: `
-      Wiadomość od ${name} ${lastName}
-      Firma: ${company}
+      Wiadomość od ${name} 
       Email: ${email}
-      Telefon: ${number()}
-      Kraj: ${country}
       Wiadomość: ${message}
     `,
-    cc: ['PSierant@multiprojekt.pl', 'MSzerment@multiprojekt.pl', 'MCichon@multiprojekt.pl'],
+    cc: ['PSierant@multiprojekt.pl'],
   }
 
   const sendMailPromise = () =>
@@ -62,6 +50,6 @@ export async function POST(request: NextRequest) {
     await sendMailPromise();
     return NextResponse.json({ message: 'sent', success: true })
   } catch (err) {
-    return NextResponse.json({ error: err }, { status: 500 })
+    return NextResponse.json({ message: 'error', error: true }, { status: 500 })
   }
 }

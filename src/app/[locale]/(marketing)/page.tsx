@@ -14,7 +14,7 @@ export default function Home({ params: { locale } }: { params: { locale: string 
             <AfterHero />
             <Content />
             <Content2 />
-            {/* <Content3 /> */}
+            <Content3 />
             <TailwindIndicator />
         </main>
     )
