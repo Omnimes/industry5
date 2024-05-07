@@ -29,7 +29,7 @@ export default function CustomLink({
     }
 
     return (
-        <a target="_blank" rel="noopener noreferrer" href={href} {...rest}>
+        <a target="_blank" rel="noopener noreferrer" href={href} className={className} {...rest}>
             {children}
         </a>
     )

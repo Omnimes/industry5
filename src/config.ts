@@ -37,17 +37,17 @@ export const pathnames = {
     en: '/future',
     pl: '/przyszlosc'
   },
-  'history': {
+  '/history': {
     en: '/history',
     pl: '/historia'
   },
-  'industry': {
+  '/industry': {
     en: '/industry',
-    pl: 'przemysl'
+    pl: '/przemysl'
   },
-  'strategy': {
-    en: 'strategy',
-    pl: 'strategia'
+  '/strategy': {
+    en: '/strategy',
+    pl: '/strategia'
   }
 } satisfies Pathnames<typeof locales>;
 
