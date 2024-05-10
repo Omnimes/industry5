@@ -15,7 +15,6 @@ export default function Home({ params: { locale } }: { params: { locale: string 
             <Content />
             <Content2 />
             <Content3 />
-            {/* <TailwindIndicator /> */}
         </main>
     )
 }

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import photo from "../../public/images/photo.webp";
+import photo from "../../public/images/future.png";
 export const Content3 = () => {
   return (
     <section className="mx-auto max-w-7xl px-4">

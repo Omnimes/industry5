@@ -16,9 +16,8 @@ export default function MarketingLayout({ children, params: { locale } }: Props)
         <main className="relative flex min-h-screen flex-col">
             <Navbar />
             {children}
-            <TailwindIndicator />
+            {/* <TailwindIndicator /> */}
             <Footer />
-            {/* tutaj footer */}
         </main>
     )
 }
