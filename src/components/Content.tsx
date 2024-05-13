@@ -11,7 +11,7 @@ export const Content = () => {
                         </span>
                     </h2>
                     <p className="mb-6 px-0 text-lg text-gray-600 md:text-xl">
-                        Przemysł 5.0 jest ważny, ponieważ umożliwia przedsiębiorstwom i przemysłowi aktywne dostarczanie społeczeństwu rozwiązań pozwalających na ochronę zasobów, zapewnienie stabilności społecznej i realizację celów klimatycznych. Dzięki korzyściom skupionym na szerszym świecie, w tym na pracownikach, a nie tylko na produktywności i zyskach, Przemysł 5.0 zamienia połączone firmy w część rozwiązania, zamiast stwarzać potencjalny problem środowiskowy i społeczny
+                        Przemysł 5.0 jest ważny, ponieważ umożliwia przedsiębiorstwom i przemysłowi aktywne dostarczanie społeczeństwu rozwiązań pozwalających na ochronę zasobów, zapewnienie stabilności społecznej i realizację celów klimatycznych. Dzięki korzyściom skupionym na szerszym świecie, w tym na pracownikach, a nie tylko na produktywności i zyskach, Przemysł 5.0 zamienia połączone firmy w część rozwiązania, zamiast stwarzać potencjalny problem środowiskowy i społeczny.
                     </p>
                 </div>
             </section>
@@ -36,7 +36,7 @@ export const Content = () => {
                             </p>
                             <div className="flex w-full items-center justify-start md:justify-center lg:justify-start">
                                 <a
-                                    href="/"
+                                    href="/future"
                                     aria-label=""
                                     className="flex items-center font-semibold text-gray-900 transition-colors duration-200 dark:text-white"
                                 >

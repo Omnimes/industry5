@@ -7,7 +7,6 @@ import { Content2 } from '@/components/Content2';
 import { Content3 } from '@/components/Content3';
 export default function Home({ params: { locale } }: { params: { locale: string } }) {
     unstable_setRequestLocale(locale);
-
     return (
         <main>
             <Hero />

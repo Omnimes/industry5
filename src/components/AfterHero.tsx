@@ -57,7 +57,7 @@ export const AfterHero = () => {
 
                         <div className="flex w-full items-center justify-start md:justify-center lg:justify-start">
                             <a
-                                href="/"
+                                href="/industry"
                                 aria-label=""
                                 className="inline-flex items-center font-semibold text-gray-900 transition-colors duration-200 dark:text-white"
                             >

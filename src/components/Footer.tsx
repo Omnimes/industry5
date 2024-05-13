@@ -1,6 +1,8 @@
 import Link from "next/link";
 import { siteConfig } from "@/data/config/site";
 import { useTranslations } from "next-intl";
+import { Separator } from "@/components/ui/separator"
+
 export const Footer = () => {
     const t = useTranslations("Navbar");
     const tr = useTranslations("Footer");
@@ -41,6 +43,8 @@ export const Footer = () => {
                             )
                         })}
                     </ul>
+                    <Separator/>
+
                     {/* <div className="m-auto flex w-max items-center justify-between space-x-4">
                         <a href="tel:+243996660436" aria-label="call">
                             <svg
@@ -91,8 +95,7 @@ export const Footer = () => {
                                 ></path>
                             </svg>
                         </a>
-                    </div> */}
-
+                    </div>  */}
                     <div className="text-center">
                         <span className="text-sm tracking-wide">
                             {tr("Copyright")}&nbsp;

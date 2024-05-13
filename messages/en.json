@@ -1,85 +1,122 @@
 {
-    "Metadata": {
-        "title": "Industry5 - Industry 5.0 - Innovations, Technologies, and Transformations in Modern Manufacturing",
-        "description": "Discover the latest trends and solutions in the field of Industry 5.0 on the Industry5 website. We provide comprehensive information on innovative technologies, digital transformation strategies, and practical advice for companies striving for excellence in production.",
-        "keywords": "Industry 5.0, industrial innovations, digital transformation, production technologies, automated industry, modern manufacturing",
-        "postNotFound": "Article not found",
-        "blog_title": "Industry5 Blog: Explore the World of Industry 5.0",
-        "blog_desc": "Explore the world of Industry 5.0 on our blog! Delve into innovative content, uncover the secrets of production efficiency and modern technologies.",
-        "blog_keywords": "Industry 5.0, Production technologies, Innovations in industry, Production efficiency, Process automation, Production management, Enterprise digitalization, Production data analysis, Modern industrial solutions, AI in industry"
-    },
-    "LocaleSwitcher": {
-        "label": "Change language",
-        "locale": "{locale, select, pl {Polish} en {English} other {Unknown}}"
-    },
-    "Error": {
-        "title": "Something went wrong!",
-        "description": "<p>We've unfortunately encountered an error.</p><p>You can try to <retry>reload the page</retry> you were visiting.</p>"
-    },
-    "NotFound": {
-        "title": "Sorry we couldn&apos;t find this page.",
-        "description": "But dont worry, you can find plenty of other things on our homepage.",
-        "action": "Back to homepage"
-    },
-    "Navbar": {
-        "home": "Home",
-        "blog": "Blog",
-        "contact": "Contact",
-        "europe": "European Union",
-        "europeDesc": "Discover the purpose, mission, and actions of the European Union - the foundation of unity and cooperation in Europe.",
-        "europe-app": "EU Applications",
-        "europeAppDesc": "Get tips and support in the process of applying for financial assistance from EU funds and implementing projects.",
-        "industry": "Industry 5.0",
-        "title": "Digital Transformation Strategies",
-        "desc": "Advice and practical tips for businesses on how to start digital transformation.",
-        "title2": "History",
-        "title3": "Industry 5.0",
-        "title4": "Future of Industry",
-        "desc2": "Discover key moments in the history of industry.",
-        "desc3": "Comprehensive knowledge about the future of development.",
-        "desc4": "A look into the future."
-    },
-    "Hero": {
-        "title": "Industry 5.0 - Comprehensive Knowledge about Future Development",
-        "desc": "Discover the latest technologies, transformative strategies, and practical insights driving the evolution of modern production.",
-        "button1": "Learn More",
-        "button2": "EU Applications"
-    },
-    "Blog": {
-        "blog_title": "Industry5 Blog: Explore the World of Industry 5.0",
-        "blog_desc": "Discover the world of Industry 5.0 on our blog! Explore innovative content, delve into the secrets of production efficiency, and modern technologies.",
-        "blog_keywords": "Industry 5.0, Production technologies, Innovations in industry, Production efficiency, Process automation, Production management, Digitalization of enterprises, Production data analysis, Modern industrial solutions",
-        "NotFound": "Sorry, no posts published",
-        "desc": "New Horizons of Industry 5.0 Within Your Reach, educate and inspire yourself with our articles!",
-        "ReadMore": "View Article"
-    },
-    "PostLayout": {
-        "allPost": "See all posts",
-        "publish": "Published on",
-        "by": "by",
-        "postNotFound": "Article not found",
-        "postNotFoundDesc": "We're sorry, but the article could not be found or it may be located at a different URL. You can read other available articles in this language by going to all posts."
-    },
-    "Pagination": {
-        "next": "Next",
-        "prev": "Previous",
-        "of": "of"
-    },
-    "Footer": {
-        "Copyright": "Copyright © Industry5",
-        "reserved": "| All right reserved"
-    },
-    "Form": {
-        "name": "Name and surname",
-        "email": "Email",
-        "message": "Message",
-        "descName": "Enter your name and surname",
-        "descEmail": "Enter your email address",
-        "descMessage": "Enter your message",
-        "submit": "Submit",
-        "SuccessForm": "Your message has been successfully sent.",
-        "SuccessFormMessage": "Thank you for getting in touch! Our team will contact you shortly.",
-        "ErrorForm": "Unfortunately, the message could not be sent.",
-        "ErrorFormMessage": "Please try again or contact us directly - info@industry5.pl."
-    }
+  "Metadata": {
+    "title": "Industry5 - Industry 5.0 - Innovations, Technologies, and Transformations in Modern Manufacturing",
+    "description": "Discover the latest trends and solutions in the field of Industry 5.0 on the Industry5 website. We provide comprehensive information on innovative technologies, digital transformation strategies, and practical advice for companies striving for excellence in production.",
+    "keywords": "Industry 5.0, industrial innovations, digital transformation, production technologies, automated industry, modern manufacturing",
+    "postNotFound": "Article not found",
+    "blog_title": "Industry5 Blog: Explore the World of Industry 5.0",
+    "blog_desc": "Explore the world of Industry 5.0 on our blog! Delve into innovative content, uncover the secrets of production efficiency and modern technologies.",
+    "blog_keywords": "Industry 5.0, Production technologies, Innovations in industry, Production efficiency, Process automation, Production management, Enterprise digitalization, Production data analysis, Modern industrial solutions, AI in industry"
+  },
+  "LocaleSwitcher": {
+    "label": "Change language",
+    "locale": "{locale, select, pl {Polish} en {English} other {Unknown}}"
+  },
+  "Error": {
+    "title": "Something went wrong!",
+    "description": "<p>We've unfortunately encountered an error.</p><p>You can try to <retry>reload the page</retry> you were visiting.</p>"
+  },
+  "NotFound": {
+    "title": "Sorry we couldn&apos;t find this page.",
+    "description": "But dont worry, you can find plenty of other things on our homepage.",
+    "action": "Back to homepage"
+  },
+  "Navbar": {
+    "home": "Home",
+    "blog": "Blog",
+    "contact": "Contact",
+    "europe": "European Union",
+    "europeDesc": "Discover the purpose, mission, and actions of the European Union - the foundation of unity and cooperation in Europe.",
+    "europe-app": "EU Applications",
+    "europeAppDesc": "Get tips and support in the process of applying for financial assistance from EU funds and implementing projects.",
+    "industry": "Industry 5.0",
+    "title": "Digital Transformation Strategies",
+    "desc": "Advice and practical tips for businesses on how to start digital transformation.",
+    "title2": "History",
+    "title3": "Industry 5.0",
+    "title4": "Future of Industry",
+    "desc2": "Discover key moments in the history of industry.",
+    "desc3": "Comprehensive knowledge about the future of development.",
+    "desc4": "A look into the future."
+  },
+  "Hero": {
+    "title": "Industry 5.0 - Comprehensive Knowledge about Future Development",
+    "desc": "Discover the latest technologies, transformative strategies, and practical insights driving the evolution of modern production.",
+    "button1": "Learn More",
+    "button2": "EU Applications"
+  },
+  "Blog": {
+    "blog_title": "Industry5 Blog: Explore the World of Industry 5.0",
+    "blog_desc": "Discover the world of Industry 5.0 on our blog! Explore innovative content, delve into the secrets of production efficiency, and modern technologies.",
+    "blog_keywords": "Industry 5.0, Production technologies, Innovations in industry, Production efficiency, Process automation, Production management, Digitalization of enterprises, Production data analysis, Modern industrial solutions",
+    "NotFound": "Sorry, no posts published",
+    "desc": "New Horizons of Industry 5.0 Within Your Reach, educate and inspire yourself with our articles!",
+    "ReadMore": "View Article"
+  },
+  "PostLayout": {
+    "allPost": "See all posts",
+    "publish": "Published on",
+    "by": "by",
+    "postNotFound": "Article not found",
+    "postNotFoundDesc": "We're sorry, but the article could not be found or it may be located at a different URL. You can read other available articles in this language by going to all posts."
+  },
+  "Pagination": {
+    "next": "Next",
+    "prev": "Previous",
+    "of": "of"
+  },
+  "Footer": {
+    "Copyright": "Copyright © Industry5",
+    "reserved": "| All right reserved"
+  },
+  "Form": {
+    "name": "Name and surname",
+    "email": "Email",
+    "message": "Message",
+    "descName": "Enter your name and surname",
+    "descEmail": "Enter your email address",
+    "descMessage": "Enter your message",
+    "submit": "Submit",
+    "SuccessForm": "Your message has been successfully sent.",
+    "SuccessFormMessage": "Thank you for getting in touch! Our team will contact you shortly.",
+    "ErrorForm": "Unfortunately, the message could not be sent.",
+    "ErrorFormMessage": "Please try again or contact us directly - info@industry5.pl."
+  },
+  "Strategy": {
+    "title": "Digital Transformation Strategies",
+    "text1": "Human-Centered Approach",
+    "alt_orient": "Illustration depicting 'Human-Centered Approach'",
+    "p1": "The fifth transformation focuses on the application of management methods that lead to the creation of a human-centered organization. Detailed guidelines for this approach can be found in standards",
+    "p2": "(Human-Centered Organization - Rationale and General Principles) and",
+    "p3": "(Human-Oriented Organization - Guidelines for Managers). These standards define key criteria, required competencies in ergonomics and human factors, and provide guidelines for board members.",
+    "p4": "ISO standards also define seven principles of a human-centered organization:",
+    "list1": "Utilizing individual differences as organizational strengths.",
+    "list2": "Ensuring the usefulness and accessibility of strategic business goals.",
+    "list3": "Adopting a systemic approach.",
+    "list4": "Prioritizing the health, safety, and well-being of employees in business priorities.",
+    "list5": "Appreciating employees and creating a meaningful work environment.",
+    "list6": "Introducing the principle of being open and trustworthy.",
+    "list7": "Operating in a socially responsible manner.",
+    "p5": "Industry 5.0, based on a strategy that shifts focus from treating people as resources to recognizing them as real assets, adds a new dimension to this approach. Instead of serving organizations, it means that organizations start serving people. Rather than utilizing talents solely for gaining competitive advantage and creating value for customers, Industry 5.0 focuses on adding value for employees to attract and retain the best specialists. Integrating this approach with human-centered organization principles is a key element for success in a dynamic and competitive business environment.",
+    "text2": "Resilience",
+    "alt_odpornosc": "Illustration depicting 'Resilience - Supply Chain'",
+    "p6": "With the globalization of the world, we increasingly recognize the widespread impact of global issues, such as the Covid-19 pandemic and international supply chain shortages. Although many companies strive to improve efficiency and optimize profits, these factors alone do not increase resilience. In fact, there is a belief that focusing solely on efficiency and flexibility may make companies less, rather than more, resilient. Instead of focusing solely on growth, profits, and efficiency, more resilient organizations will aim to anticipate every potential crisis and respond to it to ensure stability in challenging times.",
+    "p7": "The value chain model describes the comprehensive actions necessary to develop a product or service - from the conceptual stage, through raw material sourcing, production processes, and marketing activities, to distribution. The value chain-based approach aims to understand the needs of companies and entities within a given industry, such as raw material suppliers, end customers, and entities providing technical, business, and financial support for the industry and business environment. Below are general principles for implementing value chain development programs:",
+    "ol_li_title1": "Technology Description:",
+    "ol_li_res1": "Facilitating changes in the company: facilitating the implementation of changes aimed at increasing the competitiveness of the chain and generating revenue for all participating companies, contributing to economic and social growth. Understanding the financial and non-financial incentives of different stakeholders is crucial.",
+    "ol_li_title2": "Transforming Relationships:",
+    "ol_li_res2": "Through the benefits of win-win relationships in stakeholder cooperation, some companies find motivation to change their adopted methods of operation and forms of contact used with other chain participants. The effectiveness of simple appeals to self-interest is limited by conflicting incentives and a high level of distrust.",
+    "ol_li_title3": "Leverage Pointing:",
+    "ol_li_res3": "Value chain project implementers should focus on leverage points that have a significant impact on interventions to maximize the impact and scope of actions. Leverage points may include economic and social structures, trade incentives, and norms and social incentives.",
+    "ol_li_title4": "Strengthening the Private Sector's Position:",
+    "ol_li_res4": "The value chain-based approach aims to enable the private sector to act on its own through the modernization of companies and the co-creation of a competitive value chain, thereby contributing to economic growth and poverty reduction. Value chain analysis and strategy development should be based on participation and collaboration.",
+    "ol_li_title5": "Learning and Adaptive Management:",
+    "ol_li_res5": "In a dynamic market environment, achieving success requires continuous learning and adaptation to change. Identifying operating mechanisms is crucial for achieving positive results.",
+    "text3": "Sustainable Development",
+    "alt_eco": "Illustration depicting 'Sustainable Development - Ecology'",
+    "p8": "Industry 5.0 transforms the concept of sustainable development from simply mitigating climate damage to actively seeking positive change. This goal, also referred to as 'net positive', aims to make the world a better place where companies are part of the solution, not the problem. It's not just about declaring sustainable development goals but also about real commitment to them.",
+    "p9": "Sustainable development has played a key role in European policy for a long time, finding its place in the European Treaties. The European Union has fully committed to achieving the 2030 Agenda for Sustainable Development, consisting of 17 sustainable development goals, established by the UN General Assembly in 2015. The Green Deal, announced in December 2019, sets clear directions for Europe towards a sustainable economy. Several effective tools have been identified to help the EU achieve carbon neutrality goals. Innovations in green technologies, combined with EU initiatives regarding the digitalization of the European industry (such as better use of big data and artificial intelligence), are becoming a reality and are increasingly accepted by the industry. Faced with growing social and environmental concerns, companies are integrating sustainable development into their business models. As industry recognizes the benefits of a better corporate image and savings in energy and material costs, resource efficiency becomes a natural choice.",
+    "p10": "Increased industrial production typically entails higher energy consumption and increased carbon dioxide emissions. However, innovations can reverse this trend through smarter production planning and the use of more energy-efficient technologies.",
+    "p11": "Since 2005, the net growth in industrial energy efficiency has slowed. Understanding the relationship between energy consumption and economic growth at the sectoral level, especially in energy-intensive industrial sectors, is essential. Such sectoral analysis can help identify industry-specific issues, leading to more targeted research and innovation in energy efficiency, as well as specifically targeted energy policy."
+  }
 }
