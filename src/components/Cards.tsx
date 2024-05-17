@@ -2,10 +2,10 @@ export const Cards = () => {
     return (
 
         <div className="py-12">
-            <div className="m-auto px-6 text-gray-600 xl:container md:px-12 xl:px-6">
+            <div className="m-auto px-6 text-gray-400 xl:container md:px-12 xl:px-6">
                 <div className="mb-12 space-y-2 text-center">
                     <h2 className="text-3xl font-bold text-gray-800 md:text-4xl dark:text-white">Sharing is Caring</h2>
-                    <p className="text-gray-600 lg:mx-auto lg:w-6/12 dark:text-gray-300">
+                    <p className="text-gray-400 lg:mx-auto lg:w-6/12 dark:text-gray-300">
                         Quam hic dolore cumque voluptate rerum beatae et quae, tempore sunt, debitis dolorum officia
                         aliquid explicabo? Excepturi, voluptate?
                     </p>
@@ -20,7 +20,7 @@ export const Cards = () => {
                             <h3 className="text-2xl font-semibold text-gray-800 dark:text-white">
                                 De fuga fugiat lorem ispum laboriosam expedita.
                             </h3>
-                            <p className="mb-8 mt-6 text-gray-600 dark:text-gray-300">
+                            <p className="mb-8 mt-6 text-gray-400 dark:text-gray-300">
                                 Voluptates harum aliquam totam, doloribus eum impedit atque! Temporibus...
                             </p>
                             <a className="inline-block" href="#">
@@ -38,7 +38,7 @@ export const Cards = () => {
                             <h3 className="text-2xl font-semibold text-gray-800 dark:text-white">
                                 De fuga fugiat lorem ispum laboriosam expedita.
                             </h3>
-                            <p className="mb-8 mt-6 text-gray-600 dark:text-gray-300">
+                            <p className="mb-8 mt-6 text-gray-400 dark:text-gray-300">
                                 Voluptates harum aliquam totam, doloribus eum impedit atque! Temporibus...
                             </p>
                             <a className="inline-block" href="#">
@@ -56,7 +56,7 @@ export const Cards = () => {
                             <h3 className="text-2xl font-semibold text-gray-800 dark:text-white">
                                 De fuga fugiat lorem ispum laboriosam expedita.
                             </h3>
-                            <p className="mb-8 mt-6 text-gray-600 dark:text-gray-300">
+                            <p className="mb-8 mt-6 text-gray-400 dark:text-gray-300">
                                 Voluptates harum aliquam totam, doloribus eum impedit atque! Temporibus...
                             </p>
                             <a className="inline-block" href="#">

@@ -10,7 +10,7 @@ export const Content = () => {
                             Kluczowy trend w produkcji przemysłowej
                         </span>
                     </h2>
-                    <p className="mb-6 px-0 text-lg text-gray-600 md:text-xl">
+                    <p className="mb-6 px-0 text-lg text-gray-600 md:text-xl dark:text-gray-400">
                         Przemysł 5.0 jest ważny, ponieważ umożliwia przedsiębiorstwom i przemysłowi aktywne dostarczanie społeczeństwu rozwiązań pozwalających na ochronę zasobów, zapewnienie stabilności społecznej i realizację celów klimatycznych. Dzięki korzyściom skupionym na szerszym świecie, w tym na pracownikach, a nie tylko na produktywności i zyskach, Przemysł 5.0 zamienia połączone firmy w część rozwiązania, zamiast stwarzać potencjalny problem środowiskowy i społeczny.
                     </p>
                 </div>
@@ -31,7 +31,7 @@ export const Content = () => {
                             <h3 className="font-heading mb-3 text-2xl tracking-normal text-gray-900 sm:text-3xl md:text-center md:text-4xl md:leading-none md:tracking-tight lg:flex lg:flex-col lg:text-left dark:text-white">
                                 Jaka jest przyszłość Przemysłu 5.0?
                             </h3>
-                            <p className="md:text-md mb-3 px-0 text-gray-600">
+                            <p className="md:text-md mb-3 px-0 text-gray-600 dark:text-gray-400">
                                 <span className="font-bold">Przyszłość Przemysłu 5.0</span> obejmuje produkcję robotów, w tym robotów przemysłowych, z ulepszonymi technologiami sztucznej inteligencji i obliczeń kognitywnych w celu poprawy wydajności i szybkości dostaw, a jednocześnie umożliwienia ludziom skupienia się na innych obszarach.
                             </p>
                             <div className="flex w-full items-center justify-start md:justify-center lg:justify-start">

@@ -10,7 +10,7 @@ export const AfterHero = () => {
                         Odkryj Nowe Granice Produkcji Przemysłowej
                     </span>
                 </h2>
-                <p className="mb-6 px-0 text-lg text-gray-600 md:text-xl">
+                <p className="mb-6 px-0 text-lg text-gray-600 md:text-xl dark:text-gray-400">
                     Ta fascynująca koncepcja skupia się na łączeniu dobra społeczeństwa, ekologii, odporności na czynniki zewnętrzne oraz efektywności działań produkcyjnych. Współpraca człowieka z maszyną ma się skupiać na produkcji zindywidualizowanej, bez masowości i utraty jakości.
                 </p>
                 {/* <div className="mb-4 space-x-0 md:mb-8 md:space-x-2">
@@ -50,7 +50,7 @@ export const AfterHero = () => {
                             Czym dokładnie jest Przemysł 5.0?
                         </h3>
 
-                        <p className="md:text-md mb-3 px-0 text-gray-600">
+                        <p className="md:text-md mb-3 px-0 text-gray-600 dark:text-gray-400">
                             Przemysł 5.0 to rewolucyjne podejście do produkcji, które integruje ludzi, maszyny i technologie, zmieniając sposób, w jaki produkowane są towary i usługi.
                             Przemysł 5.0 nie tylko wykorzystuje zaawansowane technologie cyfrowe, takie jak sztuczna inteligencja, analiza danych czy internet rzeczy, ale również kładzie duży nacisk na rozwój umiejętności pracowników oraz bezpieczeństwo danych i systemów.
                         </p>

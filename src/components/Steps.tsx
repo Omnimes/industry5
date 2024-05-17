@@ -8,7 +8,7 @@ export const Step = () => {
                             <div>
                                 <div className="flex size-10 items-center justify-center rounded-full border">
                                     <svg
-                                        className="w-4 text-gray-600"
+                                        className="w-4 text-gray-400"
                                         stroke="currentColor"
                                         strokeWidth="2"
                                         strokeLinecap="round"
@@ -47,7 +47,7 @@ export const Step = () => {
                             <div>
                                 <div className="flex size-10 items-center justify-center rounded-full border">
                                     <svg
-                                        className="w-4 text-gray-600"
+                                        className="w-4 text-gray-400"
                                         stroke="currentColor"
                                         strokeWidth="2"
                                         strokeLinecap="round"
@@ -86,7 +86,7 @@ export const Step = () => {
                             <div>
                                 <div className="flex size-10 items-center justify-center rounded-full border">
                                     <svg
-                                        className="w-4 text-gray-600"
+                                        className="w-4 text-gray-400"
                                         stroke="currentColor"
                                         strokeWidth="2"
                                         strokeLinecap="round"
@@ -124,7 +124,7 @@ export const Step = () => {
                             <div>
                                 <div className="flex size-10 items-center justify-center rounded-full border">
                                     <svg
-                                        className="w-4 text-gray-600"
+                                        className="w-4 text-gray-400"
                                         stroke="currentColor"
                                         strokeWidth="2"
                                         strokeLinecap="round"
@@ -163,7 +163,7 @@ export const Step = () => {
                             <div>
                                 <div className="flex size-10 items-center justify-center rounded-full border">
                                     <svg
-                                        className="w-6 text-gray-600"
+                                        className="w-6 text-gray-400"
                                         stroke="currentColor"
                                         viewBox="0 0 24 24"
                                     >

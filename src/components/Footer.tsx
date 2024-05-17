@@ -18,7 +18,7 @@ export const Footer = () => {
                 ></path>
             </svg>
             <div className="bg-gradient-to-b from-gray-100 to-transparent pt-1 md:px-12 lg:px-28 dark:from-gray-900 dark:to-transparent">
-                <div className="container m-auto space-y-6 text-gray-600 dark:text-gray-300">
+                <div className="container m-auto space-y-6 text-gray-400 dark:text-gray-300">
                     <Logo />
                     <ul
                         role="list"

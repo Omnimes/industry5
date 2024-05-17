@@ -19,19 +19,19 @@ export default function StrategyPage({ params: { locale } }: { params: { locale:
                         {t("title")}
                     </span>
                 </h1>
-                <article className="mb-6 px-0 text-lg text-gray-600 md:text-xl">
+                <article className="mb-6 px-0 text-lg text-gray-400 md:text-xl">
                     <ol className="list-inside list-decimal space-y-4 text-gray-500 dark:text-gray-400">
                         <li className="text-black dark:text-white">
                             {t("text1")}
                             <Image src={orient_people.src} alt={t("alt_orient")} width={2084} height={1000} className="my-3 rounded-lg shadow-lg" />
-                            <p className="mb-6 mt-2 space-y-1 px-0 ps-6 text-lg text-gray-600 md:text-xl">
+                            <p className="mb-6 mt-2 space-y-1 px-0 ps-6 text-lg text-gray-400 md:text-xl">
                                 {t("p1")}
                                 &nbsp;<CustomLink href={"https://www.iso.org/standard/64239.html"} openNewTab={true} className="bg-gradient-to-r from-green-400 to-purple-500 bg-clip-text text-transparent underline-offset-4 hover:underline lg:inline">ISO 27500:2016</CustomLink>
                                 &nbsp;{t("p2")}
                                 &nbsp;<CustomLink href={"https://www.iso.org/standard/64241.html"} openNewTab={true} className="bg-gradient-to-r from-green-400 to-purple-500 bg-clip-text text-transparent underline-offset-4 hover:underline lg:inline">ISO 27501:2019</CustomLink>
                                 &nbsp;{t("p3")}
                             </p>
-                            <ul className="mb-6 mt-2 list-inside list-disc space-y-1 px-0 ps-6 text-lg text-gray-600 md:text-xl">
+                            <ul className="mb-6 mt-2 list-inside list-disc space-y-1 px-0 ps-6 text-lg text-gray-400 md:text-xl">
                                 {t("p4")}
                                 <li className="pl-4 pt-4">{t("list1")}</li>
                                 <li className="pl-4">{t("list2")}</li>
@@ -41,14 +41,14 @@ export default function StrategyPage({ params: { locale } }: { params: { locale:
                                 <li className="pl-4">{t("list6")}</li>
                                 <li className="pl-4">{t("list7")}</li>
                             </ul>
-                            <p className="mb-6 mt-2 space-y-1 px-0 ps-6 text-lg text-gray-600 md:text-xl">{t("p5")}</p>
+                            <p className="mb-6 mt-2 space-y-1 px-0 ps-6 text-lg text-gray-400 md:text-xl">{t("p5")}</p>
                         </li>
                         <li className="text-black dark:text-white">
                             {t("text2")}
                             <Image src={odpornosc.src} alt={t("alt_odpornosc")} width={1260} height={536} className="my-3 rounded-lg shadow-lg" />
-                            <p className="mb-6 mt-2 space-y-1 px-0 ps-6 text-lg text-gray-600 md:text-xl">{t("p6")}</p>
-                            <p className="mb-6 mt-2 space-y-1 px-0 ps-6 text-lg text-gray-600 md:text-xl">{t("p7")}</p>
-                            <ol className="list-inside list-decimal space-y-4 ps-6 text-gray-600 md:text-xl">
+                            <p className="mb-6 mt-2 space-y-1 px-0 ps-6 text-lg text-gray-400 md:text-xl">{t("p6")}</p>
+                            <p className="mb-6 mt-2 space-y-1 px-0 ps-6 text-lg text-gray-400 md:text-xl">{t("p7")}</p>
+                            <ol className="list-inside list-decimal space-y-4 ps-6 text-gray-400 md:text-xl">
                                 <li>{t("ol_li_title1")}
                                     <ul>
                                         <li className="pl-6">{t("ol_li_res1")}</li>
@@ -75,19 +75,19 @@ export default function StrategyPage({ params: { locale } }: { params: { locale:
                                     </ul>
                                 </li>
                             </ol>
-                            <p className="mb-6 mt-4 space-y-1 px-0 ps-6 text-lg text-gray-600 md:text-xl">Zmiana sposobu myślenia o zaawansowanej produkcji prowadzi do transformacji technologicznej, zarządzania oraz reguł pracy. Podjęcie wyzwań związanych z opisanymi zagadnieniami przyczyni się do pełnej implementacji inteligentnej fabryki. Nawiązanie współpracy z partnerami branżowymi, którzy również przyjęli ten sam model, przysłuży się budowie ekosystemu zgodnego z wymogami przemysłu 4.0.</p>
+                            <p className="mb-6 mt-4 space-y-1 px-0 ps-6 text-lg text-gray-400 md:text-xl">Zmiana sposobu myślenia o zaawansowanej produkcji prowadzi do transformacji technologicznej, zarządzania oraz reguł pracy. Podjęcie wyzwań związanych z opisanymi zagadnieniami przyczyni się do pełnej implementacji inteligentnej fabryki. Nawiązanie współpracy z partnerami branżowymi, którzy również przyjęli ten sam model, przysłuży się budowie ekosystemu zgodnego z wymogami przemysłu 4.0.</p>
                         </li>
                         <li className="text-black dark:text-white">
                             {t("text3")}
                             <Image src={eco.src} alt={t("alt_eco")} width={1260} height={536} className="my-3 rounded-lg shadow-lg" />
-                            <p className="mb-6 mt-2 space-y-1 px-0 ps-6 text-lg text-gray-600 md:text-xl">{t("p8")}</p>
-                            <p className="mb-6 mt-2 space-y-1 px-0 ps-6 text-lg text-gray-600 md:text-xl">{t("p9")}</p>
-                            <p className="mb-6 mt-2 space-y-1 px-0 ps-6 text-lg text-gray-600 md:text-xl">{t("p10")}</p>
-                            <p className="mb-6 mt-2 space-y-1 px-0 ps-6 text-lg text-gray-600 md:text-xl">{t("p11")}</p>
+                            <p className="mb-6 mt-2 space-y-1 px-0 ps-6 text-lg text-gray-400 md:text-xl">{t("p8")}</p>
+                            <p className="mb-6 mt-2 space-y-1 px-0 ps-6 text-lg text-gray-400 md:text-xl">{t("p9")}</p>
+                            <p className="mb-6 mt-2 space-y-1 px-0 ps-6 text-lg text-gray-400 md:text-xl">{t("p10")}</p>
+                            <p className="mb-6 mt-2 space-y-1 px-0 ps-6 text-lg text-gray-400 md:text-xl">{t("p11")}</p>
                         </li>
                     </ol>
                 </article>
-            </section >
-        </main >
+            </section>
+        </main>
     )
 }

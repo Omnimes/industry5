@@ -7,7 +7,7 @@ export const Content3 = () => {
                 <h2 className="font-heading mb-6 text-2xl tracking-normal text-gray-900 sm:text-3xl md:text-4xl md:leading-none md:tracking-tight lg:text-5xl dark:text-white">
                     Odkryj Potencjał <span className="block w-full bg-gradient-to-r from-green-400 to-purple-500 bg-clip-text text-transparent sm:inline">Przemysłu 5.0</span>
                 </h2>
-                <p className="mb-6 px-0 text-lg text-gray-600 md:text-xl">Przemysł 5.0 to nie tylko kolejny krok w ewolucji przemysłu, lecz prawdziwa rewolucja w sposobie, w jaki postrzegamy produkcję.</p>
+                <p className="mb-6 px-0 text-lg text-gray-600 md:text-xl dark:text-gray-400">Przemysł 5.0 to nie tylko kolejny krok w ewolucji przemysłu, lecz prawdziwa rewolucja w sposobie, w jaki postrzegamy produkcję.</p>
             </div>
       <div className="row-gap-10 grid max-w-screen-lg gap-5 sm:mx-auto lg:grid-cols-2 lg:py-16">
         <div className="flex flex-col justify-start">
@@ -15,11 +15,11 @@ export const Content3 = () => {
           md:leading-none md:tracking-tight lg:flex lg:flex-col lg:text-left lg:text-5xl dark:text-white">
             Odkryj Potencjał Przemysłu 5.0
           </h2> */}
-          <p className=" mb-6 block w-full px-0 text-lg text-gray-600 md:text-center md:text-xl lg:text-left">
+          <p className=" mb-6 block w-full px-0 text-lg text-gray-600 md:text-center md:text-xl lg:text-left dark:text-gray-400">
             Poznaj innowacyjne podejścia, które zmieniają oblicze przemysłu, kładąc nacisk na postęp ludzki i zrównoważony rozwój.
             Odkryj jak Przemysł 5.0 przynosi korzyści dla społeczeństwa i środowiska, otwierając nowe możliwości dla biznesu i przemysłu.
           </p>
-          <div className="grid space-y-3 font-bold text-gray-600 sm:grid-cols-2 sm:gap-2 sm:space-y-0">
+          <div className="grid space-y-3 font-bold text-gray-600 sm:grid-cols-2 sm:gap-2 sm:space-y-0 dark:text-gray-400">
             <ul className="space-y-3">
               <li className="flex">
                 <span className="mr-1">
