@@ -79,6 +79,13 @@ module.exports = {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
       },
+      transitionDuration: {
+        '0.2s': '0.2s',
+        '0.3s': '0.3s',
+      },
+      transitionTimingFunction: {
+        'ease': 'ease', // You can replace 'ease' with your desired custom easing function
+      },
     },
   },
   plugins: [require("tailwindcss-animate"), require("@tailwindcss/typography")],

@@ -1,4 +1,5 @@
 import { unstable_setRequestLocale } from "next-intl/server"
+import Link from "next/link"
 
 export default function HistoryPage({ params: { locale } }: { params: { locale: string } }) {
   // Enable static rendering
@@ -44,7 +45,7 @@ export default function HistoryPage({ params: { locale } }: { params: { locale: 
             </span>
           </h2>
 
-          <ul className="mb-6 mt-2 list-inside list-disc space-y-1 px-0 ps-6 text-lg text-gray-600 md:text-xl dark:text-gray-400">
+          <ul className="mb-6 mt-2 list-inside list-disc space-y-1 px-0  text-lg text-gray-600 md:text-xl dark:text-gray-400">
             <li>
               <strong>Mechanizacja:</strong> Pierwsza rewolucja przemysłowa (Przemysł 1.0) oznaczała
               przejście od pracy ręcznej do zmechanizowanych procesów produkcyjnych. Kluczową rolę
@@ -81,7 +82,7 @@ export default function HistoryPage({ params: { locale } }: { params: { locale: 
             </span>
           </h2>
 
-          <ul className="mb-6 mt-2 list-inside list-disc space-y-1 px-0 ps-6 text-lg text-gray-600 md:text-xl dark:text-gray-400">
+          <ul className="mb-6 mt-2 list-inside list-disc space-y-1 px-0  text-lg text-gray-600 md:text-xl dark:text-gray-400">
             <li>
               <strong>Energia elektryczna:</strong> Energia parowa została zastąpiona energią
               elektryczną, która okazała się bardziej wszechstronna i elastyczna. Umożliwiła
@@ -117,7 +118,7 @@ export default function HistoryPage({ params: { locale } }: { params: { locale: 
             </span>
           </h2>
 
-          <ul className="mb-6 mt-2 list-inside list-disc space-y-1 px-0 ps-6 text-lg text-gray-600 md:text-xl dark:text-gray-400">
+          <ul className="mb-6 mt-2 list-inside list-disc space-y-1 px-0  text-lg text-gray-600 md:text-xl dark:text-gray-400">
             <li>
               <strong>Informatyzacja:</strong> W miarę jak komputery stawały się coraz bardziej
               rozpowszechnione i niezawodne, przemysł produkcyjny zaczął je wykorzystywać do
@@ -152,7 +153,7 @@ export default function HistoryPage({ params: { locale } }: { params: { locale: 
             </span>
           </h2>
 
-          <ul className="mb-6 mt-2 list-inside list-disc space-y-1 px-0 ps-6 text-lg text-gray-600 md:text-xl dark:text-gray-400">
+          <ul className="mb-6 mt-2 list-inside list-disc space-y-1 px-0  text-lg text-gray-600 md:text-xl dark:text-gray-400">
             <li>
               <strong>Informatyzacja:</strong> W miarę jak komputery stawały się coraz bardziej
               rozpowszechnione i niezawodne, przemysł produkcyjny zaczął je wykorzystywać do
@@ -187,7 +188,7 @@ export default function HistoryPage({ params: { locale } }: { params: { locale: 
             </span>
           </h2>
 
-          <ul className="mb-6 mt-2 list-inside list-disc space-y-1 px-0 ps-6 text-lg text-gray-600 md:text-xl dark:text-gray-400">
+          <ul className="mb-6 mt-2 list-inside list-disc space-y-1 px-0  text-lg text-gray-600 md:text-xl dark:text-gray-400">
             <li>
               <strong>Internet rzeczy (IoT):</strong> Czujniki i urządzenia wprowadzone w erze
               Przemysłu 3.0 zostały teraz połączone z Internetem, co umożliwia gromadzenie i wymianę
@@ -238,6 +239,19 @@ export default function HistoryPage({ params: { locale } }: { params: { locale: 
               procesy produkcyjne.
             </li>
           </ul>
+
+          <h2 className="font-heading my-6 text-2xl tracking-normal text-gray-900 sm:text-3xl md:leading-none md:tracking-tight lg:text-2xl dark:text-white">
+            <span className="block w-fit bg-gradient-to-r from-green-400 to-purple-500 bg-clip-text text-transparent lg:inline">
+                Przemysł 5.0
+            </span>
+          </h2>
+
+          <p className="mb-6 mt-2 space-y-1 px-0 text-lg text-gray-600 md:text-xl dark:text-gray-400">
+          Przemysł 5.0 jest postrzegany jako następna generacja produkcji, chociaż niektóre firmy produkcyjne zajmujące się zaawansowanymi technologiami zaczęły wdrażać tę koncepcje. 
+          </p>
+          <Link href="/industry">
+            Czytaj więcej o Przemyśle 5.0
+          </Link>
         </article>
       </section>
     </main>
