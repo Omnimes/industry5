@@ -116,8 +116,8 @@ export default async function PostPage(params: Params) {
     return (
         <article className="mb-32">
             <DocHero {...post} />
-            <div className="mx-auto max-w-2xl px-4 md:px-0">
-                <div className="prose prose-outstatic dark:prose-invert max-w-none">
+            <div className="mx-auto max-w-5xl px-4 xl:px-0">
+                <div className="prose prose-outstatic dark:prose-invert text-muted-foreground max-w-none">
                     <MDXComponent content={post.content} />
                 </div>
             </div>

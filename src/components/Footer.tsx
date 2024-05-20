@@ -27,7 +27,7 @@ export const Footer = () => {
                         {siteConfig.mainNav.map(item => {
                             return (
                                 <li key={item.href} role="listitem">
-                                    <a href="#" className="hover:text-primary">
+                                    <a href={item.href} className="hover:text-primary">
                                         {t(item.title)}
                                     </a>
                                 </li>
@@ -36,7 +36,7 @@ export const Footer = () => {
                         {siteConfig.subNav.map(item => {
                             return (
                                 <li key={item.href} role="listitem">
-                                    <a href="#" className="hover:text-primary">
+                                    <a href={item.href} className="hover:text-primary">
                                         {t(item.title)}
                                     </a>
                                 </li>

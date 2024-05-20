@@ -1,3 +1,4 @@
+import { HeadingOneTitlePage } from "@/components/ui/heading"
 import { unstable_setRequestLocale } from "next-intl/server"
 
 export default function IndustryPage({ params: { locale } }: { params: { locale: string } }) {
@@ -6,14 +7,10 @@ export default function IndustryPage({ params: { locale } }: { params: { locale:
   return (
     <main className="mx-auto max-w-5xl px-4 py-24">
       <section className="mx-auto w-full text-left">
-        <h1 className="font-heading mb-6 text-2xl tracking-normal text-gray-900 sm:text-3xl md:text-center md:text-4xl md:leading-none md:tracking-tight lg:text-5xl dark:text-white">
-          <span className="block w-fit bg-gradient-to-r from-green-400 to-purple-500 bg-clip-text text-transparent lg:inline">
-            Przemysł 5.0
-          </span>
-        </h1>
+        <HeadingOneTitlePage text="Przemysł 5.0" />
 
-        <article className="mb-6 px-0 text-lg text-gray-600 md:text-xl dark:text-gray-400">
-          <p className="mb-6 mt-2 space-y-1 px-0 text-lg text-gray-600 md:text-xl dark:text-gray-400">
+        <article className="text-muted-foreground mb-6 px-0 text-lg">
+          <p className="mb-6 mt-2 space-y-1 px-0 ">
             Przemysł 5.0 to następna generacja produkcji, która kładzie nacisk na integrację
             człowieka i technologii w celu osiągnięcia wyższej efektywności, elastyczności oraz
             zrównoważonego rozwoju w procesach produkcyjnych.
@@ -24,7 +21,7 @@ export default function IndustryPage({ params: { locale } }: { params: { locale:
               Koncepcja Przemysłu 5.0
             </span>
           </h2>
-          <p className="mb-6 mt-2 space-y-1 px-0 text-lg text-gray-600 md:text-xl dark:text-gray-400">
+          <p className="mb-6 mt-2 space-y-1 px-0 ">
             Przemysł 5.0, symbolizujący piątą rewolucję przemysłową, opiera się na współpracy między
             człowiekiem a zaawansowanymi technologiami, takimi jak sztuczna inteligencja, robotyka,
             druk 3D oraz Internet Rzeczy (IoT). Celem tego modelu jest osiągnięcie większej
@@ -33,7 +30,7 @@ export default function IndustryPage({ params: { locale } }: { params: { locale:
             technologie współpracują z pracownikami zamiast ich zastępować, co tworzy bardziej
             humanitarny model produkcji korzystny zarówno dla przedsiębiorstw, jak i społeczeństwa.
           </p>
-          <p className="mb-6 mt-2 space-y-1 px-0 text-lg text-gray-600 md:text-xl dark:text-gray-400">
+          <p className="mb-6 mt-2 space-y-1 px-0 ">
             Założenia Przemysłu 5.0 obejmują także promocję współpracy między przedsiębiorstwami,
             instytucjami naukowymi oraz rządami, aby wspólnie tworzyć innowacyjne rozwiązania dla
             przyszłości. Ta transformacja zakłada również większą rolę człowieka w procesach
@@ -47,7 +44,7 @@ export default function IndustryPage({ params: { locale } }: { params: { locale:
             </span>
           </h2>
 
-          <ul className="mb-6 mt-2 list-inside list-disc space-y-1 px-0 text-lg text-gray-600 md:text-xl dark:text-gray-400">
+          <ul className="mb-6 mt-2 list-inside list-disc space-y-1 px-0 ">
             <li>
               <strong>Czynnik ludzki:</strong> Piąta rewolucja przemysłowa wprowadzi większe wykorzystanie cobotów, czyli robotów współpracujących, które będą pracować ramię w ramię z ludźmi przez cały proces produkcji. Coboty, łatwiejsze do zaprogramowania i idealne do wykonywania powtarzalnych, niebezpiecznych zadań, pozwolą ludziom skupić się na bardziej złożonych operacjach wymagających zdolności poznawczych. W efekcie powstaną nowe role, wymagania oraz potrzeby szkoleniowe i edukacyjne.
             </li>
@@ -67,7 +64,7 @@ export default function IndustryPage({ params: { locale } }: { params: { locale:
               Rozwój technologii Przemysłu 5.0
             </span>
           </h2>
-          <p className="mb-6 mt-2 space-y-1 px-0 text-lg text-gray-600 md:text-xl dark:text-gray-400">
+          <p className="mb-6 mt-2 space-y-1 px-0 ">
             Inteligentne systemy produkcyjne 5.0 to zaawansowane technologie, które optymalizują
             procesy produkcyjne poprzez analizę danych, uczenie maszynowe i automatyzację. Dzięki
             nim proces produkcyjny w przemyśle 5.0 staje się bardziej efektywny, elastyczny i
@@ -80,10 +77,10 @@ export default function IndustryPage({ params: { locale } }: { params: { locale:
                 Technologie w Przemyśle 5.0
             </span>
           </h2>
-          <p className="mb-6 mt-2 space-y-1 px-0 text-lg text-gray-600 md:text-xl dark:text-gray-400">
+          <p className="mb-6 mt-2 space-y-1 px-0 ">
               Technologie w Przemyśle 5.0 to zaawansowane rozwiązania, mające na celu zwiększenie efektywności, elastyczności oraz zrównoważonego rozwoju procesów produkcyjnych. Do najważniejszych z nich należą:
           </p>
-          <ul className="mb-6 mt-2 list-inside list-disc space-y-1 px-0 text-lg text-gray-600 md:text-xl dark:text-gray-400">
+          <ul className="mb-6 mt-2 list-inside list-disc space-y-1 px-0 ">
             <li>
               <strong>Sztuczna inteligencja (AI):</strong> AI umożliwia analizę danych w czasie rzeczywistym, przewidywanie awarii oraz optymalizację procesów produkcyjnych. Dzięki algorytmom uczącym się, systemy mogą automatycznie dostosowywać się do zmieniających się warunków, poprawiając wydajność i precyzję.
             </li>

@@ -9,7 +9,7 @@ export const Content2 = () => {
                     <span className="block w-full bg-gradient-to-r from-green-400 to-purple-500 bg-clip-text text-transparent lg:inline">Przemysłu 5.0?
                     </span>
                 </h2>
-                <p className="mb-6 px-0 text-lg text-gray-600 md:text-xl dark:text-gray-400">
+                <p className="text-muted-foreground mb-6 px-0 text-lg md:text-xl">
                     Przemysł 5.0 to koncepcja rozwoju przemysłu, która stawia na harmonię między człowiekiem a technologią, przekształcając tradycyjne środowisko produkcyjne. Oto kilka korzyści, które niesie ze sobą wprowadzenie Przemysłu 5.0
                 </p>
             </div>
@@ -24,7 +24,7 @@ export const Content2 = () => {
                         <h4 className="mb-2 font-semibold leading-5">
                             Zwiększona elastyczność produkcyjna
                         </h4>
-                        <p className="text-sm text-gray-400">
+                        <p className="text-muted-foreground text-sm">
                             Dzięki wykorzystaniu zaawansowanych technologii, takich jak IoT czy AI, przemysł 5.0 umożliwia elastyczne dostosowanie procesów produkcyjnych do zmieniających się potrzeb rynku.
                         </p>
                     </div>
@@ -32,7 +32,7 @@ export const Content2 = () => {
                         <h4 className="mb-2 font-semibold leading-5">
                             Personalizacja i indywidualizacja produkcji
                         </h4>
-                        <p className="text-sm text-gray-400">
+                        <p className="text-muted-foreground text-sm">
                             Dzięki możliwościom analizy danych oraz produkcji na żądanie, Przemysł 5.0 umożliwia dostosowanie produktów do indywidualnych preferencji klientów, co może przyczynić się do zwiększenia konkurencyjności firm.
                         </p>
                     </div>
@@ -40,7 +40,7 @@ export const Content2 = () => {
                         <h4 className="mb-2 font-semibold leading-5">
                             Bezpieczeństwo i ergonomia pracy
                         </h4>
-                        <p className="text-sm text-gray-400">
+                        <p className="text-muted-foreground text-sm">
                             Przemysł 5.0 stawia na współpracę między ludźmi a robotami, co może zmniejszyć ryzyko wypadków przy jednoczesnym zwiększeniu ergonomii pracy.
                         </p>
                     </div>
@@ -48,7 +48,7 @@ export const Content2 = () => {
                         <h4 className="mb-2 font-semibold leading-5">
                             Tworzenie nowych miejsc pracy
                         </h4>
-                        <p className="text-sm text-gray-400">
+                        <p className="text-muted-foreground text-sm">
                             Choć automatyzacja może prowadzić do zmian w strukturze zatrudnienia, wprowadzenie Przemysłu 5.0 otwiera również nowe możliwości zatrudnienia, zwłaszcza w obszarach związanych z obsługą, programowaniem czy zarządzaniem technologią.
                         </p>
                     </div>

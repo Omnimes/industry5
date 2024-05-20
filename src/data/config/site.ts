@@ -35,9 +35,9 @@ export const siteConfig = {
 
   subNav: [
     {
-      title: "title4",
-      href: "/future",
-      desc: "desc4"
+      title: "title3",
+      href: "/industry",
+      desc: "desc3"
     },
     {
       title: "title2",
@@ -45,9 +45,9 @@ export const siteConfig = {
       desc: "desc2"
     },
     {
-      title: "title3",
-      href: "/industry",
-      desc: "desc3"
+      title: "title4",
+      href: "/future",
+      desc: "desc4"
     }
   ]
 }

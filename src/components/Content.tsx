@@ -1,4 +1,5 @@
 import Image from "next/image"
+import { MyLink } from "./ui/link";
 export const Content = () => {
     return (
         <>
@@ -10,7 +11,7 @@ export const Content = () => {
                             Kluczowy trend w produkcji przemysłowej
                         </span>
                     </h2>
-                    <p className="mb-6 px-0 text-lg text-gray-600 md:text-xl dark:text-gray-400">
+                    <p className="text-muted-foreground mb-6 px-0 text-lg md:text-xl">
                         Przemysł 5.0 jest ważny, ponieważ umożliwia przedsiębiorstwom i przemysłowi aktywne dostarczanie społeczeństwu rozwiązań pozwalających na ochronę zasobów, zapewnienie stabilności społecznej i realizację celów klimatycznych. Dzięki korzyściom skupionym na szerszym świecie, w tym na pracownikach, a nie tylko na produktywności i zyskach, Przemysł 5.0 zamienia połączone firmy w część rozwiązania, zamiast stwarzać potencjalny problem środowiskowy i społeczny.
                     </p>
                 </div>
@@ -31,24 +32,11 @@ export const Content = () => {
                             <h3 className="font-heading mb-3 text-2xl tracking-normal text-gray-900 sm:text-3xl md:text-center md:text-4xl md:leading-none md:tracking-tight lg:flex lg:flex-col lg:text-left dark:text-white">
                                 Jaka jest przyszłość Przemysłu 5.0?
                             </h3>
-                            <p className="md:text-md mb-3 px-0 text-gray-600 dark:text-gray-400">
+                            <p className="text-muted-foreground md:text-md mb-3 px-0">
                                 <span className="font-bold">Przyszłość Przemysłu 5.0</span> obejmuje produkcję robotów, w tym robotów przemysłowych, z ulepszonymi technologiami sztucznej inteligencji i obliczeń kognitywnych w celu poprawy wydajności i szybkości dostaw, a jednocześnie umożliwienia ludziom skupienia się na innych obszarach.
                             </p>
                             <div className="flex w-full items-center justify-start md:justify-center lg:justify-start">
-                                <a
-                                    href="/future"
-                                    aria-label=""
-                                    className="flex items-center font-semibold text-gray-900 transition-colors duration-200 dark:text-white"
-                                >
-                                    Czytaj więcej
-                                    <svg
-                                        className="ml-2 inline-block w-3"
-                                        fill="currentColor"
-                                        viewBox="0 0 12 12"
-                                    >
-                                        <path d="M9.707,5.293l-5-5A1,1,0,0,0,3.293,1.707L7.586,6,3.293,10.293a1,1,0,1,0,1.414,1.414l5-5A1,1,0,0,0,9.707,5.293Z" />
-                                    </svg>
-                                </a>
+                                <MyLink href="/future" text={"Czytaj więcej"} />
                             </div>
                         </div>
                     </div>

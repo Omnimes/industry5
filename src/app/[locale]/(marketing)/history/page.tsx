@@ -1,5 +1,7 @@
 import { unstable_setRequestLocale } from "next-intl/server"
-import Link from "next/link"
+import { MyLink } from "@/components/ui/link"
+import { ArticleHeadingTitle } from "@/components/ui/link-anchor"
+import { HeadingOneTitlePage } from "@/components/ui/heading"
 
 export default function HistoryPage({ params: { locale } }: { params: { locale: string } }) {
   // Enable static rendering
@@ -7,45 +9,47 @@ export default function HistoryPage({ params: { locale } }: { params: { locale: 
   return (
     <main className="mx-auto max-w-5xl px-4 py-24">
       <section className="mx-auto w-full text-left">
-        <h1 className="font-heading mb-6 text-2xl tracking-normal text-gray-900 sm:text-3xl md:text-center md:text-4xl md:leading-none md:tracking-tight lg:flex lg:flex-col lg:text-5xl dark:text-white">
-          <span className="block w-full bg-gradient-to-r from-green-400 to-purple-500 bg-clip-text text-transparent lg:inline">
+        <HeadingOneTitlePage>
             Ewolucja produkcji <br />
             od Przemysłu 1.0 do Przemysłu 5.0
-          </span>
-        </h1>
-        <article className="mb-6 px-0 text-lg text-gray-600 md:text-xl dark:text-gray-400">
-          <p className="mb-6 mt-2 space-y-1 px-0 text-lg text-gray-600 md:text-xl dark:text-gray-400">
+        </HeadingOneTitlePage>
+        {/* scroll-mt-32 - spis tresci - linki i id dodac */}
+        <article className="text-muted-foreground mb-6 px-0 text-lg">
+          <p className="mb-6 space-y-1 px-0 ">
             Historia przemysłu to fascynujący i wieloaspektowy temat, który obejmuje rozwój
             technologii, społeczeństwa i gospodarki na przestrzeni wieków. Od początków
             rękodzielnictwa i manufaktur, przez rewolucję przemysłową, aż po współczesne innowacje w
             zakresie automatyzacji i zrównoważonego rozwoju, przemysł odgrywa kluczową rolę w
             kształtowaniu świata, w którym żyjemy.
           </p>
-          <p className="mb-12 mt-2 space-y-1 px-0 text-lg text-gray-600 md:text-xl dark:text-gray-400">
+          <p className="mb-12 space-y-1 px-0 ">
             Jak produkcja ewoluowała od pierwszej rewolucji przemysłowej (Przemysł 1.0) do obecnego
             etapu, znanego jako Przemysł 5.0? Od końca XVIII wieku, kiedy rozpoczęła się pierwsza
             rewolucja przemysłowa, przemysł przeszedł długą drogę i nadal dynamicznie się rozwija.
           </p>
 
-          <h2 className="font-heading my-6 text-2xl tracking-normal text-gray-900 sm:text-3xl md:leading-none md:tracking-tight lg:flex lg:flex-col lg:text-2xl dark:text-white">
-            <span className="block w-fit bg-gradient-to-r from-green-400 to-purple-500 bg-clip-text text-transparent lg:inline">
-              Przed Rewolucją Przemysłową
-            </span>
-          </h2>
-          <p className="mb-12 mt-2 space-y-1 px-0 text-lg text-gray-600 md:text-xl dark:text-gray-400">
+          <ArticleHeadingTitle text="Przed Rewolucją Przemysłową" />
+          
+          <p className="mb-12 space-y-1 px-0 ">
             W czasach przedindustrialnych dominowały gospodarki agrarne, a produkcja dóbr odbywała
             się głównie w małych warsztatach rzemieślniczych. Rękodzielnictwo i manufaktury były
             podstawowymi formami wytwarzania, a większość populacji pracowała na roli.
             Technologiczne innowacje były stosunkowo rzadkie, a produkcja była ograniczona lokalnie.
           </p>
 
-          <h2 className="font-heading my-6 text-2xl tracking-normal text-gray-900 sm:text-3xl md:leading-none md:tracking-tight lg:flex lg:flex-col lg:text-2xl dark:text-white">
-            <span className="block w-fit bg-gradient-to-r from-green-400 to-purple-500 bg-clip-text text-transparent lg:inline">
-              Przemysł 1.0 (koniec XVIII wieku)
-            </span>
-          </h2>
+          <ArticleHeadingTitle text="Przemysł 1.0 (koniec XVIII wieku)" />
 
-          <ul className="mb-6 mt-2 list-inside list-disc space-y-1 px-0  text-lg text-gray-600 md:text-xl dark:text-gray-400">
+          <p className="mb-6 space-y-1 px-0 ">
+            Przełom XVIII i XIX wieku przyniósł pierwszą rewolucję przemysłową, która rozpoczęła się
+            w Wielkiej Brytanii i szybko rozprzestrzeniła się na inne kraje Europy i Ameryki
+            Północnej. Kluczowe wynalazki, takie jak maszyna parowa Jamesa Watta, mechaniczne krosna
+            i maszyna spinningowa, zrewolucjonizowały produkcję tekstyliów i innych dóbr. Powstały
+            pierwsze fabryki, które umożliwiły masową produkcję na niespotykaną wcześniej skalę.
+            Wzrost produkcji i efektywności przyczynił się do dynamicznego rozwoju miast i migracji
+            ludności ze wsi do centrów przemysłowych.
+          </p>
+
+          <ul className="mb-12 list-inside list-disc space-y-1 px-0  ">
             <li>
               <strong>Mechanizacja:</strong> Pierwsza rewolucja przemysłowa (Przemysł 1.0) oznaczała
               przejście od pracy ręcznej do zmechanizowanych procesów produkcyjnych. Kluczową rolę
@@ -54,35 +58,38 @@ export default function HistoryPage({ params: { locale } }: { params: { locale: 
             </li>
 
             <li>
-              <strong>Siła pary:</strong>
-              Wprowadzenie silnika parowego zapewniło bardziej niezawodne źródło energii, zarówno
-              dla przemysłu wytwórczego, jak i transportu, co umożliwiło dalszy rozwój produkcji i
-              logistyki.
+              <strong>Siła pary:</strong> Wprowadzenie silnika parowego zapewniło bardziej
+              niezawodne źródło energii, zarówno dla przemysłu wytwórczego, jak i transportu, co
+              umożliwiło dalszy rozwój produkcji i logistyki.
             </li>
 
             <li>
-              <strong>System fabryczny:</strong>
-              Rozwój miast i migracja ludności z obszarów wiejskich do miast zaowocowały przejściem
-              od zdecentralizowanego przemysłu do bardziej zmechanizowanego i scentralizowanego
-              systemu fabrycznego.
+              <strong>System fabryczny:</strong> Rozwój miast i migracja ludności z obszarów
+              wiejskich do miast zaowocowały przejściem od zdecentralizowanego przemysłu do bardziej
+              zmechanizowanego i scentralizowanego systemu fabrycznego.
             </li>
 
             <li>
-              <strong>Wpływ na społeczeństwo:</strong>
-              Pierwsza rewolucja przemysłowa, związana ze wzrostem gospodarczym i zwiększoną
-              produkcją, miała głębokie skutki społeczne i gospodarcze. Doprowadziła do rozwoju
-              miast przemysłowych, powstania klasy robotniczej oraz znaczących zmian w praktykach
-              pracy.
+              <strong>Wpływ na społeczeństwo:</strong> Pierwsza rewolucja przemysłowa, związana ze
+              wzrostem gospodarczym i zwiększoną produkcją, miała głębokie skutki społeczne i
+              gospodarcze. Doprowadziła do rozwoju miast przemysłowych, powstania klasy robotniczej
+              oraz znaczących zmian w praktykach pracy.
             </li>
           </ul>
 
-          <h2 className="font-heading my-6 text-2xl tracking-normal text-gray-900 sm:text-3xl md:leading-none md:tracking-tight lg:flex lg:flex-col lg:text-2xl dark:text-white">
-            <span className="block w-fit bg-gradient-to-r from-green-400 to-purple-500 bg-clip-text text-transparent lg:inline">
-              Przemysł 2.0 (koniec XIX i początek XX w.)
-            </span>
-          </h2>
+          <ArticleHeadingTitle text="Przemysł 2.0 (koniec XIX i początek XX w.)" />
 
-          <ul className="mb-6 mt-2 list-inside list-disc space-y-1 px-0  text-lg text-gray-600 md:text-xl dark:text-gray-400">
+          <p className="mb-6 space-y-1 px-0 ">
+            Druga rewolucja przemysłowa, która miała miejsce na przełomie XIX i XX wieku, była
+            napędzana przez rozwój elektryczności, chemii, nafty i stali. Wynalezienie żarówki przez
+            Thomasa Edisona, rozwój produkcji stali metodą Bessemera oraz powstanie linii
+            produkcyjnych Henry’ego Forda zrewolucjonizowały przemysł i społeczeństwo. Zastosowanie
+            nowych technologii w transporcie, takich jak kolej i samochody, oraz rozwój komunikacji
+            dzięki telefonowi i telegrafowi, przyczyniły się do globalizacji i dalszego wzrostu
+            gospodarczego.
+          </p>
+
+          <ul className="mb-12 list-inside list-disc space-y-1 px-0  ">
             <li>
               <strong>Energia elektryczna:</strong> Energia parowa została zastąpiona energią
               elektryczną, która okazała się bardziej wszechstronna i elastyczna. Umożliwiła
@@ -112,13 +119,19 @@ export default function HistoryPage({ params: { locale } }: { params: { locale: 
             </li>
           </ul>
 
-          <h2 className="font-heading my-6 text-2xl tracking-normal text-gray-900 sm:text-3xl md:leading-none md:tracking-tight lg:flex lg:flex-col lg:text-2xl dark:text-white">
-            <span className="block w-fit bg-gradient-to-r from-green-400 to-purple-500 bg-clip-text text-transparent lg:inline">
-              Przemysł 3.0 (koniec XX wieku)
-            </span>
-          </h2>
+          <ArticleHeadingTitle text="Przemysł 3.0 (koniec XX wieku)" />
 
-          <ul className="mb-6 mt-2 list-inside list-disc space-y-1 px-0  text-lg text-gray-600 md:text-xl dark:text-gray-400">
+          <p className="mb-6 space-y-1 px-0 ">
+            Trzecia rewolucja przemysłowa, znana również jako rewolucja cyfrowa, rozpoczęła się w
+            drugiej połowie XX wieku. Kluczowym elementem tej ery było pojawienie się komputerów i
+            technologii informacyjnych. Wynalezienie tranzystora, rozwój mikroprocesorów, oraz
+            internet przyczyniły się do automatyzacji procesów produkcyjnych i tworzenia globalnej
+            sieci informacji. Przemysł zaczynał się coraz bardziej opierać na zaawansowanej
+            technologii, co prowadziło do powstawania nowych sektorów gospodarki, takich jak
+            przemysł informatyczny, telekomunikacyjny i robotyczny.
+          </p>
+
+          <ul className="mb-12 list-inside list-disc space-y-1 px-0  ">
             <li>
               <strong>Informatyzacja:</strong> W miarę jak komputery stawały się coraz bardziej
               rozpowszechnione i niezawodne, przemysł produkcyjny zaczął je wykorzystywać do
@@ -147,48 +160,19 @@ export default function HistoryPage({ params: { locale } }: { params: { locale: 
             </li>
           </ul>
 
-          <h2 className="font-heading my-6 text-2xl tracking-normal text-gray-900 sm:text-3xl md:leading-none md:tracking-tight lg:flex lg:flex-col lg:text-2xl dark:text-white">
-            <span className="block w-fit bg-gradient-to-r from-green-400 to-purple-500 bg-clip-text text-transparent lg:inline">
-              Przemysł 3.0 (koniec XX wieku)
-            </span>
-          </h2>
+          <ArticleHeadingTitle text="Przemysł 4.0 (koniec XX wieku do chwili obecnej)" />
 
-          <ul className="mb-6 mt-2 list-inside list-disc space-y-1 px-0  text-lg text-gray-600 md:text-xl dark:text-gray-400">
-            <li>
-              <strong>Informatyzacja:</strong> W miarę jak komputery stawały się coraz bardziej
-              rozpowszechnione i niezawodne, przemysł produkcyjny zaczął je wykorzystywać do
-              przetwarzania danych, systemów kontroli oraz zautomatyzowanego podejmowania decyzji.
-            </li>
+          <p className="mb-6 space-y-1 px-0 ">
+            Obecnie jesteśmy świadkami czwartej rewolucji przemysłowej, znanej również jako Przemysł
+            4.0. Charakteryzuje się ona integracją technologii cyfrowych, fizycznych i
+            biologicznych. Kluczowe innowacje obejmują sztuczną inteligencję, internet rzeczy (IoT),
+            big data, blockchain, druk 3D oraz robotykę. Te technologie prowadzą do tworzenia
+            inteligentnych fabryk, gdzie procesy produkcyjne są zoptymalizowane i zautomatyzowane w
+            sposób nieosiągalny w poprzednich erach. Przemysł 4.0 zmienia także relacje społeczne i
+            gospodarcze, wpływając na rynek pracy i wymagając nowych umiejętności od pracowników.
+          </p>
 
-            <li>
-              <strong>Automatyzacja:</strong> Zwiększone wykorzystanie automatyzacji w produkcji,
-              gdzie maszyny i roboty zaczęły przejmować powtarzalne i niebezpieczne zadania,
-              doprowadziło do wzrostu wydajności i zmniejszenia zapotrzebowania na pracę fizyczną.
-              Było to kluczowym krokiem w kierunku dalszej integracji automatyzacji w ramach
-              Przemysłu 4.0.
-            </li>
-
-            <li>
-              <strong>Elektronika:</strong> Rozwój elektroniki umożliwił stosowanie komponentów i
-              systemów elektronicznych w różnych systemach przemysłowych. Czujniki, mikrokontrolery
-              i inne urządzenia elektroniczne zaczęły być powszechnie używane do monitorowania i
-              kontrolowania maszyn oraz procesów.
-            </li>
-
-            <li>
-              <strong>Sterowniki PLC (programowalne sterowniki logiczne):</strong> Rozwój i
-              zastosowanie sterowników PLC umożliwiło programowalne sterowanie maszynami i
-              procesami, redukując potrzebę ręcznych regulacji i interwencji człowieka.
-            </li>
-          </ul>
-
-          <h2 className="font-heading my-6 text-2xl tracking-normal text-gray-900 sm:text-3xl md:leading-none md:tracking-tight lg:flex lg:flex-col lg:text-2xl dark:text-white">
-            <span className="block w-fit bg-gradient-to-r from-green-400 to-purple-500 bg-clip-text text-transparent lg:inline">
-              Przemysł 4.0 (koniec XX wieku do chwili obecnej)
-            </span>
-          </h2>
-
-          <ul className="mb-6 mt-2 list-inside list-disc space-y-1 px-0  text-lg text-gray-600 md:text-xl dark:text-gray-400">
+          <ul className="mb-12 list-inside list-disc space-y-1 px-0  ">
             <li>
               <strong>Internet rzeczy (IoT):</strong> Czujniki i urządzenia wprowadzone w erze
               Przemysłu 3.0 zostały teraz połączone z Internetem, co umożliwia gromadzenie i wymianę
@@ -228,7 +212,7 @@ export default function HistoryPage({ params: { locale } }: { params: { locale: 
             </li>
 
             <li>
-              <strong>Rzeczywistość rozszerzona (AR) i rzeczywistość wirtualna (VR):</strong>
+              <strong>Rzeczywistość rozszerzona (AR) i rzeczywistość wirtualna (VR):</strong>{" "}
               Technologie AR i VR są wykorzystywane do szkoleń, zdalnego wsparcia technicznego oraz
               wizualizacji złożonych procesów i systemów.
             </li>
@@ -240,18 +224,21 @@ export default function HistoryPage({ params: { locale } }: { params: { locale: 
             </li>
           </ul>
 
-          <h2 className="font-heading my-6 text-2xl tracking-normal text-gray-900 sm:text-3xl md:leading-none md:tracking-tight lg:text-2xl dark:text-white">
-            <span className="block w-fit bg-gradient-to-r from-green-400 to-purple-500 bg-clip-text text-transparent lg:inline">
-                Przemysł 5.0
-            </span>
-          </h2>
+          <ArticleHeadingTitle text="Przemysł 5.0" />
 
-          <p className="mb-6 mt-2 space-y-1 px-0 text-lg text-gray-600 md:text-xl dark:text-gray-400">
-          Przemysł 5.0 jest postrzegany jako następna generacja produkcji, chociaż niektóre firmy produkcyjne zajmujące się zaawansowanymi technologiami zaczęły wdrażać tę koncepcje. 
+          <p className="mb-6 space-y-1 px-0 ">
+            Historia przemysłu to także historia wyzwań, takich jak zanieczyszczenie środowiska,
+            eksploatacja zasobów naturalnych, nierówności społeczne i zmiany klimatyczne.
+            Współczesny przemysł stoi przed zadaniem wdrażania zrównoważonych praktyk produkcyjnych
+            i poszukiwania nowych rozwiązań, które umożliwią harmonijny rozwój gospodarczy przy
+            jednoczesnej ochronie środowiska naturalnego
           </p>
-          <Link href="/industry">
-            Czytaj więcej o Przemyśle 5.0
-          </Link>
+
+          <p className="mb-6 space-y-1 px-0 ">
+            Przemysł 5.0 jest postrzegany jako następna generacja produkcji, niektóre firmy
+            produkcyjne zajmujące się zaawansowanymi technologiami już zaczęły wdrażać tę koncepcje.
+          </p>
+          <MyLink href="/industry" text={"Czytaj więcej o Przemyśle 5.0"} />
         </article>
       </section>
     </main>
