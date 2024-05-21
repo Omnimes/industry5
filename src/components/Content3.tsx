@@ -5,8 +5,8 @@ import { MyLink } from "./ui/link"
 
 export const Content3 = () => {
   return (
-    <section className="mx-auto max-w-5xl px-4 py-24">
-      <div className="mx-auto w-full text-left md:text-center">
+    <section className="mx-auto max-w-5xl px-4 py-12 md:py-24">
+      <div className="mx-auto mb-16 w-full text-left md:text-center">
         <h2 className="font-heading mb-6 flex flex-wrap text-2xl tracking-normal text-gray-900 sm:text-3xl md:justify-center md:text-4xl md:leading-none md:tracking-tight lg:text-5xl dark:text-white">
           Odkryj Potencjał&nbsp;
           <span className="block w-fit bg-gradient-to-r from-green-400 to-purple-500 bg-clip-text text-transparent ">
@@ -17,7 +17,6 @@ export const Content3 = () => {
           Przemysł 5.0 to nie tylko kolejny krok w ewolucji przemysłu, lecz prawdziwa rewolucja w
           sposobie, w jaki postrzegamy produkcję. </p>
       </div>
-      {/* lg:py-16 */}
       <div className="row-gap-10 grid max-w-screen-lg gap-5 sm:mx-auto lg:grid-cols-2 ">
         <div className="flex flex-col justify-start">
           <p className="text-muted-foreground mb-6 block w-full px-0 text-lg md:text-center md:text-xl lg:text-left">

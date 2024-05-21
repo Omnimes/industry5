@@ -3,7 +3,7 @@ import { MyLink } from "./ui/link";
 export const Content = () => {
     return (
         <>
-            <section className="mx-auto max-w-5xl px-4 pt-24">
+            <section className="mx-auto max-w-5xl px-4 pt-12 md:pt-24">
                 <div className="mx-auto w-full text-left md:text-center">
                     <h2 className="font-heading mb-6 text-2xl tracking-normal text-gray-900 sm:text-3xl md:flex md:flex-col md:items-center md:text-4xl md:leading-none md:tracking-tight lg:text-5xl dark:text-white">
                         Dlaczego Przemysł 5.0 jest ważny?
@@ -16,7 +16,6 @@ export const Content = () => {
                     </p>
                 </div>
             </section>
-            {/* lg:py-16 */}
             <section className="mx-auto pb-24 lg:flex lg:justify-center">
                 <div className="px-4 md:max-w-full lg:max-w-5xl lg:px-0">
                     <div className="flex max-w-screen-lg flex-col overflow-hidden rounded sm:mx-auto md:shadow-sm lg:flex-row lg:border">

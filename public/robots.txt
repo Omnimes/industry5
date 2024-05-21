@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://industry5.pl/
+Host: http://localhost:3000/
 
 # Sitemaps
-Sitemap: https://industry5.pl/sitemap.xml
+Sitemap: http://localhost:3000/sitemap.xml
