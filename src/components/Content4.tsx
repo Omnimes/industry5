@@ -11,11 +11,12 @@ export const Content4 = () => {
 
   //uzupełnić alt zdjęć
   return (
+    // py-24
     <section className="mx-auto max-w-7xl px-4 py-24">
       <div className="mx-auto w-full text-left md:w-11/12 md:text-center xl:w-9/12">
-        <h2 className="font-heading mb-6 text-2xl tracking-normal text-gray-900 sm:text-3xl md:text-4xl md:leading-none md:tracking-tight lg:text-5xl dark:text-white">
+        <h2 className="font-heading mb-6 flex flex-wrap text-2xl tracking-normal text-gray-900 sm:text-3xl md:justify-center md:text-4xl md:leading-none md:tracking-tight lg:text-5xl dark:text-white">
           Transformacja&nbsp;
-          <span className="block w-full bg-gradient-to-r from-green-400 to-purple-500 bg-clip-text text-transparent sm:inline">
+          <span className="block w-fit bg-gradient-to-r from-green-400 to-purple-500 bg-clip-text text-transparent ">
             Przemysłu 5.0
           </span>
         </h2>
@@ -24,11 +25,10 @@ export const Content4 = () => {
           nowych technologii w przemyśle. Proces ten obejmuje cyfrową transformację przemysłu 5.0,
           wdrażanie nowych technologii oraz integrację człowieka z technologią.
         </p>
-
-        <p>Cyfrowa transformacja przemysłowa to proces, który obejmuje kilka etapów:</p>
+        <p className="mb-6 px-0">Cyfrowa transformacja przemysłowa to proces, który obejmuje kilka etapów:</p>
       </div>
-
-      <div className="mx-auto px-4 py-16 sm:max-w-xl md:max-w-full md:px-24 lg:max-w-screen-xl lg:px-8 lg:py-20">
+      {/* py-16 lg:py-20 */}
+      <div className="mx-auto px-4  sm:max-w-xl md:max-w-full md:px-24 lg:max-w-screen-xl lg:px-8 ">
         <div className="row-gap-8 sm:row-gap-0 grid sm:grid-cols-2 lg:grid-cols-3">
           <div className="border-b p-8 sm:border-r">
             <div className="max-w-md text-center">

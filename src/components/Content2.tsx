@@ -2,18 +2,21 @@ import Image from "next/image"
 
 export const Content2 = () => {
     return (
+        // py-24
         <section className="mx-auto max-w-7xl px-4 py-24">
             <div className="mx-auto w-full text-left md:w-11/12 md:text-center xl:w-9/12">
-                <h2 className="font-heading mb-6 text-2xl tracking-normal text-gray-900 sm:text-3xl md:text-4xl md:leading-none md:tracking-tight lg:flex lg:flex-col lg:text-5xl dark:text-white">
-                    Jakie korzyści niesie ze sobą wprowadzenie
-                    <span className="block w-full bg-gradient-to-r from-green-400 to-purple-500 bg-clip-text text-transparent lg:inline">Przemysłu 5.0?
+                <h2 className="font-heading mb-6 flex flex-wrap text-2xl tracking-normal text-gray-900 sm:text-3xl md:justify-center md:text-4xl md:leading-none md:tracking-tight lg:text-5xl dark:text-white">
+                    Korzyści wprowadzenia&nbsp;
+                    <span className="block w-fit bg-gradient-to-r from-green-400 to-purple-500 bg-clip-text text-transparent ">
+                        Przemysłu 5.0
                     </span>
                 </h2>
                 <p className="text-muted-foreground mb-6 px-0 text-lg md:text-xl">
                     Przemysł 5.0 to koncepcja rozwoju przemysłu, która stawia na harmonię między człowiekiem a technologią, przekształcając tradycyjne środowisko produkcyjne. Oto kilka korzyści, które niesie ze sobą wprowadzenie Przemysłu 5.0
                 </p>
             </div>
-            <div className="grid max-w-screen-lg gap-8 sm:mx-auto lg:grid-cols-2 lg:py-16">
+            {/* lg:py-16 */}
+            <div className="grid max-w-screen-lg gap-8 sm:mx-auto lg:grid-cols-2 ">
                 <div className="grid grid-cols-2 gap-5">
                     <Image src={"/images/4.png"} alt={"przemysł 5.0 tł"} width={1260} height={750} className="col-span-2 h-56 w-full rounded object-cover shadow-lg" />
                     <Image src={"/images/5.png"} alt={"przemysł 5.0 tł"} width={1260} height={750} className="h-48 w-full rounded object-cover shadow-lg" />
