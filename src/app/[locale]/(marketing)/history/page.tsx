@@ -2,19 +2,19 @@ import { unstable_setRequestLocale } from "next-intl/server"
 import { MyLink } from "@/components/ui/link"
 import { ArticleHeadingTitle } from "@/components/ui/link-anchor"
 import { HeadingOneTitlePage } from "@/components/ui/heading"
+import { ContainerPage } from "@/components/layout/ContainerPage"
 
 export default function HistoryPage({ params: { locale } }: { params: { locale: string } }) {
   // Enable static rendering
   unstable_setRequestLocale(locale)
   return (
-    <main className="mx-auto max-w-5xl px-4 py-24">
-      <section className="mx-auto w-full text-left">
+    <ContainerPage>
         <HeadingOneTitlePage>
             Ewolucja produkcji <br />
             od Przemysłu 1.0 do Przemysłu 5.0
         </HeadingOneTitlePage>
         {/* scroll-mt-32 - spis tresci - linki i id dodac */}
-        <article className="text-muted-foreground mb-6 px-0 text-lg">
+        <article className="text-muted-foreground mb-6 px-0 lg:text-lg">
           <p className="mb-6 space-y-1 px-0 ">
             Historia przemysłu to fascynujący i wieloaspektowy temat, który obejmuje rozwój
             technologii, społeczeństwa i gospodarki na przestrzeni wieków. Od początków
@@ -240,7 +240,6 @@ export default function HistoryPage({ params: { locale } }: { params: { locale: 
           </p>
           <MyLink href="/industry" text={"Czytaj więcej o Przemyśle 5.0"} />
         </article>
-      </section>
-    </main>
+      </ContainerPage>
   )
 }

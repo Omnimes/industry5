@@ -9,6 +9,7 @@ import { siteConfig } from "@/data/config/site"
 import { getLocalePrimaryDialects } from "@/lib/locales"
 import { cn } from "@/lib/utils"
 import { ThemeProvider } from "@/components/theme/theme-provider"
+import { TailwindIndicator } from "@/components/tailwind-indicator"
 
 const fontSans = FontSans({
   subsets: ["latin"],
@@ -137,6 +138,8 @@ export default function LocaleLayout({ children, params: { locale } }: Props) {
         <NextIntlClientProvider messages={messages}>
           <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
               {children}
+  
+              <TailwindIndicator />
           </ThemeProvider>
         </NextIntlClientProvider>
       </body>

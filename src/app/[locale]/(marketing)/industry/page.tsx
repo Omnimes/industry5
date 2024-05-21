@@ -1,27 +1,23 @@
+import { ContainerPage } from "@/components/layout/ContainerPage"
 import { HeadingOneTitlePage } from "@/components/ui/heading"
+import { ArticleHeadingTitle } from "@/components/ui/link-anchor"
 import { unstable_setRequestLocale } from "next-intl/server"
 
 export default function IndustryPage({ params: { locale } }: { params: { locale: string } }) {
   // Enable static rendering
   unstable_setRequestLocale(locale)
   return (
-    <main className="mx-auto max-w-5xl px-4 py-24">
-      <section className="mx-auto w-full text-left">
+    <ContainerPage>
         <HeadingOneTitlePage text="Przemysł 5.0" />
-
-        <article className="text-muted-foreground mb-6 px-0 text-lg">
-          <p className="mb-6 mt-2 space-y-1 px-0 ">
+        <article className="text-muted-foreground mb-6 px-0 lg:text-lg">
+          <p className="mb-6 mt-2 space-y-1 px-0">
             Przemysł 5.0 to następna generacja produkcji, która kładzie nacisk na integrację
             człowieka i technologii w celu osiągnięcia wyższej efektywności, elastyczności oraz
             zrównoważonego rozwoju w procesach produkcyjnych.
           </p>
 
-          <h2 className="font-heading my-6 text-2xl tracking-normal text-gray-900 sm:text-3xl md:leading-none md:tracking-tight lg:flex lg:flex-col lg:text-2xl dark:text-white">
-            <span className="block w-fit bg-gradient-to-r from-green-400 to-purple-500 bg-clip-text text-transparent lg:inline">
-              Koncepcja Przemysłu 5.0
-            </span>
-          </h2>
-          <p className="mb-6 mt-2 space-y-1 px-0 ">
+          <ArticleHeadingTitle text="Koncepcja Przemysłu 5.0" />
+          <p className="mb-6 mt-2 space-y-1 px-0">
             Przemysł 5.0, symbolizujący piątą rewolucję przemysłową, opiera się na współpracy między
             człowiekiem a zaawansowanymi technologiami, takimi jak sztuczna inteligencja, robotyka,
             druk 3D oraz Internet Rzeczy (IoT). Celem tego modelu jest osiągnięcie większej
@@ -30,7 +26,7 @@ export default function IndustryPage({ params: { locale } }: { params: { locale:
             technologie współpracują z pracownikami zamiast ich zastępować, co tworzy bardziej
             humanitarny model produkcji korzystny zarówno dla przedsiębiorstw, jak i społeczeństwa.
           </p>
-          <p className="mb-6 mt-2 space-y-1 px-0 ">
+          <p className="mb-6 mt-2 space-y-1 px-0">
             Założenia Przemysłu 5.0 obejmują także promocję współpracy między przedsiębiorstwami,
             instytucjami naukowymi oraz rządami, aby wspólnie tworzyć innowacyjne rozwiązania dla
             przyszłości. Ta transformacja zakłada również większą rolę człowieka w procesach
@@ -38,13 +34,8 @@ export default function IndustryPage({ params: { locale } }: { params: { locale:
             wymiar i wartość w nowoczesnych systemach produkcyjnych.
           </p>
 
-          <h2 className="font-heading my-6 text-2xl tracking-normal text-gray-900 sm:text-3xl md:leading-none md:tracking-tight lg:flex lg:flex-col lg:text-2xl dark:text-white">
-            <span className="block w-fit bg-gradient-to-r from-green-400 to-purple-500 bg-clip-text text-transparent lg:inline">
-              Kluczowe elementy Przemysłu 5.0
-            </span>
-          </h2>
-
-          <ul className="mb-6 mt-2 list-inside list-disc space-y-1 px-0 ">
+          <ArticleHeadingTitle text="Kluczowe elementy Przemysłu 5.0" />
+          <ul className="mb-6 mt-2 list-inside list-disc space-y-1 px-0">
             <li>
               <strong>Czynnik ludzki:</strong> Piąta rewolucja przemysłowa wprowadzi większe wykorzystanie cobotów, czyli robotów współpracujących, które będą pracować ramię w ramię z ludźmi przez cały proces produkcji. Coboty, łatwiejsze do zaprogramowania i idealne do wykonywania powtarzalnych, niebezpiecznych zadań, pozwolą ludziom skupić się na bardziej złożonych operacjach wymagających zdolności poznawczych. W efekcie powstaną nowe role, wymagania oraz potrzeby szkoleniowe i edukacyjne.
             </li>
@@ -59,12 +50,8 @@ export default function IndustryPage({ params: { locale } }: { params: { locale:
             </li>
           </ul>
 
-          <h2 className="font-heading my-6 text-2xl tracking-normal text-gray-900 sm:text-3xl md:leading-none md:tracking-tight lg:flex lg:flex-col lg:text-2xl dark:text-white">
-            <span className="block w-fit bg-gradient-to-r from-green-400 to-purple-500 bg-clip-text text-transparent lg:inline">
-              Rozwój technologii Przemysłu 5.0
-            </span>
-          </h2>
-          <p className="mb-6 mt-2 space-y-1 px-0 ">
+          <ArticleHeadingTitle text="Rozwój technologii Przemysłu 5.0" />
+          <p className="mb-6 mt-2 space-y-1 px-0">
             Inteligentne systemy produkcyjne 5.0 to zaawansowane technologie, które optymalizują
             procesy produkcyjne poprzez analizę danych, uczenie maszynowe i automatyzację. Dzięki
             nim proces produkcyjny w przemyśle 5.0 staje się bardziej efektywny, elastyczny i
@@ -72,15 +59,13 @@ export default function IndustryPage({ params: { locale } }: { params: { locale:
             jakością produktów oraz redukcję marnotrawstwa surowców, co przekłada się na większą
             konkurencyjność na rynku i zwiększenie zysków przedsiębiorstw.
           </p>
-          <h2 className="font-heading my-6 text-2xl tracking-normal text-gray-900 sm:text-3xl md:leading-none md:tracking-tight lg:flex lg:flex-col lg:text-2xl dark:text-white">
-            <span className="block w-fit bg-gradient-to-r from-green-400 to-purple-500 bg-clip-text text-transparent lg:inline">
-                Technologie w Przemyśle 5.0
-            </span>
-          </h2>
-          <p className="mb-6 mt-2 space-y-1 px-0 ">
+
+          <ArticleHeadingTitle text="Technologie w Przemyśle 5.0" />
+          
+          <p className="mb-6 mt-2 space-y-1 px-0">
               Technologie w Przemyśle 5.0 to zaawansowane rozwiązania, mające na celu zwiększenie efektywności, elastyczności oraz zrównoważonego rozwoju procesów produkcyjnych. Do najważniejszych z nich należą:
           </p>
-          <ul className="mb-6 mt-2 list-inside list-disc space-y-1 px-0 ">
+          <ul className="mb-6 mt-2 list-inside list-disc space-y-1 px-0">
             <li>
               <strong>Sztuczna inteligencja (AI):</strong> AI umożliwia analizę danych w czasie rzeczywistym, przewidywanie awarii oraz optymalizację procesów produkcyjnych. Dzięki algorytmom uczącym się, systemy mogą automatycznie dostosowywać się do zmieniających się warunków, poprawiając wydajność i precyzję.
             </li>
@@ -109,8 +94,37 @@ export default function IndustryPage({ params: { locale } }: { params: { locale:
               <strong>Energia odnawialna i zarządzanie energią:</strong> Technologie zarządzania energią pozwalają na efektywne wykorzystanie odnawialnych źródeł energii w produkcji. Automatyzacja i AI mogą optymalizować zużycie energii, redukując koszty i minimalizując wpływ na środowisko.
             </li>
           </ul>
+
+          <ArticleHeadingTitle text="Korzyści z Automatyzacji Procesów Produkcyjnych 5.0" />
+
+          <p className="mb-6 mt-2 space-y-1 px-0">
+          Automatyzacja przemysłowa 5.0 polega na integracji zaawansowanych technologii, takich jak robotyka, sztuczna inteligencja oraz Internet Rzeczy (IoT), w celu optymalizacji procesów produkcyjnych. Przynosi ona wiele korzyści, w tym:
+          </p>
+
+          <ul className="mb-6 mt-2 list-inside list-disc space-y-1 px-0">
+            <li>
+              <strong>Redukcja kosztów produkcji:</strong> Automatyzacja pozwala na obniżenie kosztów operacyjnych poprzez zwiększenie efektywności i minimalizację strat.
+            </li>
+            <li>
+              <strong>Zwiększenie wydajności:</strong> Dzięki automatyzacji możliwe jest przyspieszenie procesów produkcyjnych, co prowadzi do wyższej produktywności.
+            </li>
+            <li>
+              <strong>Poprawa jakości produktów:</strong> Zaawansowane systemy monitoringu i kontroli jakości pomagają w utrzymaniu wysokich standardów produkcji.
+            </li>
+            <li>
+              <strong>Zmniejszenie ryzyka błędów:</strong> Automatyzacja minimalizuje ryzyko błędów ludzkich, co przekłada się na mniejsze straty i wyższą jakość końcową.
+            </li>
+            <li>
+              <strong>Lepsze wykorzystanie zasobów:</strong> Inteligentne systemy zarządzania zasobami umożliwiają bardziej efektywne ich wykorzystanie, co zwiększa rentowność produkcji.
+            </li>
+            <li>
+              <strong>Zwiększenie konkurencyjności przedsiębiorstw:</strong> Firmy wdrażające nowoczesne technologie zyskują przewagę konkurencyjną dzięki innowacyjności i elastyczności produkcji.
+            </li>
+          </ul>
+          <p className="mb-6 mt-2 space-y-1 px-0">
+            Warto podkreślić, że automatyzacja procesów produkcyjnych 5.0 nie eliminuje roli człowieka, lecz wspiera współpracę między pracownikami a nowoczesnymi technologiami. Ta synergia pozwala na osiągnięcie lepszych rezultatów niż tradycyjne metody produkcji.
+          </p>
         </article>
-      </section>
-    </main>
+      </ContainerPage>
   )
 }

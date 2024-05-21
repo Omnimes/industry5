@@ -9,6 +9,7 @@ import eco from "../../../../../public/images/eco.png"
 import odpornosc from "../../../../../public/images/odpornosc.png"
 import orient_people from "../../../../../public/images/orient_people.png"
 import { HeadingOneTitlePage } from "@/components/ui/heading"
+import { ContainerPage } from "@/components/layout/ContainerPage"
 
 export default function StrategyPage({ params: { locale } }: { params: { locale: string } }) {
   // Enable static rendering
@@ -16,10 +17,9 @@ export default function StrategyPage({ params: { locale } }: { params: { locale:
   const t = useTranslations("Strategy")
 
   return (
-    <main className="mx-auto max-w-5xl px-4 py-24">
-      <section className="mx-auto w-full text-left">
+    <ContainerPage>
         <HeadingOneTitlePage text={t("title")} />
-        <article className="text-muted-foreground mb-6 px-0 text-lg">
+        <article className="text-muted-foreground mb-6 px-0 lg:text-lg">
           <Image
             src={orient_people.src}
             alt={t("alt_orient")}
@@ -30,7 +30,7 @@ export default function StrategyPage({ params: { locale } }: { params: { locale:
 
           <ArticleHeadingTitle text={t("text1")} />
 
-          <p className="mb-6 space-y-1 px-0 ">
+          <p className="mb-6 space-y-1 px-0">
             {t("p1")}
             &nbsp;
             <CustomLink
@@ -51,7 +51,7 @@ export default function StrategyPage({ params: { locale } }: { params: { locale:
             </CustomLink>
             &nbsp;{t("p3")}
           </p>
-          <ul className="mb-6 list-inside list-disc space-y-1 px-0  ">
+          <ul className="mb-6 list-inside list-disc space-y-1 px-0 ">
             {t("p4")}
             <li className="pl-4 pt-4">{t("list1")}</li>
             <li className="pl-4">{t("list2")}</li>
@@ -61,7 +61,7 @@ export default function StrategyPage({ params: { locale } }: { params: { locale:
             <li className="pl-4">{t("list6")}</li>
             <li className="pl-4">{t("list7")}</li>
           </ul>
-          <p className="mb-6 space-y-1 px-0 ">
+          <p className="mb-6 space-y-1 px-0">
             {t("p5")}
           </p>
 
@@ -74,13 +74,13 @@ export default function StrategyPage({ params: { locale } }: { params: { locale:
           />
           <ArticleHeadingTitle text={t("text2")} />
 
-          <p className="mb-6 space-y-1 px-0 ">
+          <p className="mb-6 space-y-1 px-0">
             {t("p6")}
           </p>
-          <p className="mb-6 space-y-1 px-0 ">
+          <p className="mb-6 space-y-1 px-0">
             {t("p7")}
           </p>
-          <ol className="list-inside list-decimal space-y-4 ">
+          <ol className="list-inside list-decimal space-y-4">
             <li>
               {t("ol_li_title1")}
               <ul>
@@ -113,7 +113,7 @@ export default function StrategyPage({ params: { locale } }: { params: { locale:
             </li>
           </ol>
 
-          <p className="mb-12 mt-4 space-y-1 px-0  ">
+          <p className="mb-12 mt-4 space-y-1 px-0">
             Zmiana sposobu myślenia o zaawansowanej produkcji prowadzi do transformacji
             technologicznej, zarządzania oraz reguł pracy. Podjęcie wyzwań związanych z opisanymi
             zagadnieniami przyczyni się do pełnej implementacji inteligentnej fabryki. Nawiązanie
@@ -130,20 +130,19 @@ export default function StrategyPage({ params: { locale } }: { params: { locale:
           />
           <ArticleHeadingTitle text={t("text3")} />
 
-          <p className="mb-6 space-y-1 px-0 ">
+          <p className="mb-6 space-y-1 px-0">
             {t("p8")}
           </p>
-          <p className="mb-6 space-y-1 px-0 ">
+          <p className="mb-6 space-y-1 px-0">
             {t("p9")}
           </p>
-          <p className="mb-6 space-y-1 px-0 ">
+          <p className="mb-6 space-y-1 px-0">
             {t("p10")}
           </p>
-          <p className="mb-6 space-y-1 px-0 ">
+          <p className="mb-6 space-y-1 px-0">
             {t("p11")}
           </p>
         </article>
-      </section>
-    </main>
+      </ContainerPage>
   )
 }
