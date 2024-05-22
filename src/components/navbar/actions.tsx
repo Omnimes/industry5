@@ -27,8 +27,9 @@ const ActionButtons = () => {
                     <SheetContent>
                         <SheetHeader>
                             <SheetDescription>
-                                <div className="mt-10 flex w-full flex-col items-start space-y-4 text-lg text-black dark:text-white">
+                                <div className="mt-10 flex w-full flex-col items-start space-y-4 text-left text-lg text-black dark:text-white">
                                     {siteConfig.mainNav.map((item, index) => <Link key={index} href={item.href}>{t(item.title)}</Link>)}
+                                    <Link href={"/strategy"}>{t("title")}</Link>
                                     {siteConfig.subNav.map((item, index) => <Link key={index} href={item.href}>{t(item.title)}</Link>)}
                                 </div>
                             </SheetDescription>

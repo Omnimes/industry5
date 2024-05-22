@@ -1,5 +1,5 @@
 'use client'
-import Logo from "./logo"
+import { Logo } from "./logo"
 import Link from "next/link"
 import { cn } from "@/lib/utils"
 import {
@@ -40,18 +40,18 @@ export function NavigationMenuBar() {
                         <ul className="grid gap-2 p-3 md:w-[400px] lg:w-[500px] lg:grid-cols-[1fr]">
                             <li className="row-span-3">
                                 <NavigationMenuLink asChild>
-                                    <a
+                                    <Link
                                         className="from-muted/50 to-muted flex size-full select-none flex-col justify-end rounded-md bg-gradient-to-b p-6 no-underline outline-none focus:shadow-md"
                                         href="/strategy"
                                     >
-                                        <Logo />
+                                        <Logo withinLink />
                                         <div className="mb-2 mt-4 text-lg font-medium">
                                             {t("title")}
                                         </div>
                                         <p className="text-muted-foreground text-sm leading-tight">
                                             {t("desc")}
                                         </p>
-                                    </a>
+                                    </Link>
                                 </NavigationMenuLink>
                             </li>
                             {siteConfig.subNav.map(item => {

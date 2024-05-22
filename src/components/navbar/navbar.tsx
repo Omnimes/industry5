@@ -1,5 +1,5 @@
 import ActionButtons from "./actions";
-import Logo from "./logo";
+import { Logo } from "./logo";
 import { NavigationMenuBar } from "./navigation-bar";
 
 export const Navbar = () => {
