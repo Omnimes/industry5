@@ -1,16 +1,20 @@
 import { ContainerPage } from "@/components/layout/ContainerPage"
 import { HeadingOneTitlePage } from "@/components/ui/heading"
 import { ArticleHeadingTitle } from "@/components/ui/link-anchor"
+import { useTranslations } from "next-intl";
 import { unstable_setRequestLocale } from "next-intl/server"
 
 export default function IndustryPage({ params: { locale } }: { params: { locale: string } }) {
   // Enable static rendering
-  unstable_setRequestLocale(locale)
+  unstable_setRequestLocale(locale);
+  const t = useTranslations("Industry");
+
   return (
     <ContainerPage>
         <HeadingOneTitlePage text="Przemysł 5.0" />
         <article className="text-muted-foreground mb-6 px-0 lg:text-lg">
           <p className="mb-6 mt-2 space-y-1 px-0">
+          {/* {t("titlePart1")} */}
             Przemysł 5.0 to następna generacja produkcji, która kładzie nacisk na integrację
             człowieka i technologii w celu osiągnięcia wyższej efektywności, elastyczności oraz
             zrównoważonego rozwoju w procesach produkcyjnych.

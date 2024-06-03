@@ -1,4 +1,5 @@
 import { ContactForm } from "@/components/Form";
+// import { SparklesPreview } from "@/components/ui/headingOne";
 import { unstable_setRequestLocale } from "next-intl/server";
 import Image from "next/image";
 
@@ -7,7 +8,9 @@ export default async function ContactPage({ params: { locale } }: { params: { lo
   unstable_setRequestLocale(locale);
 
   return (
-    <main className="mx-auto flex w-full max-w-5xl flex-wrap-reverse px-4">
+    <main className="mx-auto flex w-full max-w-5xl flex-wrap-reverse">
+      {/* <SparklesPreview /> */}
+      {/* <section className="mx-auto flex w-full max-w-5xl flex-wrap-reverse"> */}
       <section className="mx-auto w-full max-w-[500px] py-10 md:px-0">
         <ContactForm />
       </section>
@@ -21,6 +24,7 @@ export default async function ContactPage({ params: { locale } }: { params: { lo
               <p>ggoral@multiprojekt.pl</p>
           </div>
       </section>
+      {/* </section> */}
     </main>
   );
 }

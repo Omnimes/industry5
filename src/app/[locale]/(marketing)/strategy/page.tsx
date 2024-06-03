@@ -114,11 +114,7 @@ export default function StrategyPage({ params: { locale } }: { params: { locale:
           </ol>
 
           <p className="mb-12 mt-4 space-y-1 px-0">
-            Zmiana sposobu myślenia o zaawansowanej produkcji prowadzi do transformacji
-            technologicznej, zarządzania oraz reguł pracy. Podjęcie wyzwań związanych z opisanymi
-            zagadnieniami przyczyni się do pełnej implementacji inteligentnej fabryki. Nawiązanie
-            współpracy z partnerami branżowymi, którzy również przyjęli ten sam model, przysłuży się
-            budowie ekosystemu zgodnego z wymogami przemysłu 4.0.
+            {t("p12")}
           </p>
 
           <Image
