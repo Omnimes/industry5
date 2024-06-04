@@ -89,7 +89,6 @@ export function NavigationMenuBar() {
                         </NavigationMenuLink>
                     </Link>
                 </NavigationMenuItem>
-
                 <NavigationMenuItem>
                     <Link href="/contact" legacyBehavior passHref>
                         <NavigationMenuLink className="font-medium">

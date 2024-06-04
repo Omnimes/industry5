@@ -241,5 +241,24 @@
     "list17": "Automation minimizes the risk of human errors, resulting in less waste and higher final product quality.",
     "list18": "Smart resource management systems enable more efficient utilization, increasing production profitability.",
     "list19": "Companies implementing modern technologies gain a competitive edge through innovation and production flexibility."
+  },
+  "AfterHero": {
+    "title": "Industry 5.0 - Evolution or Revolution?",
+    "title2": "Discover New Frontiers of Industrial Production",
+    "p1": "This fascinating concept focuses on combining the good of society, ecology, resilience to external factors, and efficiency of production activities. The collaboration between humans and machines is centered on individualized production, without mass production and loss of quality.",
+    "altImg": "An illustration depicting the cooperation between humans and technology. A human hand and a robotic hand jointly hold a globe. The background of the image is blurred, with dominant blue and orange colors symbolizing sustainable development and innovation in Industry 5.0.",
+    "h3": "What exactly is Industry 5.0?",
+    "p2": "Industry 5.0 is a revolutionary approach to production that integrates people, machines, and technologies, changing the way goods and services are produced. Industry 5.0 not only leverages advanced digital technologies such as artificial intelligence, data analysis, and the Internet of Things, but also places a strong emphasis on developing workers' skills and ensuring data and system security.",
+    "link": "Read more"
+  },
+  "Content": {
+    "head1": "Why is Industry 5.0 Important?",
+    "head1span": "A Key Trend in Industrial Production",
+    "p1": "Industry 5.0 is important because it enables businesses and industries to actively provide society with solutions that protect resources, ensure social stability, and achieve climate goals. The benefits are focused on the broader world, including workers, not just productivity and profits.",
+    "altImg": "A person in a futuristic lab operates a large robotic arm using a tablet, with various other robotic devices and workstations visible in the background.",
+    "head2": "What is the Future of Industry 5.0?",
+    "p2": "It includes the production of robots, including industrial robots, with enhanced artificial intelligence and cognitive computing technologies to improve efficiency and delivery speed, while allowing humans to focus on other areas.",
+    "p2span": "The Future of Industry 5.0",
+    "link": "Read more"
   }
 }

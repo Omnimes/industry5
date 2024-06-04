@@ -88,10 +88,8 @@ export async function generateMetadata({
 }
 
 export default function LocaleLayout({ children, params: { locale } }: Props) {
-  // Enable static rendering
   unstable_setRequestLocale(locale);
   const messages = useMessages();
-
   return (
     <html
       lang={getLocalePrimaryDialects(locale)}
@@ -108,7 +106,6 @@ export default function LocaleLayout({ children, params: { locale } }: Props) {
         media="(prefers-color-scheme: dark)"
         content="#000"
       />
-
       <link rel="shortcut icon" href="/favicons/favicon.ico" type="image/x-icon" />
       <link rel="icon" href="/favicons/favicon.ico" type="image/x-icon" />
       <link rel="apple-touch-icon" sizes="57x57" href="/favicons/apple-icon-57x57.png" />
@@ -126,7 +123,6 @@ export default function LocaleLayout({ children, params: { locale } }: Props) {
       <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png" />
       <meta name="msapplication-TileColor" content="#ffffff" />
       <meta name="msapplication-TileImage" content="/favicons/ms-icon-144x144.png" />
-
       <body
         className={cn(
           "bg-background min-h-screen font-sans antialiased",
@@ -138,7 +134,6 @@ export default function LocaleLayout({ children, params: { locale } }: Props) {
         <NextIntlClientProvider messages={messages}>
           <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
               {children}
-  
               <TailwindIndicator />
           </ThemeProvider>
         </NextIntlClientProvider>
