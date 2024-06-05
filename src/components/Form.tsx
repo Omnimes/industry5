@@ -1,5 +1,4 @@
 "use client"
-
 import { zodResolver } from "@hookform/resolvers/zod"
 import { useForm } from "react-hook-form"
 import { z } from "zod"
@@ -26,19 +25,23 @@ const accountFormSchema = z.object({
     name: z
         .string()
         .min(2, {
-            message: "Name must be at least 2 characters.",
+            message: "nameMsg",
         })
         .max(30, {
-            message: "Name must not be longer than 30 characters.",
+            message: "nameMsg2",
         }),
-    email: z.string().email(),
+    email: z
+        .string()
+        .email({
+            message: "msgEmail"
+        }),
     message: z
         .string()
         .min(2, {
-            message: "Name must be at least 2 characters.",
+            message: "msg",
         })
         .max(1000, {
-            message: "Name must not be longer than 1000 characters.",
+            message: "msg2",
         }),
 })
 

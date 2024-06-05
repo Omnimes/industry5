@@ -260,5 +260,72 @@
     "p2": "obejmuje produkcję robotów, w tym robotów przemysłowych, z ulepszonymi technologiami sztucznej inteligencji i obliczeń kognitywnych w celu poprawy wydajności i szybkości dostaw, a jednocześnie umożliwienia ludziom skupienia się na innych obszarach.",
     "p2span": "Przyszłość Przemysłu 5.0",
     "link": "Czytaj więcej"
+  },
+  "Content2": {
+    "head1": "Korzyści wprowadzenia",
+    "head1span": "Przemysłu 5.0",
+    "p1": "Przemysł 5.0 to koncepcja rozwoju przemysłu, która stawia na harmonię między człowiekiem a technologią, przekształcając tradycyjne środowisko produkcyjne. Oto kilka korzyści, które niesie ze sobą wprowadzenie Przemysłu 5.0",
+    "alt1": "Technik w żółtym kasku ochronnym używa tabletu do sterowania ramionami robotycznymi spawającymi w środowisku przemysłowym 5.0. Ramiona robotyczne, z żółtymi korpusami oraz czerwonymi i czarnymi elementami, emitują widoczne iskry podczas spawania. W tle znajduje się więcej maszyn w tętniącym życiem środowisku fabrycznym.",
+    "alt2": "Pracownik w kasku ochronnym i kamizelce bezpieczeństwa trzyma clipboard, stojąc w otoczeniu fabrycznym. Wokół niego znajdują się ikony reprezentujące elementy przemysłowe, takie jak ramie robota, chmura danych i sztuczna inteligencja, symbolizujące rozwój technologii Industry 5.0 w nowoczesnej produkcji.",
+    "alt3": "Trzech inżynierów w pomarańczowych kamizelkach bezpieczeństwa i żółtych kaskach ochronnych znajduje się w otoczeniu fabrycznym, dyskutując nad dużym żółtym ramieniem robotycznym. Jedna osoba wskazuje na nie, podczas gdy pozostali uważnie słuchają, stojąc blisko kabli i sprzętu maszynowego, uosabiając zasady współpracy w Industry 5.0.",
+    "head2": "Zwiększona elastyczność produkcyjna",
+    "p2": "Dzięki wykorzystaniu zaawansowanych technologii, takich jak IoT czy AI, przemysł 5.0 umożliwia elastyczne dostosowanie procesów produkcyjnych do zmieniających się potrzeb rynku.",
+    "head3": "Personalizacja i indywidualizacja produkcji",
+    "p3": "Dzięki możliwościom analizy danych oraz produkcji na żądanie, Przemysł 5.0 umożliwia dostosowanie produktów do indywidualnych preferencji klientów, co może przyczynić się do zwiększenia konkurencyjności firm.",
+    "head4": "Bezpieczeństwo i ergonomia pracy",
+    "p4": "Przemysł 5.0 stawia na współpracę między ludźmi a robotami, co może zmniejszyć ryzyko wypadków przy jednoczesnym zwiększeniu ergonomii pracy.",
+    "head5": "Tworzenie nowych miejsc pracy",
+    "p5": " Choć automatyzacja może prowadzić do zmian w strukturze zatrudnienia, wprowadzenie Przemysłu 5.0 otwiera również nowe możliwości zatrudnienia, zwłaszcza w obszarach związanych z obsługą, programowaniem czy zarządzaniem technologią."
+  },
+  "Content3": {
+    "alt": "Futurystyczny wyświetlacz w szklarni prezentuje okrągły diagram z połączonymi węzłami i ilustracjami, skupiając się na zrównoważonym rolnictwie. Podświetlony i wyróżniający różne ekologiczne i technologiczne elementy, struktura lśni w przestronnym, przemysłowym otoczeniu, odzwierciedlając zasady Przemysłu 5.0.",
+    "head1": "Odkryj Potencjał",
+    "head1span": "Przemysłu 5.0",
+    "p1": "Przemysł 5.0 to nie tylko kolejny krok w ewolucji przemysłu, lecz prawdziwa rewolucja w sposobie, w jaki postrzegamy produkcję.",
+    "p2": "Poznaj innowacyjne podejścia, które zmieniają oblicze przemysłu, kładąc nacisk na postęp ludzki i zrównoważony rozwój. Odkryj jak Przemysł 5.0 przynosi korzyści dla społeczeństwa i środowiska, otwierając nowe możliwości dla biznesu i przemysłu.",
+    "list1": "Decentralizacja",
+    "list2": "Zmiana orientacji gospodarczej",
+    "list3": "Zrównoważony rozwój",
+    "list4": "Transformacja cyfrowa",
+    "list5": "Nacisk na postęp ludzki i dobrostan",
+    "list6": "Nowe wskaźniki",
+    "link": "Dowiedz się więcej o strategii transformacji cyfrowej"
+  },
+  "Content4": {
+    "head1": "Transformacja",
+    "head1span": "Przemysłu 5.0",
+    "p1": "To proces, w którym przedsiębiorstwa przystosowują się do zmian wynikających z wdrażania nowych technologii w przemyśle. Proces ten obejmuje cyfrową transformację przemysłu 5.0, wdrażanie nowych technologii oraz integrację człowieka z technologią.",
+    "p2": "Cyfrowa transformacja przemysłowa to proces, który obejmuje kilka etapów:",
+    "alt1": "Ikona 3D symbolizująca Analizę",
+    "head2": "Analiza",
+    "p3": "Ocena aktualnej sytuacji firmy i identyfikacja obszarów wymagających zmian.",
+    "alt2": "Ikona 3D symbolizująca Planowanie",
+    "head3": "Planowanie",
+    "p4": "Opracowanie planu działania, uwzględniającego cele biznesowe, technologiczne i społeczne.",
+    "alt3": "Ikona 3D symbolizująca Wdrożenie",
+    "head4": "Wdrożenie",
+    "p5": "Implementacja innowacyjnych rozwiązań, takich jak sztuczna inteligencja, systemy WMS, uczenie maszynowe, „koboty”, druk 3D oraz Internet Rzeczy (IoT).",
+    "alt4": "Ikona 3D symbolizująca Integrację",
+    "head5": "Integracja",
+    "p6": "Połączenie nowych technologii z istniejącymi systemami i procesami produkcyjnymi.",
+    "alt5": "Ikona 3D symbolizująca Adaptację",
+    "head6": "Adaptacja",
+    "p7": "Przygotowanie kadry do zmian poprzez szkolenia, rozwój kompetencji i współpracę z nowymi technologiami.",
+    "alt6": "Ikona 3D symbolizująca Monitorowanie",
+    "head7": "Monitorowanie",
+    "p8": "Ciągła kontrola i ocena efektów transformacji w celu dalszej optymalizacji procesów produkcyjnych."
+  },
+  "Content5": {
+    "head1": "Historia inspiruje tych, którzy szukają rozwoju",
+    "head1span": "Poznaj Historię Innowacji Przemysłowych",
+    "p1": "Od początków rękodzielnictwa po współczesne inteligentne fabryki, przemysł przeszedł ogromną ewolucję, każda przynosiła ze sobą nie tylko rozwój technologiczny, ale także głębokie zmiany społeczne i ekonomiczne. Przemysł pozostaje siłą napędową globalnej gospodarki, a jego historia pokazuje, jak innowacje technologiczne mogą kształtować naszą przyszłość.",
+    "link": "Czytaj więcej"
+  },
+  "FormMessage": {
+    "nameMsg": "Imię musi składać się z co najmniej 2 znaków.",
+    "nameMsg2": "Imię nie może być dłuższe niż 30 znaków.",
+    "msg": "Wiadomość musi składać się z co najmniej 2 znaków.",
+    "msg2": "Wiadomość nie może być dłuższa niż 1000 znaków.",
+    "msgEmail": "Nieprawidłowy adres e-mail."
   }
 }
