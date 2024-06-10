@@ -8,6 +8,13 @@
       "fieldType": "String",
       "dataType": "string",
       "title": "lang"
+    },
+    "dateFrom": {
+      "required": false,
+      "description": "Terminy rozpoczęcia złożenia wniosków",
+      "fieldType": "String",
+      "dataType": "string",
+      "title": "DateFrom"
     }
   }
 }
