@@ -15,6 +15,13 @@
       "fieldType": "String",
       "dataType": "string",
       "title": "DateFrom"
+    },
+    "dateTo": {
+      "required": false,
+      "description": "Terminy zakończenia skłądania wniosków",
+      "fieldType": "String",
+      "dataType": "string",
+      "title": "DateTo"
     }
   }
 }
