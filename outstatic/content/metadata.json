@@ -1,6 +1,6 @@
 {
-  "commit": "bb2bef118cfcfc713ef8daa36ed22aec3e00f584",
-  "generated": "2024-06-11T05:48:18.948Z",
+  "commit": "3cb67f0ff01e21f6bbcb7c9b087464a95647a453",
+  "generated": "2024-06-11T15:32:34.343Z",
   "metadata": [
     {
       "__outstatic": {
@@ -83,6 +83,27 @@
       "slug": "automatyzacja-i-robotyzacja-w-msp",
       "status": "published",
       "title": "Automatyzacja i robotyzacja w MŚP"
+    },
+    {
+      "__outstatic": {
+        "commit": "3cb67f0ff01e21f6bbcb7c9b087464a95647a453",
+        "hash": "931057431",
+        "path": "outstatic/content/euapplications/wdrozenie-rozwiazan-w-zakresie-przemyslu-4-0.md"
+      },
+      "author": {
+        "name": "Piotr Sierant",
+        "picture": ""
+      },
+      "collection": "euapplications",
+      "coverImage": "/images/green-minimalist-credit-repair-facebook-post-U0MD.png",
+      "dateFrom": "16.09.2024",
+      "dateTo": "30.09.2024",
+      "description": "Działanie 1.5 WDROŻENIE ROZWIĄZAŃ W ZAKRESIE PRZEMYSŁU 4.0 KONKURENSYJNOŚĆ MŚP – FE DLA ŁÓDZKIEGO",
+      "lang": "pl",
+      "publishedAt": "2024-06-11T15:31:25.071Z",
+      "slug": "wdrozenie-rozwiazan-w-zakresie-przemyslu-4-0",
+      "status": "published",
+      "title": "Wdrożenie rozwiązań w zakresie przemysłu 4.0"
     }
   ]
 }
