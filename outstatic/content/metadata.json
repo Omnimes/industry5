@@ -1,6 +1,6 @@
 {
-  "commit": "3cb67f0ff01e21f6bbcb7c9b087464a95647a453",
-  "generated": "2024-06-11T15:32:34.343Z",
+  "commit": "9394d37e905c558618741e33599a9f4f0f9f15bf",
+  "generated": "2024-06-11T15:53:49.235Z",
   "metadata": [
     {
       "__outstatic": {
@@ -104,6 +104,27 @@
       "slug": "wdrozenie-rozwiazan-w-zakresie-przemyslu-4-0",
       "status": "published",
       "title": "Wdrożenie rozwiązań w zakresie przemysłu 4.0"
+    },
+    {
+      "__outstatic": {
+        "commit": "9394d37e905c558618741e33599a9f4f0f9f15bf",
+        "hash": "2049814260",
+        "path": "outstatic/content/euapplications/dig-it-transformacja-cyfrowa.md"
+      },
+      "author": {
+        "name": "Piotr Sierant",
+        "picture": "https://avatars.githubusercontent.com/u/94246053?v=4"
+      },
+      "collection": "euapplications",
+      "coverImage": "/images/green-minimalist-credit-repair-facebook-post-M4Mz.png",
+      "dateFrom": "",
+      "dateTo": "",
+      "description": "DIG.IT TRANSFORMACJA CYFROWA POLSKICH MŚP",
+      "lang": "pl",
+      "publishedAt": "2024-06-11T16:02:14.908Z",
+      "slug": "dig-it-transformacja-cyfrowa",
+      "status": "published",
+      "title": "DIG.IT Transformacja cyfrowa"
     }
   ]
 }
