@@ -1,6 +1,6 @@
 {
-  "commit": "4741b62cf60203ff7b2a9613ad59985a0ae0362a",
-  "generated": "2024-04-07T18:59:32.854Z",
+  "commit": "9a2018b9e82a123ccc78a42311b57a57b8622b5a",
+  "generated": "2024-06-11T05:19:29.594Z",
   "metadata": [
     {
       "__outstatic": {
@@ -20,6 +20,27 @@
       "slug": "przemysl-5-0-nowa-era-produkcji",
       "status": "published",
       "title": "Przemysł 5.0: Nowa Era Produkcji"
+    },
+    {
+      "__outstatic": {
+        "commit": "9a2018b9e82a123ccc78a42311b57a57b8622b5a",
+        "hash": "130327931",
+        "path": "outstatic/content/euapplications/kredyt-ekologiczny.md"
+      },
+      "author": {
+        "name": "Piotr Sierant",
+        "picture": "https://avatars.githubusercontent.com/u/94246053?v=4"
+      },
+      "collection": "euapplications",
+      "coverImage": "/images/green-minimalist-credit-repair-facebook-post-MzMj.png",
+      "dateFrom": "25.04.2024",
+      "dateTo": "25.07.2024",
+      "description": "Kredyt ekologiczny jest finansowany z Programu Fundusze Europejskie dla Nowoczesnej Gospodarki (FENG) na lata 2021-2027.",
+      "lang": "pl",
+      "publishedAt": "2024-06-11T05:24:42.947Z",
+      "slug": "kredyt-ekologiczny",
+      "status": "published",
+      "title": "Kredyt ekologiczny"
     }
   ]
 }
