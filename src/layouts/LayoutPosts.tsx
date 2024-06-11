@@ -62,7 +62,7 @@ export const LayoutPosts = ({ posts, pagination }: { posts: OstDocument[], pagin
     return (
         <>
             {posts?.length ? (
-                <div className="grid gap-10 sm:grid-cols-2">
+                <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
                     {posts.map((post, index) => (
                         <article
                             key={post.title}
