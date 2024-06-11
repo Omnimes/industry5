@@ -1,6 +1,6 @@
 {
-  "commit": "539416791896e147c7a14da07336a26d53bdaffe",
-  "generated": "2024-06-11T16:01:16.123Z",
+  "commit": "be61d227a6711b8100057273dd8c3724344b83da",
+  "generated": "2024-06-11T16:05:25.163Z",
   "metadata": [
     {
       "__outstatic": {
@@ -146,6 +146,27 @@
       "slug": "wsparcie-rozwoju-i-konkurencyjnosci-msp-w-formie-dotacji-wojewodztwo-podkarpackie",
       "status": "published",
       "title": "Wsparcie rozwoju i konkurencyjności MŚP w formie dotacji  Województwo Podkarpackie"
+    },
+    {
+      "__outstatic": {
+        "commit": "be61d227a6711b8100057273dd8c3724344b83da",
+        "hash": "2127912142",
+        "path": "outstatic/content/euapplications/sciezka-smart.md"
+      },
+      "author": {
+        "name": "Piotr Sierant",
+        "picture": "https://avatars.githubusercontent.com/u/94246053?v=4"
+      },
+      "collection": "euapplications",
+      "coverImage": "/images/green-minimalist-credit-repair-facebook-post--1--U0Mz.png",
+      "dateFrom": "27.06.2024",
+      "dateTo": "24.10.2024",
+      "description": "Ścieżka SMART/ Fundusze Europejskie dla Nowoczesnej Gospodarki",
+      "lang": "pl",
+      "publishedAt": "2024-06-11T16:14:19.397Z",
+      "slug": "sciezka-smart",
+      "status": "published",
+      "title": "Ścieżka SMART"
     }
   ]
 }
