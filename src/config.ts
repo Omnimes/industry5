@@ -33,6 +33,10 @@ export const pathnames = {
     en: '/eu-applications',
     pl: '/wnioski-unijne'
   },
+  '/eu-applications/[slug]': {
+    en: '/eu-applications/[slug]',
+    pl: '/wnioski-unijne/[slug]'
+  },
   '/future': {
     en: '/future',
     pl: '/przyszlosc'

@@ -5,7 +5,7 @@ import { getTranslations } from 'next-intl/server';
 import { unstable_setRequestLocale } from "next-intl/server";
 import { getDocuments, load } from 'outstatic/server';
 
-export const revalidate = 900;
+export const revalidate = 3600;
 const POSTS_PER_PAGE = 10;
 
 export async function generateMetadata({ params: { locale } }: { params: { locale: string } }) {
