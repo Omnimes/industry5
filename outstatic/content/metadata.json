@@ -1,6 +1,6 @@
 {
-  "commit": "9394d37e905c558618741e33599a9f4f0f9f15bf",
-  "generated": "2024-06-11T15:53:49.235Z",
+  "commit": "539416791896e147c7a14da07336a26d53bdaffe",
+  "generated": "2024-06-11T16:01:16.123Z",
   "metadata": [
     {
       "__outstatic": {
@@ -125,6 +125,27 @@
       "slug": "dig-it-transformacja-cyfrowa",
       "status": "published",
       "title": "DIG.IT Transformacja cyfrowa"
+    },
+    {
+      "__outstatic": {
+        "commit": "539416791896e147c7a14da07336a26d53bdaffe",
+        "hash": "3329634884",
+        "path": "outstatic/content/euapplications/wsparcie-rozwoju-i-konkurencyjnosci-msp-w-formie-dotacji-wojewodztwo-podkarpackie.md"
+      },
+      "author": {
+        "name": "Piotr Sierant",
+        "picture": "https://avatars.githubusercontent.com/u/94246053?v=4"
+      },
+      "collection": "euapplications",
+      "coverImage": "/images/green-minimalist-credit-repair-facebook-post-Y4Nj.png",
+      "dateFrom": "01.09.2024",
+      "dateTo": "30.09.2024",
+      "description": "01.03 Wsparcie rozwoju i konkurencyjności MŚP w formie dotacji  Województwo Podkarpackie",
+      "lang": "pl",
+      "publishedAt": "2024-06-11T16:09:30.905Z",
+      "slug": "wsparcie-rozwoju-i-konkurencyjnosci-msp-w-formie-dotacji-wojewodztwo-podkarpackie",
+      "status": "published",
+      "title": "Wsparcie rozwoju i konkurencyjności MŚP w formie dotacji  Województwo Podkarpackie"
     }
   ]
 }
