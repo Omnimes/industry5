@@ -1,6 +1,6 @@
 {
-  "commit": "9a2018b9e82a123ccc78a42311b57a57b8622b5a",
-  "generated": "2024-06-11T05:19:29.594Z",
+  "commit": "f705a2921b9cc63ab92ac7db8272d6db2e55ef31",
+  "generated": "2024-06-11T05:26:28.744Z",
   "metadata": [
     {
       "__outstatic": {
@@ -41,6 +41,27 @@
       "slug": "kredyt-ekologiczny",
       "status": "published",
       "title": "Kredyt ekologiczny"
+    },
+    {
+      "__outstatic": {
+        "commit": "f705a2921b9cc63ab92ac7db8272d6db2e55ef31",
+        "hash": "613850554",
+        "path": "outstatic/content/euapplications/dzialanie-1-7-opolskie-konkurencyjne.md"
+      },
+      "author": {
+        "name": "Piotr Sierant",
+        "picture": "https://avatars.githubusercontent.com/u/94246053?v=4"
+      },
+      "collection": "euapplications",
+      "coverImage": "/images/green-minimalist-credit-repair-facebook-post--1--E0MT.png",
+      "dateFrom": "27.06.2024",
+      "dateTo": "27.08.2024",
+      "description": "Działanie 1.7 Opolskie konkurencyjne w ramach programu Fundusze Europejskie dla Opolskiego 2021-2027  (Subregion Południowy) ",
+      "lang": "pl",
+      "publishedAt": "2024-06-11T05:35:49.398Z",
+      "slug": "dzialanie-1-7-opolskie-konkurencyjne",
+      "status": "published",
+      "title": "Działanie 1.7 Opolskie konkurencyjne"
     }
   ]
 }
