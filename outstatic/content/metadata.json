@@ -1,10 +1,94 @@
 {
-  "commit": "8a2836a45a79abd028386f3fc9f44aca5813a13c",
-  "generated": "2024-06-11T16:12:10.198Z",
+  "commit": "802fb629ce77467fb5eab6be9b29664e96561464",
+  "generated": "Tue, 11 Jun 2024 17:34:24 GMT",
   "metadata": [
     {
       "__outstatic": {
-        "commit": "f957c00c96f132e16ba944679e044eb3791ad156",
+        "commit": "53bac80f3b1704a9f2e8d0a93b539e765131e109",
+        "hash": "4194983835",
+        "path": "outstatic/content/euapplications/dzialanie-1-7-opolskie-konkurencyjne.md"
+      },
+      "author": {
+        "name": "Piotr Sierant",
+        "picture": "https://avatars.githubusercontent.com/u/94246053?v=4"
+      },
+      "collection": "euapplications",
+      "coverImage": "/images/opolskiekonkurencyjne.png",
+      "dateFrom": "27.06.2024",
+      "dateTo": "27.08.2024",
+      "description": "Działanie 1.7 Opolskie konkurencyjne w ramach programu Fundusze Europejskie dla Opolskiego 2021-2027  (Subregion Południowy) ",
+      "lang": "pl",
+      "publishedAt": "2024-06-11T05:35:49.398Z",
+      "slug": "dzialanie-1-7-opolskie-konkurencyjne",
+      "status": "published",
+      "title": "Działanie 1.7 Opolskie konkurencyjne"
+    },
+    {
+      "__outstatic": {
+        "commit": "227ca06576d3c5e5875ba4f85dcc4a74411eca39",
+        "hash": "923627978",
+        "path": "outstatic/content/euapplications/dig-it-transformacja-cyfrowa.md"
+      },
+      "author": {
+        "name": "Piotr Sierant",
+        "picture": "https://avatars.githubusercontent.com/u/94246053?v=4"
+      },
+      "collection": "euapplications",
+      "coverImage": "/images/digit.png",
+      "dateFrom": "",
+      "dateTo": "",
+      "description": "DIG.IT TRANSFORMACJA CYFROWA POLSKICH MŚP",
+      "lang": "pl",
+      "publishedAt": "2024-06-11T16:02:14.908Z",
+      "slug": "dig-it-transformacja-cyfrowa",
+      "status": "published",
+      "title": "DIG.IT Transformacja cyfrowa"
+    },
+    {
+      "__outstatic": {
+        "commit": "20f09403cfa8b1b623394c0c1bd8d30a886a3619",
+        "hash": "4064074861",
+        "path": "outstatic/content/euapplications/cyfrowe-msp-warminsko-mazurskie.md"
+      },
+      "author": {
+        "name": "Piotr Sierant",
+        "picture": "https://avatars.githubusercontent.com/u/94246053?v=4"
+      },
+      "collection": "euapplications",
+      "coverImage": "/images/cyfrowemsp.png",
+      "dateFrom": "25.03.2024",
+      "dateTo": "23.07.2024",
+      "description": "Działanie 01.12 Cyfrowe MŚP dla województwa warmińsko - mazurskiego to program oferujący wsparcie dotacyjne dla mikro, małych i średnich przedsiębiorstwa prowadzących działalność na terenie województwa warmińsko - mazurskiego na wdrożenie zaawansowanych technologii cyfrowych, w tym automatyzację i robotyzację procesów.",
+      "lang": "pl",
+      "publishedAt": "2024-06-11T16:19:58.842Z",
+      "slug": "cyfrowe-msp-warminsko-mazurskie",
+      "status": "published",
+      "title": "Cyfrowe MŚP (warmińsko – mazurskie)"
+    },
+    {
+      "__outstatic": {
+        "commit": "f9d8ca4e2b83a971e6f967cb61fbf062e6ff2ee0",
+        "hash": "1383134460",
+        "path": "outstatic/content/euapplications/automatyzacja-i-robotyzacja-w-msp.md"
+      },
+      "author": {
+        "name": "Piotr Sierant",
+        "picture": "https://avatars.githubusercontent.com/u/94246053?v=4"
+      },
+      "collection": "euapplications",
+      "coverImage": "/images/automatyzacja.png",
+      "dateFrom": "01.08.2024",
+      "dateTo": "26.09.2024",
+      "description": "Automatyzacja i robotyzacja w MŚP - Działanie 1.2 FEPW 2021-2027",
+      "lang": "pl",
+      "publishedAt": "2024-06-11T05:57:40.260Z",
+      "slug": "automatyzacja-i-robotyzacja-w-msp",
+      "status": "published",
+      "title": "Automatyzacja i robotyzacja w MŚP"
+    },
+    {
+      "__outstatic": {
+        "commit": "d141437eb8235bc59bcb9a9fe30f403526a9fba9",
         "hash": "1135047470",
         "path": "outstatic/content/posts/przemysl-5-0-nowa-era-produkcji.md"
       },
@@ -23,71 +107,29 @@
     },
     {
       "__outstatic": {
-        "commit": "9a2018b9e82a123ccc78a42311b57a57b8622b5a",
-        "hash": "130327931",
-        "path": "outstatic/content/euapplications/kredyt-ekologiczny.md"
+        "commit": "4ac10f131e60ea41c528562acb5a107fcade054a",
+        "hash": "468096600",
+        "path": "outstatic/content/euapplications/wsparcie-rozwoju-i-konkurencyjnosci-msp-w-formie-dotacji-wojewodztwo-podkarpackie.md"
       },
       "author": {
         "name": "Piotr Sierant",
         "picture": "https://avatars.githubusercontent.com/u/94246053?v=4"
       },
       "collection": "euapplications",
-      "coverImage": "/images/green-minimalist-credit-repair-facebook-post-MzMj.png",
-      "dateFrom": "25.04.2024",
-      "dateTo": "25.07.2024",
-      "description": "Kredyt ekologiczny jest finansowany z Programu Fundusze Europejskie dla Nowoczesnej Gospodarki (FENG) na lata 2021-2027.",
+      "coverImage": "/images/rozwojikonkurencja.png",
+      "dateFrom": "01.09.2024",
+      "dateTo": "30.09.2024",
+      "description": "01.03 Wsparcie rozwoju i konkurencyjności MŚP w formie dotacji Województwo Podkarpackie",
       "lang": "pl",
-      "publishedAt": "2024-06-11T05:24:42.947Z",
-      "slug": "kredyt-ekologiczny",
+      "publishedAt": "2024-06-11T16:09:30.905Z",
+      "slug": "wsparcie-rozwoju-i-konkurencyjnosci-msp-w-formie-dotacji-wojewodztwo-podkarpackie",
       "status": "published",
-      "title": "Kredyt ekologiczny"
+      "title": "Wsparcie rozwoju i konkurencyjności MŚP w formie dotacji Województwo Podkarpackie"
     },
     {
       "__outstatic": {
-        "commit": "f705a2921b9cc63ab92ac7db8272d6db2e55ef31",
-        "hash": "613850554",
-        "path": "outstatic/content/euapplications/dzialanie-1-7-opolskie-konkurencyjne.md"
-      },
-      "author": {
-        "name": "Piotr Sierant",
-        "picture": "https://avatars.githubusercontent.com/u/94246053?v=4"
-      },
-      "collection": "euapplications",
-      "coverImage": "/images/green-minimalist-credit-repair-facebook-post--1--E0MT.png",
-      "dateFrom": "27.06.2024",
-      "dateTo": "27.08.2024",
-      "description": "Działanie 1.7 Opolskie konkurencyjne w ramach programu Fundusze Europejskie dla Opolskiego 2021-2027  (Subregion Południowy) ",
-      "lang": "pl",
-      "publishedAt": "2024-06-11T05:35:49.398Z",
-      "slug": "dzialanie-1-7-opolskie-konkurencyjne",
-      "status": "published",
-      "title": "Działanie 1.7 Opolskie konkurencyjne"
-    },
-    {
-      "__outstatic": {
-        "commit": "bb2bef118cfcfc713ef8daa36ed22aec3e00f584",
-        "hash": "1297758571",
-        "path": "outstatic/content/euapplications/automatyzacja-i-robotyzacja-w-msp.md"
-      },
-      "author": {
-        "name": "Piotr Sierant",
-        "picture": "https://avatars.githubusercontent.com/u/94246053?v=4"
-      },
-      "collection": "euapplications",
-      "coverImage": "/images/green-minimalist-credit-repair-facebook-post-I4Mz.png",
-      "dateFrom": "01.08.2024",
-      "dateTo": "26.09.2024",
-      "description": "Automatyzacja i robotyzacja w MŚP - Działanie 1.2 FEPW 2021-2027",
-      "lang": "pl",
-      "publishedAt": "2024-06-11T05:57:40.260Z",
-      "slug": "automatyzacja-i-robotyzacja-w-msp",
-      "status": "published",
-      "title": "Automatyzacja i robotyzacja w MŚP"
-    },
-    {
-      "__outstatic": {
-        "commit": "3cb67f0ff01e21f6bbcb7c9b087464a95647a453",
-        "hash": "931057431",
+        "commit": "abc839b4ca7152007b95a5dac147a517476b7daa",
+        "hash": "2069104895",
         "path": "outstatic/content/euapplications/wdrozenie-rozwiazan-w-zakresie-przemyslu-4-0.md"
       },
       "author": {
@@ -95,7 +137,7 @@
         "picture": ""
       },
       "collection": "euapplications",
-      "coverImage": "/images/green-minimalist-credit-repair-facebook-post-U0MD.png",
+      "coverImage": "/images/wdrozenierozwiazan.png",
       "dateFrom": "16.09.2024",
       "dateTo": "30.09.2024",
       "description": "Działanie 1.5 WDROŻENIE ROZWIĄZAŃ W ZAKRESIE PRZEMYSŁU 4.0 KONKURENSYJNOŚĆ MŚP – FE DLA ŁÓDZKIEGO",
@@ -107,50 +149,8 @@
     },
     {
       "__outstatic": {
-        "commit": "9394d37e905c558618741e33599a9f4f0f9f15bf",
-        "hash": "2049814260",
-        "path": "outstatic/content/euapplications/dig-it-transformacja-cyfrowa.md"
-      },
-      "author": {
-        "name": "Piotr Sierant",
-        "picture": "https://avatars.githubusercontent.com/u/94246053?v=4"
-      },
-      "collection": "euapplications",
-      "coverImage": "/images/green-minimalist-credit-repair-facebook-post-M4Mz.png",
-      "dateFrom": "",
-      "dateTo": "",
-      "description": "DIG.IT TRANSFORMACJA CYFROWA POLSKICH MŚP",
-      "lang": "pl",
-      "publishedAt": "2024-06-11T16:02:14.908Z",
-      "slug": "dig-it-transformacja-cyfrowa",
-      "status": "published",
-      "title": "DIG.IT Transformacja cyfrowa"
-    },
-    {
-      "__outstatic": {
-        "commit": "539416791896e147c7a14da07336a26d53bdaffe",
-        "hash": "3329634884",
-        "path": "outstatic/content/euapplications/wsparcie-rozwoju-i-konkurencyjnosci-msp-w-formie-dotacji-wojewodztwo-podkarpackie.md"
-      },
-      "author": {
-        "name": "Piotr Sierant",
-        "picture": "https://avatars.githubusercontent.com/u/94246053?v=4"
-      },
-      "collection": "euapplications",
-      "coverImage": "/images/green-minimalist-credit-repair-facebook-post-Y4Nj.png",
-      "dateFrom": "01.09.2024",
-      "dateTo": "30.09.2024",
-      "description": "01.03 Wsparcie rozwoju i konkurencyjności MŚP w formie dotacji  Województwo Podkarpackie",
-      "lang": "pl",
-      "publishedAt": "2024-06-11T16:09:30.905Z",
-      "slug": "wsparcie-rozwoju-i-konkurencyjnosci-msp-w-formie-dotacji-wojewodztwo-podkarpackie",
-      "status": "published",
-      "title": "Wsparcie rozwoju i konkurencyjności MŚP w formie dotacji  Województwo Podkarpackie"
-    },
-    {
-      "__outstatic": {
-        "commit": "be61d227a6711b8100057273dd8c3724344b83da",
-        "hash": "2127912142",
+        "commit": "c26025a56f1883da5b7dd45e113fd5ff0e4d4a3d",
+        "hash": "1794049123",
         "path": "outstatic/content/euapplications/sciezka-smart.md"
       },
       "author": {
@@ -158,7 +158,7 @@
         "picture": "https://avatars.githubusercontent.com/u/94246053?v=4"
       },
       "collection": "euapplications",
-      "coverImage": "/images/green-minimalist-credit-repair-facebook-post--1--U0Mz.png",
+      "coverImage": "/images/sciezkasmart.png",
       "dateFrom": "27.06.2024",
       "dateTo": "24.10.2024",
       "description": "Ścieżka SMART/ Fundusze Europejskie dla Nowoczesnej Gospodarki",
@@ -170,24 +170,24 @@
     },
     {
       "__outstatic": {
-        "commit": "8a2836a45a79abd028386f3fc9f44aca5813a13c",
-        "hash": "1167515968",
-        "path": "outstatic/content/euapplications/cyfrowe-msp-warminsko-mazurskie.md"
+        "commit": "67b681263fdc18b791bd3c2f0b0267ef2b6646f0",
+        "hash": "1472228850",
+        "path": "outstatic/content/euapplications/kredyt-ekologiczny.md"
       },
       "author": {
         "name": "Piotr Sierant",
         "picture": "https://avatars.githubusercontent.com/u/94246053?v=4"
       },
       "collection": "euapplications",
-      "coverImage": "/images/green-minimalist-credit-repair-facebook-post--2--I1OT.png",
-      "dateFrom": "25.03.2024",
-      "dateTo": "23.07.2024",
-      "description": "Działanie 01.12 Cyfrowe MŚP dla województwa warmińsko - mazurskiego to program oferujący wsparcie dotacyjne dla mikro, małych i średnich przedsiębiorstwa prowadzących działalność na terenie województwa warmińsko - mazurskiego na wdrożenie zaawansowanych technologii cyfrowych, w tym automatyzację i robotyzację procesów.",
+      "coverImage": "/images/kredyteco.png",
+      "dateFrom": "25.04.2024",
+      "dateTo": "25.07.2024",
+      "description": "Kredyt ekologiczny jest finansowany z Programu Fundusze Europejskie dla Nowoczesnej Gospodarki (FENG) na lata 2021-2027.",
       "lang": "pl",
-      "publishedAt": "2024-06-11T16:19:58.842Z",
-      "slug": "cyfrowe-msp-warminsko-mazurskie",
+      "publishedAt": "2024-06-11T05:24:42.947Z",
+      "slug": "kredyt-ekologiczny",
       "status": "published",
-      "title": "Cyfrowe MŚP (warmińsko – mazurskie)"
+      "title": "Kredyt ekologiczny"
     }
   ]
 }
