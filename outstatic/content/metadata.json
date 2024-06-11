@@ -1,6 +1,6 @@
 {
-  "commit": "be61d227a6711b8100057273dd8c3724344b83da",
-  "generated": "2024-06-11T16:05:25.163Z",
+  "commit": "8a2836a45a79abd028386f3fc9f44aca5813a13c",
+  "generated": "2024-06-11T16:12:10.198Z",
   "metadata": [
     {
       "__outstatic": {
@@ -167,6 +167,27 @@
       "slug": "sciezka-smart",
       "status": "published",
       "title": "Ścieżka SMART"
+    },
+    {
+      "__outstatic": {
+        "commit": "8a2836a45a79abd028386f3fc9f44aca5813a13c",
+        "hash": "1167515968",
+        "path": "outstatic/content/euapplications/cyfrowe-msp-warminsko-mazurskie.md"
+      },
+      "author": {
+        "name": "Piotr Sierant",
+        "picture": "https://avatars.githubusercontent.com/u/94246053?v=4"
+      },
+      "collection": "euapplications",
+      "coverImage": "/images/green-minimalist-credit-repair-facebook-post--2--I1OT.png",
+      "dateFrom": "25.03.2024",
+      "dateTo": "23.07.2024",
+      "description": "Działanie 01.12 Cyfrowe MŚP dla województwa warmińsko - mazurskiego to program oferujący wsparcie dotacyjne dla mikro, małych i średnich przedsiębiorstwa prowadzących działalność na terenie województwa warmińsko - mazurskiego na wdrożenie zaawansowanych technologii cyfrowych, w tym automatyzację i robotyzację procesów.",
+      "lang": "pl",
+      "publishedAt": "2024-06-11T16:19:58.842Z",
+      "slug": "cyfrowe-msp-warminsko-mazurskie",
+      "status": "published",
+      "title": "Cyfrowe MŚP (warmińsko – mazurskie)"
     }
   ]
 }
