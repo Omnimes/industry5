@@ -1,6 +1,6 @@
 {
-  "commit": "f705a2921b9cc63ab92ac7db8272d6db2e55ef31",
-  "generated": "2024-06-11T05:26:28.744Z",
+  "commit": "bb2bef118cfcfc713ef8daa36ed22aec3e00f584",
+  "generated": "2024-06-11T05:48:18.948Z",
   "metadata": [
     {
       "__outstatic": {
@@ -62,6 +62,27 @@
       "slug": "dzialanie-1-7-opolskie-konkurencyjne",
       "status": "published",
       "title": "Działanie 1.7 Opolskie konkurencyjne"
+    },
+    {
+      "__outstatic": {
+        "commit": "bb2bef118cfcfc713ef8daa36ed22aec3e00f584",
+        "hash": "1297758571",
+        "path": "outstatic/content/euapplications/automatyzacja-i-robotyzacja-w-msp.md"
+      },
+      "author": {
+        "name": "Piotr Sierant",
+        "picture": "https://avatars.githubusercontent.com/u/94246053?v=4"
+      },
+      "collection": "euapplications",
+      "coverImage": "/images/green-minimalist-credit-repair-facebook-post-I4Mz.png",
+      "dateFrom": "01.08.2024",
+      "dateTo": "26.09.2024",
+      "description": "Automatyzacja i robotyzacja w MŚP - Działanie 1.2 FEPW 2021-2027",
+      "lang": "pl",
+      "publishedAt": "2024-06-11T05:57:40.260Z",
+      "slug": "automatyzacja-i-robotyzacja-w-msp",
+      "status": "published",
+      "title": "Automatyzacja i robotyzacja w MŚP"
     }
   ]
 }
