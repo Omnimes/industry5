@@ -5,7 +5,7 @@ author:
   name: 'Piotr Sierant'
   picture: 'https://avatars.githubusercontent.com/u/94246053?v=4'
 slug: 'cyfrowe-msp-warminsko-mazurskie'
-description: 'Działanie 01.12 Cyfrowe MŚP dla województwa warmińsko - mazurskiego to program oferujący wsparcie dotacyjne dla mikro, małych i średnich przedsiębiorstwa prowadzących działalność na terenie województwa warmińsko - mazurskiego na wdrożenie zaawansowanych technologii cyfrowych, w tym automatyzację i robotyzację procesów.'
+description: 'Program oferujący wsparcie dotacyjne dla mikro, małych i średnich przedsiębiorstwa prowadzących działalność na terenie województwa warmińsko - mazurskiego na wdrożenie zaawansowanych technologii cyfrowych, w tym automatyzację i robotyzację procesów.'
 coverImage: '/images/cyfrowemsp.png'
 lang: 'pl'
 dateFrom: '25.03.2024'

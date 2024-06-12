@@ -59,6 +59,7 @@ export const LayoutPosts = ({ posts, pagination }: { posts: OstDocument[], pagin
     const lang = useLocale();
     const t = useTranslations("Blog")
 
+    console.log(posts)
     return (
         <>
             {posts?.length ? (

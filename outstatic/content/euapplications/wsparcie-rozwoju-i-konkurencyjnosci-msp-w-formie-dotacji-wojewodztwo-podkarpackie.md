@@ -1,10 +1,10 @@
 ---
-title: 'Wsparcie rozwoju i konkurencyjności MŚP w formie dotacji Województwo Podkarpackie'
+title: 'Wsparcie rozwoju i konkurencyjności - Województwo Podkarpackie'
 status: 'published'
 author:
   name: 'Piotr Sierant'
   picture: 'https://avatars.githubusercontent.com/u/94246053?v=4'
-slug: 'wsparcie-rozwoju-i-konkurencyjnosci-msp-w-formie-dotacji-wojewodztwo-podkarpackie'
+slug: 'wsparcie-rozwoju-i-konkurencyjnosci-wojewodztwo-podkarpackie'
 description: '01.03 Wsparcie rozwoju i konkurencyjności MŚP w formie dotacji Województwo Podkarpackie'
 coverImage: '/images/rozwojikonkurencja.png'
 lang: 'pl'
