@@ -1,6 +1,6 @@
 {
-  "commit": "802fb629ce77467fb5eab6be9b29664e96561464",
-  "generated": "Tue, 11 Jun 2024 17:34:24 GMT",
+  "commit": "e9aa1d6e15c72676f98359360b8ed1fc5cd1927d",
+  "generated": "Wed, 12 Jun 2024 05:35:49 GMT",
   "metadata": [
     {
       "__outstatic": {
@@ -46,8 +46,8 @@
     },
     {
       "__outstatic": {
-        "commit": "20f09403cfa8b1b623394c0c1bd8d30a886a3619",
-        "hash": "4064074861",
+        "commit": "08c2f9a1ce74d82a39b11d8cf50fa2deee40fd1f",
+        "hash": "2742184930",
         "path": "outstatic/content/euapplications/cyfrowe-msp-warminsko-mazurskie.md"
       },
       "author": {
@@ -58,7 +58,7 @@
       "coverImage": "/images/cyfrowemsp.png",
       "dateFrom": "25.03.2024",
       "dateTo": "23.07.2024",
-      "description": "Działanie 01.12 Cyfrowe MŚP dla województwa warmińsko - mazurskiego to program oferujący wsparcie dotacyjne dla mikro, małych i średnich przedsiębiorstwa prowadzących działalność na terenie województwa warmińsko - mazurskiego na wdrożenie zaawansowanych technologii cyfrowych, w tym automatyzację i robotyzację procesów.",
+      "description": "Program oferujący wsparcie dotacyjne dla mikro, małych i średnich przedsiębiorstwa prowadzących działalność na terenie województwa warmińsko - mazurskiego na wdrożenie zaawansowanych technologii cyfrowych, w tym automatyzację i robotyzację procesów.",
       "lang": "pl",
       "publishedAt": "2024-06-11T16:19:58.842Z",
       "slug": "cyfrowe-msp-warminsko-mazurskie",
@@ -107,8 +107,8 @@
     },
     {
       "__outstatic": {
-        "commit": "4ac10f131e60ea41c528562acb5a107fcade054a",
-        "hash": "468096600",
+        "commit": "3e3242f42031fa7fa0b6e3f9858dcd66d871766e",
+        "hash": "1623058447",
         "path": "outstatic/content/euapplications/wsparcie-rozwoju-i-konkurencyjnosci-msp-w-formie-dotacji-wojewodztwo-podkarpackie.md"
       },
       "author": {
@@ -122,9 +122,9 @@
       "description": "01.03 Wsparcie rozwoju i konkurencyjności MŚP w formie dotacji Województwo Podkarpackie",
       "lang": "pl",
       "publishedAt": "2024-06-11T16:09:30.905Z",
-      "slug": "wsparcie-rozwoju-i-konkurencyjnosci-msp-w-formie-dotacji-wojewodztwo-podkarpackie",
+      "slug": "wsparcie-rozwoju-i-konkurencyjnosci-wojewodztwo-podkarpackie",
       "status": "published",
-      "title": "Wsparcie rozwoju i konkurencyjności MŚP w formie dotacji Województwo Podkarpackie"
+      "title": "Wsparcie rozwoju i konkurencyjności - Województwo Podkarpackie"
     },
     {
       "__outstatic": {
