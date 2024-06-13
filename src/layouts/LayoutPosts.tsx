@@ -58,8 +58,6 @@ export const LayoutPosts = ({ posts, pagination }: { posts: OstDocument[], pagin
     const basePath = pathname.split('/')[2];
     const lang = useLocale();
     const t = useTranslations("Blog")
-
-    console.log(posts)
     return (
         <>
             {posts?.length ? (

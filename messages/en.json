@@ -121,7 +121,10 @@
     "p11": "Since 2005, the net growth in industrial energy efficiency has slowed. Understanding the relationship between energy consumption and economic growth at the sectoral level, especially in energy-intensive industrial sectors, is essential. Such sectoral analysis can help identify industry-specific issues, leading to more targeted research and innovation in energy efficiency, as well as specifically targeted energy policy."
   },
   "EuApplicationsPage": {
-    "title": "EU Applications"
+    "title": "EU Applications",
+    "desc": "Check the current and upcoming EU grants you can benefit from. Everything in one place, easily accessible and organized for your convenience.",
+    "info": "There is no data on EU applications outside Poland",
+    "keywords": "EU grants, funding, support, industry"
   },
   "EuropeanUnion": {
     "title": "European Union"
@@ -327,5 +330,12 @@
     "msg": "The message must consist of at least 2 characters.",
     "msg2": "The message cannot be longer than 1000 characters.",
     "msgEmail": "Invalid email address."
-  }
+  },
+  "Recruitment": {
+  "noData1": "No data",
+  "noData2": "No data",
+  "Started": "Started",
+  "Ended": "Ended",
+  "Coming": "Coming soon"
+}
 }

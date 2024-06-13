@@ -11,8 +11,6 @@ import Link from "next/link";
 import { LucideChevronLeft } from "lucide-react";
 import { buttonVariants } from "@/components/ui/button";
 
-export const revalidate = 900;
-
 interface Params {
     params: {
         slug: string;

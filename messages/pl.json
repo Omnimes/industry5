@@ -122,7 +122,9 @@
   },
   "EuApplicationsPage": {
     "title": "Wnioski unijne",
-    "desc": "Sprawdź aktualne i nadchodzące wnioski unijne, z których możesz skorzystać. Wszystko w jednym miejscu, łatwo dostępne i uporządkowane dla Twojej wygody."
+    "desc": "Sprawdź aktualne i nadchodzące wnioski unijne, z których możesz skorzystać. Wszystko w jednym miejscu, łatwo dostępne i uporządkowane dla Twojej wygody.",
+    "info": "Brak danych o wnioskach unijnych poza terenem Polski",
+    "keywords": "wnioski unijne, dofinansowania, wsparcie, przemysł"
   },
   "EuropeanUnion": {
     "title": "Unia Europejska"
@@ -328,5 +330,12 @@
     "msg": "Wiadomość musi składać się z co najmniej 2 znaków.",
     "msg2": "Wiadomość nie może być dłuższa niż 1000 znaków.",
     "msgEmail": "Nieprawidłowy adres e-mail."
+  },
+  "Recruitment": {
+    "noData1": "Brak danych",
+    "noData2": "Brak danych",
+    "Started": "Rozpoczęte",
+    "Ended": "Zakończone",
+    "Coming": "Wkrótce"
   }
 }
