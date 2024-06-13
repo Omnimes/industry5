@@ -8,8 +8,8 @@ slug: 'dig-it-transformacja-cyfrowa'
 description: 'DIG.IT TRANSFORMACJA CYFROWA POLSKICH MŚP'
 coverImage: '/images/digit.png'
 lang: 'pl'
-dateFrom: ''
-dateTo: ''
+dateFrom: 'II'
+dateTo: 'III'
 publishedAt: '2024-06-11T16:02:14.908Z'
 ---
 
@@ -19,7 +19,7 @@ publishedAt: '2024-06-11T16:02:14.908Z'
 
 ### **Cel działania**
 
-Projekt Dig.IT jest skierowany do polskich przedsiębiorców prowadzących działalność w sektorze przemysłu, produkcji i usług na rzecz przemysłu, którzy chcą podnieść poziom dojrzałości cyfrowej swoich przedsiębiorstw poprzez skuteczny proces transformacji cyfrowej. 
+Projekt Dig.IT jest skierowany do polskich przedsiębiorców prowadzących działalność w sektorze przemysłu, produkcji i usług na rzecz przemysłu, którzy chcą podnieść poziom dojrzałości cyfrowej swoich przedsiębiorstw poprzez skuteczny proces transformacji cyfrowej.
 
 ### **Na co można przeznaczyć dofinansowanie:**
 
@@ -43,7 +43,7 @@ Projekt Dig.IT jest skierowany do polskich przedsiębiorców prowadzących dzia�
 
 ### **Dla kogo:**
 
-Z dofinansowania będą mogły skorzystać polskie przedsiębiorstwa MŚP (mikro, małe i średnie) prowadzące działalność w sektorze przemysłu, produkcji i usług na rzecz przemysłu, które chcą podnieść swój poziom dojrzałości cyfrowej poprzez skuteczny proces transformacji cyfrowej. 
+Z dofinansowania będą mogły skorzystać polskie przedsiębiorstwa MŚP (mikro, małe i średnie) prowadzące działalność w sektorze przemysłu, produkcji i usług na rzecz przemysłu, które chcą podnieść swój poziom dojrzałości cyfrowej poprzez skuteczny proces transformacji cyfrowej.
 
 ### **Koszty kwalifikowane:**
 

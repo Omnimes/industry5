@@ -1,6 +1,6 @@
 {
-  "commit": "e9aa1d6e15c72676f98359360b8ed1fc5cd1927d",
-  "generated": "Wed, 12 Jun 2024 05:35:49 GMT",
+  "commit": "5d96b489a90aafc6b6930ec4ef5d3d8d1a221a68",
+  "generated": "2024-06-13T05:23:38.790Z",
   "metadata": [
     {
       "__outstatic": {
@@ -22,27 +22,6 @@
       "slug": "dzialanie-1-7-opolskie-konkurencyjne",
       "status": "published",
       "title": "Działanie 1.7 Opolskie konkurencyjne"
-    },
-    {
-      "__outstatic": {
-        "commit": "227ca06576d3c5e5875ba4f85dcc4a74411eca39",
-        "hash": "923627978",
-        "path": "outstatic/content/euapplications/dig-it-transformacja-cyfrowa.md"
-      },
-      "author": {
-        "name": "Piotr Sierant",
-        "picture": "https://avatars.githubusercontent.com/u/94246053?v=4"
-      },
-      "collection": "euapplications",
-      "coverImage": "/images/digit.png",
-      "dateFrom": "",
-      "dateTo": "",
-      "description": "DIG.IT TRANSFORMACJA CYFROWA POLSKICH MŚP",
-      "lang": "pl",
-      "publishedAt": "2024-06-11T16:02:14.908Z",
-      "slug": "dig-it-transformacja-cyfrowa",
-      "status": "published",
-      "title": "DIG.IT Transformacja cyfrowa"
     },
     {
       "__outstatic": {
@@ -188,6 +167,27 @@
       "slug": "kredyt-ekologiczny",
       "status": "published",
       "title": "Kredyt ekologiczny"
+    },
+    {
+      "__outstatic": {
+        "commit": "5d96b489a90aafc6b6930ec4ef5d3d8d1a221a68",
+        "hash": "3676179151",
+        "path": "outstatic/content/euapplications/dig-it-transformacja-cyfrowa.md"
+      },
+      "author": {
+        "name": "Piotr Sierant",
+        "picture": "https://avatars.githubusercontent.com/u/94246053?v=4"
+      },
+      "collection": "euapplications",
+      "coverImage": "/images/digit.png",
+      "dateFrom": "II",
+      "dateTo": "III",
+      "description": "DIG.IT TRANSFORMACJA CYFROWA POLSKICH MŚP",
+      "lang": "pl",
+      "publishedAt": "2024-06-11T16:02:14.908Z",
+      "slug": "dig-it-transformacja-cyfrowa",
+      "status": "published",
+      "title": "DIG.IT Transformacja cyfrowa"
     }
   ]
 }
