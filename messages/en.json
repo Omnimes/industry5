@@ -60,6 +60,13 @@
     "postNotFound": "Article not found",
     "postNotFoundDesc": "We're sorry, but the article could not be found or it may be located at a different URL. You can read other available articles in this language by going to all posts."
   },
+  "PostLayoutEuApp": {
+    "allPost": "All Applications",
+    "publish": "Published on",
+    "by": "by",
+    "postNotFound": "Application Not Found",
+    "postNotFoundDesc": "Sorry, but we couldn't find this application or it may be located at a different URL. You can read other available articles in this language by going to all posts."
+  },
   "Pagination": {
     "next": "Next",
     "prev": "Previous",

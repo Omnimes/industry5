@@ -6,7 +6,6 @@ import { OstDocument } from "outstatic";
 import { absoluteUrl, cn, ogUrl } from "@/lib/utils"
 import { getDocumentSlugs, load } from "outstatic/server";
 import { getTranslations, unstable_setRequestLocale } from "next-intl/server"
-import DocHero from "@/components/doc-hero";
 import Link from "next/link";
 import { LucideChevronLeft } from "lucide-react";
 import { buttonVariants } from "@/components/ui/button";
@@ -91,7 +90,7 @@ export async function generateMetadata(params: Params): Promise<Metadata> {
 
 export default async function PostPage(params: Params) {
     unstable_setRequestLocale(params.params.locale);
-    const t = await getTranslations('PostLayout');
+    const t = await getTranslations('PostLayoutEuApp');
     const post = await getData(params);
 
     if (!post) {
