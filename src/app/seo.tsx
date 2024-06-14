@@ -16,8 +16,8 @@ export function genPageMetadata({ title, description, keywords, image, localeSho
         description,
         keywords,
         openGraph: {
-            title: `${title} | ${siteConfig.title}`,
-            description: description || siteConfig.description,
+            title: `${title}`,
+            description: description,
             url: './',
             siteName: siteConfig.title,
             images: image ? [image] : [siteConfig.socialBanner],
@@ -25,7 +25,7 @@ export function genPageMetadata({ title, description, keywords, image, localeSho
             type: 'website',
         },
         twitter: {
-            title: `${title} | ${siteConfig.title}`,
+            title: `${title}`,
             card: 'summary_large_image',
             images: image ? [image] : [siteConfig.socialBanner],
         },
