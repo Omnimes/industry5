@@ -68,7 +68,7 @@ export const LayoutEuApp = ({ posts, pagination }: { posts: ExtendedOstDocument[
                       key={post.title}
                       className="group relative flex flex-col rounded-3xl border border-gray-100 bg-white p-6 shadow-2xl shadow-gray-600/10 dark:border-gray-700 dark:bg-gray-800"
                     >
-                      <div className="relative h-64 overflow-hidden rounded-xl">
+                      <div className="relative overflow-hidden rounded-xl">
                         {post.coverImage &&
                           <Image
                             src={post.coverImage}
