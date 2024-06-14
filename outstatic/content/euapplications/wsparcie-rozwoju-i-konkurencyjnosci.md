@@ -4,7 +4,7 @@ status: 'published'
 author:
   name: 'Piotr Sierant'
   picture: 'https://avatars.githubusercontent.com/u/94246053?v=4'
-slug: 'wsparcie-rozwoju-i-konkurencyjnosci-wojewodztwo-podkarpackie'
+slug: 'wsparcie-rozwoju-i-konkurencyjnosci'
 description: '01.03 Wsparcie rozwoju i konkurencyjności MŚP w formie dotacji Województwo Podkarpackie'
 coverImage: '/images/rozwojikonkurencja.png'
 lang: 'pl'
@@ -19,7 +19,7 @@ publishedAt: '2024-06-11T16:09:30.905Z'
 
 ### **Krótki opis działania:**
 
-Działanie 01.03 Wsparcie rozwoju i konkurencyjności MŚP w formie dotacji to program oferujący bezzwrotne dotacje na inwestycje firm zlokalizowanych w przygranicznych gminach województwa podkarpackiego. 
+Działanie 01.03 Wsparcie rozwoju i konkurencyjności MŚP w formie dotacji to program oferujący bezzwrotne dotacje na inwestycje firm zlokalizowanych w przygranicznych gminach województwa podkarpackiego.
 
 ### **Dla kogo:**
 
