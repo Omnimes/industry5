@@ -1,6 +1,6 @@
 {
-  "commit": "a4f58525ffd185c3afc1402a7746b760d80dae69",
-  "generated": "2024-06-14T12:40:46.283Z",
+  "commit": "1cad93920c4499c0c839af529f0704e4c0af395b",
+  "generated": "Fri, 14 Jun 2024 12:40:57 GMT",
   "metadata": [
     {
       "__outstatic": {
@@ -22,6 +22,27 @@
       "slug": "dzialanie-1-7-opolskie-konkurencyjne",
       "status": "published",
       "title": "Działanie 1.7 Opolskie konkurencyjne"
+    },
+    {
+      "__outstatic": {
+        "commit": "7fb03e1909fd08c047ab07343ea795505d2a96b5",
+        "hash": "3676179151",
+        "path": "outstatic/content/euapplications/dig-it-transformacja-cyfrowa.md"
+      },
+      "author": {
+        "name": "Piotr Sierant",
+        "picture": "https://avatars.githubusercontent.com/u/94246053?v=4"
+      },
+      "collection": "euapplications",
+      "coverImage": "/images/digit.png",
+      "dateFrom": "II",
+      "dateTo": "III",
+      "description": "DIG.IT TRANSFORMACJA CYFROWA POLSKICH MŚP",
+      "lang": "pl",
+      "publishedAt": "2024-06-11T16:02:14.908Z",
+      "slug": "dig-it-transformacja-cyfrowa",
+      "status": "published",
+      "title": "DIG.IT Transformacja cyfrowa"
     },
     {
       "__outstatic": {
@@ -67,6 +88,27 @@
     },
     {
       "__outstatic": {
+        "commit": "d89d3400b90f0d11400cfe73d3e5c6461b43572f",
+        "hash": "1234174073",
+        "path": "outstatic/content/euapplications/wsparcie-rozwoju-i-konkurencyjnosci.md"
+      },
+      "author": {
+        "name": "Piotr Sierant",
+        "picture": "https://avatars.githubusercontent.com/u/94246053?v=4"
+      },
+      "collection": "euapplications",
+      "coverImage": "/images/rozwojikonkurencja.png",
+      "dateFrom": "01.09.2024",
+      "dateTo": "30.09.2024",
+      "description": "01.03 Wsparcie rozwoju i konkurencyjności MŚP w formie dotacji Województwo Podkarpackie",
+      "lang": "pl",
+      "publishedAt": "2024-06-11T16:09:30.905Z",
+      "slug": "wsparcie-rozwoju-i-konkurencyjnosci",
+      "status": "published",
+      "title": "Wsparcie rozwoju i konkurencyjności - Województwo Podkarpackie"
+    },
+    {
+      "__outstatic": {
         "commit": "d141437eb8235bc59bcb9a9fe30f403526a9fba9",
         "hash": "1135047470",
         "path": "outstatic/content/posts/przemysl-5-0-nowa-era-produkcji.md"
@@ -83,27 +125,6 @@
       "slug": "przemysl-5-0-nowa-era-produkcji",
       "status": "published",
       "title": "Przemysł 5.0: Nowa Era Produkcji"
-    },
-    {
-      "__outstatic": {
-        "commit": "3e3242f42031fa7fa0b6e3f9858dcd66d871766e",
-        "hash": "1623058447",
-        "path": "outstatic/content/euapplications/wsparcie-rozwoju-i-konkurencyjnosci-msp-w-formie-dotacji-wojewodztwo-podkarpackie.md"
-      },
-      "author": {
-        "name": "Piotr Sierant",
-        "picture": "https://avatars.githubusercontent.com/u/94246053?v=4"
-      },
-      "collection": "euapplications",
-      "coverImage": "/images/rozwojikonkurencja.png",
-      "dateFrom": "01.09.2024",
-      "dateTo": "30.09.2024",
-      "description": "01.03 Wsparcie rozwoju i konkurencyjności MŚP w formie dotacji Województwo Podkarpackie",
-      "lang": "pl",
-      "publishedAt": "2024-06-11T16:09:30.905Z",
-      "slug": "wsparcie-rozwoju-i-konkurencyjnosci-wojewodztwo-podkarpackie",
-      "status": "published",
-      "title": "Wsparcie rozwoju i konkurencyjności - Województwo Podkarpackie"
     },
     {
       "__outstatic": {
@@ -167,48 +188,6 @@
       "slug": "kredyt-ekologiczny",
       "status": "published",
       "title": "Kredyt ekologiczny"
-    },
-    {
-      "__outstatic": {
-        "commit": "5d96b489a90aafc6b6930ec4ef5d3d8d1a221a68",
-        "hash": "3676179151",
-        "path": "outstatic/content/euapplications/dig-it-transformacja-cyfrowa.md"
-      },
-      "author": {
-        "name": "Piotr Sierant",
-        "picture": "https://avatars.githubusercontent.com/u/94246053?v=4"
-      },
-      "collection": "euapplications",
-      "coverImage": "/images/digit.png",
-      "dateFrom": "II",
-      "dateTo": "III",
-      "description": "DIG.IT TRANSFORMACJA CYFROWA POLSKICH MŚP",
-      "lang": "pl",
-      "publishedAt": "2024-06-11T16:02:14.908Z",
-      "slug": "dig-it-transformacja-cyfrowa",
-      "status": "published",
-      "title": "DIG.IT Transformacja cyfrowa"
-    },
-    {
-      "__outstatic": {
-        "commit": "a4f58525ffd185c3afc1402a7746b760d80dae69",
-        "hash": "1234174073",
-        "path": "outstatic/content/euapplications/wsparcie-rozwoju-i-konkurencyjnosci.md"
-      },
-      "author": {
-        "name": "Piotr Sierant",
-        "picture": "https://avatars.githubusercontent.com/u/94246053?v=4"
-      },
-      "collection": "euapplications",
-      "coverImage": "/images/rozwojikonkurencja.png",
-      "dateFrom": "01.09.2024",
-      "dateTo": "30.09.2024",
-      "description": "01.03 Wsparcie rozwoju i konkurencyjności MŚP w formie dotacji Województwo Podkarpackie",
-      "lang": "pl",
-      "publishedAt": "2024-06-11T16:09:30.905Z",
-      "slug": "wsparcie-rozwoju-i-konkurencyjnosci",
-      "status": "published",
-      "title": "Wsparcie rozwoju i konkurencyjności - Województwo Podkarpackie"
     }
   ]
 }
