@@ -1,6 +1,6 @@
 {
-  "commit": "b9b45fb8bb6e8eacdef00f2cc68a7f3da6d00d2f",
-  "generated": "2024-06-16T17:22:24.768Z",
+  "commit": "f21f283dd7ee43ceb53662c91e8dd404fc8dc616",
+  "generated": "2024-06-17T05:11:36.909Z",
   "metadata": [
     {
       "__outstatic": {
@@ -106,25 +106,6 @@
       "slug": "wsparcie-rozwoju-i-konkurencyjnosci",
       "status": "published",
       "title": "Wsparcie rozwoju i konkurencyjności - Województwo Podkarpackie"
-    },
-    {
-      "__outstatic": {
-        "commit": "d141437eb8235bc59bcb9a9fe30f403526a9fba9",
-        "hash": "1135047470",
-        "path": "outstatic/content/posts/przemysl-5-0-nowa-era-produkcji.md"
-      },
-      "author": {
-        "name": "Piotr Sierant",
-        "picture": "https://avatars.githubusercontent.com/u/94246053?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/images/industry-UyMT.jpg",
-      "description": "W ostatnich latach światowy przemysł przeszedł przez wiele ewolucji, ale teraz stoi przed kolejnym przełomem - erą Przemysłu 5.0. Ta nowa era produkcji nie tylko rewolucjonizuje sposoby wytwarzania, ale także zmienia sposób myślenia o produkcji jako takiej.",
-      "lang": "pl",
-      "publishedAt": "2024-04-06T13:56:42.293Z",
-      "slug": "przemysl-5-0-nowa-era-produkcji",
-      "status": "published",
-      "title": "Przemysł 5.0: Nowa Era Produkcji"
     },
     {
       "__outstatic": {
