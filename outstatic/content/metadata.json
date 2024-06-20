@@ -1,6 +1,6 @@
 {
-  "commit": "089db001eebf25d3b519130b097bcd7bc324d108",
-  "generated": "2024-06-20T08:02:26.765Z",
+  "commit": "44159afb68b33ec3888ce9d2d981556c70082e5b",
+  "generated": "2024-06-20T08:06:14.930Z",
   "metadata": [
     {
       "__outstatic": {
@@ -188,25 +188,6 @@
       "slug": "wnioski-unijne-dla-firm-w-2024-roku-szanse-na-rozwoj-i-innowacje",
       "status": "published",
       "title": "Wnioski Unijne dla Firm w 2024 Roku: Szanse na Rozwój i Innowacje"
-    },
-    {
-      "__outstatic": {
-        "commit": "089db001eebf25d3b519130b097bcd7bc324d108",
-        "hash": "1984967156",
-        "path": "outstatic/content/posts/testowego-posta.md"
-      },
-      "author": {
-        "name": "Piotr Sierant",
-        "picture": "https://avatars.githubusercontent.com/u/94246053?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/images/wdrozenierozwiazan-M4MT.png",
-      "description": "testowy post",
-      "lang": "pl",
-      "publishedAt": "2024-06-20T08:13:22.935Z",
-      "slug": "testowego-posta",
-      "status": "published",
-      "title": "Testowego posta"
     }
   ]
 }
