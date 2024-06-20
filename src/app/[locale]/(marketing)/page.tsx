@@ -27,7 +27,7 @@ export async function generateMetadata({ params: { locale } }: { params: { local
 export default function Home({ params: { locale } }: { params: { locale: string } }) {
     unstable_setRequestLocale(locale);
     return (
-        <main>
+        <main className="overflow-hidden">
             <Hero />
             <AfterHero />
             <Content />
