@@ -6,9 +6,9 @@ type Props = {
     text: string;
     className?: string;
 }
-export const MyLink = ({ href, text, className }: Props) => {
+export const MyLink = ({ href, text, className, ...props }: Props) => {
     return (
-        <Link href={href} className={clsx(
+        <Link href={href} {...props} className={clsx(
             "hover:text-foreground inline-flex items-center gap-x-1 decoration-2 transition-colors hover:underline",
             className
         )}>

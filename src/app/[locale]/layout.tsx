@@ -1,4 +1,4 @@
-import "@/styles/globals.css"
+import "@/styles/globals.css";
 import localFont from "next/font/local"
 import { ReactNode } from "react"
 import { locales } from "@/config"
@@ -10,6 +10,7 @@ import { getLocalePrimaryDialects } from "@/lib/locales"
 import { cn } from "@/lib/utils"
 import { ThemeProvider } from "@/components/theme/theme-provider"
 import { TailwindIndicator } from "@/components/tailwind-indicator"
+import { AOSProvider } from "@/components/providers/AosProviders";
 
 const fontSans = FontSans({
   subsets: ["latin"],
@@ -90,6 +91,7 @@ export async function generateMetadata({
 export default function LocaleLayout({ children, params: { locale } }: Props) {
   unstable_setRequestLocale(locale);
   const messages = useMessages();
+  
   return (
     <html
       lang={getLocalePrimaryDialects(locale)}
@@ -132,10 +134,12 @@ export default function LocaleLayout({ children, params: { locale } }: Props) {
         suppressHydrationWarning
       >
         <NextIntlClientProvider messages={messages}>
-          <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-              {children}
-              <TailwindIndicator />
-          </ThemeProvider>
+          <AOSProvider>
+            <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+                {children}
+                <TailwindIndicator />
+            </ThemeProvider>
+          </AOSProvider>
         </NextIntlClientProvider>
       </body>
     </html>

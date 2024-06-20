@@ -8,6 +8,53 @@
     "blog_desc": "Odkryj świat Przemysłu 5.0 na naszym blogu! Eksploruj innowacyjne treści, zgłębiaj tajniki efektywności produkcyjnej i nowoczesnych technologii.",
     "blog_keywords": "Przemysł 5.0, Technologie produkcyjne, Innowacje w przemyśle, Efektywność produkcji, Automatyzacja procesów, Zarządzanie produkcją, Digitalizacja przedsiębiorstwa, Analiza danych produkcyjnych, Nowoczesne rozwiązania przemysłowe, AI w przemyśle"
   },
+  "ContactMeta": {
+    "title": "Industry5 - Kontakt - Skontaktuj się z nami",
+    "desc": "Skontaktuj się z nami za pomocą naszego formularza kontaktowego i dowiedz się więcej o naszej firmie oraz naszych produktach. Jesteśmy gotowi odpowiedzieć na wszystkie Twoje pytania.",
+    "keywords": "kontakt, skontaktuj się, formularz kontaktowy, industry5, firma, pytania",
+    "contact": "Kontakt",
+    "ggPhoto": "Grzegorz Góral - zdjęcie profilowe"
+  },
+  "FuturesMeta": {
+    "title": "Idustry5 - Przyszłość Przemysłu",
+    "desc": "Odkryj przyszłość przemysłu dzięki Industry5. Dowiedz się o nadchodzących trendach, innowacjach i technologiach, które będą kształtować krajobraz przemysłowy. Bądź na bieżąco dzięki naszym spostrzeżeniom i przewidywaniom.",
+    "keywords": "przyszłość przemysłu, trendy przemysłowe, innowacje, technologie, Industry5, spostrzeżenia przemysłowe, prognozy przemysłowe"
+  },
+  "HistoryMeta": {
+    "title": "Idustry5 - Historia Przemysłu",
+    "desc": "Poznaj bogatą historię przemysłu dzięki Industry5. Dowiedz się o kluczowych wydarzeniach, innowacjach i kamieniach milowych, które ukształtowały świat przemysłowy. Uzyskaj wgląd w przeszłość, aby zrozumieć teraźniejszość i przyszłość przemysłu.",
+    "keywords": "historia przemysłu, historia przemysłu, kluczowe wydarzenia, innowacje przemysłowe, kamienie milowe w branży, Industry5, spostrzeżenia przemysłowe"
+  },
+  "IndustryMeta": {
+    "title": "Industry5 - O Przemysle 5.0",
+    "desc": "Poznaj Przemysł 5.0 dzięki Industry5. Odkryj, jak integracja zaawansowanych technologii, podejścia skupionego na człowieku i zrównoważonego rozwoju zmienia krajobraz przemysłowy. Bądź na bieżąco z najnowszymi osiągnięciami i innowacjami Przemysłu 5.0.",
+    "keywords": "Przemysł 5.0, zaawansowane technologie, przemysł zorientowany na człowieka, zrównoważony rozwój, transformacja przemysłowa, Przemysł 5, najnowsze osiągnięcia, innowacje przemysłowe"
+  },
+  "PrivacyMeta": {
+    "title": "Industry5 - Polityka Prywatności",
+    "desc": "Przeczytaj naszą politykę prywatności, aby dowiedzieć się, w jaki sposób chronimy Twoje dane osobowe i jak je wykorzystujemy.",
+    "keywords": "polityka prywatności, Industry5, ochrona danych, dane osobowe, przetwarzanie danych"
+  },
+  "StrategyMeta": {
+    "title": "Industry5 - Strategie transformacji cyfrowej",
+    "desc": "Odkryj strategie transformacji cyfrowej z Industry5. Dowiedz się, jak wykorzystać technologie cyfrowe do napędzania innowacji, poprawy wydajności i osiągnięcia sukcesu biznesowego.",
+    "keywords": "transformacja cyfrowa, strategie cyfrowe, Przemysł5, innowacja, efektywność, sukces biznesowy, technologie cyfrowe"
+  },
+  "TermsMeta": {
+    "title": "Industry5 - Regulamin Strony - Zasady Korzystania",
+    "desc": "Zapoznaj się z naszym regulaminem strony, aby poznać zasady korzystania z naszych usług oraz obowiązki użytkowników.",
+    "keywords": "regulamin, zasady korzystania, Industry5, usługi, użytkownicy"
+  },
+  "HomeMeta": {
+    "title": "Przemysł 5.0 - Kompleksowa wiedza na temat przyszłości rozwoju.",
+    "desc": "Odkrywaj najnowocześniejsze technologie, transformatywne strategie oraz praktyczne spostrzeżenia napędzające ewolucję nowoczesnej produkcji.",
+    "keywords": "Przemysł 5.0, najnowocześniejsze technologie, strategie transformacyjne, nowoczesna produkcja, ewolucja przemysłu, przyszły rozwój, Industry5"
+  },
+  "EuropeanUnionMeta": {
+    "title": "Przemysł 5.0 - Unia Europejska",
+    "desc": "Dowiedz się o roli Unii Europejskiej w kształtowaniu Przemysłu 5.0. Odkryj polityki, inicjatywy i współpracę mające na celu wspieranie innowacji przemysłowych i zrównoważonego rozwoju w UE.",
+    "keywords": "Przemysł 5.0, Unia Europejska, polityki UE, innowacje przemysłowe, zrównoważony rozwój, inicjatywy UE, Przemysł 5, współpraca przemysłowa"
+  },
   "LocaleSwitcher": {
     "label": "Zmień język",
     "locale": "{locale, select, pl {Polski} en {Angielski} other {Nieznany}}"
@@ -134,7 +181,8 @@
     "keywords": "wnioski unijne, dofinansowania, wsparcie, przemysł"
   },
   "EuropeanUnion": {
-    "title": "Unia Europejska"
+    "title": "Unia Europejska",
+    "desc": ""
   },
   "Future": {
     "title": "Przyszłość Przemysłu"

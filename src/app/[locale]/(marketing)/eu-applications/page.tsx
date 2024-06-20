@@ -1,9 +1,10 @@
 import { genPageMetadata } from "@/app/seo";
 import { getLocalePrimaryDialects } from "@/lib/locales";
 import { getTranslations, unstable_setRequestLocale } from "next-intl/server";
-import { load, getDocuments } from "outstatic/server";
+import { load } from "outstatic/server";
 import { OstDocument } from "outstatic";
 import { LayoutEuApp } from "@/layouts/LayoutEuApp";
+import { TextRevealCard } from "@/components/ui/text-reveal-card";
 
 export const revalidate = 3600;
 const POSTS_PER_PAGE = 20;
@@ -65,17 +66,12 @@ export default async function EuApplicationsPage({ params: { locale } }: { param
   }
 
   return (
-    <div className="py-12">
-      <div className="m-auto px-6 text-gray-600 xl:container md:px-12 xl:px-6">
-        <div className="mx-auto mb-12 max-w-5xl space-y-2 text-center">
-          <h2 className="text-3xl font-bold text-gray-800 md:text-4xl dark:text-white">{t('title')}</h2>
-          <p className="pb-3 text-gray-600 dark:text-gray-300">
-            {t("desc")}
-          </p>
-          <hr className="my-8" />
-        </div>
+      <div className="m-auto px-4 py-6 text-gray-600 xl:container md:px-12 lg:px-0 lg:py-10 xl:px-6">
+        <TextRevealCard
+          text={t('title')}
+          desc={t('desc')}
+        />
         <LayoutEuApp posts={allPosts} pagination={pagination} />
       </div>
-    </div>
   );
 }

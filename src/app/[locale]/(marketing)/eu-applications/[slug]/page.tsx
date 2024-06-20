@@ -26,7 +26,6 @@ export async function generateStaticParams() {
 
 async function getData({ params }: Params) {
     const db = await load();
-
     const post = await db
         .find<OstDocument>({ collection: "euapplications", slug: params.slug, lang: params.locale }, [
             "title",
@@ -39,11 +38,7 @@ async function getData({ params }: Params) {
         ])
         .first();
 
-
-    if (!post) {
-        return undefined
-    }
-
+    if (!post) { return undefined }
     const content = await MDXServer(post.content);
 
     return {

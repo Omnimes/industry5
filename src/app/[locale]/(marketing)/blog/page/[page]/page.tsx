@@ -24,9 +24,7 @@ export async function generateMetadata({ params: { locale } }: { params: { local
         keywords,
         localeShort,
     }
-    const meta = genPageMetadata(obj)
-
-    return meta
+    return genPageMetadata(obj)
 }
 
 const POSTS_PER_PAGE = 10;
@@ -45,7 +43,6 @@ export const generateStaticParams = async ({ params: { locale } }: Props) => {
 
 async function getData(locale: string, page: string) {
     const db = await load();
-    // get all posts. Example of fetching a specific collection
     const allPosts = await db
         .find({ collection: 'posts', status: 'published', lang: locale }, [
             'title',

@@ -1,19 +1,34 @@
-import { unstable_setRequestLocale } from "next-intl/server"
+import { getTranslations, unstable_setRequestLocale } from "next-intl/server"
 import { MyLink } from "@/components/ui/link"
 import { ArticleHeadingTitle } from "@/components/ui/link-anchor"
-import { HeadingOneTitlePage } from "@/components/ui/heading"
-import { ContainerPage } from "@/components/layout/ContainerPage"
 import { useTranslations } from "next-intl"
+import { TextRevealCardDouble } from "@/components/ui/text-reveal-card"
+import { getLocalePrimaryDialects } from "@/lib/locales"
+import { genPageMetadata } from "@/app/seo"
 
+export async function generateMetadata({ params: { locale } }: { params: { locale: string } }) {
+  const t = await getTranslations({ locale, namespace: "HistoryMeta" });
+  const title = t('title');
+  const description = t('desc');
+  const keywords = t('keywords');
+  const localeShort = getLocalePrimaryDialects(locale);
+  const obj = {
+    title,
+    description,
+    keywords,
+    localeShort,
+  }
+  return genPageMetadata(obj)
+}
 export default function HistoryPage({ params: { locale } }: { params: { locale: string } }) {
   unstable_setRequestLocale(locale);
   const t = useTranslations("History");
   return (
-    <ContainerPage>
-        <HeadingOneTitlePage>
-            {t("titlePart1")} <br />
-            {t("titlePart2")}
-        </HeadingOneTitlePage>
+    <div className="container max-w-screen-lg px-4 py-6 lg:px-0 lg:py-10">
+        <TextRevealCardDouble
+          text={t("titlePart1")}
+          textPart={t("titlePart2")}
+        />
         {/* scroll-mt-32 - spis tresci - linki i id dodac */}
         <article className="text-muted-foreground mb-6 px-0 lg:text-lg">
           <p className="mb-6 space-y-1 px-0 ">{t("p1")}</p>
@@ -61,6 +76,6 @@ export default function HistoryPage({ params: { locale } }: { params: { locale: 
           <p className="mb-6 space-y-1 px-0 ">{t("p9")}</p>
           <MyLink href="/industry" text={t("link")} />
         </article>
-      </ContainerPage>
+      </div>
   )
 }

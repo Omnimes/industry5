@@ -1,25 +1,38 @@
 import Image from "next/image"
 import { useTranslations } from "next-intl"
-import { unstable_setRequestLocale } from "next-intl/server"
-
+import { getTranslations, unstable_setRequestLocale } from "next-intl/server"
 import { ArticleHeadingTitle } from "@/components/ui/link-anchor"
 import CustomLink from "@/components/mdx/custom-link"
+import { TextRevealCard } from "@/components/ui/text-reveal-card"
+import { getLocalePrimaryDialects } from "@/lib/locales"
+import { genPageMetadata } from "@/app/seo"
 
-import eco from "../../../../../public/images/eco.png"
-import odpornosc from "../../../../../public/images/odpornosc.png"
-import orient_people from "../../../../../public/images/orient_people.png"
-import { HeadingOneTitlePage } from "@/components/ui/heading"
-import { ContainerPage } from "@/components/layout/ContainerPage"
+export async function generateMetadata({ params: { locale } }: { params: { locale: string } }) {
+  const t = await getTranslations({ locale, namespace: "StrategyMeta" });
+  const title = t('title');
+  const description = t('desc');
+  const keywords = t('keywords');
+  const localeShort = getLocalePrimaryDialects(locale);
+  const obj = {
+    title,
+    description,
+    keywords,
+    localeShort,
+  }
+  return genPageMetadata(obj)
+}
 
 export default function StrategyPage({ params: { locale } }: { params: { locale: string } }) {
   unstable_setRequestLocale(locale)
   const t = useTranslations("Strategy")
   return (
-    <ContainerPage>
-      <HeadingOneTitlePage text={t("title")} />
+    <div className="container max-w-screen-lg px-4 py-6 lg:px-0 lg:py-10">
+      <TextRevealCard
+        text={t('title')}
+      />
       <article className="text-muted-foreground mb-6 px-0 lg:text-lg">
         <Image
-          src={orient_people.src}
+          src={"/images/orient_people.png"}
           alt={t("alt_orient")}
           width={2084}
           height={1000}
@@ -59,7 +72,7 @@ export default function StrategyPage({ params: { locale } }: { params: { locale:
         </ul>
         <p className="mb-6 space-y-1 px-0">{t("p5")}</p>
         <Image
-          src={odpornosc.src}
+          src={"/images/odpornosc.png"}
           alt={t("alt_odpornosc")}
           width={1260}
           height={536}
@@ -101,7 +114,7 @@ export default function StrategyPage({ params: { locale } }: { params: { locale:
         </ol>
         <p className="mb-12 mt-4 space-y-1 px-0">{t("p12")}</p>
         <Image
-          src={eco.src}
+          src={"/images/eco.png"}
           alt={t("alt_eco")}
           width={1260}
           height={536}
@@ -113,6 +126,6 @@ export default function StrategyPage({ params: { locale } }: { params: { locale:
         <p className="mb-6 space-y-1 px-0">{t("p10")}</p>
         <p className="mb-6 space-y-1 px-0">{t("p11")}</p>
       </article>
-    </ContainerPage>
+    </div>
   )
 }

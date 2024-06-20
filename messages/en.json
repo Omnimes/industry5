@@ -8,6 +8,53 @@
     "blog_desc": "Explore the world of Industry 5.0 on our blog! Delve into innovative content, uncover the secrets of production efficiency and modern technologies.",
     "blog_keywords": "Industry 5.0, Production technologies, Innovations in industry, Production efficiency, Process automation, Production management, Enterprise digitalization, Production data analysis, Modern industrial solutions, AI in industry"
   },
+  "ContactMeta": {
+    "title": "Industry5 - Contact - Get in Touch with Us",
+    "desc": "Get in touch with us using our contact form and learn more about our company and our products. We are ready to answer all your questions.",
+    "keywords": "contact, get in touch, contact form, industry5, company, questions",
+    "contact": "Contact",
+    "ggPhoto": "Grzegorz Góral - profile photo"
+  },
+  "FuturesMeta": {
+    "title": "Industry5 - The Future of Industry",
+    "desc": "Discover the future of industry with Industry5. Learn about upcoming trends, innovations, and technologies that will shape the industrial landscape. Stay ahead with our insights and predictions.",
+    "keywords": "future of industry, industrial trends, innovations, technologies, Industry5, industrial insights, industrial predictions"
+  },
+  "HistoryMeta": {
+    "title": "Industry5 - The History of Industry",
+    "desc": "Explore the rich history of industry with Industry5. Learn about the key events, innovations, and milestones that have shaped the industrial world. Gain insights into the past to understand the present and future of industry.",
+    "keywords": "history of industry, industrial history, key events, industrial innovations, industry milestones, Industry5, industrial insights"
+  },
+  "IndustryMeta": {
+    "title": "Industry5 - About Industry 5.0",
+    "desc": "Learn about Industry 5.0 with Industry5. Discover how the integration of advanced technologies, human-centric approaches, and sustainability is transforming the industrial landscape. Stay informed about the latest developments and innovations in Industry 5.0.",
+    "keywords": "Industry 5.0, advanced technologies, human-centric industry, sustainability, industrial transformation, Industry5, latest developments, industrial innovations"
+  },
+  "PrivacyMeta": {
+    "title": "Industry5 - Privacy Policy",
+    "desc": "Read our privacy policy to learn how we protect and use your personal data.",
+    "keywords": "privacy policy, Industry5, data protection, personal data, data processing"
+  },
+  "StrategyMeta": {
+    "title": "Industry5 - Digital Transformation Strategies",
+    "desc": "Discover the strategies for digital transformation with Industry5. Learn how to leverage digital technologies to drive innovation, improve efficiency, and achieve business success.",
+    "keywords": "digital transformation, digital strategies, Industry5, innovation, efficiency, business success, digital technologies"
+  },
+  "TermsMeta": {
+    "title": "Industry5 - Website Terms and Conditions - Usage Guidelines",
+    "desc": "Read our website terms and conditions to learn about the rules for using our services and the responsibilities of users.",
+    "keywords": "terms and conditions, usage guidelines, Industry5, services, users"
+  },
+  "HomeMeta": {
+    "title": "Industry 5.0 - Comprehensive Knowledge on the Future of Development",
+    "desc": "Explore cutting-edge technologies, transformative strategies, and practical insights driving the evolution of modern manufacturing.",
+    "keywords": "Industry 5.0, cutting-edge technologies, transformative strategies, modern manufacturing, industrial evolution, future development, Industry5"
+  },
+  "EuropeanUnionMeta": {
+    "title": "Industry 5.0 - European Union",
+    "desc": "Learn about the European Union's role in shaping Industry 5.0. Discover policies, initiatives, and collaborations aimed at advancing industrial innovation and sustainability within the EU.",
+    "keywords": "Industry 5.0, European Union, EU policies, industrial innovation, sustainability, EU initiatives, Industry5, industrial collaboration"
+  },
   "LocaleSwitcher": {
     "label": "Change language",
     "locale": "{locale, select, pl {Polish} en {English} other {Unknown}}"
@@ -134,7 +181,8 @@
     "keywords": "EU grants, funding, support, industry"
   },
   "EuropeanUnion": {
-    "title": "European Union"
+    "title": "European Union",
+    "desc": ""
   },
   "Future": {
     "title": "Future of Industry"

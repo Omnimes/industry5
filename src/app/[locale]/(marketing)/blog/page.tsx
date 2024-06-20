@@ -1,4 +1,5 @@
 import { genPageMetadata } from "@/app/seo";
+import { TextRevealCard } from "@/components/ui/text-reveal-card";
 import { LayoutPosts } from "@/layouts/LayoutPosts";
 import { getLocalePrimaryDialects } from "@/lib/locales";
 import { getTranslations } from 'next-intl/server';
@@ -20,14 +21,11 @@ export async function generateMetadata({ params: { locale } }: { params: { local
     keywords,
     localeShort,
   }
-  const meta = genPageMetadata(obj)
-
-  return meta
+  return genPageMetadata(obj)
 }
 
 async function getData(locale: string) {
   const db = await load();
-  // get all posts. Example of fetching a specific collection
   const allPosts = await db
     .find({ collection: 'posts', status: 'published', lang: locale }, [
       'title',
@@ -50,13 +48,11 @@ async function getData(locale: string) {
 }
 
 export default async function BlogPage({ params: { locale } }: { params: { locale: string } }) {
-  // Enable static rendering
   unstable_setRequestLocale(locale);
   const t = await getTranslations('Blog');
   const { allPosts, postsLength } = await getData(locale);
 
   const pageNumber = 1
-
   const pagination = {
     currentPage: pageNumber,
     totalPages: Math.ceil(postsLength / POSTS_PER_PAGE),
@@ -64,17 +60,10 @@ export default async function BlogPage({ params: { locale } }: { params: { local
 
   return (
     <div className="container max-w-screen-lg px-4 py-6 lg:px-0 lg:py-10">
-      <div className="flex flex-col items-start gap-4 md:flex-row md:justify-between md:gap-8">
-        <div className="flex-1 space-y-4">
-          <h1 className="font-heading inline-block text-4xl tracking-tight lg:text-5xl">
-            Blog
-          </h1>
-          <p className="text-muted-foreground text-xl">
-            {t("desc")}
-          </p>
-        </div>
-      </div>
-      <hr className="my-8" />
+      <TextRevealCard
+          text={"Blog"}
+          desc={t('desc')}
+        />
       <LayoutPosts posts={allPosts} pagination={pagination} />
     </div>
   );

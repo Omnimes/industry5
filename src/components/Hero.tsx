@@ -14,18 +14,18 @@ export const Hero = () => {
             <div className="z-[2] space-y-2">
                 <div className="mx-auto max-w-5xl">
                     <div className="text-center">
-                        <h1 className="font-heading bg-gradient-to-r from-neutral-300 to-stone-400 bg-clip-text text-4xl 
+                        <h1 data-aos="fade-up" className="font-heading bg-gradient-to-r from-neutral-300 to-stone-400 bg-clip-text text-4xl 
                         font-bold tracking-normal text-transparent drop-shadow-xl sm:text-6xl">
                             {t("title")}
                         </h1>
-                        <p className="mt-6 bg-gradient-to-r from-neutral-300 to-stone-400 bg-clip-text font-sans text-lg font-medium leading-8 text-transparent drop-shadow-xl">
+                        <p data-aos="fade-up" data-aos-delay="300" className="mt-6 bg-gradient-to-r from-neutral-300 to-stone-400 bg-clip-text font-sans text-lg font-medium leading-8 text-transparent drop-shadow-xl">
                             {t("desc")}
                         </p>
                         <div className="mt-10 flex flex-wrap items-center justify-center gap-x-6">
-                            <Button asChild className="bg-gradient-to-r from-slate-600 to-slate-800 text-white">
+                            <Button asChild data-aos="fade-up-right" data-aos-delay="500" className="bg-gradient-to-r from-slate-600 to-slate-800 text-white" >
                                 <Link href="#industry">{t("button1")}</Link>
                             </Button>
-                            <Button variant="link" asChild className="text-white">
+                            <Button variant="link" asChild data-aos="fade-up-left" data-aos-delay="500" className="text-white">
                                 <Link href="/eu-applications">{t("button2")}<ArrowRightIcon className="ml-2 size-4" /></Link>
                             </Button>
                         </div>
