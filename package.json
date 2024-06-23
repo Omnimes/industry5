@@ -12,7 +12,6 @@
     "typecheck": "tsc --noEmit",
     "format:write": "prettier --write \"**/*.{ts,tsx,mdx}\" --cache",
     "format:check": "prettier --check \"**/*.{ts,tsx,mdx}\" --cache",
-    "postbuild": "next-sitemap",
     "rmibs": "rm -f -r .next && rm -f -r node_modules && rm -f -r package_lock.json && npm cache clean --force && npm cache verify && npm i --legacy-peer-deps && npm run build && npm run dev"
   },
   "dependencies": {
