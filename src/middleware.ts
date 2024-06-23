@@ -1,8 +1,13 @@
 import createMiddleware from 'next-intl/middleware';
 import { pathnames, locales, localePrefix, localeDetection } from './config';
 
+export const defaultLocale = 'pl' as const
+export const excludePaths = [
+  '/blog/[slug]',
+  '/eu-applications/[slug]',
+]
 export default createMiddleware({
-  defaultLocale: 'pl',
+  defaultLocale: defaultLocale,
   locales,
   pathnames,
   localeDetection,
