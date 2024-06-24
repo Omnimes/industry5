@@ -25,10 +25,10 @@ export async function GET() {
   const urlObjects = generateURLObjects(paths, defaultLocale, host);
   const arrUrlObjects = [...urlObjects, ...prepareUrls];
   const xml = generateXML(arrUrlObjects);
-
-  return new Response(xml, {
-    headers: {
-      "content-type": "application/xml;charset=UTF-8",
-    },
-  });
+  return new Response(xml);
+  // return new Response(xml, {
+  //   headers: {
+  //     "content-type": "application/xml;charset=UTF-8",
+  //   },
+  // });
 }

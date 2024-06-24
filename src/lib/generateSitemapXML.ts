@@ -149,11 +149,13 @@ export function generateURLObjects(paths: Paths, defaultLocale: string, baseURL:
 export function generateXML(urlObjects: URLObject[]): string {
     const root = create({ version: '1.0', encoding: 'UTF-8' })
     .ele('urlset', { 
-        'xmlns': 'http://www.sitemaps.org/schemas/sitemap/0.9', 
-        'xmlns:xhtml': 'http://www.w3.org/TR/xhtml11/xhtml11_schema.html',
-        'xmlns:mobile': 'http://www.google.com/schemas/sitemap-mobile/1.0',
-        'xmlns:news': 'http://www.google.com/schemas/sitemap-news/0.9'
-      });
+      'xmlns': 'http://www.sitemaps.org/schemas/sitemap/0.9', 
+      'xmlns:xhtml': 'http://www.w3.org/1999/xhtml',
+      'xmlns:mobile': 'http://www.google.com/schemas/sitemap-mobile/1.0',
+      'xmlns:news': 'http://www.google.com/schemas/sitemap-news/0.9',
+      'xmlns:image': 'http://www.google.com/schemas/sitemap-image/1.1',
+      'xmlns:video': 'http://www.google.com/schemas/sitemap-video/1.1',
+    });
       
     urlObjects.forEach(obj => {
       const urlElement = root.ele('url');
