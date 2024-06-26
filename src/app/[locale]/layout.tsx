@@ -125,6 +125,14 @@ export default function LocaleLayout({ children, params: { locale } }: Props) {
       <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png" />
       <meta name="msapplication-TileColor" content="#ffffff" />
       <meta name="msapplication-TileImage" content="/favicons/ms-icon-144x144.png" />
+      <link rel="canonical" href="https://industry5.pl/pl/" key="canonical" />
+      <link rel="sitemap" type="application/xml" title="Sitemap" href="https://industry5.pl/sitemap.xml" />
+      <link rel="alternate" type="application/rss+xml; charset=utf-8" title="RSS POSTS" href="https://industry5.pl/rss.xml" />
+      <link rel="alternate" type="application/rss+xml; charset=utf-8" title="RSS NEWS" href="https://industry5.pl/rss-eu-applications.xml" />
+      <link rel="alternate" type="application/atom+xml; charset=utf-8" title="FEED POSTS" href="https://industry5.pl/feed.xml" />
+      <link rel="alternate" type="application/atom+xml; charset=utf-8" title="FEED NEWS" href="https://industry5.pl/feed-eu-applications.xml" />
+      <link rel="alternate" type="application/json; charset=utf-8" title="JSON FEED POSTS" href="https://industry5.pl/posts.json" />
+      <link rel="alternate" type="application/json; charset=utf-8" title="JSON FEED NEWS" href="https://industry5.pl/eu-applications.json" />
       <body
         className={cn(
           "bg-background min-h-screen font-sans antialiased",

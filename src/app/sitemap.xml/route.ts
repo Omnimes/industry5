@@ -19,16 +19,20 @@ export async function GET() {
         prepareUrls.push(...results);
       } 
   });
-
+  const xmlFiles = ["feed-eu-applications.xml", "feed.xml", "eu-applications.json", "posts.json", "rss-eu-applications.xml", "rss.xml"];
+  const xmlFilesUrls: URLObject[] = [];
+  xmlFiles.forEach(item => {
+    xmlFilesUrls.push({
+      url: `${host}${item}`,
+      lastModified: new Date(),
+      changeFrequency: "weekly",
+      priority: 0.5,
+    } as URLObject)
+  });
 
   const paths = transformPaths(pathnames, excludePaths);
   const urlObjects = generateURLObjects(paths, defaultLocale, host);
-  const arrUrlObjects = [...urlObjects, ...prepareUrls];
+  const arrUrlObjects = [...urlObjects, ...prepareUrls, ...xmlFilesUrls];
   const xml = generateXML(arrUrlObjects);
   return new Response(xml);
-  // return new Response(xml, {
-  //   headers: {
-  //     "content-type": "application/xml;charset=UTF-8",
-  //   },
-  // });
 }
