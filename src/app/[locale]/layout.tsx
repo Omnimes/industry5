@@ -57,7 +57,7 @@ export async function generateMetadata({
       type: "website",
     },
     alternates: {
-      canonical: "./",
+      canonical: "https://industry5.pl/pl/",
       types: {
         "application/rss+xml": `${siteConfig.siteUrl}/feed.xml`,
       },
