@@ -6,6 +6,7 @@ import { Separator } from "@/components/ui/separator"
 export const Footer = () => {
     const t = useTranslations("Navbar");
     const tr = useTranslations("Footer");
+    const taria = useTranslations("AriaLabel");
     return (
         <footer className="w-full py-16">
             <svg xmlns="http://www.w3.org/2000/svg" className="-mb-0.5 w-full" viewBox="0 0 1367.743 181.155">
@@ -27,19 +28,35 @@ export const Footer = () => {
                         {siteConfig.mainNav.map(item => {
                             return (
                                 <li key={item.href} role="listitem">
-                                    <Link href={item.href} className="hover:text-primary">
+                                    <Link 
+                                        href={item.href} 
+                                        aria-label={taria("footerAria") + t(item.title)} 
+                                        rel="noreferrer noopener"
+                                        className="hover:text-primary"
+                                    >
                                         {t(item.title)}
                                     </Link>
                                 </li>
                             )
                         })}
                         <li role="listitem">
-                            <Link href={"/strategy"}>{t("title")}</Link>
+                            <Link 
+                                href={"/strategy"} 
+                                rel="noreferrer noopener"
+                                aria-label={taria("footerAria") + t("title")}
+                            >
+                                    {t("title")}
+                            </Link>
                         </li>
                         {siteConfig.subNav.map(item => {
                             return (
                                 <li key={item.href} role="listitem">
-                                    <Link href={item.href} className="hover:text-primary">
+                                    <Link 
+                                        href={item.href} 
+                                        rel="noreferrer noopener"
+                                        aria-label={taria("footerAria") + t(item.title)} 
+                                        className="hover:text-primary"
+                                    >
                                         {t(item.title)}
                                     </Link>
                                 </li>
@@ -115,8 +132,15 @@ export const Footer = () => {
 }
 
 const Logo = () => {
+   const taria = useTranslations("AriaLabel")
+
     return (
-        <Link href={"/"} className="flex items-center justify-center">
+        <Link 
+            href={"/"} 
+            aria-label={taria("footerLogoAria")} 
+            rel="noreferrer noopener"
+            className="flex items-center justify-center"
+        >
             <svg xmlns="http://www.w3.org/2000/svg"
                 width="50"
                 zoomAndPan="magnify"

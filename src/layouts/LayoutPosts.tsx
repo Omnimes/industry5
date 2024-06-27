@@ -57,7 +57,8 @@ export const LayoutPosts = ({ posts, pagination }: { posts: OstDocument[], pagin
     const pathname = usePathname();
     const basePath = pathname.split('/')[2];
     const lang = useLocale();
-    const t = useTranslations("Blog")
+    const t = useTranslations("Blog");
+    const taria = useTranslations("AriaLabel");
     return (
         <>
             {posts?.length ? (
@@ -87,6 +88,8 @@ export const LayoutPosts = ({ posts, pagination }: { posts: OstDocument[], pagin
                                 </p>
                             )}
                             <Link
+                                aria-label={taria("readMoreAria")}
+                                rel="noreferrer noopener"
                                 href={`/${basePath}/${post.slug}`}
                                 className="absolute inset-0">
                                 <span className="sr-only">{t("ReadMore")}</span>

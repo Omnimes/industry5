@@ -423,5 +423,14 @@
     "Started": "Rozpoczęte",
     "Ended": "Zakończone",
     "Coming": "Wkrótce"
+  },
+  "AriaLabel": {
+    "allPostAria": "Wróc do listy postów",
+    "allAppAria": "Wróć do listy wniosków unijnych",
+    "footerAria": "Przejdź do ",
+    "footerLogoAria": "Przejdź do strony głównej",
+    "heroAria": "Kliknij aby dowiedzieć się więcej!",
+    "heroEuAria": "Kliknij aby dowiedzieć się więcej o wnioskach unijnych!",
+    "readMoreAria": "Kliknij aby czytać więcej"
   }
 }

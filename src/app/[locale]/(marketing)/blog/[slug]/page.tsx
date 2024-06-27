@@ -85,6 +85,7 @@ export async function generateMetadata(params: Params): Promise<Metadata> {
 export default async function PostPage(params: Params) {
     unstable_setRequestLocale(params.params.locale);
     const t = await getTranslations('PostLayout');
+    const taria = await getTranslations('AriaLabel');
     const post = await getData(params);
 
     if (!post) {
@@ -97,7 +98,12 @@ export default async function PostPage(params: Params) {
                     {t("postNotFoundDesc")}
                 </p>
                 <div className="flex justify-center py-6 lg:py-10">
-                    <Link href="/blog" className={cn(buttonVariants({ variant: "ghost" }))}>
+                    <Link 
+                        href="/blog" 
+                        aria-label={taria("allPostAria")} 
+                        rel="noreferrer noopener"
+                        className={cn(buttonVariants({ variant: "ghost" }))}
+                    >
                         <LucideChevronLeft className="mr-2 size-4" />
                         {t("allPost")}
                     </Link>
@@ -116,7 +122,12 @@ export default async function PostPage(params: Params) {
             </div>
             <hr className="mt-12" />
             <div className="flex justify-center py-6 lg:py-10">
-                <Link href="/blog" className={cn(buttonVariants({ variant: "ghost" }))}>
+                <Link 
+                    href="/blog" 
+                    aria-label={taria("allPostAria")} 
+                    rel="noreferrer noopener"
+                    className={cn(buttonVariants({ variant: "ghost" }))}
+                >
                     <LucideChevronLeft className="mr-2 size-4" />
                     {t("allPost")}
                 </Link>

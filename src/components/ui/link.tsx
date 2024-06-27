@@ -8,7 +8,7 @@ type Props = {
 }
 export const MyLink = ({ href, text, className, ...props }: Props) => {
     return (
-        <Link href={href} {...props} className={clsx(
+        <Link href={href} rel="noreferrer noopener" {...props} className={clsx(
             "hover:text-foreground inline-flex items-center gap-x-1 decoration-2 transition-colors hover:underline",
             className
         )}>

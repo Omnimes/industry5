@@ -4,7 +4,8 @@ import { useTranslations } from "next-intl";
 import Link from "next/link";
 
 export const Hero = () => {
-    const t = useTranslations("Hero")
+    const t = useTranslations("Hero");
+    const taria = useTranslations("AriaLabel");
     return (
         <section className="relative mt-[-65px] flex h-screen flex-col items-center justify-center px-3 py-0 text-center text-white">
             <div className="absolute left-0 top-0 size-full overflow-hidden">
@@ -23,10 +24,23 @@ export const Hero = () => {
                         </p>
                         <div className="mt-10 flex flex-wrap items-center justify-center gap-x-6">
                             <Button asChild data-aos="fade-up-right" data-aos-delay="500" className="bg-gradient-to-r from-slate-600 to-slate-800 text-white" >
-                                <Link href="#industry">{t("button1")}</Link>
+                                <Link 
+                                    href="#industry" 
+                                    aria-label={taria("heroAria")}
+                                    rel="noreferrer noopener"
+                                >
+                                    {t("button1")}
+                                </Link>
                             </Button>
                             <Button variant="link" asChild data-aos="fade-up-left" data-aos-delay="500" className="text-white">
-                                <Link href="/eu-applications">{t("button2")}<ArrowRightIcon className="ml-2 size-4" /></Link>
+                                <Link 
+                                    href="/eu-applications" 
+                                    rel="noreferrer noopener"
+                                    aria-label={taria("heroEuAria")}
+                                >
+                                    {t("button2")}
+                                    <ArrowRightIcon className="ml-2 size-4" />
+                                </Link>
                             </Button>
                         </div>
                     </div>

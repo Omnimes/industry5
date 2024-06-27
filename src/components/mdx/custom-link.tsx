@@ -22,7 +22,7 @@ export default function CustomLink({
 
     if (!isNewTab) {
         return (
-            <Link href={href} {...rest} className={className}>
+            <Link href={href} {...rest} className={className} rel="noreferrer noopener">
                 {children}
             </Link>
         )

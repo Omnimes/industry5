@@ -1,5 +1,7 @@
+import { useTranslations } from "next-intl";
 import Link from "next/link";
 export const Logo = ({withinLink}: {withinLink?: boolean}) => {
+    const taria = useTranslations("AriaLabel")
 
     if(withinLink) return (
         <svg xmlns="http://www.w3.org/2000/svg" width="150"
@@ -71,7 +73,7 @@ export const Logo = ({withinLink}: {withinLink?: boolean}) => {
     )
 
     return (
-        <Link href={"/"} aria-label="Kliknij w logo i przejdź na stronę główną." rel="noreferrer noopener">
+        <Link href={"/"} aria-label={taria("footerLogoAria")} rel="noreferrer noopener">
             <svg xmlns="http://www.w3.org/2000/svg" width="150"
                 zoomAndPan="magnify" viewBox="0 0 211.5 56.999997" height="40"
                 preserveAspectRatio="xMidYMid meet" version="1.0">

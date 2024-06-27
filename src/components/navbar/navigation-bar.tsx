@@ -28,7 +28,8 @@ const components: { title: string, description: string, href: string }[] = [
 ]
 
 export function NavigationMenuBar() {
-    const t = useTranslations("Navbar")
+    const t = useTranslations("Navbar");
+    const taria = useTranslations("AriaLabel")
     return (
         <NavigationMenu>
             <NavigationMenuList
@@ -41,8 +42,10 @@ export function NavigationMenuBar() {
                             <li className="row-span-3">
                                 <NavigationMenuLink asChild>
                                     <Link
+                                        aria-label={taria("footerAria") + t("title")}
                                         className="from-muted/50 to-muted flex size-full select-none flex-col justify-end rounded-md bg-gradient-to-b p-6 no-underline outline-none focus:shadow-md"
                                         href="/strategy"
+                                        rel="noreferrer noopener"
                                     >
                                         <Logo withinLink />
                                         <div className="mb-2 mt-4 text-lg font-medium">
@@ -73,6 +76,7 @@ export function NavigationMenuBar() {
                                     key={t(component.title)}
                                     title={t(component.title)}
                                     href={component.href}
+                                    aria-label={taria("footerAria") + t(component.title)}
                                 >
                                     {t(component.description)}
                                 </ListItem>
@@ -81,7 +85,7 @@ export function NavigationMenuBar() {
                     </NavigationMenuContent>
                 </NavigationMenuItem>
                 <NavigationMenuItem>
-                    <Link href="/blog" legacyBehavior passHref>
+                    <Link href="/blog" aria-label={taria("footerAria") + 'blog'} rel="noreferrer noopener" legacyBehavior passHref>
                         <NavigationMenuLink
                             className="font-medium"
                         >
@@ -90,7 +94,7 @@ export function NavigationMenuBar() {
                     </Link>
                 </NavigationMenuItem>
                 <NavigationMenuItem>
-                    <Link href="/contact" legacyBehavior passHref>
+                    <Link href="/contact" aria-label={taria("footerAria") + t('contact')} rel="noreferrer noopener" legacyBehavior passHref>
                         <NavigationMenuLink className="font-medium">
                             {t('contact')}
                         </NavigationMenuLink>

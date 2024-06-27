@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export default function NotFoundPage() {
   const t = useTranslations('NotFound');
-
+  const taria = useTranslations("AriaLabel")
   return (
     <div className="flex flex-col items-start justify-start md:mt-24 md:flex-row md:items-center md:justify-center md:space-x-6">
       <div className="space-x-2 pb-8 pt-6 md:space-y-5">
@@ -22,6 +22,8 @@ export default function NotFoundPage() {
         </p>
         <Link
           href="/"
+          aria-label={taria("footerLogoAria")}
+          rel="noreferrer noopener"
           className="bg-gradient-to-tr from-[#FF1CF7] to-[#b249f8] text-white shadow-lg"
         >
           {t('action')}

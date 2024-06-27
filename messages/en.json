@@ -214,7 +214,6 @@
     "h7": "The Future of Industry in the EU",
     "p9": "The European Union continually strives to strengthen its position as a leader in industrial innovation. Through strategies and programs supporting Industry 5.0, Europe is moving towards sustainable and innovative development, benefiting both current and future generations.",
     "p10": "We invite you to follow our news and resources to stay updated with the latest trends and initiatives in Industry 5.0 within the European Union."
- 
   },
   "Future": {
     "title": "Future of Industry"
@@ -419,10 +418,19 @@
     "msgEmail": "Invalid email address."
   },
   "Recruitment": {
-  "noData1": "No data",
-  "noData2": "No data",
-  "Started": "Started",
-  "Ended": "Ended",
-  "Coming": "Coming soon"
-}
+    "noData1": "No data",
+    "noData2": "No data",
+    "Started": "Started",
+    "Ended": "Ended",
+    "Coming": "Coming soon"
+  },
+  "AriaLabel": {
+    "allPostAria": "Back to post list",
+    "allAppAria": "Back to list of EU applications",
+    "footerAria": "Go to ",
+    "footerLogoAria": "Go to homepage",
+    "heroAria": "Click to learn more!",
+    "heroEuAria": "Click to learn more about EU applications!",
+    "readMoreAria": "Click to read more"
+  }
 }
