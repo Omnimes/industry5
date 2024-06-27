@@ -1,6 +1,6 @@
 {
-  "commit": "44159afb68b33ec3888ce9d2d981556c70082e5b",
-  "generated": "2024-06-20T08:06:14.930Z",
+  "commit": "5fb80a0b35fa7beed6957cdebb5e3ffa783c3248",
+  "generated": "2024-06-27T06:24:35.057Z",
   "metadata": [
     {
       "__outstatic": {
@@ -109,27 +109,6 @@
     },
     {
       "__outstatic": {
-        "commit": "abc839b4ca7152007b95a5dac147a517476b7daa",
-        "hash": "2069104895",
-        "path": "outstatic/content/euapplications/wdrozenie-rozwiazan-w-zakresie-przemyslu-4-0.md"
-      },
-      "author": {
-        "name": "Piotr Sierant",
-        "picture": ""
-      },
-      "collection": "euapplications",
-      "coverImage": "/images/wdrozenierozwiazan.png",
-      "dateFrom": "16.09.2024",
-      "dateTo": "30.09.2024",
-      "description": "Działanie 1.5 WDROŻENIE ROZWIĄZAŃ W ZAKRESIE PRZEMYSŁU 4.0 KONKURENSYJNOŚĆ MŚP – FE DLA ŁÓDZKIEGO",
-      "lang": "pl",
-      "publishedAt": "2024-06-11T15:31:25.071Z",
-      "slug": "wdrozenie-rozwiazan-w-zakresie-przemyslu-4-0",
-      "status": "published",
-      "title": "Wdrożenie rozwiązań w zakresie przemysłu 4.0"
-    },
-    {
-      "__outstatic": {
         "commit": "c26025a56f1883da5b7dd45e113fd5ff0e4d4a3d",
         "hash": "1794049123",
         "path": "outstatic/content/euapplications/sciezka-smart.md"
@@ -188,6 +167,27 @@
       "slug": "wnioski-unijne-dla-firm-w-2024-roku-szanse-na-rozwoj-i-innowacje",
       "status": "published",
       "title": "Wnioski Unijne dla Firm w 2024 Roku: Szanse na Rozwój i Innowacje"
+    },
+    {
+      "__outstatic": {
+        "commit": "5fb80a0b35fa7beed6957cdebb5e3ffa783c3248",
+        "hash": "1587315961",
+        "path": "outstatic/content/euapplications/wdrozenie-rozwiazan-w-zakresie-przemyslu-4-0.md"
+      },
+      "author": {
+        "name": "Piotr Sierant",
+        "picture": ""
+      },
+      "collection": "euapplications",
+      "coverImage": "/images/wdrozenierozwiazan.png",
+      "dateFrom": "16.09.2024",
+      "dateTo": "30.09.2024",
+      "description": "Działanie 1.5 WDROŻENIE ROZWIĄZAŃ W ZAKRESIE PRZEMYSŁU 4.0 KONKURENSYJNOŚĆ MŚP – FE DLA ŁÓDZKIEGO",
+      "lang": "pl",
+      "publishedAt": "2024-06-11T15:31:25.071Z",
+      "slug": "wdrozenie-rozwiazan-w-zakresie-przemyslu-4-0",
+      "status": "published",
+      "title": "Wdrożenie rozwiązań w zakresie przemysłu 4.0"
     }
   ]
 }
