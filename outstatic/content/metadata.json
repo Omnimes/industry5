@@ -1,6 +1,6 @@
 {
-  "commit": "5db3c98ad586d79e54b24e9e370dc7ceb04a9e67",
-  "generated": "2024-06-27T09:19:04.406Z",
+  "commit": "17920cfe621cb27514efca6f7072594ca3a937f0",
+  "generated": "2024-06-27T09:38:42.496Z",
   "metadata": [
     {
       "__outstatic": {
@@ -170,8 +170,8 @@
     },
     {
       "__outstatic": {
-        "commit": "5db3c98ad586d79e54b24e9e370dc7ceb04a9e67",
-        "hash": "3386097195",
+        "commit": "17920cfe621cb27514efca6f7072594ca3a937f0",
+        "hash": "1230131782",
         "path": "outstatic/content/euapplications/dig-it-transformacja-cyfrowa.md"
       },
       "author": {
@@ -180,7 +180,7 @@
       },
       "collection": "euapplications",
       "coverImage": "/images/digit.png",
-      "dateFrom": "II",
+      "dateFrom": "III",
       "dateTo": "III",
       "description": "DIG.IT TRANSFORMACJA CYFROWA POLSKICH MŚP",
       "lang": "pl",
