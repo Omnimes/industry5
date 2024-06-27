@@ -71,7 +71,7 @@ export const Logo = ({withinLink}: {withinLink?: boolean}) => {
     )
 
     return (
-        <Link href={"/"}>
+        <Link href={"/"} aria-label="Kliknij w logo i przejdź na stronę główną." rel="noreferrer noopener">
             <svg xmlns="http://www.w3.org/2000/svg" width="150"
                 zoomAndPan="magnify" viewBox="0 0 211.5 56.999997" height="40"
                 preserveAspectRatio="xMidYMid meet" version="1.0">

@@ -38,12 +38,16 @@ export default function LocaleSwitcher() {
       <SelectTrigger className={clsx(
         'w-[60px] inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none ring-offset-background border-0 px-3 focus:border-0 focus:outline-none focus:ring-0 hover:bg-accent hover:text-accent-foreground shadow-none',
         isPending && 'transition-opacity [&:disabled]:opacity-30'
-      )} >
+      )}
+       aria-label="Locale Switcher"
+       aria-labelledby="Locale Switcher"
+       title="Locale Switcher"
+      >
         <SelectValue placeholder={t("label")} />
       </SelectTrigger>
       <SelectContent>
         {locales.map((cur) => <SelectItem key={cur} value={cur}>
-          <ReactCountryFlag countryCode={cur == "en" ? "gb" : cur} svg className="flag" />
+          <ReactCountryFlag countryCode={cur == "en" ? "gb" : cur} svg className="flag" alt={`flag ${cur}`} />
         </SelectItem>)}
       </SelectContent>
     </Select>

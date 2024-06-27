@@ -20,19 +20,19 @@ export const Content2 = () => {
                 </div>
                 <div className="flex flex-col justify-center">
                     <div data-aos="fade-left" data-aos-delay="200" className="mb-4 border-b pb-4">
-                        <h4 className="mb-2 font-semibold leading-5">{t("head2")}</h4>
+                        <h6 className="mb-2 font-semibold leading-5">{t("head2")}</h6>
                         <p className="text-muted-foreground text-sm">{t("p2")}</p>
                     </div>
                     <div data-aos="fade-left" data-aos-delay="400" className="mb-4 border-b pb-4">
-                        <h4 className="mb-2 font-semibold leading-5">{t("head3")}</h4>
+                        <h6 className="mb-2 font-semibold leading-5">{t("head3")}</h6>
                         <p className="text-muted-foreground text-sm">{t("p3")}</p>
                     </div>
                     <div data-aos="fade-left" data-aos-delay="600" className="mb-4 border-b pb-4">
-                        <h4 className="mb-2 font-semibold leading-5">{t("head4")}</h4>
+                        <h6 className="mb-2 font-semibold leading-5">{t("head4")}</h6>
                         <p className="text-muted-foreground text-sm">{t("p4")}</p>
                     </div>
                     <div data-aos="fade-left" data-aos-delay="800">
-                        <h4 className="mb-2 font-semibold leading-5">{t("head5")}</h4>
+                        <h6 className="mb-2 font-semibold leading-5">{t("head5")}</h6>
                         <p className="text-muted-foreground text-sm">{t("p5")}</p>
                     </div>
                 </div>

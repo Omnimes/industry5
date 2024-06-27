@@ -9,6 +9,7 @@ export function ThemeToggle() {
     <Button
       variant="ghost"
       size="icon"
+      aria-label="Theme Toggle"
       onClick={() => setTheme(theme === "light" ? "dark" : "light")}
     >
       <Sun className="h-6 w-[1.3rem] dark:hidden" />
