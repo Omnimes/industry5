@@ -13,9 +13,9 @@ dateTo: '30.09.2024'
 publishedAt: '2024-06-11T15:31:25.071Z'
 ---
 
-## **Działanie 1.5 WDROŻENIE ROZWIĄZAŃ W ZAKRESIE PRZEMYSŁU 4.0 KONKURENSYJNOŚĆ MŚP – FE DLA ŁÓDZKIEGO** 
+## **Działanie 1.5 WDROŻENIE ROZWIĄZAŃ W ZAKRESIE PRZEMYSŁU 4.0 KONKURENCYJNOŚĆ MŚP – FE DLA ŁÓDZKIEGO**
 
-**Termin naboru wniosków:** 16-30 września 2024 r.
+**Termin naboru wniosków:** 26 września - 8 listopada 2024 r.
 
 ### **Cel działania**
 
@@ -49,7 +49,7 @@ Mikro, małe i średnie przedsiębiorstwa, które na dzień złożenia wniosku p
 ### **Koszty kwalifikowane:**
 
 - zakup, dostawa, instalacja i uruchomienie rzeczowych aktywów trwałych, w tym maszyn, sprzętu i urządzeń wraz ze specjalistycznym instruktażem w ich obsłudze, zaawansowanych rozwiązań teleinformatycznych (w tym sprzętu informatycznego),
-- zakup wartości niematerialnych i prawnych (WNiP) w formie patentów, licencji, know-how oraz innych praw własności intelektualnej, jeżeli spełniają łącznie następujące warunki: 
+- zakup wartości niematerialnych i prawnych (WNiP) w formie patentów, licencji, know-how oraz innych praw własności intelektualnej, jeżeli spełniają łącznie następujące warunki:
 - będą wykorzystywane wyłącznie przez nabywcę,
 - będą podlegać amortyzacji zgodnie z przepisami odrębnymi,
 - będą nabyte na warunkach rynkowych od podmiotów niepowiązanych z nabywcą,
@@ -58,17 +58,17 @@ Mikro, małe i średnie przedsiębiorstwa, które na dzień złożenia wniosku p
 
 **Budżet dotacji** wynosi prawie 25 000 000 PLN.
 
-**Minimalna wartość wydatków kwalifikowalnych:** 300 000 PLN
+**Minimalna wartość wydatków kwalifikowanych:** 300 000 PLN
 
 **Maksymalna wartość dofinansowania:** 1 000 000 PLN
 
-Wsparcie będzie udzielane z wykorzystaniem regionalnej pomocy inwestycyjnej oraz pomocy de minimis. 
+Wsparcie będzie udzielane z wykorzystaniem regionalnej pomocy inwestycyjnej oraz pomocy de minimis.
 
 Maksymalna wysokość wsparcia wynosi:
 
-Regionalna pomoc inwestycyjna: 
+Regionalna pomoc inwestycyjna:
 
 - mikro i małe przedsiębiorstwa – max. 60%
-- średnie przedsiębiorstwa – max. 50% 
+- średnie przedsiębiorstwa – max. 50%
 
 Pomoc de minimis – max. 85%
