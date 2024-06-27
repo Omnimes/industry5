@@ -1,7 +1,8 @@
 import { useTranslations } from "next-intl"
 import { MyLink } from "./ui/link"
 export const Content5 = () => {
-    const t = useTranslations("Content5")
+    const t = useTranslations("Content5");
+    const taria = useTranslations("AriaLabel");
     return (
         <section className="mx-auto max-w-5xl px-4 py-12 md:py-24">
             <div className="mx-auto w-full text-left md:text-center">
@@ -14,7 +15,7 @@ export const Content5 = () => {
                 <p data-aos="fade-up" data-aos-delay="300" className="text-muted-foreground mb-6 px-0 text-lg md:text-xl">
                 {t("p1")}
                 </p>
-                <MyLink data-aos="fade-up" data-aos-delay="500" href="/history" text={t("link")} />
+                <MyLink data-aos="fade-up" data-aos-delay="300" href="/history" aria-label={taria("footerAria") + t("link")} text={t("link")} />
             </div>
         </section>
     )

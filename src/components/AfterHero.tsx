@@ -3,6 +3,7 @@ import { MyLink } from "./ui/link"
 import { useTranslations } from "next-intl"
 export const AfterHero = () => {
     const t = useTranslations("AfterHero");
+    const taria = useTranslations("AriaLabel");
     return (
         <section id="industry" className="mx-auto max-w-5xl px-4 py-12 md:py-24">
             <div className="mx-auto mb-16 w-full text-left md:text-center">
@@ -22,7 +23,7 @@ export const AfterHero = () => {
                         <h3 className="font-heading mb-3 text-2xl tracking-normal text-gray-900 sm:text-3xl md:text-center md:text-4xl md:leading-none md:tracking-tight lg:flex lg:flex-col lg:text-left dark:text-white">{t('h3')}</h3>
                         <p className="md:text-md text-muted-foreground mb-3 px-0">{t('p2')}</p>
                         <div className="flex w-full items-center justify-start md:justify-center lg:justify-start">
-                            <MyLink href="/industry" text={t("link")} />
+                            <MyLink href="/industry" aria-label={taria("footerAria") + t("link")} text={t("link")} />
                         </div>
                     </div>
                 </div>

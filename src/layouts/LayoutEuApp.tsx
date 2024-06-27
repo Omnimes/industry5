@@ -57,7 +57,7 @@ export const LayoutEuApp = ({ posts, pagination }: { posts: ExtendedOstDocument[
     const pathname = usePathname();
     const basePath = pathname.split('/')[2];
     const t = useTranslations("EuApplicationsPage")
-
+    const taria = useTranslations("AriaLabel");
     return (
         <>
             {posts?.length ? (
@@ -89,7 +89,7 @@ export const LayoutEuApp = ({ posts, pagination }: { posts: ExtendedOstDocument[
                           {post.description}
                         </p>
                       </div>
-                      <MyLink href={`/${basePath}/${post.slug}`} text={"Czytaj więcej"} className="mt-auto dark:text-gray-300 hover:dark:text-white" />
+                      <MyLink href={`/${basePath}/${post.slug}`} aria-label={taria("readMoreAria")} text={t("ReadMore")} className="mt-auto dark:text-gray-300 hover:dark:text-white" />
                     </div>
                   )
                 })}

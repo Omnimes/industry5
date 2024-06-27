@@ -2,7 +2,8 @@ import Image from "next/image"
 import { MyLink } from "./ui/link";
 import { useTranslations } from "next-intl";
 export const Content = () => {
-    const t = useTranslations("Content")
+    const t = useTranslations("Content");
+    const taria = useTranslations("AriaLabel");
     return (
         <>
             <section className="mx-auto max-w-5xl px-4 pt-12 md:pt-24">
@@ -36,7 +37,7 @@ export const Content = () => {
                                 <span className="font-bold">{t("p2span")}</span> {t("p2")}
                             </p>
                             <div className="flex w-full items-center justify-start md:justify-center lg:justify-start">
-                                <MyLink href="/future" text={t("link")} />
+                                <MyLink href="/future" aria-label={taria("footerAria") + t("link")} text={t("link")} />
                             </div>
                         </div>
                     </div>

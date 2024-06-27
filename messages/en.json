@@ -178,7 +178,8 @@
     "title": "EU Applications",
     "desc": "Check the current and upcoming EU grants you can benefit from. Everything in one place, easily accessible and organized for your convenience.",
     "info": "There is no data on EU applications outside Poland",
-    "keywords": "EU grants, funding, support, industry"
+    "keywords": "EU grants, funding, support, industry",
+    "ReadMore": "Read more"
   },
   "EuropeanUnion": {
     "title": "European Union",

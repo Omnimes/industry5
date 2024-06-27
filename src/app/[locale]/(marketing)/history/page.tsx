@@ -23,6 +23,7 @@ export async function generateMetadata({ params: { locale } }: { params: { local
 export default function HistoryPage({ params: { locale } }: { params: { locale: string } }) {
   unstable_setRequestLocale(locale);
   const t = useTranslations("History");
+  const taria = useTranslations("AriaLabel");
   return (
     <div className="container max-w-screen-lg px-4 py-6 lg:px-0 lg:py-10">
         <TextRevealCardDouble
@@ -74,7 +75,7 @@ export default function HistoryPage({ params: { locale } }: { params: { locale: 
           <ArticleHeadingTitle text={t("head6")} />
           <p className="mb-6 space-y-1 px-0 ">{t("p8")}</p>
           <p className="mb-6 space-y-1 px-0 ">{t("p9")}</p>
-          <MyLink href="/industry" text={t("link")} />
+          <MyLink href="/industry" aria-label={taria("footerAria") + t("link")}  text={t("link")} />
         </article>
       </div>
   )

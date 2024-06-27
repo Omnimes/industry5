@@ -3,7 +3,8 @@ import { MyLink } from "./ui/link"
 import { useTranslations } from "next-intl"
 
 export const Content3 = () => {
-  const t = useTranslations("Content3")
+  const t = useTranslations("Content3");
+  const taria = useTranslations("AriaLabel");
   return (
     <section className="mx-auto max-w-5xl px-4 py-12 md:py-24">
       <div className="mx-auto mb-16 w-full text-left md:text-center">
@@ -133,6 +134,7 @@ export const Content3 = () => {
           <div className="my-6 flex w-full items-center justify-start md:justify-center lg:justify-start">
             <MyLink
               href="/strategy"
+              aria-label={taria("footerAria") + t("link")}
               text={t("link")}
             />
           </div>
