@@ -5,7 +5,7 @@ author:
   name: 'Piotr Sierant'
   picture: ''
 slug: 'wdrozenie-rozwiazan-w-zakresie-przemyslu-4-0'
-description: 'Działanie 1.5 WDROŻENIE ROZWIĄZAŃ W ZAKRESIE PRZEMYSŁU 4.0 KONKURENSYJNOŚĆ MŚP – FE DLA ŁÓDZKIEGO'
+description: 'Działanie 1.5 WDROŻENIE ROZWIĄZAŃ W ZAKRESIE PRZEMYSŁU 4.0 KONKURENCYJNOŚĆ MŚP – FE DLA ŁÓDZKIEGO'
 coverImage: '/images/wdrozenierozwiazan.png'
 lang: 'pl'
 dateFrom: '16.09.2024'
