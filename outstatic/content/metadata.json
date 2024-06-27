@@ -1,6 +1,6 @@
 {
-  "commit": "f82caa0719cd759300f43734652101feb2cf552b",
-  "generated": "2024-06-27T09:14:17.383Z",
+  "commit": "5db3c98ad586d79e54b24e9e370dc7ceb04a9e67",
+  "generated": "2024-06-27T09:19:04.406Z",
   "metadata": [
     {
       "__outstatic": {
@@ -22,27 +22,6 @@
       "slug": "dzialanie-1-7-opolskie-konkurencyjne",
       "status": "published",
       "title": "Działanie 1.7 Opolskie konkurencyjne"
-    },
-    {
-      "__outstatic": {
-        "commit": "7fb03e1909fd08c047ab07343ea795505d2a96b5",
-        "hash": "3676179151",
-        "path": "outstatic/content/euapplications/dig-it-transformacja-cyfrowa.md"
-      },
-      "author": {
-        "name": "Piotr Sierant",
-        "picture": "https://avatars.githubusercontent.com/u/94246053?v=4"
-      },
-      "collection": "euapplications",
-      "coverImage": "/images/digit.png",
-      "dateFrom": "II",
-      "dateTo": "III",
-      "description": "DIG.IT TRANSFORMACJA CYFROWA POLSKICH MŚP",
-      "lang": "pl",
-      "publishedAt": "2024-06-11T16:02:14.908Z",
-      "slug": "dig-it-transformacja-cyfrowa",
-      "status": "published",
-      "title": "DIG.IT Transformacja cyfrowa"
     },
     {
       "__outstatic": {
@@ -188,6 +167,27 @@
       "slug": "wdrozenie-rozwiazan-w-zakresie-przemyslu-4-0",
       "status": "published",
       "title": "Wdrożenie rozwiązań w zakresie przemysłu 4.0"
+    },
+    {
+      "__outstatic": {
+        "commit": "5db3c98ad586d79e54b24e9e370dc7ceb04a9e67",
+        "hash": "3386097195",
+        "path": "outstatic/content/euapplications/dig-it-transformacja-cyfrowa.md"
+      },
+      "author": {
+        "name": "Piotr Sierant",
+        "picture": "https://avatars.githubusercontent.com/u/94246053?v=4"
+      },
+      "collection": "euapplications",
+      "coverImage": "/images/digit.png",
+      "dateFrom": "II",
+      "dateTo": "III",
+      "description": "DIG.IT TRANSFORMACJA CYFROWA POLSKICH MŚP",
+      "lang": "pl",
+      "publishedAt": "2024-06-11T16:02:14.908Z",
+      "slug": "dig-it-transformacja-cyfrowa",
+      "status": "published",
+      "title": "DIG.IT Transformacja cyfrowa"
     }
   ]
 }

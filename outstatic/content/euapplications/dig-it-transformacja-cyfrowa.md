@@ -15,7 +15,7 @@ publishedAt: '2024-06-11T16:02:14.908Z'
 
 ## **DIG.IT TRANSFORMACJA CYFROWA POLSKICH MŚP**
 
-**Planowany termin składania wniosków:** II/III kwartał 2024
+**Planowany termin składania wniosków:** III kwartał 2024
 
 ### **Cel działania**
 
@@ -54,7 +54,7 @@ Z dofinansowania będą mogły skorzystać polskie przedsiębiorstwa MŚP (mikro
 - Cyberbezpieczeństwo,
 - Zarządzanie zasobami przedsiębiorstwa z wykorzystaniem rozwiązań informatycznych.
 
-**Minimalna wartość wydatków kwalifikowalnych:** 40 tys Eur
+**Minimalna wartość wydatków kwalifikowanych:** 40 tys Eur
 
 **Maksymalna wartość dofinansowania:** 200 tys Eur
 
