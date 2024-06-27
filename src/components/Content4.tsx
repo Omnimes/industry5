@@ -24,7 +24,7 @@ export const Content4 = () => {
               <div className="mx-auto mb-4 flex size-32 items-center justify-center rounded-full sm:size-32">
                 <Image src={"/images/features/1.png"} alt={t("alt1")} height={337} width={500} />
               </div>
-              <h5 className="mb-2 font-semibold leading-5">{t("head2")}</h5>
+              <h3 className="mb-2 font-semibold leading-5">{t("head2")}</h3>
               <p className="text-muted-foreground mb-3 text-sm">{t("p3")}</p>
             </div>
           </div>
@@ -36,7 +36,7 @@ export const Content4 = () => {
               <div className="mx-auto mb-4 flex size-32 items-center justify-center rounded-full sm:size-32">
                 <Image src={"/images/features/2.png"} alt={t("alt2")} height={337} width={500} />
               </div>
-              <h5 className="mb-2 font-semibold leading-5">{t("head3")}</h5>
+              <h3 className="mb-2 font-semibold leading-5">{t("head3")}</h3>
               <p className="text-muted-foreground mb-3 text-sm">{t("p4")}</p>
             </div>
           </div>
@@ -48,7 +48,7 @@ export const Content4 = () => {
               <div className="mx-auto mb-4 flex size-32 items-center justify-center rounded-full sm:size-32">
                 <Image src={"/images/features/3.png"} alt={t("alt3")} height={337} width={500} />
               </div>
-              <h5 className="mb-2 font-semibold leading-5">{t("head4")}</h5>
+              <h3 className="mb-2 font-semibold leading-5">{t("head4")}</h3>
               <p className="text-muted-foreground mb-3 text-sm">{t("p5")}</p>
             </div>
           </div>
@@ -61,7 +61,7 @@ export const Content4 = () => {
               <div className="mx-auto mb-4 flex size-32 items-center justify-center rounded-full sm:size-32">
                 <Image src={"/images/features/4.png"} alt={t("alt4")} height={337} width={500} />
               </div>
-              <h5 className="mb-2 font-semibold leading-5">{t("head5")}</h5>
+              <h3 className="mb-2 font-semibold leading-5">{t("head5")}</h3>
               <p className="text-muted-foreground mb-3 text-sm">{t("p6")}</p>
             </div>
           </div>
@@ -73,7 +73,7 @@ export const Content4 = () => {
               <div className="mx-auto mb-4 flex size-32 items-center justify-center rounded-full sm:size-32">
                 <Image src={"/images/features/5.png"} alt={t("alt5")} height={337} width={500} />
               </div>
-              <h5 className="mb-2 font-semibold leading-5">{t("head6")}</h5>
+              <h3 className="mb-2 font-semibold leading-5">{t("head6")}</h3>
               <p className="text-muted-foreground mb-3 text-sm">{t("p7")}</p>
             </div>
           </div>
@@ -85,7 +85,7 @@ export const Content4 = () => {
               <div className="mx-auto mb-4 flex size-32 items-center justify-center rounded-full sm:size-32">
                 <Image src={"/images/features/6.png"} alt={t("alt6")} height={337} width={500} />
               </div>
-              <h5 className="mb-2 font-semibold leading-5">{t("head7")}</h5>
+              <h3 className="mb-2 font-semibold leading-5">{t("head7")}</h3>
               <p className="text-muted-foreground mb-3 text-sm">{t("p8")}</p>
             </div>
           </div>
