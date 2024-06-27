@@ -11,7 +11,8 @@ import { cn } from "@/lib/utils"
 import { ThemeProvider } from "@/components/theme/theme-provider"
 import { TailwindIndicator } from "@/components/tailwind-indicator"
 import { AOSProvider } from "@/components/providers/AosProviders";
-
+import { Analytics } from "@vercel/analytics/react"
+import { SpeedInsights } from "@vercel/speed-insights/next"
 const fontSans = FontSans({
   subsets: ["latin"],
   display: "swap",
@@ -145,6 +146,8 @@ export default function LocaleLayout({ children, params: { locale } }: Props) {
           <AOSProvider>
             <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
                 {children}
+                <Analytics/>
+                <SpeedInsights/>
                 <TailwindIndicator />
             </ThemeProvider>
           </AOSProvider>
