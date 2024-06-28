@@ -1,6 +1,6 @@
 {
-  "commit": "17920cfe621cb27514efca6f7072594ca3a937f0",
-  "generated": "2024-06-27T09:38:42.496Z",
+  "commit": "b236d4b37cf227cdd3b3bb19a4951ae537f42595",
+  "generated": "Fri, 28 Jun 2024 05:50:47 GMT",
   "metadata": [
     {
       "__outstatic": {
@@ -22,6 +22,27 @@
       "slug": "dzialanie-1-7-opolskie-konkurencyjne",
       "status": "published",
       "title": "Działanie 1.7 Opolskie konkurencyjne"
+    },
+    {
+      "__outstatic": {
+        "commit": "f5a64c56caff645244a52ad1b99821b15436ddd4",
+        "hash": "1230131782",
+        "path": "outstatic/content/euapplications/dig-it-transformacja-cyfrowa.md"
+      },
+      "author": {
+        "name": "Piotr Sierant",
+        "picture": "https://avatars.githubusercontent.com/u/94246053?v=4"
+      },
+      "collection": "euapplications",
+      "coverImage": "/images/digit.png",
+      "dateFrom": "III",
+      "dateTo": "III",
+      "description": "DIG.IT TRANSFORMACJA CYFROWA POLSKICH MŚP",
+      "lang": "pl",
+      "publishedAt": "2024-06-11T16:02:14.908Z",
+      "slug": "dig-it-transformacja-cyfrowa",
+      "status": "published",
+      "title": "DIG.IT Transformacja cyfrowa"
     },
     {
       "__outstatic": {
@@ -67,6 +88,25 @@
     },
     {
       "__outstatic": {
+        "commit": "159db9571f9c03bdf035cc62f50c4621e7fa82d7",
+        "hash": "721186158",
+        "path": "outstatic/content/posts/wnioski-unijne-dla-firm-w-2024-roku-szanse-na-rozwoj-i-innowacje.md"
+      },
+      "author": {
+        "name": "Piotr Sierant",
+        "picture": "https://avatars.githubusercontent.com/u/94246053?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/projekt-bez-nazwy-M3OD.png",
+      "description": "Unia Europejska oferuje przedsiębiorcom szeroką gamę programów wsparcia, które mogą znacząco przyczynić się do rozwoju i innowacji w firmach. Rok 2024 przynosi nowe możliwości dla mikro, małych i średnich przedsiębiorstw (MŚP) z różnych regionów Polski.",
+      "lang": "pl",
+      "publishedAt": "2024-06-16T16:56:16.656Z",
+      "slug": "wnioski-unijne-dla-firm-w-2024-roku-szanse-na-rozwoj-i-innowacje",
+      "status": "published",
+      "title": "Wnioski Unijne dla Firm w 2024 Roku: Szanse na Rozwój i Innowacje"
+    },
+    {
+      "__outstatic": {
         "commit": "d89d3400b90f0d11400cfe73d3e5c6461b43572f",
         "hash": "1234174073",
         "path": "outstatic/content/euapplications/wsparcie-rozwoju-i-konkurencyjnosci.md"
@@ -85,6 +125,27 @@
       "slug": "wsparcie-rozwoju-i-konkurencyjnosci",
       "status": "published",
       "title": "Wsparcie rozwoju i konkurencyjności - Województwo Podkarpackie"
+    },
+    {
+      "__outstatic": {
+        "commit": "ca25013e9ac3fcea2b2d860e541b1c7a8f328cc3",
+        "hash": "1245615044",
+        "path": "outstatic/content/euapplications/wdrozenie-rozwiazan-w-zakresie-przemyslu-4-0.md"
+      },
+      "author": {
+        "name": "Piotr Sierant",
+        "picture": ""
+      },
+      "collection": "euapplications",
+      "coverImage": "/images/wdrozenierozwiazan.png",
+      "dateFrom": "16.09.2024",
+      "dateTo": "30.09.2024",
+      "description": "Działanie 1.5 WDROŻENIE ROZWIĄZAŃ W ZAKRESIE PRZEMYSŁU 4.0 KONKURENCYJNOŚĆ MŚP – FE DLA ŁÓDZKIEGO",
+      "lang": "pl",
+      "publishedAt": "2024-06-11T15:31:25.071Z",
+      "slug": "wdrozenie-rozwiazan-w-zakresie-przemyslu-4-0",
+      "status": "published",
+      "title": "Wdrożenie rozwiązań w zakresie przemysłu 4.0"
     },
     {
       "__outstatic": {
@@ -127,67 +188,6 @@
       "slug": "kredyt-ekologiczny",
       "status": "published",
       "title": "Kredyt ekologiczny"
-    },
-    {
-      "__outstatic": {
-        "commit": "b9b45fb8bb6e8eacdef00f2cc68a7f3da6d00d2f",
-        "hash": "4097701956",
-        "path": "outstatic/content/posts/wnioski-unijne-dla-firm-w-2024-roku-szanse-na-rozwoj-i-innowacje.md"
-      },
-      "author": {
-        "name": "Piotr Sierant",
-        "picture": "https://avatars.githubusercontent.com/u/94246053?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/images/projekt-bez-nazwy-M3OD.png",
-      "description": "Unia Europejska oferuje przedsiębiorcom szeroką gamę programów wsparcia, które mogą znacząco przyczynić się do rozwoju i innowacji w firmach. Rok 2024 przynosi nowe możliwości dla mikro, małych i średnich przedsiębiorstw (MŚP) z różnych regionów Polski.",
-      "lang": "pl",
-      "publishedAt": "2024-06-16T16:56:16.656Z",
-      "slug": "wnioski-unijne-dla-firm-w-2024-roku-szanse-na-rozwoj-i-innowacje",
-      "status": "published",
-      "title": "Wnioski Unijne dla Firm w 2024 Roku: Szanse na Rozwój i Innowacje"
-    },
-    {
-      "__outstatic": {
-        "commit": "f82caa0719cd759300f43734652101feb2cf552b",
-        "hash": "1245615044",
-        "path": "outstatic/content/euapplications/wdrozenie-rozwiazan-w-zakresie-przemyslu-4-0.md"
-      },
-      "author": {
-        "name": "Piotr Sierant",
-        "picture": ""
-      },
-      "collection": "euapplications",
-      "coverImage": "/images/wdrozenierozwiazan.png",
-      "dateFrom": "16.09.2024",
-      "dateTo": "30.09.2024",
-      "description": "Działanie 1.5 WDROŻENIE ROZWIĄZAŃ W ZAKRESIE PRZEMYSŁU 4.0 KONKURENCYJNOŚĆ MŚP – FE DLA ŁÓDZKIEGO",
-      "lang": "pl",
-      "publishedAt": "2024-06-11T15:31:25.071Z",
-      "slug": "wdrozenie-rozwiazan-w-zakresie-przemyslu-4-0",
-      "status": "published",
-      "title": "Wdrożenie rozwiązań w zakresie przemysłu 4.0"
-    },
-    {
-      "__outstatic": {
-        "commit": "17920cfe621cb27514efca6f7072594ca3a937f0",
-        "hash": "1230131782",
-        "path": "outstatic/content/euapplications/dig-it-transformacja-cyfrowa.md"
-      },
-      "author": {
-        "name": "Piotr Sierant",
-        "picture": "https://avatars.githubusercontent.com/u/94246053?v=4"
-      },
-      "collection": "euapplications",
-      "coverImage": "/images/digit.png",
-      "dateFrom": "III",
-      "dateTo": "III",
-      "description": "DIG.IT TRANSFORMACJA CYFROWA POLSKICH MŚP",
-      "lang": "pl",
-      "publishedAt": "2024-06-11T16:02:14.908Z",
-      "slug": "dig-it-transformacja-cyfrowa",
-      "status": "published",
-      "title": "DIG.IT Transformacja cyfrowa"
     }
   ]
 }
