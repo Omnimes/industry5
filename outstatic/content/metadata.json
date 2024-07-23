@@ -1,6 +1,6 @@
 {
-  "commit": "e11da3e90aee079d7e5d1cfeaa23ded1a6363805",
-  "generated": "2024-07-23T13:22:54.104Z",
+  "commit": "736b1242f4586866adf12a6232321da7e217cb5e",
+  "generated": "2024-07-23T13:24:46.764Z",
   "metadata": [
     {
       "__outstatic": {
@@ -149,27 +149,6 @@
     },
     {
       "__outstatic": {
-        "commit": "6dfc6add6596f5224181717a1f137b57acb6990f",
-        "hash": "4259975142",
-        "path": "outstatic/content/euapplications/kredyt-ekologiczny.md"
-      },
-      "author": {
-        "name": "Piotr Sierant",
-        "picture": "https://avatars.githubusercontent.com/u/94246053?v=4"
-      },
-      "collection": "euapplications",
-      "coverImage": "/images/kredyteco.png",
-      "dateFrom": "17.10.2024",
-      "dateTo": "30.12.2024",
-      "description": "Kredyt ekologiczny jest finansowany z Programu Fundusze Europejskie dla Nowoczesnej Gospodarki (FENG) na lata 2021-2027.",
-      "lang": "pl",
-      "publishedAt": "2024-06-11T05:24:42.947Z",
-      "slug": "kredyt-ekologiczny",
-      "status": "published",
-      "title": "Kredyt ekologiczny"
-    },
-    {
-      "__outstatic": {
         "commit": "e11da3e90aee079d7e5d1cfeaa23ded1a6363805",
         "hash": "1796238456",
         "path": "outstatic/content/euapplications/dig-it-transformacja-cyfrowa.md"
@@ -188,6 +167,27 @@
       "slug": "dig-it-transformacja-cyfrowa",
       "status": "published",
       "title": "DIG.IT Transformacja cyfrowa"
+    },
+    {
+      "__outstatic": {
+        "commit": "736b1242f4586866adf12a6232321da7e217cb5e",
+        "hash": "1908224492",
+        "path": "outstatic/content/euapplications/kredyt-ekologiczny.md"
+      },
+      "author": {
+        "name": "Piotr Sierant",
+        "picture": "https://avatars.githubusercontent.com/u/94246053?v=4"
+      },
+      "collection": "euapplications",
+      "coverImage": "/images/kredyteco.png",
+      "dateFrom": "17.10.2024",
+      "dateTo": "30.12.2024",
+      "description": "Kredyt ekologiczny jest finansowany z Programu Fundusze Europejskie dla Nowoczesnej Gospodarki (FENG) na lata 2021-2027.",
+      "lang": "pl",
+      "publishedAt": "2024-06-11T05:24:42.947Z",
+      "slug": "kredyt-ekologiczny",
+      "status": "published",
+      "title": "Kredyt ekologiczny"
     }
   ]
 }

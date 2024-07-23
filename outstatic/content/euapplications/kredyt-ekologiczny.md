@@ -59,10 +59,10 @@ Wsparcie stanowić będzie premia ekologiczna, czyli dofinansowanie stanowiące 
 
 ### **Finansowanie:**
 
-Działanie finansowane z Programu Fundusze Europejskie dla Nowoczesnej Gospodarki, 2021-20
+Działanie finansowane z Programu Fundusze Europejskie dla Nowoczesnej Gospodarki, 2021-2027
 
-**Minimalna wartość wydatków kwalifikowalnych:** BRAK
+**Minimalna wartość wydatków kwalifikowanych:** BRAK
 
-**Maksymalna wartość dofinansowania:** Równowartość 50 mln EUR
+**Maksymalna wartość dofinansowania:** równowartość 50 mln EUR
 
 **Poziom dofinansowania:** od 15 proc. do 80 proc. w zależności od rodzaju wydatku, wielkości przedsiębiorstwa oraz lokalizacji inwestycji.
