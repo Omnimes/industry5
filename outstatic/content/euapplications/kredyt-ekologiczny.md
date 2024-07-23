@@ -8,14 +8,14 @@ slug: 'kredyt-ekologiczny'
 description: 'Kredyt ekologiczny jest finansowany z Programu Fundusze Europejskie dla Nowoczesnej Gospodarki (FENG) na lata 2021-2027.'
 coverImage: '/images/kredyteco.png'
 lang: 'pl'
-dateFrom: '25.04.2024'
-dateTo: '25.07.2024'
+dateFrom: '17.10.2024'
+dateTo: '30.12.2024'
 publishedAt: '2024-06-11T05:24:42.947Z'
 ---
 
 ## **Działanie 3.01 KREDYT EKOLOGICZNY**
 
-**Termin naboru wniosków:** 25 kwietnia - 25 lipca 2024 r.
+**Termin naboru wniosków:** 17 października - 30 grudnia 2024 r.
 
 Kredyt ekologiczny jest finansowany z Programu Fundusze Europejskie dla Nowoczesnej Gospodarki (FENG) na lata 2021-2027.
 

@@ -1,6 +1,6 @@
 {
-  "commit": "b236d4b37cf227cdd3b3bb19a4951ae537f42595",
-  "generated": "Fri, 28 Jun 2024 05:50:47 GMT",
+  "commit": "6dfc6add6596f5224181717a1f137b57acb6990f",
+  "generated": "2024-07-23T13:22:13.836Z",
   "metadata": [
     {
       "__outstatic": {
@@ -170,8 +170,8 @@
     },
     {
       "__outstatic": {
-        "commit": "67b681263fdc18b791bd3c2f0b0267ef2b6646f0",
-        "hash": "1472228850",
+        "commit": "6dfc6add6596f5224181717a1f137b57acb6990f",
+        "hash": "4259975142",
         "path": "outstatic/content/euapplications/kredyt-ekologiczny.md"
       },
       "author": {
@@ -180,8 +180,8 @@
       },
       "collection": "euapplications",
       "coverImage": "/images/kredyteco.png",
-      "dateFrom": "25.04.2024",
-      "dateTo": "25.07.2024",
+      "dateFrom": "17.10.2024",
+      "dateTo": "30.12.2024",
       "description": "Kredyt ekologiczny jest finansowany z Programu Fundusze Europejskie dla Nowoczesnej Gospodarki (FENG) na lata 2021-2027.",
       "lang": "pl",
       "publishedAt": "2024-06-11T05:24:42.947Z",
