@@ -1,6 +1,6 @@
 {
-  "commit": "6dfc6add6596f5224181717a1f137b57acb6990f",
-  "generated": "2024-07-23T13:22:13.836Z",
+  "commit": "e11da3e90aee079d7e5d1cfeaa23ded1a6363805",
+  "generated": "2024-07-23T13:22:54.104Z",
   "metadata": [
     {
       "__outstatic": {
@@ -22,27 +22,6 @@
       "slug": "dzialanie-1-7-opolskie-konkurencyjne",
       "status": "published",
       "title": "Działanie 1.7 Opolskie konkurencyjne"
-    },
-    {
-      "__outstatic": {
-        "commit": "f5a64c56caff645244a52ad1b99821b15436ddd4",
-        "hash": "1230131782",
-        "path": "outstatic/content/euapplications/dig-it-transformacja-cyfrowa.md"
-      },
-      "author": {
-        "name": "Piotr Sierant",
-        "picture": "https://avatars.githubusercontent.com/u/94246053?v=4"
-      },
-      "collection": "euapplications",
-      "coverImage": "/images/digit.png",
-      "dateFrom": "III",
-      "dateTo": "III",
-      "description": "DIG.IT TRANSFORMACJA CYFROWA POLSKICH MŚP",
-      "lang": "pl",
-      "publishedAt": "2024-06-11T16:02:14.908Z",
-      "slug": "dig-it-transformacja-cyfrowa",
-      "status": "published",
-      "title": "DIG.IT Transformacja cyfrowa"
     },
     {
       "__outstatic": {
@@ -188,6 +167,27 @@
       "slug": "kredyt-ekologiczny",
       "status": "published",
       "title": "Kredyt ekologiczny"
+    },
+    {
+      "__outstatic": {
+        "commit": "e11da3e90aee079d7e5d1cfeaa23ded1a6363805",
+        "hash": "1796238456",
+        "path": "outstatic/content/euapplications/dig-it-transformacja-cyfrowa.md"
+      },
+      "author": {
+        "name": "Piotr Sierant",
+        "picture": "https://avatars.githubusercontent.com/u/94246053?v=4"
+      },
+      "collection": "euapplications",
+      "coverImage": "/images/digit.png",
+      "dateFrom": "IV",
+      "dateTo": "III",
+      "description": "DIG.IT TRANSFORMACJA CYFROWA POLSKICH MŚP",
+      "lang": "pl",
+      "publishedAt": "2024-06-11T16:02:14.908Z",
+      "slug": "dig-it-transformacja-cyfrowa",
+      "status": "published",
+      "title": "DIG.IT Transformacja cyfrowa"
     }
   ]
 }

@@ -8,14 +8,14 @@ slug: 'dig-it-transformacja-cyfrowa'
 description: 'DIG.IT TRANSFORMACJA CYFROWA POLSKICH MŚP'
 coverImage: '/images/digit.png'
 lang: 'pl'
-dateFrom: 'III'
+dateFrom: 'IV'
 dateTo: 'III'
 publishedAt: '2024-06-11T16:02:14.908Z'
 ---
 
 ## **DIG.IT TRANSFORMACJA CYFROWA POLSKICH MŚP**
 
-**Planowany termin składania wniosków:** III kwartał 2024
+**Planowany termin składania wniosków:** III-IV kwartał 2024
 
 ### **Cel działania**
 
