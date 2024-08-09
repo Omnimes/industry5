@@ -11,8 +11,6 @@ lang: 'pl'
 publishedAt: '2024-08-09T11:25:52.161Z'
 ---
 
-![Zjęcie prezentujace webinar](/images/webinar--1--c2ND.png)
-
 🤔 Jak uzyskać dofinansowanie na robotyzację i automatyzację przedsiębiorstwa?
 
 Zapisz się na nasz webinar, aby dowiedzieć się jak dostać środki z UE. Do wyboru dwie daty ➡️
