@@ -1,6 +1,6 @@
 {
-  "commit": "736b1242f4586866adf12a6232321da7e217cb5e",
-  "generated": "2024-07-23T13:24:46.764Z",
+  "commit": "3961c8c6d5924e03ed1069d8d7d3ad31e5ab23e5",
+  "generated": "2024-08-09T11:15:23.566Z",
   "metadata": [
     {
       "__outstatic": {
@@ -188,6 +188,25 @@
       "slug": "kredyt-ekologiczny",
       "status": "published",
       "title": "Kredyt ekologiczny"
+    },
+    {
+      "__outstatic": {
+        "commit": "3961c8c6d5924e03ed1069d8d7d3ad31e5ab23e5",
+        "hash": "2984725752",
+        "path": "outstatic/content/posts/jak-uzyskac-dofinansowanie-na-robotyzacje-i-automatyzacje-przedsiebiorstwa.md"
+      },
+      "author": {
+        "name": "Piotr Sierant",
+        "picture": "https://avatars.githubusercontent.com/u/94246053?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/webinar--1--Q2Nj.png",
+      "description": "Chcesz zainwestować w rozwój swojego przedsiębiorstwa poprzez robotyzację i automatyzację, ale nie wiesz, jak zdobyć dofinansowanie? Dołącz do naszego webinaru i odkryj, jak pozyskać środki z Unii Europejskiej na innowacyjne projekty!",
+      "lang": "pl",
+      "publishedAt": "2024-08-09T11:25:52.161Z",
+      "slug": "jak-uzyskac-dofinansowanie-na-robotyzacje-i-automatyzacje-przedsiebiorstwa",
+      "status": "published",
+      "title": "Jak uzyskać dofinansowanie na robotyzację i automatyzację przedsiębiorstwa?"
     }
   ]
 }
