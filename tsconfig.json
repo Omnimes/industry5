@@ -27,7 +27,7 @@
     "paths": {
       "@/*": [
         "./src/*"
-      ],
+      ]
     }
   },
   "include": [
@@ -36,7 +36,8 @@
     "**/*.tsx",
     ".next/types/**/*.ts",
     ".contentlayer/generated",
-    "src/app/[locale]/_document.js"
+    "src/app/[locale]/_document.js",
+    "global.d.ts"
   ],
   "exclude": [
     "node_modules"

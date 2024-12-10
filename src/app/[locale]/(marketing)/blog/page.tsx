@@ -3,7 +3,7 @@ import { TextRevealCard } from "@/components/ui/text-reveal-card";
 import { LayoutPosts } from "@/layouts/LayoutPosts";
 import { getLocalePrimaryDialects } from "@/lib/locales";
 import { getTranslations } from 'next-intl/server';
-import { unstable_setRequestLocale } from "next-intl/server";
+import { setRequestLocale } from "next-intl/server";
 import { getDocuments, load } from 'outstatic/server';
 
 export const revalidate = 3600;
@@ -48,7 +48,7 @@ async function getData(locale: string) {
 }
 
 export default async function BlogPage({ params: { locale } }: { params: { locale: string } }) {
-  unstable_setRequestLocale(locale);
+  setRequestLocale(locale);
   const t = await getTranslations('Blog');
   const { allPosts, postsLength } = await getData(locale);
 

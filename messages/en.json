@@ -84,10 +84,12 @@
     "title4": "Future of Industry",
     "desc2": "Discover key moments in the history of industry.",
     "desc3": "Comprehensive knowledge about the future of development.",
-    "desc4": "A look into the future."
+    "desc4": "A look into the future.",
+    "description": "Discover the latest trends and solutions in the field of Industry 5.0 on the Industry5 website. We provide comprehensive information on innovative technologies, digital transformation strategies, and practical advice for companies striving for excellence in production."
   },
   "Hero": {
-    "title": "Industry 5.0 - Comprehensive Knowledge about Future Development",
+    "title": "Industry 5.0 - Comprehensive Knowledge about ",
+    "title-highlight": "Future Development.",
     "desc": "Discover the latest technologies, transformative strategies, and practical insights driving the evolution of modern production.",
     "button1": "Learn More",
     "button2": "EU Applications"

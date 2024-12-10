@@ -17,7 +17,8 @@ import { Input } from "@/components/ui/input"
 import { Textarea } from "./ui/textarea"
 import { sendEmail } from "@/lib/send-email"
 import { useTranslations } from "next-intl"
-import { LuAlertCircle, LuCheckCircle } from "react-icons/lu";
+import { GoCheckCircleFill } from "react-icons/go";
+import { IoAlertCircle } from "react-icons/io5";
 import { useState } from "react"
 import { LoadingSpinner } from "./ui/loader"
 
@@ -128,7 +129,7 @@ export function ContactForm() {
                     {t("submit")}
                 </Button>
                 {responseForm == 'sent' && <Alert variant="success">
-                    <LuCheckCircle className="size-4" />
+                    <GoCheckCircleFill className="size-4" />
                     <AlertTitle>{t("SuccessForm")}</AlertTitle>
                     <AlertDescription>
                         {t("SuccessFormMessage")}
@@ -136,7 +137,7 @@ export function ContactForm() {
                 </Alert>}
 
                 {responseForm == 'error' && <Alert variant="destructive">
-                    <LuAlertCircle className="size-4" />
+                    <IoAlertCircle className="size-4" />
                     <AlertTitle>{t("ErrorForm")}</AlertTitle>
                     <AlertDescription>
                         {t("ErrorFormMessage")}

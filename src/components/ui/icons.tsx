@@ -1,17 +1,14 @@
 import {
   LucideProps,
   Moon,
-  SunMedium,
-  Twitter,
-  type Icon as LucideIcon,
+  SunMedium
 } from "lucide-react"
-
-export type Icon = LucideIcon
+import { FaTwitter } from "react-icons/fa";
 
 export const Icons = {
   sun: SunMedium,
   moon: Moon,
-  twitter: Twitter,
+  twitter: FaTwitter,
   logo: (props: LucideProps) => (
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" {...props}>
       <path
@@ -28,4 +25,19 @@ export const Icons = {
       ></path>
     </svg>
   ),
+  volt: (props: LucideProps) => (
+    <svg
+      stroke="currentColor"
+      viewBox="0 0 52 52"
+      {...props}
+    >
+      <polygon
+        strokeWidth="4"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        fill="none"
+        points="29 13 14 29 25 29 23 39 38 23 27 23"
+      />
+    </svg>
+  )
 }

@@ -1,7 +1,7 @@
 import { genPageMetadata } from '@/app/seo';
 import { ContainerPage } from '@/components/layout/ContainerPage'
 import { getLocalePrimaryDialects } from '@/lib/locales';
-import { getTranslations, unstable_setRequestLocale } from 'next-intl/server'
+import { getTranslations, setRequestLocale } from 'next-intl/server'
 
 export async function generateMetadata({ params: { locale } }: { params: { locale: string } }) {
   const t = await getTranslations({ locale, namespace: "PrivacyMeta" });
@@ -19,7 +19,7 @@ export async function generateMetadata({ params: { locale } }: { params: { local
 }
 
 export default function PrivacyPolicyPage({ params: { locale } }: { params: { locale: string } }) {
-  unstable_setRequestLocale(locale)
+  setRequestLocale(locale)
   return (
     <ContainerPage>
           Polityka Prywatności

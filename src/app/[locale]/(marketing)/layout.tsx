@@ -1,4 +1,4 @@
-import { unstable_setRequestLocale } from "next-intl/server";
+import { setRequestLocale } from "next-intl/server";
 import { ReactNode } from "react";
 import { Navbar } from "@/components/navbar/navbar"
 import { Footer } from "@/components/Footer";
@@ -9,7 +9,7 @@ type Props = {
 };
 
 export default function MarketingLayout({ children, params: { locale } }: Props) {
-    unstable_setRequestLocale(locale);
+    setRequestLocale(locale);
 
     return (
         <main className="relative flex min-h-screen flex-col">

@@ -2,7 +2,7 @@ import { genPageMetadata } from "@/app/seo";
 import { LayoutPosts } from "@/layouts/LayoutPosts";
 import { getLocalePrimaryDialects } from "@/lib/locales";
 import { getTranslations } from 'next-intl/server';
-import { unstable_setRequestLocale } from "next-intl/server";
+import { setRequestLocale } from "next-intl/server";
 import { getDocuments, load } from 'outstatic/server';
 
 type Props = {
@@ -66,7 +66,7 @@ async function getData(locale: string, page: string) {
 }
 
 export default async function Page({ params }: { params: { page: string, locale: string } }) {
-    unstable_setRequestLocale(params.locale);
+    setRequestLocale(params.locale);
     const t = await getTranslations('Blog');
     const { allPosts, postsLength } = await getData(params.locale, params.page);
 

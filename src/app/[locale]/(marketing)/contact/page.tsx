@@ -3,7 +3,7 @@ import { ContactForm } from "@/components/Form";
 import { TextRevealCard } from "@/components/ui/text-reveal-card";
 import { getLocalePrimaryDialects } from "@/lib/locales";
 import { useTranslations } from "next-intl";
-import { getTranslations, unstable_setRequestLocale } from "next-intl/server";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 import Image from "next/image";
 
 export async function generateMetadata({ params: { locale } }: { params: { locale: string } }) {
@@ -22,14 +22,14 @@ export async function generateMetadata({ params: { locale } }: { params: { local
 }
 
 export default function ContactPage({ params: { locale } }: { params: { locale: string } }) {
-  unstable_setRequestLocale(locale);
+  setRequestLocale(locale);
   const t = useTranslations("ContactMeta")
   return (
     <main className="container max-w-screen-lg px-4 py-6 lg:px-0 lg:py-10">
       <TextRevealCard
         text={t("contact")}
       />
-      <section className="mx-auto flex w-full max-w-5xl flex-wrap-reverse">
+      <section className="mx-auto flex w-full max-w-screen-xl flex-wrap-reverse">
         <section className="mx-auto w-full max-w-[500px] py-2 md:px-0">
           <ContactForm />
         </section>

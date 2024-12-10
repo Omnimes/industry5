@@ -1,6 +1,6 @@
 import Image from "next/image"
 import { useTranslations } from "next-intl"
-import { getTranslations, unstable_setRequestLocale } from "next-intl/server"
+import { getTranslations, setRequestLocale } from "next-intl/server"
 import { ArticleHeadingTitle } from "@/components/ui/link-anchor"
 import CustomLink from "@/components/mdx/custom-link"
 import { TextRevealCard } from "@/components/ui/text-reveal-card"
@@ -23,7 +23,7 @@ export async function generateMetadata({ params: { locale } }: { params: { local
 }
 
 export default function StrategyPage({ params: { locale } }: { params: { locale: string } }) {
-  unstable_setRequestLocale(locale)
+  setRequestLocale(locale)
   const t = useTranslations("Strategy")
   return (
     <div className="container max-w-screen-lg px-4 py-6 lg:px-0 lg:py-10">

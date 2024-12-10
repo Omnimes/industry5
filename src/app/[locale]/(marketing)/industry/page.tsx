@@ -3,7 +3,7 @@ import { ArticleHeadingTitle } from "@/components/ui/link-anchor"
 import { TextRevealCard } from "@/components/ui/text-reveal-card";
 import { getLocalePrimaryDialects } from "@/lib/locales";
 import { useTranslations } from "next-intl";
-import { getTranslations, unstable_setRequestLocale } from "next-intl/server";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 
 export async function generateMetadata({ params: { locale } }: { params: { locale: string } }) {
   const t = await getTranslations({ locale, namespace: "IndustryMeta" });
@@ -20,7 +20,7 @@ export async function generateMetadata({ params: { locale } }: { params: { local
   return genPageMetadata(obj)
 }
 export default function IndustryPage({ params: { locale } }: { params: { locale: string } }) {
-  unstable_setRequestLocale(locale);
+  setRequestLocale(locale);
   const t = useTranslations("Industry");
 
   return (

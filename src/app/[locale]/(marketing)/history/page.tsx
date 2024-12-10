@@ -1,4 +1,4 @@
-import { getTranslations, unstable_setRequestLocale } from "next-intl/server"
+import { getTranslations, setRequestLocale } from "next-intl/server"
 import { MyLink } from "@/components/ui/link"
 import { ArticleHeadingTitle } from "@/components/ui/link-anchor"
 import { useTranslations } from "next-intl"
@@ -21,7 +21,7 @@ export async function generateMetadata({ params: { locale } }: { params: { local
   return genPageMetadata(obj)
 }
 export default function HistoryPage({ params: { locale } }: { params: { locale: string } }) {
-  unstable_setRequestLocale(locale);
+  setRequestLocale(locale);
   const t = useTranslations("History");
   const taria = useTranslations("AriaLabel");
   return (

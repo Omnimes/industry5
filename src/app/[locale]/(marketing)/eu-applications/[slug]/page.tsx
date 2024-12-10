@@ -5,7 +5,7 @@ import { Metadata } from "next";
 import { OstDocument } from "outstatic";
 import { absoluteUrl, cn, ogUrl } from "@/lib/utils"
 import { getDocumentSlugs, load } from "outstatic/server";
-import { getTranslations, unstable_setRequestLocale } from "next-intl/server"
+import { getTranslations, setRequestLocale } from "next-intl/server"
 import Link from "next/link";
 import { LucideChevronLeft } from "lucide-react";
 import { buttonVariants } from "@/components/ui/button";
@@ -84,7 +84,7 @@ export async function generateMetadata(params: Params): Promise<Metadata> {
 }
 
 export default async function PostPage(params: Params) {
-    unstable_setRequestLocale(params.params.locale);
+    setRequestLocale(params.params.locale);
     const t = await getTranslations('PostLayoutEuApp');
     const taria = await getTranslations('AriaLabel');
     const post = await getData(params);
@@ -115,7 +115,7 @@ export default async function PostPage(params: Params) {
 
     return (
         <article className="mb-32">
-            <div className="mx-auto max-w-5xl px-4 pt-12 xl:px-0">
+            <div className="mx-auto max-w-screen-xl px-4 pt-12 xl:px-0">
                 <div className="prose prose-outstatic dark:prose-invert text-muted-foreground max-w-none">
                     <MDXComponent content={post.content} />
                 </div>

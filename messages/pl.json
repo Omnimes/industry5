@@ -84,10 +84,12 @@
     "title4": "Przyszłość Przemysłu",
     "desc2": "Odkryj kluczowe momenty w historii przemysłu.",
     "desc3": "Kompleksowa wiedza na temat przyszłości rozwoju.",
-    "desc4": "Spojrzenie w przyszłość."
+    "desc4": "Spojrzenie w przyszłość.",
+    "description": "Odkryj najnowsze trendy i rozwiązania w dziedzinie Przemysłu 5.0 na stronie Industry5. Zapewniamy kompleksowe informacje dotyczące innowacyjnych technologii, strategii transformacji cyfrowej oraz praktyczne porady dla przedsiębiorstw dążących do doskonałości w produkcji."
   },
   "Hero": {
-    "title": "Przemysł 5.0 - Kompleksowa wiedza na temat przyszłości rozwoju.",
+    "title": "Przemysł 5.0 - Kompleksowa wiedza na temat ",
+    "title-highlight": "przyszłości rozwoju.",
     "desc": "Odkrywaj najnowocześniejsze technologie, transformatywne strategie oraz praktyczne spostrzeżenia napędzające ewolucję nowoczesnej produkcji.",
     "button1": "Dowiedź się więcej",
     "button2": "Wnioski Unijne"

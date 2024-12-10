@@ -1,6 +1,6 @@
 import { genPageMetadata } from "@/app/seo";
 import { getLocalePrimaryDialects } from "@/lib/locales";
-import { getTranslations, unstable_setRequestLocale } from "next-intl/server";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 import { load } from "outstatic/server";
 import { OstDocument } from "outstatic";
 import { LayoutEuApp } from "@/layouts/LayoutEuApp";
@@ -55,7 +55,7 @@ async function getData(locale: string) {
 }
 
 export default async function EuApplicationsPage({ params: { locale } }: { params: { locale: string } }) {
-  unstable_setRequestLocale(locale);
+  setRequestLocale(locale);
   const t = await getTranslations('EuApplicationsPage');
   const { allPosts, length } = await getData(locale);
 

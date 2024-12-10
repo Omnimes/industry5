@@ -4,13 +4,12 @@ import { ReactNode } from "react"
 import { locales } from "@/config"
 import { Inter as FontSans } from "next/font/google"
 import { NextIntlClientProvider, useMessages } from "next-intl";
-import { getTranslations, unstable_setRequestLocale } from "next-intl/server";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 import { siteConfig } from "@/data/config/site"
 import { getLocalePrimaryDialects } from "@/lib/locales"
 import { cn } from "@/lib/utils"
 import { ThemeProvider } from "@/components/theme/theme-provider"
 import { TailwindIndicator } from "@/components/tailwind-indicator"
-import { AOSProvider } from "@/components/providers/AosProviders";
 import { Analytics } from "@vercel/analytics/react"
 import { SpeedInsights } from "@vercel/speed-insights/next"
 const fontSans = FontSans({
@@ -90,9 +89,9 @@ export async function generateMetadata({
 }
 
 export default function LocaleLayout({ children, params: { locale } }: Props) {
-  unstable_setRequestLocale(locale);
+  setRequestLocale(locale);
   const messages = useMessages();
-  
+
   return (
     <html
       lang={getLocalePrimaryDialects(locale)}
@@ -143,14 +142,12 @@ export default function LocaleLayout({ children, params: { locale } }: Props) {
         suppressHydrationWarning
       >
         <NextIntlClientProvider messages={messages}>
-          <AOSProvider>
-            <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-                {children}
-                <Analytics/>
-                <SpeedInsights/>
-                <TailwindIndicator />
-            </ThemeProvider>
-          </AOSProvider>
+          <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+            {children}
+            <Analytics />
+            <SpeedInsights />
+            <TailwindIndicator />
+          </ThemeProvider>
         </NextIntlClientProvider>
       </body>
     </html>

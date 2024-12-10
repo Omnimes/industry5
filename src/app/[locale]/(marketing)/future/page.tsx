@@ -1,4 +1,4 @@
-import { getTranslations, unstable_setRequestLocale } from "next-intl/server"
+import { getTranslations, setRequestLocale } from "next-intl/server"
 import { useTranslations } from "next-intl";
 import { TextRevealCard } from "@/components/ui/text-reveal-card";
 import { getLocalePrimaryDialects } from "@/lib/locales";
@@ -19,7 +19,7 @@ export async function generateMetadata({ params: { locale } }: { params: { local
   return genPageMetadata(obj)
 }
 export default function FuturePage({ params: { locale } }: { params: { locale: string } }) {
-  unstable_setRequestLocale(locale);
+  setRequestLocale(locale);
   const t = useTranslations('Future');
   return (
     <div className="container max-w-screen-lg px-4 py-6 lg:px-0 lg:py-10">
