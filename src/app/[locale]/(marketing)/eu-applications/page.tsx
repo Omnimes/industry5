@@ -10,7 +10,9 @@ export const revalidate = 3600;
 const POSTS_PER_PAGE = 20;
 export type ExtendedOstDocument = OstDocument & { dateFrom: string, dateTo: string };
 
-export async function generateMetadata({ params: { locale } }: { params: { locale: string } }) {
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
+  const resolvedParams = await params;
+  const locale = resolvedParams.locale;
   const t = await getTranslations({ locale, namespace: "EuApplicationsPage" });
   const title = t('title');
   const description = t('desc');
@@ -42,11 +44,11 @@ async function getData(locale: string) {
     .limit(POSTS_PER_PAGE)
     .toArray()
 
-    const allPostsLength = await db
+  const allPostsLength = await db
     .find<ExtendedOstDocument>({ collection: 'euapplications', status: 'published', lang: locale })
     .toArray()
-    
-    const length = allPostsLength.length
+
+  const length = allPostsLength.length
 
   return {
     allPosts,
@@ -54,7 +56,9 @@ async function getData(locale: string) {
   }
 }
 
-export default async function EuApplicationsPage({ params: { locale } }: { params: { locale: string } }) {
+export default async function EuApplicationsPage({ params }: { params: Promise<{ locale: string }> }) {
+  const resolvedParams = await params;
+  const locale = resolvedParams.locale;
   setRequestLocale(locale);
   const t = await getTranslations('EuApplicationsPage');
   const { allPosts, length } = await getData(locale);
@@ -66,12 +70,12 @@ export default async function EuApplicationsPage({ params: { locale } }: { param
   }
 
   return (
-      <div className="m-auto px-4 py-6 text-gray-600 xl:container md:px-12 lg:px-0 lg:py-10 xl:px-6">
-        <TextRevealCard
-          text={t('title')}
-          desc={t('desc')}
-        />
-        <LayoutEuApp posts={allPosts} pagination={pagination} />
-      </div>
+    <main className="mx-auto w-full max-w-screen-xl px-4 py-12 md:py-24">
+      <TextRevealCard
+        text={t('title')}
+        desc={t('desc')}
+      />
+      <LayoutEuApp posts={allPosts} pagination={pagination} />
+    </main>
   );
 }

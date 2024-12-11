@@ -13,7 +13,7 @@ export const HistoryIndustryHome = () => {
                         {t("head1span")}
                     </span>
                 </h2>
-                <p className="text-muted-foreground px-0 text-lg md:text-xl text-balance">
+                <p className="text-muted-foreground text-balance px-0 text-lg md:text-xl">
                     {t("p1")}
                 </p>
                 <MyLink href="/history" aria-label={taria("footerAria") + t("link")} text={t("link")} className="mt-12" />

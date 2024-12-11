@@ -5,17 +5,17 @@ import { Footer } from "@/components/Footer";
 
 type Props = {
     children: ReactNode;
-    params: { locale: string };
+    params: Promise<{ locale: string }>;
 };
 
-export default function MarketingLayout({ children, params: { locale } }: Props) {
+export default async function MarketingLayout({ children, params }: Props) {
+    const { locale } = await params;
     setRequestLocale(locale);
-
     return (
-        <main className="relative flex min-h-screen flex-col">
+        <section className="relative flex min-h-screen flex-col">
             <Navbar />
             {children}
             <Footer />
-        </main>
+        </section>
     )
 }

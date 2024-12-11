@@ -2,7 +2,8 @@ import { genPageMetadata } from '@/app/seo';
 import { ContainerPage } from '@/components/layout/ContainerPage'
 import { getLocalePrimaryDialects } from '@/lib/locales';
 import { getTranslations, setRequestLocale } from 'next-intl/server'
-export async function generateMetadata({ params: { locale } }: { params: { locale: string } }) {
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "TermsMeta" });
   const title = t('title');
   const description = t('desc');
@@ -16,11 +17,12 @@ export async function generateMetadata({ params: { locale } }: { params: { local
   }
   return genPageMetadata(obj)
 }
-export default function TermsPage({ params: { locale } }: { params: { locale: string } }) {
+export default async function TermsPage({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
   setRequestLocale(locale)
   return (
     <ContainerPage>
-          Regulamin
+      Regulamin
     </ContainerPage>
   )
 }

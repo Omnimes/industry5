@@ -4,7 +4,8 @@ import { TextRevealCard } from "@/components/ui/text-reveal-card";
 import { getLocalePrimaryDialects } from "@/lib/locales";
 import { genPageMetadata } from "@/app/seo";
 
-export async function generateMetadata({ params: { locale } }: { params: { locale: string } }) {
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "FuturesMeta" });
   const title = t('title');
   const description = t('desc');
@@ -18,15 +19,16 @@ export async function generateMetadata({ params: { locale } }: { params: { local
   }
   return genPageMetadata(obj)
 }
-export default function FuturePage({ params: { locale } }: { params: { locale: string } }) {
+export default async function FuturePage({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
   setRequestLocale(locale);
-  const t = useTranslations('Future');
+  const t = await getTranslations('Future');
   return (
-    <div className="container max-w-screen-lg px-4 py-6 lg:px-0 lg:py-10">
-    <TextRevealCard
+    <main className="mx-auto w-full max-w-screen-xl px-4 py-12 md:py-24">
+      <TextRevealCard
         text={t('title')}
       />
-          <article className="text-muted-foreground mb-6 px-0 lg:text-lg"></article>
-      </div>
+      <article className="text-muted-foreground mb-6 px-0 lg:text-lg"></article>
+    </main>
   )
 }

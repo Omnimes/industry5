@@ -3,8 +3,8 @@ import localFont from "next/font/local"
 import { ReactNode } from "react"
 import { locales } from "@/config"
 import { Inter as FontSans } from "next/font/google"
-import { NextIntlClientProvider, useMessages } from "next-intl";
-import { getTranslations, setRequestLocale } from "next-intl/server";
+import { NextIntlClientProvider} from "next-intl";
+import { getTranslations, setRequestLocale,getMessages } from "next-intl/server";
 import { siteConfig } from "@/data/config/site"
 import { getLocalePrimaryDialects } from "@/lib/locales"
 import { cn } from "@/lib/utils"
@@ -23,7 +23,7 @@ const fontHeading = localFont({
 })
 type Props = {
   children: ReactNode;
-  params: { locale: string };
+  params: Promise<{ locale: string }>;
 };
 
 export function generateStaticParams() {
@@ -31,10 +31,11 @@ export function generateStaticParams() {
 }
 
 export async function generateMetadata({
-  params: { locale },
+  params,
 }: {
-  params: { locale: string };
+  params: Promise<{ locale: string }>;
 }) {
+  const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "Metadata" });
   return {
     metadataBase: new URL(siteConfig.siteUrl),
@@ -88,9 +89,11 @@ export async function generateMetadata({
   };
 }
 
-export default function LocaleLayout({ children, params: { locale } }: Props) {
+export default async function LocaleLayout({ children, params }: Props) {
+  const { locale } = await params;
   setRequestLocale(locale);
-  const messages = useMessages();
+  // const messages = useMessages();
+  const messages = await getMessages();
 
   return (
     <html

@@ -6,7 +6,7 @@ type Props = {
     dateFrom: string;
     dateTo: string;
 }
-export const Recruitment = ({dateFrom, dateTo}: Props) => {
+export const Recruitment = ({ dateFrom, dateTo }: Props) => {
     const { status } = isInPeriod(dateFrom, dateTo);
     const t = useTranslations("Recruitment");
 
@@ -15,7 +15,7 @@ export const Recruitment = ({dateFrom, dateTo}: Props) => {
             <Badge variant={
                 status == 'noData1' && 'secondary' ||
                 status == 'noData2' && 'secondary' ||
-                status == 'Started' && 'success' || 
+                status == 'Started' && 'success' ||
                 status == 'Ended' && 'destructive' ||
                 status == 'Coming' && 'warning' ||
                 'default'

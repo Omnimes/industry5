@@ -9,7 +9,9 @@ import { getDocuments, load } from 'outstatic/server';
 export const revalidate = 3600;
 const POSTS_PER_PAGE = 10;
 
-export async function generateMetadata({ params: { locale } }: { params: { locale: string } }) {
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
+  const resolvedParams = await params;
+  const locale = resolvedParams.locale;
   const t = await getTranslations({ locale, namespace: "Blog" });
   const title = t('blog_title');
   const description = t('blog_desc');
@@ -46,11 +48,11 @@ async function getData(locale: string) {
     postsLength
   }
 }
-
-export default async function BlogPage({ params: { locale } }: { params: { locale: string } }) {
-  setRequestLocale(locale);
+export default async function BlogPage({ params }: { params: Promise<{ locale: string }> }) {
+  const resolvedParams = await params;
+  setRequestLocale(resolvedParams.locale);
   const t = await getTranslations('Blog');
-  const { allPosts, postsLength } = await getData(locale);
+  const { allPosts, postsLength } = await getData(resolvedParams.locale);
 
   const pageNumber = 1
   const pagination = {
@@ -59,12 +61,12 @@ export default async function BlogPage({ params: { locale } }: { params: { local
   }
 
   return (
-    <div className="container max-w-screen-lg px-4 py-6 lg:px-0 lg:py-10">
+    <main className="mx-auto w-full max-w-screen-xl px-4 py-12 md:py-24">
       <TextRevealCard
-          text={"Blog"}
-          desc={t('desc')}
-        />
+        text={"Blog"}
+        desc={t('desc')}
+      />
       <LayoutPosts posts={allPosts} pagination={pagination} />
-    </div>
+    </main>
   );
 }

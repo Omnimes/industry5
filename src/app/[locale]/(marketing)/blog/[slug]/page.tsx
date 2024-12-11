@@ -11,19 +11,12 @@ import Link from "next/link";
 import { LucideChevronLeft } from "lucide-react";
 import { buttonVariants } from "@/components/ui/button";
 
-interface Params {
-    params: {
-        slug: string;
-        locale: string;
-    };
-}
-
 export async function generateStaticParams() {
     const posts = getDocumentSlugs("posts");
     return posts.map((slug) => ({ slug }));
 }
 
-async function getData({ params }: Params) {
+async function getData({ params }: { params: { slug: string, locale: string } }) {
     const db = await load();
     const post = await db
         .find<OstDocument>({ collection: "posts", slug: params.slug, lang: params.locale }, [
@@ -46,9 +39,10 @@ async function getData({ params }: Params) {
     };
 }
 
-export async function generateMetadata(params: Params): Promise<Metadata> {
-    const post = await getData(params)
-    const { params: { locale } } = params;
+export async function generateMetadata({ params }: { params: Promise<{ slug: string, locale: string }> }): Promise<Metadata> {
+    const resolvedParams = await params;
+    const post = await getData({ params: resolvedParams });
+    const locale = resolvedParams.locale;
     const t = await getTranslations({ locale, namespace: "Metadata" });
     if (!post) {
         return {
@@ -82,11 +76,12 @@ export async function generateMetadata(params: Params): Promise<Metadata> {
     }
 }
 
-export default async function PostPage(params: Params) {
-    setRequestLocale(params.params.locale);
+export default async function PostPage({ params }: { params: Promise<{ slug: string, locale: string }> }) {
+    const resolvedParams = await params;
+    setRequestLocale(resolvedParams.locale);
     const t = await getTranslations('PostLayout');
     const taria = await getTranslations('AriaLabel');
-    const post = await getData(params);
+    const post = await getData({params: resolvedParams});
 
     if (!post) {
         return (

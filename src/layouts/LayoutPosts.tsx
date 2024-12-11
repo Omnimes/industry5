@@ -62,7 +62,7 @@ export const LayoutPosts = ({ posts, pagination }: { posts: OstDocument[], pagin
     return (
         <>
             {posts?.length ? (
-                <div className="grid gap-10 sm:grid-cols-2">
+                <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
                     {posts.map((post, index) => (
                         <article
                             key={post.title}
@@ -74,13 +74,13 @@ export const LayoutPosts = ({ posts, pagination }: { posts: OstDocument[], pagin
                                     alt={post.title}
                                     width={804}
                                     height={452}
-                                    className="bg-muted rounded-md border transition-colors"
+                                    className="bg-muted mb-4 rounded-md border transition-colors"
                                     priority={index <= 1}
                                 />
                             }
                             <h2 className="text-2xl font-extrabold">{post.title}</h2>
                             {post.description && (
-                                <p className="text-muted-foreground">{post.description}</p>
+                                <p className="text-muted-foreground line-clamp-3 text-balance">{post.description}</p>
                             )}
                             {post.publishedAt && (
                                 <p className="text-muted-foreground text-sm">

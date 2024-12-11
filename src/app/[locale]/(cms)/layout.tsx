@@ -2,10 +2,10 @@ import { ReactNode } from "react"
 
 type Props = {
   children: ReactNode;
-  params: { locale: string };
+  params: Promise<{ locale: string }>;
 };
 
-export default function OutstaticLayout({ children, params: { locale } }: Props) {
+export default async function OutstaticLayout({ children, params }: Props) {
   return (
     <main>
       {children}

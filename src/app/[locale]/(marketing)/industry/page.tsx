@@ -2,10 +2,10 @@ import { genPageMetadata } from "@/app/seo";
 import { ArticleHeadingTitle } from "@/components/ui/link-anchor"
 import { TextRevealCard } from "@/components/ui/text-reveal-card";
 import { getLocalePrimaryDialects } from "@/lib/locales";
-import { useTranslations } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 
-export async function generateMetadata({ params: { locale } }: { params: { locale: string } }) {
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "IndustryMeta" });
   const title = t('title');
   const description = t('desc');
@@ -19,12 +19,13 @@ export async function generateMetadata({ params: { locale } }: { params: { local
   }
   return genPageMetadata(obj)
 }
-export default function IndustryPage({ params: { locale } }: { params: { locale: string } }) {
+export default async function IndustryPage({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
   setRequestLocale(locale);
-  const t = useTranslations("Industry");
+  const t = await getTranslations("Industry");
 
   return (
-    <div className="container max-w-screen-lg px-4 py-6 lg:px-0 lg:py-10">
+    <main className="mx-auto w-full max-w-screen-xl px-4 py-12 md:py-24">
       <TextRevealCard
         text={t('title')}
       />
@@ -67,6 +68,6 @@ export default function IndustryPage({ params: { locale } }: { params: { locale:
         </ul>
         <p className="mb-6 mt-2 space-y-1 px-0">{t("p7")}</p>
       </article>
-    </div>
+    </main>
   )
 }

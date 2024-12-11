@@ -10,7 +10,8 @@ module.exports = {
   rules: {
     "@next/next/no-html-link-for-pages": "off",
     "react/jsx-key": "off",
-    "tailwindcss/no-custom-classname": "off"
+    "tailwindcss/no-custom-classname": "off",
+    "tailwindcss/no-contradicting-classname": "off",
   },
   settings: {
     tailwindcss: {
@@ -26,5 +27,6 @@ module.exports = {
       files: ["*.ts", "*.tsx"],
       parser: "@typescript-eslint/parser"
     }
-  ]
+  ],
+  ignorePatterns: ["dist/*", ".cache", "public", "node_modules", "*.esm.js"],
 };

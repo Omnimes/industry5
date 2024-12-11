@@ -9,7 +9,8 @@ import { TransformationOfIndustry } from '@/components/TransformationOfIndustry'
 import { getLocalePrimaryDialects } from '@/lib/locales';
 import { genPageMetadata } from '@/app/seo';
 
-export async function generateMetadata({ params: { locale } }: { params: { locale: string } }) {
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "HomeMeta" });
   const title = t('title');
   const description = t('desc');
@@ -24,10 +25,11 @@ export async function generateMetadata({ params: { locale } }: { params: { local
   return genPageMetadata(obj)
 }
 
-export default function Home({ params: { locale } }: { params: { locale: string } }) {
+export default async function Home({ params }: { params: Promise<{ locale: string }>}) {
+  const { locale } = await params;
   setRequestLocale(locale);
   return (
-    <main className="overflow-hidden">
+    <section className="overflow-hidden">
       <Hero />
       <EvolutionOrRevolution />
       <WhyIndustry />
@@ -35,6 +37,6 @@ export default function Home({ params: { locale } }: { params: { locale: string 
       <DiscoverPotential />
       <TransformationOfIndustry />
       <BenefitsOfImplementingIndustry />
-    </main>
+    </section>
   )
 }

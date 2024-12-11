@@ -20,67 +20,68 @@ export const Footer = () => {
                     transform="translate(1.743 66.155)"
                 ></path>
             </svg>
-            <div className="absolute w-full flex items-center justify-center">
-                <TextHoverEffect text="INDUSTRY5" />
-            </div>
-            <div className="bg-gradient-to-b from-gray-100 to-transparent pt-1 md:px-12 lg:px-28 dark:from-gray-900 dark:to-transparent">
-            <section className="mx-auto max-w-screen-xl px-4 py-12 md:py-24 ">
-                <div className="flex flex-col justify-between gap-8 md:flex-row ">
-                    <div className="flex flex-col">
-                        <div className="flex">
-                            <Logo />
-                            <AnimatedShinyText className="mx-0 font-bold text-3xl inline-flex items-center justify-center px-4 py-1 transition ease-out hover:text-neutral-600 hover:duration-300 hover:dark:text-neutral-400">
-                                Industry5
-                            </AnimatedShinyText>
+            <section className="relative">
+                <div className="absolute top-0 left-0 xl:-top-20 2xl:-top-48 flex w-full items-center justify-center">
+                    <TextHoverEffect text="INDUSTRY5" />
+                </div>
+                <div className="bg-gradient-to-b from-gray-100 to-transparent pt-1 md:px-12 lg:px-28 dark:from-gray-900 dark:to-transparent">
+                    <section className="mx-auto max-w-screen-xl px-4 py-12 md:py-24">
+                        <div className="flex flex-col justify-between gap-8 md:flex-row">
+                            <div className="flex flex-col">
+                                <div className="flex z-10">
+                                    <Logo />
+                                    <AnimatedShinyText className="mx-0 inline-flex items-center justify-center px-4 py-1 text-3xl font-bold transition ease-out hover:text-neutral-600 hover:duration-300 hover:dark:text-neutral-400">
+                                        Industry5
+                                    </AnimatedShinyText>
+                                </div>
+                                <p className="py-8 text-left text-sm text-gray-500 md:max-w-xs z-10">{t("description")}</p>
+                            </div>
+                            <section className="flex gap-8">
+                                <div>
+                                    <h4 className="mb-7 text-lg font-medium text-gray-900 dark:text-white">Industry5</h4>
+                                    <ul className="space-y-4 transition-all duration-500">
+                                        {siteConfig.mainNav.map(item => {
+                                            return (
+                                                <li key={item.href} role="listitem" className="text-muted-foreground relative text-sm">
+                                                    <Link
+                                                        href={item.href}
+                                                        aria-label={taria("footerAria") + t(item.title)}
+                                                        rel="noreferrer noopener"
+                                                        className="hover:text-primary z-10"
+                                                    >
+                                                        {t(item.title)}
+                                                    </Link>
+                                                </li>
+                                            )
+                                        })}
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h4 className="mb-7 text-lg font-medium text-gray-900 dark:text-white">{t("industry")}</h4>
+                                    <ul className="space-y-4 transition-all duration-500">
+                                        {siteConfig.subNav.map(item => {
+                                            return (
+                                                <li key={item.href} role="listitem" className="text-muted-foreground relative text-sm">
+                                                    <Link
+                                                        href={item.href}
+                                                        rel="noreferrer noopener"
+                                                        aria-label={taria("footerAria") + t(item.title)}
+                                                        className="hover:text-primary z-10"
+                                                    >
+                                                        {t(item.title)}
+                                                    </Link>
+                                                </li>
+                                            )
+                                        })}
+                                    </ul>
+                                </div>
+                            </section>
                         </div>
-                        <p className="py-8 text-sm text-gray-500 md:max-w-xs text-left">{t("description")}</p>
-                    </div>
-
-                    <section className="flex gap-8">
-                    <div className="">
-                        <h4 className="text-lg text-gray-900 dark:text-white font-medium mb-7">Industry5</h4>
-                        <ul className="transition-all duration-500 space-y-4">
-                            {siteConfig.mainNav.map(item => {
-                                return (
-                                    <li key={item.href} role="listitem" className="text-muted-foreground text-sm relative">
-                                        <Link
-                                            href={item.href}
-                                            aria-label={taria("footerAria") + t(item.title)}
-                                            rel="noreferrer noopener"
-                                            className="hover:text-primary z-10"
-                                        >
-                                            {t(item.title)}
-                                        </Link>
-                                    </li>
-                                )
-                            })}
-                        </ul>
-                    </div>
-
-                    <div className="">
-                        <h4 className="text-lg text-gray-900 dark:text-white font-medium mb-7">{t("industry")}</h4>
-                        <ul className="transition-all duration-500 space-y-4">
-                            {siteConfig.subNav.map(item => {
-                                return (
-                                    <li key={item.href} role="listitem" className="text-muted-foreground text-sm relative">
-                                        <Link
-                                            href={item.href}
-                                            rel="noreferrer noopener"
-                                            aria-label={taria("footerAria") + t(item.title)}
-                                            className="hover:text-primary z-10"
-                                        >
-                                            {t(item.title)}
-                                        </Link>
-                                    </li>
-                                )
-                            })}
-                        </ul>
-                    </div>
                     </section>
                 </div>
             </section>
             <Separator />
-            <div className="text-center mt-8 px-2">
+            <div className="mt-8 px-2 text-center">
                 <span className="text-sm tracking-wide">
                     {tr("Copyright")}&nbsp;
                     <span id="year">
@@ -88,7 +89,6 @@ export const Footer = () => {
                     </span>&nbsp;
                     {tr("reserved")}
                 </span>
-            </div>
             </div>
         </footer>
     )

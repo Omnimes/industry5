@@ -5,14 +5,25 @@ import { getTranslations } from 'next-intl/server';
 import { setRequestLocale } from "next-intl/server";
 import { getDocuments, load } from 'outstatic/server';
 
-type Props = {
-    params: {
-        locale: string;
-        page: string;
-    };
-};
+const POSTS_PER_PAGE = 10;
 
-export async function generateMetadata({ params: { locale } }: { params: { locale: string } }) {
+export const generateStaticParams = async ({ params }: { params: Promise<{ locale: string }> }) => {
+    const resolvedParams = await params;
+    const locale = resolvedParams.locale;
+    const posts = getDocuments('posts', ['lang'])
+    if (!posts || posts.length == 0 || posts === undefined) {
+        return []
+    }
+    const localePosts = posts.filter(post => post.lang == locale)
+    const totalPages = Math.ceil(localePosts.length / POSTS_PER_PAGE)
+    const paths = Array.from({ length: totalPages }, (_, i) => ({ page: (i + 1).toString() }))
+
+    return paths
+}
+
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
+    const resolvedParams = await params;
+    const locale = resolvedParams.locale; 
     const t = await getTranslations({ locale, namespace: "Blog" });
     const title = t('blog_title');
     const description = t('blog_desc');
@@ -27,19 +38,6 @@ export async function generateMetadata({ params: { locale } }: { params: { local
     return genPageMetadata(obj)
 }
 
-const POSTS_PER_PAGE = 10;
-
-export const generateStaticParams = async ({ params: { locale } }: Props) => {
-    const posts = getDocuments('posts', ['lang'])
-    if (!posts || posts.length == 0 || posts === undefined) {
-        return []
-    }
-    const localePosts = posts.filter(post => post.lang == locale)
-    const totalPages = Math.ceil(localePosts.length / POSTS_PER_PAGE)
-    const paths = Array.from({ length: totalPages }, (_, i) => ({ page: (i + 1).toString() }))
-
-    return paths
-}
 
 async function getData(locale: string, page: string) {
     const db = await load();
@@ -65,10 +63,13 @@ async function getData(locale: string, page: string) {
     }
 }
 
-export default async function Page({ params }: { params: { page: string, locale: string } }) {
-    setRequestLocale(params.locale);
+export default async function Page({ params }: { params: Promise<{ page: string, locale: string }> }) {
+    const resolvedParams = await params;
+    const locale = resolvedParams.locale;
+    const page = resolvedParams.page;
+    setRequestLocale(locale);
     const t = await getTranslations('Blog');
-    const { allPosts, postsLength } = await getData(params.locale, params.page);
+    const { allPosts, postsLength } = await getData(locale, page);
 
     if (!allPosts || allPosts.length == 0 || allPosts === undefined) {
         return (
@@ -89,7 +90,7 @@ export default async function Page({ params }: { params: { page: string, locale:
         )
     }
 
-    const pageNumber = parseInt(params.page as string)
+    const pageNumber = parseInt(page as string)
 
     const pagination = {
         currentPage: pageNumber,

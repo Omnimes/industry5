@@ -47,7 +47,7 @@ export function HeroHighlightDemo() {
                     ease: [0.4, 0.0, 0.2, 1],
                 }}
                 className={cn(
-                    "mt-6 mb-12 font-sans text-xl font-medium leading-8 text-transparent drop-shadow-xl tracking-tight",
+                    "mb-12 mt-6 font-sans text-xl font-medium leading-8 tracking-tight text-transparent drop-shadow-xl",
                     "bg-gradient-to-r from-neutral-300 to-stone-400 bg-clip-text",
                     "text-balance",
                 )}
@@ -67,7 +67,7 @@ export function HeroHighlightDemo() {
                     duration: 0.8,
                     ease: [0.4, 0.0, 0.2, 1],
                 }}
-                className="mt-10 flex flex-col sm:flex-row gap-y-2 items-center justify-center gap-x-6"
+                className="mt-10 flex flex-col items-center justify-center gap-x-6 gap-y-2 sm:flex-row"
             >
                 <Link
                     href="#industry"
@@ -86,9 +86,9 @@ export function HeroHighlightDemo() {
                     rel="noreferrer noopener"
                     aria-label={taria("heroEuAria")}
                     className={cn(
-                        "inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none ring-offset-background",
-                        "underline-offset-4 hover:underline text-white",
-                        "h-10 py-2 px-4",
+                        "focus-visible:ring-ring ring-offset-background inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50",
+                        "text-white underline-offset-4 hover:underline",
+                        "h-10 px-4 py-2",
                     )}
                 >
                     {t("button2")}
