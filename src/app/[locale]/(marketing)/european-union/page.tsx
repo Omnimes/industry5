@@ -1,10 +1,16 @@
 import { genPageMetadata } from "@/app/seo";
+import { BentoGridEuropenUnion } from "@/components/BentoFeature";
+import { BentoBox1 } from "@/components/ui/bento-grid-e";
+import BlurFade from "@/components/ui/blur-fade";
 import { ArticleHeadingTitle } from "@/components/ui/link-anchor";
 import { TextRevealCard } from "@/components/ui/text-reveal-card";
+import { getBase64 } from "@/lib/base64";
 import { getLocalePrimaryDialects } from "@/lib/locales";
+import { cn } from "@/lib/utils";
 import { getTranslations, setRequestLocale } from "next-intl/server";
+import { LuGlobe, LuLeaf, LuCpu } from "react-icons/lu";
 
-export async function generateMetadata({ params }: { params: Promise<{ locale: string }>}) {
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "EuropeanUnionMeta" });
   const title = t('title');
@@ -23,46 +29,100 @@ export default async function EuropeanUnionPage({ params }: { params: Promise<{ 
   const { locale } = await params;
   setRequestLocale(locale);
   const t = await getTranslations('EuropeanUnion');
+
+  const images = [
+    "/images/eu/displaying-technology-growth.webp",
+    "/images/eu/panels-surrounded-by-lush-greenery.webp",
+    "/images/eu/global-market-trends.webp",
+    "/images/eu/advanced-manufacturing-technologies.webp",
+  ]
+  const bluredImages = await Promise.all(images.map((image) => getBase64(image)))
+
+  const feature = [
+    {
+      heading: t('h3'),
+      paragrapgh: t('p5'),
+      icon: <LuGlobe />,
+    },
+    {
+      heading: t('h4'),
+      paragrapgh: t('p6'),
+      icon: <LuLeaf />,
+    },
+    {
+      heading: t('h5'),
+      paragrapgh: t('p7'),
+      icon: <LuCpu />,
+    },
+  ]
   return (
-    <main className="mx-auto w-full max-w-screen-xl px-4 py-12 md:py-24">
-      <TextRevealCard
-        text={t('title')}
-        desc={t('desc')}
-      />
+    <section id="industry" className="mx-auto max-w-screen-xl px-4 py-12 md:py-24">
+      <BlurFade delay={0.2} inView className="mx-auto mb-16 w-full text-left md:mb-20 text-lg md:text-xl">
+        <TextRevealCard
+          text={t('title')}
+          desc={t('desc')}
+        />
+      </BlurFade>
       <article className="text-muted-foreground mb-6 px-0 lg:text-lg">
-        <p className="mb-6 mt-2 space-y-1 px-0">{t("p1")}</p>
-        <hr className="pb-4" />
-        <p className="mb-6 mt-2 space-y-1 px-0">{t("p2")}</p>
-        <ArticleHeadingTitle text={t("h1")} />
-        <p className="mb-6 mt-2 space-y-1 px-0">{t("p3")}</p>
-        <ul className="mb-6 mt-2 list-inside list-disc space-y-1 px-0">
-          <li><strong>{t("l1strong")}</strong> {t("l1")}</li>
-          <li><strong>{t("l2strong")}</strong> {t("l2")}</li>
-          <li><strong>{t("l3strong")}</strong> {t("l3")}</li>
-        </ul>
-        <ArticleHeadingTitle text={t("h2")} />
-        <p className="mb-6 mt-2 space-y-1 px-0">{t("p4")}</p>
+        <BlurFade delay={0.3} inView className="mx-auto mb-16 w-full text-left md:mb-20 text-lg md:text-xl">
+          <p className="mb-6 mt-2 space-y-1 px-0">{t("p1")}</p>
+          <hr className="pb-4" />
+          <p className="mb-6 mt-2 space-y-1 px-0">{t("p2")}</p>
+        </BlurFade>
 
-        <h3 className="font-heading text-1xl lg:text-1xl mt-6 tracking-normal text-gray-900 sm:text-2xl md:leading-none md:tracking-tight lg:flex lg:flex-col dark:text-white">{t("h3")}</h3>
-        <p className="mb-6 mt-2 space-y-1 px-0">{t("p5")}</p>
+        <BlurFade delay={0.2} inView className="mx-auto mb-16 w-full text-left md:mb-20 text-lg md:text-xl md:text-center">
+          <h2 className="font-heading mb-6 flex flex-wrap text-2xl tracking-normal text-gray-900 sm:text-3xl md:justify-center md:text-4xl md:leading-none md:tracking-tight lg:text-5xl dark:text-white">
+            {t("h1")}&nbsp;
+            <span className="block w-fit bg-gradient-to-r from-green-400 to-purple-500 bg-clip-text text-transparent">{t("h1span")}</span>
+          </h2>
+          <p className="text-muted-foreground text-balance px-0 text-lg md:text-xl">{t("p3")}</p>
+          <BentoBox1 />
+        </BlurFade>
 
-        <h3 className="font-heading text-1xl lg:text-1xl mt-6 tracking-normal text-gray-900 sm:text-2xl md:leading-none md:tracking-tight lg:flex lg:flex-col dark:text-white">{t("h4")}</h3>
-        <p className="mb-6 mt-2 space-y-1 px-0">{t("p6")}</p>
+        <BlurFade delay={0.2} inView className="mx-auto mb-16 w-full text-left md:mb-20 text-lg md:text-xl md:text-center">
+          <h2 className="font-heading mb-6 flex flex-wrap text-2xl tracking-normal text-gray-900 sm:text-3xl md:justify-center md:text-4xl md:leading-none md:tracking-tight lg:text-5xl dark:text-white">
+            {t("h2")}&nbsp;
+            <span className="block w-fit bg-gradient-to-r from-green-400 to-purple-500 bg-clip-text text-transparent">{t("h2span")}</span>
+          </h2>
+          <p className="text-muted-foreground text-balance px-0 text-lg md:text-xl">{t("p4")}</p>
+        </BlurFade>
 
-        <h3 className="font-heading text-1xl lg:text-1xl mt-6 tracking-normal text-gray-900 sm:text-2xl md:leading-none md:tracking-tight lg:flex lg:flex-col dark:text-white">{t("h5")}</h3>
-        <p className="mb-6 mt-2 space-y-1 px-0">{t("p7")}</p>
-        <ArticleHeadingTitle text={t("h6")} />
-        <p className="mb-6 mt-2 space-y-1 px-0">{t("p8")}</p>
-        <ul className="mb-6 mt-2 list-inside list-disc space-y-1 px-0">
-          <li><strong>{t("l4strong")}</strong> {t("l4")}</li>
-          <li><strong>{t("l5strong")}</strong> {t("l5")}</li>
-          <li><strong>{t("l6strong")}</strong> {t("l6")}</li>
-          <li><strong>{t("l7strong")}</strong> {t("l7")}</li>
-        </ul>
-        <ArticleHeadingTitle text={t("h7")} />
-        <p className="mb-6 mt-2 space-y-1 px-0">{t("p9")}</p>
-        <p className="mb-6 mt-2 space-y-1 px-0">{t("p10")}</p>
+        <BlurFade delay={0.2} inView className="mx-auto mb-16 w-full text-left md:mb-20 text-lg md:text-xl md:text-center grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 mt-12">
+          {feature.map((item, i) => (
+            <div key={i} className={cn(i == 2 && "md:col-span-2 lg:col-span-1")}>
+              <div className="rounded-lg border text-card-foreground bg-background border-none shadow-none">
+                <div className="space-y-4">
+                  <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
+                    {item.icon}
+                  </div>
+                  <h3 className="text-xl font-semibold text-left">{item.heading}</h3>
+                  <p className="text-muted-foreground text-left text-balance">{item.paragrapgh}</p>
+                </div>
+              </div>
+            </div>
+          ))}
+        </BlurFade>
+
+        <BlurFade delay={0.2} inView className="mx-auto mb-16 w-full text-left md:mb-20 text-lg md:text-xl md:text-center">
+          <h2 className="font-heading mb-6 flex flex-wrap text-2xl tracking-normal text-gray-900 sm:text-3xl md:justify-center md:text-4xl md:leading-none md:tracking-tight lg:text-5xl dark:text-white">
+            {t("h6")}&nbsp;
+            <span className="block w-fit bg-gradient-to-r from-green-400 to-purple-500 bg-clip-text text-transparent">{t("h6span")}</span>
+          </h2>
+          <p className="text-muted-foreground text-balance px-0 text-lg md:text-xl">{t("p8")}</p>
+        </BlurFade>
+
+        <BlurFade delay={0.2} inView className="mx-auto mb-16 w-full text-left md:mb-20 text-lg md:text-xl md:text-center">
+          <BentoGridEuropenUnion images={images} bluredImages={bluredImages} />
+        </BlurFade>
+
+        <BlurFade delay={0.2} inView className="mx-auto mb-16 w-full text-left md:mb-20 text-lg md:text-xl md:text-center">
+          <h2 className="font-heading mb-6 flex flex-wrap text-2xl tracking-normal text-gray-900 sm:text-3xl md:justify-center md:text-4xl md:leading-none md:tracking-tight lg:text-5xl dark:text-white">
+            {t("h7")}&nbsp;
+          </h2>
+          <p className="text-muted-foreground text-balance px-0 text-lg md:text-xl">{t("p9")}</p>
+          <p className="text-muted-foreground text-balance px-0 text-lg md:text-xl">{t("p10")}</p>
+        </BlurFade>
       </article>
-    </main>
+    </section>
   );
 }
