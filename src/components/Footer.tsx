@@ -21,24 +21,24 @@ export const Footer = () => {
                 ></path>
             </svg>
             <section className="relative">
-                <div className="absolute top-0 left-0 xl:-top-20 2xl:-top-48 flex w-full items-center justify-center">
+                <div className="absolute left-0 top-0 flex w-full items-center justify-center xl:-top-20 2xl:-top-48">
                     <TextHoverEffect text="INDUSTRY5" />
                 </div>
                 <div className="bg-gradient-to-b from-gray-100 to-transparent pt-1 md:px-12 lg:px-28 dark:from-gray-900 dark:to-transparent">
                     <section className="mx-auto max-w-screen-xl px-4 py-12 md:py-24">
                         <div className="flex flex-col justify-between gap-8 md:flex-row">
                             <div className="flex flex-col">
-                                <div className="flex z-10">
+                                <div className="z-10 flex">
                                     <Logo />
                                     <AnimatedShinyText className="mx-0 inline-flex items-center justify-center px-4 py-1 text-3xl font-bold transition ease-out hover:text-neutral-600 hover:duration-300 hover:dark:text-neutral-400">
                                         Industry5
                                     </AnimatedShinyText>
                                 </div>
-                                <p className="py-8 text-left text-sm text-gray-500 md:max-w-xs z-10">{t("description")}</p>
+                                <p className="z-10 py-8 text-left text-sm text-gray-500 md:max-w-xs">{t("description")}</p>
                             </div>
                             <section className="flex gap-8">
                                 <div>
-                                    <h4 className="mb-7 text-lg font-medium text-gray-900 dark:text-white">Industry5</h4>
+                                    <h4 className="relative z-10 mb-7 text-lg font-medium text-gray-900 dark:text-white">Industry5</h4>
                                     <ul className="space-y-4 transition-all duration-500">
                                         {siteConfig.mainNav.map(item => {
                                             return (
@@ -57,7 +57,7 @@ export const Footer = () => {
                                     </ul>
                                 </div>
                                 <div>
-                                    <h4 className="mb-7 text-lg font-medium text-gray-900 dark:text-white">{t("industry")}</h4>
+                                    <h4 className="relative z-10 mb-7 text-lg font-medium text-gray-900 dark:text-white">{t("industry")}</h4>
                                     <ul className="space-y-4 transition-all duration-500">
                                         {siteConfig.subNav.map(item => {
                                             return (

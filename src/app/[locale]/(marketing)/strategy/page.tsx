@@ -1,10 +1,13 @@
 import Image from "next/image"
 import { getTranslations, setRequestLocale } from "next-intl/server"
-import { ArticleHeadingTitle } from "@/components/ui/link-anchor"
-import CustomLink from "@/components/mdx/custom-link"
 import { TextRevealCard } from "@/components/ui/text-reveal-card"
 import { getLocalePrimaryDialects } from "@/lib/locales"
 import { genPageMetadata } from "@/app/seo"
+import BlurFade from "@/components/ui/blur-fade"
+import { getBase64 } from "@/lib/base64"
+import { FeaturesStrategy } from "@/components/ui/features-a"
+import { DynamicSquareBackground } from "@/components/ui/dynamic-square"
+import ZoomParallax from "@/components/ui/zoom-parallax"
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
@@ -25,13 +28,159 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 export default async function StrategyPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
   setRequestLocale(locale)
-  const t = await getTranslations("Strategy")
+  const t = await getTranslations("Strategy");
+
+  const images = [
+    "/images/strategia/skoncentrowanie_na_czlowieku.webp",
+    "/images/strategia/odpornosc.webp",
+    "/images/strategia/zrownowazony_rozwoj.webp",
+  ]
+  const bluredImages = await Promise.all(images.map((image) => getBase64(image)))
+
   return (
-    <main className="mx-auto w-full max-w-screen-xl px-4 py-12 md:py-24">
-      <TextRevealCard
-        text={t('title')}
-      />
-      <article className="text-muted-foreground mb-6 px-0 lg:text-lg">
+    <section id="industry" className="mx-auto max-w-screen-xl px-4 py-12 md:py-24">
+      <BlurFade delay={0.2} inView className="mx-auto mb-16 w-full text-left text-lg md:mb-20 md:text-xl">
+        <TextRevealCard
+          text={t('title')}
+        />
+      </BlurFade>
+      <article className="mb-6 px-0 lg:text-lg">
+        <BlurFade delay={0.3} inView className="mx-auto mb-16 w-full text-left text-lg md:mb-20 md:text-xl">
+          <div className="grid h-full border sm:grid-cols-2 lg:grid-cols-3">
+            <div className="h-full overflow-hidden border-b p-0 sm:border-r lg:border-b-0">
+              <div className="flex size-full flex-col items-center justify-between gap-y-5">
+                <div className="flex aspect-square size-full items-center justify-center rounded-t-xl border-b lg:h-[440px]">
+                  <Image
+                    src={"/images/strategia/skoncentrowanie_na_czlowieku.webp"}
+                    alt={"Skoncentrowanie na człowieku"}
+                    width={1024}
+                    height={1024}
+                    placeholder="blur"
+                    className="size-full object-cover"
+                    blurDataURL={bluredImages[0]}
+                    priority
+                  />
+                </div>
+                <div className="flex w-full flex-col items-start gap-y-1 px-5 pb-4">
+                  <h2 className="mb-2 text-xl font-bold text-black dark:text-white">{t("h2_men")}</h2>
+                  <p className="text-muted-foreground text-balance text-base lg:text-lg">{t("p_desc_men")}</p>
+                </div>
+              </div>
+            </div>
+            <div className="h-full overflow-hidden border-b p-0 lg:border-b-0 lg:border-r">
+              <div className="flex size-full flex-col items-center justify-between gap-y-5">
+                <div className="flex size-full items-center justify-center rounded-t-xl border-b lg:h-[440px]">
+                  <Image
+                    src={"/images/strategia/odpornosc.webp"}
+                    alt={"Odporność"}
+                    width={1024}
+                    height={1024}
+                    className="size-full object-cover"
+                    placeholder="blur"
+                    blurDataURL={bluredImages[0]}
+                    priority
+                  />
+                </div>
+                <div className="flex w-full flex-col items-start gap-y-1 px-5 pb-4">
+                  <h2 className="mb-2 text-xl font-bold text-black dark:text-white">{t("h2_odpo")}</h2>
+                  <p className="text-muted-foreground text-balance text-base lg:text-lg">{t("p_desc_odpo")}</p>
+                </div>
+              </div>
+            </div>
+            <div className="-z-0 min-h-[500px] overflow-hidden border-b p-0 sm:border-r lg:min-h-fit lg:border-b-0 lg:border-r-0">
+              <div className="flex size-full flex-col items-center justify-between gap-y-5">
+                <div className="flex aspect-square size-full items-center justify-center rounded-t-xl border-b lg:h-[440px]">
+                  <Image
+                    src={"/images/strategia/zrownowazony_rozwoj.webp"}
+                    alt={"Zrównoważony rozwój"}
+                    width={1024}
+                    height={1024}
+                    className="size-full object-cover"
+                    placeholder="blur"
+                    blurDataURL={bluredImages[0]}
+                    priority
+                  />
+                </div>
+                <div className="flex w-full flex-col items-start gap-y-1 px-5 pb-4">
+                  <h2 className="mb-2 text-xl font-bold text-black dark:text-white">{t("h2_roz")}</h2>
+                  <p className="text-muted-foreground text-balance text-base lg:text-lg">{t("p_desc_roz")}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </BlurFade>
+
+        <BlurFade delay={0.2} inView className="mx-auto mb-16 w-full text-left text-lg md:mb-20 md:text-center md:text-xl">
+          <h2 className="font-heading mb-6 flex flex-wrap text-2xl tracking-normal text-gray-900 sm:text-3xl md:justify-center md:text-4xl md:leading-none md:tracking-tight lg:text-5xl dark:text-white">
+            {t("h2_pod")}&nbsp;
+            <span className="block w-fit bg-gradient-to-r from-green-400 to-purple-500 bg-clip-text text-transparent">{t("h2span_pod")}</span>
+          </h2>
+          <p className="text-muted-foreground text-balance px-0 text-lg md:text-xl">
+            {t("p_desc_pod")}
+          </p>
+        </BlurFade>
+        <BlurFade delay={0.2} inView className="mx-auto mb-16 w-full md:mb-20">
+          <p className="text-muted-foreground text-balance px-0 text-lg md:text-center md:text-xl">{t("p4")}</p>
+          <FeaturesStrategy />
+          <p className="text-muted-foreground text-balance px-0 text-lg md:text-center md:text-xl">{t("p5")}</p>
+        </BlurFade>
+
+        <div
+          className="after:bg-background pointer-events-none relative z-[-2] mx-auto my-[-18.8rem] h-[50rem] overflow-hidden 
+                    [mask-image:radial-gradient(ellipse_at_center_center,#000,transparent_50%)] before:absolute before:inset-0 before:size-full before:bg-[radial-gradient(circle_at_bottom_center,#9e7aff,transparent_70%)] before:text-[#9e7aff] before:opacity-20 before:content-[''] after:absolute after:-left-1/2
+                    after:top-1/2 after:aspect-[1/0.7] after:w-[200%] after:rounded-[50%] after:border-t after:border-[hsl(var(--border))] after:[background-image:radial-gradient(circle_at_bottom_center,var(--color),transparent_70%)]"
+        />
+
+        <BlurFade delay={0.2} inView className="mx-auto mb-16 w-full text-left text-lg md:mb-20 md:text-center md:text-xl">
+          <h2 className="font-heading mb-6 flex flex-wrap text-2xl tracking-normal text-gray-900 sm:text-3xl md:justify-center md:text-4xl md:leading-none md:tracking-tight lg:text-5xl dark:text-white">
+            {t("text2")}
+          </h2>
+          <p className="text-muted-foreground text-balance px-0 text-lg md:text-xl">{t("p6")}</p>
+          <p className="text-muted-foreground mt-10 text-balance px-0 text-lg md:text-xl">{t("p7")}</p>
+        </BlurFade>
+
+        <BlurFade delay={0.2} inView className="mx-auto mb-16 mt-12 grid w-full grid-cols-1 gap-12 text-left text-lg md:mb-20 md:grid-cols-2 md:text-xl lg:grid-cols-3">
+          <DynamicSquareBackground
+            title={t("ol_li_title1")}
+            description={t("ol_li_res1")}
+          />
+          <DynamicSquareBackground
+            title={t("ol_li_title2")}
+            description={t("ol_li_res2")}
+          />
+          <DynamicSquareBackground
+            title={t("ol_li_title3")}
+            description={t("ol_li_res3")}
+          />
+          <DynamicSquareBackground
+            title={t("ol_li_title4")}
+            description={t("ol_li_res4")}
+          />
+          <DynamicSquareBackground
+            title={t("ol_li_title5")}
+            description={t("ol_li_res5")}
+          />
+        </BlurFade>
+
+        <BlurFade delay={0.2} inView className="mx-auto mb-16 w-full text-left text-lg md:mb-20 md:text-center md:text-xl">
+          <p className="text-muted-foreground mt-10 px-0 text-lg md:text-xl">{t("p12")}</p>
+        </BlurFade>
+
+        <BlurFade delay={0.2} inView className="mx-auto mb-16 w-full text-left text-lg md:mb-20 md:text-center md:text-xl">
+          <h2 className="font-heading mb-6 flex flex-wrap text-2xl tracking-normal text-gray-900 sm:text-3xl md:justify-center md:text-4xl md:leading-none md:tracking-tight lg:text-5xl dark:text-white">
+            {t("text3")}
+          </h2>
+          <p className="text-muted-foreground text-balance px-0 text-lg md:text-xl">{t("p8")}</p>
+        </BlurFade>
+        <ZoomParallax />
+        <BlurFade delay={0.2} inView className="mx-auto mb-16 mt-20 w-full text-left text-lg md:mb-20 md:text-center md:text-xl">
+          <p className="text-muted-foreground mt-10 text-balance px-0 text-lg md:text-xl">{t("p9")}</p>
+          <p className="text-muted-foreground mt-10 text-balance px-0 text-lg md:text-xl">{t("p10")}</p>
+          <p className="text-muted-foreground mt-10 text-balance px-0 text-lg md:text-xl">{t("p11")}</p>
+        </BlurFade>
+      </article>
+    </section>)
+  {/* 
         <Image
           src={"/images/orient_people.png"}
           alt={t("alt_orient")}
@@ -39,39 +188,6 @@ export default async function StrategyPage({ params }: { params: Promise<{ local
           height={1000}
           className="my-3 rounded-lg shadow-lg"
         />
-        <ArticleHeadingTitle text={t("text1")} />
-        <p className="mb-6 space-y-1 px-0">
-          {t("p1")}
-          &nbsp;
-          <CustomLink
-            href={"https://www.iso.org/standard/64239.html"}
-            openNewTab={true}
-            className="bg-gradient-to-r from-green-400 to-purple-500 bg-clip-text text-transparent underline-offset-4 hover:underline lg:inline"
-          >
-            ISO 27500:2016
-          </CustomLink>
-          &nbsp;{t("p2")}
-          &nbsp;
-          <CustomLink
-            href={"https://www.iso.org/standard/64241.html"}
-            openNewTab={true}
-            className="bg-gradient-to-r from-green-400 to-purple-500 bg-clip-text text-transparent underline-offset-4 hover:underline lg:inline"
-          >
-            ISO 27501:2019
-          </CustomLink>
-          &nbsp;{t("p3")}
-        </p>
-        <ul className="mb-6 list-inside list-disc space-y-1 px-0 ">
-          {t("p4")}
-          <li className="pl-4 pt-4">{t("list1")}</li>
-          <li className="pl-4">{t("list2")}</li>
-          <li className="pl-4">{t("list3")}</li>
-          <li className="pl-4">{t("list4")}</li>
-          <li className="pl-4">{t("list5")}</li>
-          <li className="pl-4">{t("list6")}</li>
-          <li className="pl-4">{t("list7")}</li>
-        </ul>
-        <p className="mb-6 space-y-1 px-0">{t("p5")}</p>
         <Image
           src={"/images/odpornosc.png"}
           alt={t("alt_odpornosc")}
@@ -79,41 +195,6 @@ export default async function StrategyPage({ params }: { params: Promise<{ local
           height={536}
           className="my-3 rounded-lg shadow-lg"
         />
-        <ArticleHeadingTitle text={t("text2")} />
-        <p className="mb-6 space-y-1 px-0">{t("p6")}</p>
-        <p className="mb-6 space-y-1 px-0">{t("p7")}</p>
-        <ol className="list-inside list-decimal space-y-4">
-          <li>{t("ol_li_title1")}
-            <ul>
-              <li className="pl-6">{t("ol_li_res1")}</li>
-            </ul>
-          </li>
-          <li>
-            {t("ol_li_title2")}
-            <ul>
-              <li className="pl-6">{t("ol_li_res2")}</li>
-            </ul>
-          </li>
-          <li>
-            {t("ol_li_title3")}
-            <ul>
-              <li className="pl-6">{t("ol_li_res3")}</li>
-            </ul>
-          </li>
-          <li>
-            {t("ol_li_title4")}
-            <ul>
-              <li className="pl-6">{t("ol_li_res4")}</li>
-            </ul>
-          </li>
-          <li>
-            {t("ol_li_title5")}
-            <ul>
-              <li className="pl-6">{t("ol_li_res5")}</li>
-            </ul>
-          </li>
-        </ol>
-        <p className="mb-12 mt-4 space-y-1 px-0">{t("p12")}</p>
         <Image
           src={"/images/eco.png"}
           alt={t("alt_eco")}
@@ -121,12 +202,5 @@ export default async function StrategyPage({ params }: { params: Promise<{ local
           height={536}
           className="rounded-lg shadow-lg"
         />
-        <ArticleHeadingTitle text={t("text3")} />
-        <p className="mb-6 space-y-1 px-0">{t("p8")}</p>
-        <p className="mb-6 space-y-1 px-0">{t("p9")}</p>
-        <p className="mb-6 space-y-1 px-0">{t("p10")}</p>
-        <p className="mb-6 space-y-1 px-0">{t("p11")}</p>
-      </article>
-    </main>
-  )
+  )*/}
 }

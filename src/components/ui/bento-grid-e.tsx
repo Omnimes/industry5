@@ -10,14 +10,14 @@ const lineHeight = 2;
 
 const LogoBeam = () => {
   return (
-    <div className="flex items-center justify-center min-h-52">
+    <div className="flex min-h-52 items-center justify-center">
       <div className="relative flex items-center">
-        <div className="border dark:border-white/30 border-black/30 rounded-2xl flex items-center justify-center w-14 h-14 p-4">
+        <div className="flex size-14 items-center justify-center rounded-2xl border border-black/30 p-4 dark:border-white/30">
           <Recycle size={24} />
         </div>
         <div className="relative bg-black dark:bg-white" style={{ width: `${lineWidth}px`, height: `${lineHeight}px`, overflow: 'hidden' }}>
           <motion.div
-            className="absolute top-0 left-0 h-full w-10 bg-gradient-to-r from-transparent via-white dark:via-black to-transparent opacity-75"
+            className="absolute left-0 top-0 h-full w-10 bg-gradient-to-r from-transparent via-white to-transparent opacity-75 dark:via-black"
             initial={{ x: '-40px' }}
             animate={{ x: `calc(${lineWidth}px + 40px)` }}
             transition={{
@@ -29,10 +29,10 @@ const LogoBeam = () => {
             style={{ willChange: 'transform' }}
           />
         </div>
-        <div className="relative border-2 dark:border-white/70 border-black/70 rounded-2xl flex items-center justify-center w-16 h-16 p-4 overflow-hidden shadow-[0_0_15px_5px_#dbe0e2]">
+        <div className="relative flex size-16 items-center justify-center overflow-hidden rounded-2xl border-2 border-black/70 p-4 shadow-[0_0_15px_5px_#dbe0e2] dark:border-white/70">
           <Leaf size={24} />
           <motion.div
-            className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-transparent via-black dark:via-white to-transparent opacity-30"
+            className="absolute left-0 top-0 size-full bg-gradient-to-r from-transparent via-black to-transparent opacity-30 dark:via-white"
             initial={{ x: '-100%' }}
             animate={{ x: '100%' }}
             transition={{
@@ -46,7 +46,7 @@ const LogoBeam = () => {
         </div>
         <div className="relative bg-black dark:bg-white" style={{ width: `${lineWidth}px`, height: `${lineHeight}px`, overflow: 'hidden' }}>
           <motion.div
-            className="absolute top-0 right-0 h-full w-10 bg-gradient-to-r from-transparent via-white dark:via-black to-transparent opacity-75"
+            className="absolute right-0 top-0 h-full w-10 bg-gradient-to-r from-transparent via-white to-transparent opacity-75 dark:via-black"
             initial={{ x: '40px' }}
             animate={{ x: `calc(-${lineWidth}px - 40px)` }}
             transition={{
@@ -58,7 +58,7 @@ const LogoBeam = () => {
             style={{ willChange: 'transform' }}
           />
         </div>
-        <div className="border dark:border-white/30 border-black/30 rounded-2xl flex items-center justify-center w-14 h-14 p-4">
+        <div className="flex size-14 items-center justify-center rounded-2xl border border-black/30 p-4 dark:border-white/30">
           <Lightbulb size={24} />
         </div>
       </div>
@@ -77,7 +77,7 @@ const CardWithEffect = ({ children }: { children: React.ReactNode }) => {
 
   return (
     <div
-      className="relative from-muted/20 to-muted bg-gradient-to-b flex-1 rounded-xl border border-purple-500 p-4 overflow-hidden"
+      className="from-muted/20 to-muted relative flex-1 overflow-hidden rounded-xl border border-purple-500 bg-gradient-to-b p-4"
       onMouseMove={handleMouseMove}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
@@ -107,16 +107,16 @@ const CardWithEffect = ({ children }: { children: React.ReactNode }) => {
 export const BentoBox1 = () => {
   const t = useTranslations('EuropeanUnion');
   return (
-    <div className="flex justify-center items-center rounded-lg mt-16">
-      <div className="flex flex-col md:flex-row gap-4 w-full min-h-[800px] md:min-h-[800px] md:h-[800px]">
+    <div className="mt-16 flex items-center justify-center rounded-lg">
+      <div className="flex min-h-[800px] w-full flex-col gap-4 md:h-[800px] md:min-h-[800px] md:flex-row">
         <CardWithEffect>
-          <div className="flex flex-col justify-between h-full p-2">
+          <div className="flex h-full flex-col justify-between p-2">
             <div className="mb-4 h-full">
               <Image
                 alt=""
                 loading="eager"
                 priority={true}
-                className="rounded w-full h-full"
+                className="size-full rounded"
                 height={450}
                 width={450}
                 src={"/images/eu/personalisation.webp"}
@@ -125,29 +125,29 @@ export const BentoBox1 = () => {
                 }}
               />
             </div>
-            <div className="text-left pt-6 mt-4">
-              <h3 className="text-2xl font-bold mb-2 dark:text-white text-black">{t("l1strong")}</h3>
+            <div className="mt-4 pt-6 text-left">
+              <h3 className="mb-2 text-2xl font-bold text-black dark:text-white">{t("l1strong")}</h3>
               <p className="text-muted-foreground text-balance">{t("l1")}</p>
             </div>
           </div>
         </CardWithEffect>
-        <div className="flex flex-col w-full md:w-1/2 gap-5 h-full md:h-[800px]">
+        <div className="flex size-full flex-col gap-5 md:h-[800px] md:w-1/2">
           <CardWithEffect>
-            <div className="flex flex-col justify-center h-full p-2">
-              <div className="flex items-center justify-center min-h-52 overflow-hidden">
+            <div className="flex h-full flex-col justify-center p-2">
+              <div className="flex min-h-52 items-center justify-center overflow-hidden">
                 <video className="object-cover" src="/images/eu/video-ai.mp4" autoPlay muted loop />
               </div>
-              <div className="text-left pt-6">
-                <h3 className="text-2xl font-bold mb-2 dark:text-white text-black">{t("l2strong")}</h3>
+              <div className="pt-6 text-left">
+                <h3 className="mb-2 text-2xl font-bold text-black dark:text-white">{t("l2strong")}</h3>
                 <p className="text-muted-foreground text-balance">{t("l2")}</p>
               </div>
             </div>
           </CardWithEffect>
           <CardWithEffect>
-            <div className="flex flex-col justify-center h-full p-2">
+            <div className="flex h-full flex-col justify-center p-2">
               <LogoBeam />
-              <div className="text-left pt-6">
-                <h3 className="text-2xl font-bold mb-2 dark:text-white text-black">{t("l3strong")}</h3>
+              <div className="pt-6 text-left">
+                <h3 className="mb-2 text-2xl font-bold text-black dark:text-white">{t("l3strong")}</h3>
                 <p className="text-muted-foreground text-balance">{t("l3")}</p>
               </div>
             </div>

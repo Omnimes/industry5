@@ -83,6 +83,14 @@ module.exports = {
             "offset-distance": "100%",
           },
         },
+        "marquee": {
+          from: { transform: "translateX(0)" },
+          to: { transform: "translateX(calc(-100% - var(--gap)))" },
+        },
+        "marquee-vertical": {
+          from: { transform: "translateY(0)" },
+          to: { transform: "translateY(calc(-100% - var(--gap)))" },
+        },
         "shimmer": {
           "0%, 90%, 100%": {
             "background-position": "calc(-100% - var(--shimmer-width)) 0",
@@ -96,6 +104,8 @@ module.exports = {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         "border-beam": "border-beam calc(var(--duration)*1s) infinite linear",
+        "marquee": "marquee var(--duration) linear infinite",
+        "marquee-vertical": "marquee-vertical var(--duration) linear infinite",
         "shimmer": "shimmer 8s infinite",
       },
       transitionDuration: {
@@ -103,7 +113,7 @@ module.exports = {
         '0.3s': '0.3s',
       },
       transitionTimingFunction: {
-        'ease': 'ease', // You can replace 'ease' with your desired custom easing function
+        'ease': 'ease',
       },
     },
   },

@@ -57,20 +57,20 @@ export default async function EuropeanUnionPage({ params }: { params: Promise<{ 
   ]
   return (
     <section id="industry" className="mx-auto max-w-screen-xl px-4 py-12 md:py-24">
-      <BlurFade delay={0.2} inView className="mx-auto mb-16 w-full text-left md:mb-20 text-lg md:text-xl">
+      <BlurFade delay={0.2} inView className="mx-auto mb-16 w-full text-left text-lg md:mb-20 md:text-xl">
         <TextRevealCard
           text={t('title')}
           desc={t('desc')}
         />
       </BlurFade>
       <article className="text-muted-foreground mb-6 px-0 lg:text-lg">
-        <BlurFade delay={0.3} inView className="mx-auto mb-16 w-full text-left md:mb-20 text-lg md:text-xl">
+        <BlurFade delay={0.3} inView className="mx-auto mb-16 w-full text-left text-lg md:mb-20 md:text-xl">
           <p className="mb-6 mt-2 space-y-1 px-0">{t("p1")}</p>
           <hr className="pb-4" />
           <p className="mb-6 mt-2 space-y-1 px-0">{t("p2")}</p>
         </BlurFade>
 
-        <BlurFade delay={0.2} inView className="mx-auto mb-16 w-full text-left md:mb-20 text-lg md:text-xl md:text-center">
+        <BlurFade delay={0.2} inView className="mx-auto mb-16 w-full text-left text-lg md:mb-20 md:text-center md:text-xl">
           <h2 className="font-heading mb-6 flex flex-wrap text-2xl tracking-normal text-gray-900 sm:text-3xl md:justify-center md:text-4xl md:leading-none md:tracking-tight lg:text-5xl dark:text-white">
             {t("h1")}&nbsp;
             <span className="block w-fit bg-gradient-to-r from-green-400 to-purple-500 bg-clip-text text-transparent">{t("h1span")}</span>
@@ -79,7 +79,7 @@ export default async function EuropeanUnionPage({ params }: { params: Promise<{ 
           <BentoBox1 />
         </BlurFade>
 
-        <BlurFade delay={0.2} inView className="mx-auto mb-16 w-full text-left md:mb-20 text-lg md:text-xl md:text-center">
+        <BlurFade delay={0.2} inView className="mx-auto mb-16 w-full text-left text-lg md:mb-20 md:text-center md:text-xl">
           <h2 className="font-heading mb-6 flex flex-wrap text-2xl tracking-normal text-gray-900 sm:text-3xl md:justify-center md:text-4xl md:leading-none md:tracking-tight lg:text-5xl dark:text-white">
             {t("h2")}&nbsp;
             <span className="block w-fit bg-gradient-to-r from-green-400 to-purple-500 bg-clip-text text-transparent">{t("h2span")}</span>
@@ -87,23 +87,23 @@ export default async function EuropeanUnionPage({ params }: { params: Promise<{ 
           <p className="text-muted-foreground text-balance px-0 text-lg md:text-xl">{t("p4")}</p>
         </BlurFade>
 
-        <BlurFade delay={0.2} inView className="mx-auto mb-16 w-full text-left md:mb-20 text-lg md:text-xl md:text-center grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 mt-12">
+        <BlurFade delay={0.2} inView className="mx-auto mb-16 mt-12 grid w-full grid-cols-1 gap-12 text-left text-lg md:mb-20 md:grid-cols-2 md:text-center md:text-xl lg:grid-cols-3">
           {feature.map((item, i) => (
             <div key={i} className={cn(i == 2 && "md:col-span-2 lg:col-span-1")}>
-              <div className="rounded-lg border text-card-foreground bg-background border-none shadow-none">
+              <div className="text-card-foreground bg-background rounded-lg border border-none shadow-none">
                 <div className="space-y-4">
-                  <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
+                  <div className="bg-primary/10 flex size-12 items-center justify-center rounded-full">
                     {item.icon}
                   </div>
-                  <h3 className="text-xl font-semibold text-left">{item.heading}</h3>
-                  <p className="text-muted-foreground text-left text-balance">{item.paragrapgh}</p>
+                  <h3 className="text-left text-xl font-semibold">{item.heading}</h3>
+                  <p className="text-muted-foreground text-balance text-left">{item.paragrapgh}</p>
                 </div>
               </div>
             </div>
           ))}
         </BlurFade>
 
-        <BlurFade delay={0.2} inView className="mx-auto mb-16 w-full text-left md:mb-20 text-lg md:text-xl md:text-center">
+        <BlurFade delay={0.2} inView className="mx-auto mb-16 w-full text-left text-lg md:mb-20 md:text-center md:text-xl">
           <h2 className="font-heading mb-6 flex flex-wrap text-2xl tracking-normal text-gray-900 sm:text-3xl md:justify-center md:text-4xl md:leading-none md:tracking-tight lg:text-5xl dark:text-white">
             {t("h6")}&nbsp;
             <span className="block w-fit bg-gradient-to-r from-green-400 to-purple-500 bg-clip-text text-transparent">{t("h6span")}</span>
@@ -111,11 +111,11 @@ export default async function EuropeanUnionPage({ params }: { params: Promise<{ 
           <p className="text-muted-foreground text-balance px-0 text-lg md:text-xl">{t("p8")}</p>
         </BlurFade>
 
-        <BlurFade delay={0.2} inView className="mx-auto mb-16 w-full text-left md:mb-20 text-lg md:text-xl md:text-center">
+        <BlurFade delay={0.2} inView className="mx-auto mb-16 w-full text-left text-lg md:mb-20 md:text-center md:text-xl">
           <BentoGridEuropenUnion images={images} bluredImages={bluredImages} />
         </BlurFade>
 
-        <BlurFade delay={0.2} inView className="mx-auto mb-16 w-full text-left md:mb-20 text-lg md:text-xl md:text-center">
+        <BlurFade delay={0.2} inView className="mx-auto mb-16 w-full text-left text-lg md:mb-20 md:text-center md:text-xl">
           <h2 className="font-heading mb-6 flex flex-wrap text-2xl tracking-normal text-gray-900 sm:text-3xl md:justify-center md:text-4xl md:leading-none md:tracking-tight lg:text-5xl dark:text-white">
             {t("h7")}&nbsp;
           </h2>
