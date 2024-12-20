@@ -1,21 +1,19 @@
-const { fontFamily } = require('tailwindcss/defaultTheme')
-const colors = require('tailwindcss/colors')
-const svgToDataUri = require("mini-svg-data-uri");
-const {
-  default: flattenColorPalette,
-} = require("tailwindcss/lib/util/flattenColorPalette");
+const { fontFamily } = require("tailwindcss/defaultTheme")
+const colors = require("tailwindcss/colors")
+const svgToDataUri = require("mini-svg-data-uri")
+const { default: flattenColorPalette } = require("tailwindcss/lib/util/flattenColorPalette")
 
 /** @type {import("tailwindcss/types").Config } */
 module.exports = {
   content: [
     "./src/**/*.{html,js}",
-    './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/components/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/app/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/layouts/**/*.{js,ts,tsx}',
-    './src/data/**/*.mdx',
+    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/layouts/**/*.{js,ts,tsx}",
+    "./src/data/**/*.mdx",
   ],
-  darkMode: 'class',
+  darkMode: "class",
   theme: {
     container: {
       center: true,
@@ -83,7 +81,7 @@ module.exports = {
             "offset-distance": "100%",
           },
         },
-        "marquee": {
+        marquee: {
           from: { transform: "translateX(0)" },
           to: { transform: "translateX(calc(-100% - var(--gap)))" },
         },
@@ -91,7 +89,7 @@ module.exports = {
           from: { transform: "translateY(0)" },
           to: { transform: "translateY(calc(-100% - var(--gap)))" },
         },
-        "shimmer": {
+        shimmer: {
           "0%, 90%, 100%": {
             "background-position": "calc(-100% - var(--shimmer-width)) 0",
           },
@@ -104,21 +102,21 @@ module.exports = {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         "border-beam": "border-beam calc(var(--duration)*1s) infinite linear",
-        "marquee": "marquee var(--duration) linear infinite",
+        marquee: "marquee var(--duration) linear infinite",
         "marquee-vertical": "marquee-vertical var(--duration) linear infinite",
-        "shimmer": "shimmer 8s infinite",
+        shimmer: "shimmer 8s infinite",
       },
       transitionDuration: {
-        '0.2s': '0.2s',
-        '0.3s': '0.3s',
+        "0.2s": "0.2s",
+        "0.3s": "0.3s",
       },
       transitionTimingFunction: {
-        'ease': 'ease',
+        ease: "ease",
       },
     },
   },
   plugins: [
-    require("tailwindcss-animate"), 
+    require("tailwindcss-animate"),
     require("@tailwindcss/typography"),
     addVariablesForColors,
     function ({ matchUtilities, theme }: any) {
@@ -131,18 +129,16 @@ module.exports = {
           }),
         },
         { values: flattenColorPalette(theme("backgroundColor")), type: "color" }
-      );
+      )
     },
   ],
 }
 
 function addVariablesForColors({ addBase, theme }: any) {
-  let allColors = flattenColorPalette(theme("colors"));
-  let newVars = Object.fromEntries(
-    Object.entries(allColors).map(([key, val]) => [`--${key}`, val])
-  );
- 
+  let allColors = flattenColorPalette(theme("colors"))
+  let newVars = Object.fromEntries(Object.entries(allColors).map(([key, val]) => [`--${key}`, val]))
+
   addBase({
     ":root": newVars,
-  });
+  })
 }

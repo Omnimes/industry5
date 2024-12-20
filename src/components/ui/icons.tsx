@@ -1,9 +1,5 @@
-import {
-  LucideProps,
-  Moon,
-  SunMedium
-} from "lucide-react"
-import { FaTwitter } from "react-icons/fa";
+import { LucideProps, Moon, SunMedium } from "lucide-react"
+import { FaTwitter } from "react-icons/fa"
 
 export const Icons = {
   sun: SunMedium,
@@ -26,11 +22,7 @@ export const Icons = {
     </svg>
   ),
   volt: (props: LucideProps) => (
-    <svg
-      stroke="currentColor"
-      viewBox="0 0 52 52"
-      {...props}
-    >
+    <svg stroke="currentColor" viewBox="0 0 52 52" {...props}>
       <polygon
         strokeWidth="4"
         strokeLinecap="round"
@@ -39,5 +31,5 @@ export const Icons = {
         points="29 13 14 29 25 29 23 39 38 23 27 23"
       />
     </svg>
-  )
+  ),
 }

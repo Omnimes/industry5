@@ -1,5 +1,6 @@
-import { Marquee } from "@/components/ui/marquee";
-import Image from "next/image";
+import Image from "next/image"
+
+import { Marquee } from "@/components/ui/marquee"
 
 const companies = [
   {
@@ -30,7 +31,7 @@ const companies = [
     name: "Spotify",
     url: "https://res.cloudinary.com/eldoraui/image/upload/v1734066180/Spotify_ocrrnm.svg",
   },
-];
+]
 
 export function Logos() {
   return (
@@ -57,5 +58,5 @@ export function Logos() {
         </div>
       </div>
     </section>
-  );
+  )
 }

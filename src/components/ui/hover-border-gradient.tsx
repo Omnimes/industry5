@@ -1,10 +1,11 @@
-"use client";
-import React, { useState, useEffect, useRef, useCallback } from "react";
+"use client"
 
-import { motion } from "framer-motion";
-import { cn } from "@/lib/utils";
+import React, { useCallback, useEffect, useRef, useState } from "react"
+import { motion } from "framer-motion"
 
-type Direction = "TOP" | "LEFT" | "BOTTOM" | "RIGHT";
+import { cn } from "@/lib/utils"
+
+type Direction = "TOP" | "LEFT" | "BOTTOM" | "RIGHT"
 
 export function HoverBorderGradient({
   children,
@@ -16,24 +17,27 @@ export function HoverBorderGradient({
   ...props
 }: React.PropsWithChildren<
   {
-    as?: React.ElementType;
-    containerClassName?: string;
-    className?: string;
-    duration?: number;
-    clockwise?: boolean;
+    as?: React.ElementType
+    containerClassName?: string
+    className?: string
+    duration?: number
+    clockwise?: boolean
   } & React.HTMLAttributes<HTMLElement>
 >) {
-  const [hovered, setHovered] = useState<boolean>(false);
-  const [direction, setDirection] = useState<Direction>("TOP");
+  const [hovered, setHovered] = useState<boolean>(false)
+  const [direction, setDirection] = useState<Direction>("TOP")
 
-  const rotateDirection = useCallback((currentDirection: Direction): Direction => {
-    const directions: Direction[] = ["TOP", "LEFT", "BOTTOM", "RIGHT"];
-    const currentIndex = directions.indexOf(currentDirection);
-    const nextIndex = clockwise
-      ? (currentIndex - 1 + directions.length) % directions.length
-      : (currentIndex + 1) % directions.length;
-    return directions[nextIndex];
-  }, [clockwise]);
+  const rotateDirection = useCallback(
+    (currentDirection: Direction): Direction => {
+      const directions: Direction[] = ["TOP", "LEFT", "BOTTOM", "RIGHT"]
+      const currentIndex = directions.indexOf(currentDirection)
+      const nextIndex = clockwise
+        ? (currentIndex - 1 + directions.length) % directions.length
+        : (currentIndex + 1) % directions.length
+      return directions[nextIndex]
+    },
+    [clockwise]
+  )
 
   const movingMap: Record<Direction, string> = {
     TOP: "radial-gradient(20.7% 50% at 50% 0%, hsl(0, 0%, 100%) 0%, rgba(255, 255, 255, 0) 100%)",
@@ -42,23 +46,23 @@ export function HoverBorderGradient({
       "radial-gradient(20.7% 50% at 50% 100%, hsl(0, 0%, 100%) 0%, rgba(255, 255, 255, 0) 100%)",
     RIGHT:
       "radial-gradient(16.2% 41.199999999999996% at 100% 50%, hsl(0, 0%, 100%) 0%, rgba(255, 255, 255, 0) 100%)",
-  };
+  }
 
   const highlight =
-    "radial-gradient(75% 181.15942028985506% at 50% 50%, #3275F8 0%, rgba(255, 255, 255, 0) 100%)";
+    "radial-gradient(75% 181.15942028985506% at 50% 50%, #3275F8 0%, rgba(255, 255, 255, 0) 100%)"
 
   useEffect(() => {
     if (!hovered) {
       const interval = setInterval(() => {
-        setDirection((prevState) => rotateDirection(prevState));
-      }, duration * 1000);
-      return () => clearInterval(interval);
+        setDirection((prevState) => rotateDirection(prevState))
+      }, duration * 1000)
+      return () => clearInterval(interval)
     }
-  }, [hovered, rotateDirection, duration]);
+  }, [hovered, rotateDirection, duration])
   return (
     <Tag
       onMouseEnter={(event: React.MouseEvent<HTMLDivElement>) => {
-        setHovered(true);
+        setHovered(true)
       }}
       onMouseLeave={() => setHovered(false)}
       className={cn(
@@ -67,18 +71,11 @@ export function HoverBorderGradient({
       )}
       {...props}
     >
-      <div
-        className={cn(
-          "z-10 w-auto rounded-[inherit] bg-black px-4 py-2 text-white",
-          className
-        )}
-      >
+      <div className={cn("z-10 w-auto rounded-[inherit] bg-black px-4 py-2 text-white", className)}>
         {children}
       </div>
       <motion.div
-        className={cn(
-          "absolute inset-0 z-0 flex-none overflow-hidden rounded-[inherit]"
-        )}
+        className={cn("absolute inset-0 z-0 flex-none overflow-hidden rounded-[inherit]")}
         style={{
           filter: "blur(2px)",
           position: "absolute",
@@ -87,13 +84,11 @@ export function HoverBorderGradient({
         }}
         initial={{ background: movingMap[direction] }}
         animate={{
-          background: hovered
-            ? [movingMap[direction], highlight]
-            : movingMap[direction],
+          background: hovered ? [movingMap[direction], highlight] : movingMap[direction],
         }}
         transition={{ ease: "linear", duration: duration ?? 1 }}
       />
       <div className="z-1 absolute inset-[2px] flex-none rounded-[100px] bg-black" />
     </Tag>
-  );
+  )
 }

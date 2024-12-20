@@ -1,44 +1,38 @@
-"use client";
+"use client"
 
-import { useState, useRef, useEffect } from "react";
-import Image from "next/image";
-import { Transition } from "@headlessui/react";
+import { useEffect, useRef, useState } from "react"
+import Image from "next/image"
+import { Transition } from "@headlessui/react"
 
 interface Testimonial {
-  img: string;
-  quote: string;
-  name: string;
-  role: string;
+  img: string
+  quote: string
+  name: string
+  role: string
 }
 
-export function FancyTestimonialsSlider({
-  testimonials,
-}: {
-  testimonials: Testimonial[];
-}) {
-  const testimonialsRef = useRef<HTMLDivElement>(null);
-  const [active, setActive] = useState<number>(0);
-  const [autorotate, setAutorotate] = useState<boolean>(true);
-  const autorotateTiming: number = 7000;
+export function FancyTestimonialsSlider({ testimonials }: { testimonials: Testimonial[] }) {
+  const testimonialsRef = useRef<HTMLDivElement>(null)
+  const [active, setActive] = useState<number>(0)
+  const [autorotate, setAutorotate] = useState<boolean>(true)
+  const autorotateTiming: number = 7000
 
   useEffect(() => {
-    if (!autorotate) return;
+    if (!autorotate) return
     const interval = setInterval(() => {
-      setActive(
-        active + 1 === testimonials.length ? 0 : (active) => active + 1,
-      );
-    }, autorotateTiming);
-    return () => clearInterval(interval);
-  }, [active, autorotate, testimonials.length]);
+      setActive(active + 1 === testimonials.length ? 0 : (active) => active + 1)
+    }, autorotateTiming)
+    return () => clearInterval(interval)
+  }, [active, autorotate, testimonials.length])
 
   const heightFix = () => {
     if (testimonialsRef.current && testimonialsRef.current.parentElement)
-      testimonialsRef.current.parentElement.style.height = `${testimonialsRef.current.clientHeight}px`;
-  };
+      testimonialsRef.current.parentElement.style.height = `${testimonialsRef.current.clientHeight}px`
+  }
 
   useEffect(() => {
-    heightFix();
-  }, []);
+    heightFix()
+  }, [])
 
   return (
     <div className="mx-auto w-full max-w-3xl text-center">
@@ -101,14 +95,12 @@ export function FancyTestimonialsSlider({
             key={index}
             className={`m-1.5 inline-flex justify-center whitespace-nowrap rounded-full px-3 py-1.5 text-xs shadow-sm transition-colors duration-150 focus-visible:outline-none focus-visible:ring focus-visible:ring-fuchsia-300 dark:focus-visible:ring-fuchsia-600 ${active === index ? "bg-fuchsia-500 text-white shadow-fuchsia-950/10" : "bg-white text-fuchsia-900 hover:bg-fuchsia-100"}`}
             onClick={() => {
-              setActive(index);
-              setAutorotate(false);
+              setActive(index)
+              setAutorotate(false)
             }}
           >
             <span>{testimonial.name}</span>{" "}
-            <span
-              className={`${active === index ? "text-fuchsia-200" : "text-fuchsia-300"}`}
-            >
+            <span className={`${active === index ? "text-fuchsia-200" : "text-fuchsia-300"}`}>
               -
             </span>{" "}
             <span>{testimonial.role}</span>
@@ -116,5 +108,5 @@ export function FancyTestimonialsSlider({
         ))}
       </div>
     </div>
-  );
+  )
 }

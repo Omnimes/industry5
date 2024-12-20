@@ -1,7 +1,13 @@
-'use client';
-import clsx from 'clsx';
-import { useParams } from 'next/navigation';
-import { useTransition } from 'react';
+"use client"
+
+import { useTransition } from "react"
+import { useParams } from "next/navigation"
+import { locales } from "@/config"
+import { usePathname, useRouter } from "@/navigation"
+import clsx from "clsx"
+import { useLocale, useTranslations } from "next-intl"
+import ReactCountryFlag from "react-country-flag"
+
 import {
   Select,
   SelectContent,
@@ -9,20 +15,17 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select"
-import { useTranslations, useLocale } from 'next-intl';
-import ReactCountryFlag from "react-country-flag"
-import { useRouter, usePathname } from '@/navigation';
-import { locales } from '@/config';
+
 export default function LocaleSwitcher() {
-  const t = useTranslations('LocaleSwitcher');
-  const locale = useLocale();
-  const params = useParams();
-  const router = useRouter();
-  const pathname = usePathname();
-  const [isPending, startTransition] = useTransition();
+  const t = useTranslations("LocaleSwitcher")
+  const locale = useLocale()
+  const params = useParams()
+  const router = useRouter()
+  const pathname = usePathname()
+  const [isPending, startTransition] = useTransition()
 
   function onSelectChange(value: string) {
-    const nextLocale = value;
+    const nextLocale = value
     startTransition(() => {
       router.replace(
         // @ts-expect-error -- TypeScript will validate that only known `params`
@@ -30,26 +33,34 @@ export default function LocaleSwitcher() {
         // always match for the current route, we can skip runtime checks.
         { pathname, params },
         { locale: nextLocale }
-      );
-    });
+      )
+    })
   }
   return (
     <Select onValueChange={onSelectChange} defaultValue={locale}>
-      <SelectTrigger className={clsx(
-        'w-[60px] inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none ring-offset-background border-0 px-3 focus:border-0 focus:outline-none focus:ring-0 hover:bg-accent hover:text-accent-foreground shadow-none',
-        isPending && 'transition-opacity [&:disabled]:opacity-30'
-      )}
-       aria-label="Locale Switcher"
-       aria-labelledby="Locale Switcher"
-       title="Locale Switcher"
+      <SelectTrigger
+        className={clsx(
+          "w-[60px] inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none ring-offset-background border-0 px-3 focus:border-0 focus:outline-none focus:ring-0 hover:bg-accent hover:text-accent-foreground shadow-none",
+          isPending && "transition-opacity [&:disabled]:opacity-30"
+        )}
+        aria-label="Locale Switcher"
+        aria-labelledby="Locale Switcher"
+        title="Locale Switcher"
       >
         <SelectValue placeholder={t("label")} />
       </SelectTrigger>
       <SelectContent>
-        {locales.map((cur) => <SelectItem key={cur} value={cur}>
-          <ReactCountryFlag countryCode={cur == "en" ? "gb" : cur} svg className="flag" alt={`flag ${cur}`} />
-        </SelectItem>)}
+        {locales.map((cur) => (
+          <SelectItem key={cur} value={cur}>
+            <ReactCountryFlag
+              countryCode={cur == "en" ? "gb" : cur}
+              svg
+              className="flag"
+              alt={`flag ${cur}`}
+            />
+          </SelectItem>
+        ))}
       </SelectContent>
     </Select>
-  );
+  )
 }

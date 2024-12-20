@@ -1,4 +1,4 @@
-import { DotPattern } from "./dot-pattern";
+import { DotPattern } from "./dot-pattern"
 
 export function DynamicSquareBackground({
   title,
@@ -7,11 +7,11 @@ export function DynamicSquareBackground({
   buttonText,
   buttonHref,
 }: Readonly<{
-  title: string;
-  tag?: string;
-  description: string;
-  buttonText?: string;
-  buttonHref?: string;
+  title: string
+  tag?: string
+  description: string
+  buttonText?: string
+  buttonHref?: string
 }>) {
   return (
     <>
@@ -32,16 +32,12 @@ export function DynamicSquareBackground({
         <DotPattern />
         <div className="z-20">
           <div className="">
-            <h3 className="text-balck inline text-xl font-semibold dark:text-white">
-              {title}
-            </h3>
+            <h3 className="text-balck inline text-xl font-semibold dark:text-white">{title}</h3>
             {/* <p className="ml-2 inline rounded-sm border border-neutral-900 px-0.5 align-top text-xs font-medium uppercase tracking-tight dark:border-neutral-400">
               {tag}
             </p> */}
           </div>
-          <p className="text-muted-foreground mt-1 text-base">
-            {description}
-          </p>
+          <p className="text-muted-foreground mt-1 text-base">{description}</p>
         </div>
         {/* <Link
           className="z-20 inline-flex h-12 w-full items-center justify-center rounded-lg border border-neutral-500/15 bg-neutral-200/20 font-medium text-neutral-600 backdrop-blur-md transition-colors hover:border-neutral-500/30 hover:bg-neutral-200/50 dark:bg-neutral-500/20 dark:text-neutral-300 dark:hover:bg-neutral-500/40"
@@ -51,13 +47,13 @@ export function DynamicSquareBackground({
         </Link> */}
       </div>
     </>
-  );
+  )
 }
 
 const DecorativeTilesBackground = () => {
-  const rows = 40;
-  const columns = 40;
-  const animationDuration = 14; // seconds
+  const rows = 40
+  const columns = 40
+  const animationDuration = 14 // seconds
 
   return (
     <div
@@ -72,7 +68,7 @@ const DecorativeTilesBackground = () => {
             key={`line-${rowIndex}`}
           >
             {Array.from({ length: columns }).map((_, colIndex) => {
-              const delay = Math.random() * animationDuration;
+              const delay = Math.random() * animationDuration
 
               return (
                 <div
@@ -92,11 +88,11 @@ const DecorativeTilesBackground = () => {
                     }}
                   />
                 </div>
-              );
+              )
             })}
           </div>
-        );
+        )
       })}
     </div>
-  );
-};
+  )
+}

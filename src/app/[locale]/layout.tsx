@@ -1,17 +1,20 @@
-import "@/styles/globals.css";
-import localFont from "next/font/local"
+import "@/styles/globals.css"
+
 import { ReactNode } from "react"
-import { locales } from "@/config"
 import { Inter as FontSans } from "next/font/google"
-import { NextIntlClientProvider} from "next-intl";
-import { getTranslations, setRequestLocale,getMessages } from "next-intl/server";
+import localFont from "next/font/local"
+import { locales } from "@/config"
 import { siteConfig } from "@/data/config/site"
-import { getLocalePrimaryDialects } from "@/lib/locales"
-import { cn } from "@/lib/utils"
-import { ThemeProvider } from "@/components/theme/theme-provider"
-import { TailwindIndicator } from "@/components/tailwind-indicator"
 import { Analytics } from "@vercel/analytics/react"
 import { SpeedInsights } from "@vercel/speed-insights/next"
+import { NextIntlClientProvider } from "next-intl"
+import { getMessages, getTranslations, setRequestLocale } from "next-intl/server"
+
+import { getLocalePrimaryDialects } from "@/lib/locales"
+import { cn } from "@/lib/utils"
+import { TailwindIndicator } from "@/components/tailwind-indicator"
+import { ThemeProvider } from "@/components/theme/theme-provider"
+
 const fontSans = FontSans({
   subsets: ["latin"],
   display: "swap",
@@ -22,21 +25,17 @@ const fontHeading = localFont({
   variable: "--font-heading",
 })
 type Props = {
-  children: ReactNode;
-  params: Promise<{ locale: string }>;
-};
-
-export function generateStaticParams() {
-  return locales.map((locale) => ({ locale }));
+  children: ReactNode
+  params: Promise<{ locale: string }>
 }
 
-export async function generateMetadata({
-  params,
-}: {
-  params: Promise<{ locale: string }>;
-}) {
-  const { locale } = await params;
-  const t = await getTranslations({ locale, namespace: "Metadata" });
+export function generateStaticParams() {
+  return locales.map((locale) => ({ locale }))
+}
+
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params
+  const t = await getTranslations({ locale, namespace: "Metadata" })
   return {
     metadataBase: new URL(siteConfig.siteUrl),
     title: t(siteConfig.title),
@@ -86,14 +85,14 @@ export async function generateMetadata({
       apple: "/favicons/apple-touch-icon.png",
     },
     manifest: `${siteConfig.siteUrl}/site.webmanifest`,
-  };
+  }
 }
 
 export default async function LocaleLayout({ children, params }: Props) {
-  const { locale } = await params;
-  setRequestLocale(locale);
+  const { locale } = await params
+  setRequestLocale(locale)
   // const messages = useMessages();
-  const messages = await getMessages();
+  const messages = await getMessages()
 
   return (
     <html
@@ -101,16 +100,8 @@ export default async function LocaleLayout({ children, params }: Props) {
       className={`scroll-smooth`}
       suppressHydrationWarning
     >
-      <meta
-        name="theme-color"
-        media="(prefers-color-scheme: light)"
-        content="#fff"
-      />
-      <meta
-        name="theme-color"
-        media="(prefers-color-scheme: dark)"
-        content="#000"
-      />
+      <meta name="theme-color" media="(prefers-color-scheme: light)" content="#fff" />
+      <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#000" />
       <link rel="shortcut icon" href="/favicons/favicon.ico" type="image/x-icon" />
       <link rel="icon" href="/favicons/favicon.ico" type="image/x-icon" />
       <link rel="apple-touch-icon" sizes="57x57" href="/favicons/apple-icon-57x57.png" />
@@ -129,13 +120,48 @@ export default async function LocaleLayout({ children, params }: Props) {
       <meta name="msapplication-TileColor" content="#ffffff" />
       <meta name="msapplication-TileImage" content="/favicons/ms-icon-144x144.png" />
       <link rel="canonical" href="https://industry5.pl/pl/" key="canonical" />
-      <link rel="sitemap" type="application/xml" title="Sitemap" href="https://industry5.pl/sitemap.xml" />
-      <link rel="alternate" type="application/rss+xml; charset=utf-8" title="RSS POSTS" href="https://industry5.pl/rss.xml" />
-      <link rel="alternate" type="application/rss+xml; charset=utf-8" title="RSS NEWS" href="https://industry5.pl/rss-eu-applications.xml" />
-      <link rel="alternate" type="application/atom+xml; charset=utf-8" title="FEED POSTS" href="https://industry5.pl/feed.xml" />
-      <link rel="alternate" type="application/atom+xml; charset=utf-8" title="FEED NEWS" href="https://industry5.pl/feed-eu-applications.xml" />
-      <link rel="alternate" type="application/json; charset=utf-8" title="JSON FEED POSTS" href="https://industry5.pl/posts.json" />
-      <link rel="alternate" type="application/json; charset=utf-8" title="JSON FEED NEWS" href="https://industry5.pl/eu-applications.json" />
+      <link
+        rel="sitemap"
+        type="application/xml"
+        title="Sitemap"
+        href="https://industry5.pl/sitemap.xml"
+      />
+      <link
+        rel="alternate"
+        type="application/rss+xml; charset=utf-8"
+        title="RSS POSTS"
+        href="https://industry5.pl/rss.xml"
+      />
+      <link
+        rel="alternate"
+        type="application/rss+xml; charset=utf-8"
+        title="RSS NEWS"
+        href="https://industry5.pl/rss-eu-applications.xml"
+      />
+      <link
+        rel="alternate"
+        type="application/atom+xml; charset=utf-8"
+        title="FEED POSTS"
+        href="https://industry5.pl/feed.xml"
+      />
+      <link
+        rel="alternate"
+        type="application/atom+xml; charset=utf-8"
+        title="FEED NEWS"
+        href="https://industry5.pl/feed-eu-applications.xml"
+      />
+      <link
+        rel="alternate"
+        type="application/json; charset=utf-8"
+        title="JSON FEED POSTS"
+        href="https://industry5.pl/posts.json"
+      />
+      <link
+        rel="alternate"
+        type="application/json; charset=utf-8"
+        title="JSON FEED NEWS"
+        href="https://industry5.pl/eu-applications.json"
+      />
       <body
         className={cn(
           "bg-background min-h-screen font-sans antialiased",

@@ -1,37 +1,38 @@
-"use client";
+"use client"
 
-import { cn } from "@/lib/utils";
-import { motion } from "framer-motion";
-import { Star } from "lucide-react";
-import Image from "next/image";
-import { Marquee } from "@/components/ui/marquee";
+import Image from "next/image"
+import { motion } from "framer-motion"
+import { Star } from "lucide-react"
+
+import { cn } from "@/lib/utils"
+import { Marquee } from "@/components/ui/marquee"
 
 export function Highlight({
   children,
   className,
 }: {
-  children: React.ReactNode;
-  className?: string;
+  children: React.ReactNode
+  className?: string
 }) {
   return (
     <span
       className={cn(
         "bg-[#f0abfc] p-1 py-0.5 font-bold text-[#d946ef] dark:bg-[#f0abfc] dark:text-[#d946ef]",
-        className,
+        className
       )}
     >
       {children}
     </span>
-  );
+  )
 }
 
 export interface TestimonialCardProps {
-  name: string;
-  role: string;
-  img?: string;
-  description: React.ReactNode;
-  className?: string;
-  [key: string]: any;
+  name: string
+  role: string
+  img?: string
+  description: React.ReactNode
+  className?: string
+  [key: string]: any
 }
 
 export function TestimonialCard({
@@ -50,7 +51,7 @@ export function TestimonialCard({
         " border border-neutral-200 bg-white",
         // dark styles
         "dark:bg-black dark:[border:1px_solid_rgba(255,255,255,.1)] dark:[box-shadow:0_-20px_80px_-20px_#ffffff1f_inset]",
-        className,
+        className
       )}
       {...props}
     >
@@ -80,7 +81,7 @@ export function TestimonialCard({
         </div>
       </div>
     </div>
-  );
+  )
 }
 const testimonials = [
   {
@@ -91,8 +92,7 @@ const testimonials = [
       <p>
         Using EldoraUI has revolutionized our design process.
         <Highlight>
-          Its reusable, animated components make it easy to deliver cutting-edge
-          designs.
+          Its reusable, animated components make it easy to deliver cutting-edge designs.
         </Highlight>{" "}
         A must-have for any design team.
       </p>
@@ -104,11 +104,9 @@ const testimonials = [
     img: "https://randomuser.me/api/portraits/women/12.jpg",
     description: (
       <p>
-        EldoraUI&apos;s templates have drastically improved our development
-        speed.
+        EldoraUI&apos;s templates have drastically improved our development speed.
         <Highlight>
-          We&apos;ve reduced project timelines by 70%, delivering high-quality
-          UIs effortlessly.
+          We&apos;ve reduced project timelines by 70%, delivering high-quality UIs effortlessly.
         </Highlight>{" "}
         Highly recommend it to fellow developers.
       </p>
@@ -120,9 +118,9 @@ const testimonials = [
     img: "https://randomuser.me/api/portraits/men/45.jpg",
     description: (
       <p>
-        As a startup founder, I need tools that help us grow fast without
-        sacrificing quality. EldoraUI&apos;s stunning designs and simple
-        integration have made it an essential part of our workflow.
+        As a startup founder, I need tools that help us grow fast without sacrificing quality.
+        EldoraUI&apos;s stunning designs and simple integration have made it an essential part of
+        our workflow.
         <Highlight>Our clients love our modern interfaces.</Highlight>
       </p>
     ),
@@ -133,12 +131,10 @@ const testimonials = [
     img: "https://randomuser.me/api/portraits/women/83.jpg",
     description: (
       <p>
-        EldoraUI&apos;s prebuilt components have made it so easy to create
-        intuitive and compliant designs.
-        <Highlight>
-          It&apos;s perfect for tackling complex workflows with style.
-        </Highlight>{" "}
-        A must-have for any product designer.
+        EldoraUI&apos;s prebuilt components have made it so easy to create intuitive and compliant
+        designs.
+        <Highlight>It&apos;s perfect for tackling complex workflows with style.</Highlight> A
+        must-have for any product designer.
       </p>
     ),
   },
@@ -148,12 +144,10 @@ const testimonials = [
     img: "https://randomuser.me/api/portraits/men/1.jpg",
     description: (
       <p>
-        EldoraUI&apos;s animations and design elements have elevated our fintech
-        app&apos;s user experience.
-        <Highlight>
-          The feedback on our new design is phenomenal.
-        </Highlight>{" "}
-        It&apos;s a game-changer for user-centric applications.
+        EldoraUI&apos;s animations and design elements have elevated our fintech app&apos;s user
+        experience.
+        <Highlight>The feedback on our new design is phenomenal.</Highlight> It&apos;s a
+        game-changer for user-centric applications.
       </p>
     ),
   },
@@ -163,11 +157,9 @@ const testimonials = [
     img: "https://randomuser.me/api/portraits/women/5.jpg",
     description: (
       <p>
-        EldoraUI&apos;s component library has simplified web development for our
-        logistics dashboard.
-        <Highlight>
-          Building custom layouts has never been this efficient.
-        </Highlight>{" "}
+        EldoraUI&apos;s component library has simplified web development for our logistics
+        dashboard.
+        <Highlight>Building custom layouts has never been this efficient.</Highlight>{" "}
       </p>
     ),
   },
@@ -177,11 +169,9 @@ const testimonials = [
     img: "https://randomuser.me/api/portraits/men/14.jpg",
     description: (
       <p>
-        EldoraUI&apos;s responsive designs have helped us create marketing sites
-        that look amazing on every device.
-        <Highlight>
-          It&apos;s revolutionized how we approach branding online.
-        </Highlight>{" "}
+        EldoraUI&apos;s responsive designs have helped us create marketing sites that look amazing
+        on every device.
+        <Highlight>It&apos;s revolutionized how we approach branding online.</Highlight>{" "}
       </p>
     ),
   },
@@ -191,11 +181,9 @@ const testimonials = [
     img: "https://randomuser.me/api/portraits/women/56.jpg",
     description: (
       <p>
-        EldoraUI&apos;s beautifully crafted components have completely
-        transformed our fashion storefront.
-        <Highlight>
-          Customers love the dynamic shopping experience.
-        </Highlight>{" "}
+        EldoraUI&apos;s beautifully crafted components have completely transformed our fashion
+        storefront.
+        <Highlight>Customers love the dynamic shopping experience.</Highlight>{" "}
       </p>
     ),
   },
@@ -205,11 +193,9 @@ const testimonials = [
     img: "https://randomuser.me/api/portraits/men/18.jpg",
     description: (
       <p>
-        EldoraUI has made it easy to create user-friendly, accessible interfaces
-        for our healthcare apps.
-        <Highlight>
-          It&apos;s a crucial part of our design system.
-        </Highlight>{" "}
+        EldoraUI has made it easy to create user-friendly, accessible interfaces for our healthcare
+        apps.
+        <Highlight>It&apos;s a crucial part of our design system.</Highlight>{" "}
       </p>
     ),
   },
@@ -219,15 +205,12 @@ const testimonials = [
     img: "https://randomuser.me/api/portraits/women/73.jpg",
     description: (
       <p>
-        EldoraUI&apos;s education-focused templates have doubled our
-        platform&apos;s usability.
-        <Highlight>
-          It&apos;s tailor-made for addressing student and teacher needs.
-        </Highlight>{" "}
+        EldoraUI&apos;s education-focused templates have doubled our platform&apos;s usability.
+        <Highlight>It&apos;s tailor-made for addressing student and teacher needs.</Highlight>{" "}
       </p>
     ),
   },
-];
+]
 
 export function Testimonials() {
   return (
@@ -237,11 +220,8 @@ export function Testimonials() {
       </h2>
       <h3 className="text-foreground/80 mx-auto mb-8 max-w-lg text-balance text-center text-lg font-medium tracking-tight">
         Don&apos;t just take our word for it. Here&apos;s what{" "}
-        <span className="bg-gradient bg-clip-text text-transparent">
-          real people
-        </span>{" "}
-        are saying about{" "}
-        <span className="from-fg-onAccent text-purple-600">Eldora UI</span>
+        <span className="bg-gradient bg-clip-text text-transparent">real people</span> are saying
+        about <span className="from-fg-onAccent text-purple-600">Eldora UI</span>
       </h3>
       <div className="relative mt-6 max-h-screen overflow-hidden">
         <div className="gap-4 md:columns-2 xl:columns-3 2xl:columns-4">
@@ -278,5 +258,5 @@ export function Testimonials() {
         <div className="from-background pointer-events-none absolute inset-x-0 top-0 h-1/4 w-full bg-gradient-to-b from-20%"></div>
       </div>
     </section>
-  );
+  )
 }

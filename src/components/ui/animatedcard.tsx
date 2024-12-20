@@ -1,8 +1,10 @@
-"use client";
-import { ArrowUpRightIcon } from "lucide-react";
-import type { ReactNode } from "react";
-import { useMouse } from "@/hooks/usemouse";
-import { cn } from "@/lib/utils";
+"use client"
+
+import type { ReactNode } from "react"
+import { ArrowUpRightIcon } from "lucide-react"
+
+import { cn } from "@/lib/utils"
+import { useMouse } from "@/hooks/usemouse"
 
 export const MainMenusGradientCard = ({
   title,
@@ -12,14 +14,14 @@ export const MainMenusGradientCard = ({
   className,
   children,
 }: {
-  title: string;
-  description: string;
-  withArrow?: boolean;
-  circleSize?: number;
-  children?: ReactNode;
-  className?: string;
+  title: string
+  description: string
+  withArrow?: boolean
+  circleSize?: number
+  children?: ReactNode
+  className?: string
 }) => {
-  const [mouse, parentRef] = useMouse();
+  const [mouse, parentRef] = useMouse()
 
   return (
     <div
@@ -32,20 +34,15 @@ export const MainMenusGradientCard = ({
       <div
         className={cn(
           "absolute -translate-x-1/2 -translate-y-1/2 transform-gpu rounded-full transition-transform duration-500 group-hover:scale-[3]",
-          mouse.elementX === null || mouse.elementY === null
-            ? "opacity-0"
-            : "opacity-100",
+          mouse.elementX === null || mouse.elementY === null ? "opacity-0" : "opacity-100"
         )}
         style={{
-          maskImage: `radial-gradient(${
-            circleSize / 2
-          }px circle at center, white, transparent)`,
+          maskImage: `radial-gradient(${circleSize / 2}px circle at center, white, transparent)`,
           width: `${circleSize}px`,
           height: `${circleSize}px`,
           left: `${mouse.elementX}px`,
           top: `${mouse.elementY}px`,
-          background:
-            "linear-gradient(135deg, #3BC4F2, #7A69F9,#F26378,#F5833F)",
+          background: "linear-gradient(135deg, #3BC4F2, #7A69F9,#F26378,#F5833F)",
         }}
       />
       <div className="absolute inset-px rounded-[19px] bg-neutral-100/80 dark:bg-neutral-900/80" />
@@ -53,20 +50,16 @@ export const MainMenusGradientCard = ({
         <div
           className={cn(
             "gird relative h-40 place-content-center overflow-hidden rounded-[15px] border-white bg-white/70 dark:border-neutral-950 dark:bg-black/50",
-            className,
+            className
           )}
         >
           {children}
         </div>
       )}
       <div className="relative px-4 pb-2 pt-4">
-        <h3 className="text-lg font-semibold text-neutral-800 dark:text-neutral-300">
-          {title}
-        </h3>
-        <p className="mt-2 text-neutral-600 dark:text-neutral-400">
-          {description}
-        </p>
+        <h3 className="text-lg font-semibold text-neutral-800 dark:text-neutral-300">{title}</h3>
+        <p className="mt-2 text-neutral-600 dark:text-neutral-400">{description}</p>
       </div>
     </div>
-  );
-};
+  )
+}

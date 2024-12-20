@@ -1,10 +1,11 @@
-import { useTranslations } from 'next-intl';
-import Link from "next/link";
+import Link from "next/link"
+import { useTranslations } from "next-intl"
+
 // Note that `app/[locale]/[...rest]/page.tsx`
 // is necessary for this page to render.
 
 export default function NotFoundPage() {
-  const t = useTranslations('NotFound');
+  const t = useTranslations("NotFound")
   const taria = useTranslations("AriaLabel")
   return (
     <div className="flex flex-col items-start justify-start md:mt-24 md:flex-row md:items-center md:justify-center md:space-x-6">
@@ -14,21 +15,17 @@ export default function NotFoundPage() {
         </h1>
       </div>
       <div className="max-w-md">
-        <p className="mb-4 text-xl font-bold leading-normal md:text-2xl">
-          {t('title')}
-        </p>
-        <p className="mb-8">
-          {t('description')}
-        </p>
+        <p className="mb-4 text-xl font-bold leading-normal md:text-2xl">{t("title")}</p>
+        <p className="mb-8">{t("description")}</p>
         <Link
           href="/"
           aria-label={taria("footerLogoAria")}
           rel="noreferrer noopener"
           className="bg-gradient-to-tr from-[#FF1CF7] to-[#b249f8] text-white shadow-lg"
         >
-          {t('action')}
+          {t("action")}
         </Link>
       </div>
     </div>
-  );
+  )
 }

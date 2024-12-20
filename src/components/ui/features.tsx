@@ -1,36 +1,33 @@
-"use client";
+"use client"
 
-import * as Accordion from "@radix-ui/react-accordion";
-import { motion, useInView } from "framer-motion";
-import type { ReactNode } from "react";
-import React, { forwardRef, useEffect, useRef, useState } from "react";
+import type { ReactNode } from "react"
+import React, { forwardRef, useEffect, useRef, useState } from "react"
+import * as Accordion from "@radix-ui/react-accordion"
+import { motion, useInView } from "framer-motion"
 
-import { cn } from "@/lib/utils";
+import { cn } from "@/lib/utils"
 
 type AccordionItemProps = {
-  children: React.ReactNode;
-  className?: string;
-} & Accordion.AccordionItemProps;
+  children: React.ReactNode
+  className?: string
+} & Accordion.AccordionItemProps
 
 const AccordionItem = forwardRef<HTMLDivElement, AccordionItemProps>(
   ({ children, className, ...props }, forwardedRef) => (
     <Accordion.Item
-      className={cn(
-        "mt-px overflow-hidden focus-within:relative focus-within:z-10",
-        className,
-      )}
+      className={cn("mt-px overflow-hidden focus-within:relative focus-within:z-10", className)}
       {...props}
       ref={forwardedRef}
     >
       {children}
     </Accordion.Item>
-  ),
-);
-AccordionItem.displayName = "AccordionItem";
+  )
+)
+AccordionItem.displayName = "AccordionItem"
 
 interface AccordionTriggerProps {
-  children: React.ReactNode;
-  className?: string;
+  children: React.ReactNode
+  className?: string
 }
 
 const AccordionTrigger = forwardRef<HTMLButtonElement, AccordionTriggerProps>(
@@ -39,7 +36,7 @@ const AccordionTrigger = forwardRef<HTMLButtonElement, AccordionTriggerProps>(
       <Accordion.Trigger
         className={cn(
           "group flex flex-1 cursor-pointer items-center justify-between px-5 text-[15px] leading-none outline-none",
-          className,
+          className
         )}
         {...props}
         ref={forwardedRef}
@@ -47,44 +44,44 @@ const AccordionTrigger = forwardRef<HTMLButtonElement, AccordionTriggerProps>(
         {children}
       </Accordion.Trigger>
     </Accordion.Header>
-  ),
-);
-AccordionTrigger.displayName = "AccordionTrigger";
+  )
+)
+AccordionTrigger.displayName = "AccordionTrigger"
 type AccordionContentProps = {
-  children: ReactNode;
-  className?: string;
-} & Accordion.AccordionContentProps;
+  children: ReactNode
+  className?: string
+} & Accordion.AccordionContentProps
 
 const AccordionContent = forwardRef<HTMLDivElement, AccordionContentProps>(
   ({ children, className, ...props }, forwardedRef) => (
     <Accordion.Content
       className={cn(
         "data-[state=closed]:animate-slide-up data-[state=open]:animate-slide-down overflow-hidden text-[15px] font-medium",
-        className,
+        className
       )}
       {...props}
       ref={forwardedRef}
     >
       <div className="px-5 py-2">{children}</div>
     </Accordion.Content>
-  ),
-);
-AccordionContent.displayName = "AccordionContent";
+  )
+)
+AccordionContent.displayName = "AccordionContent"
 
 export interface FeaturesDataProps {
-  id: number;
-  title: string;
-  content: string;
-  image?: string;
-  video?: string;
-  icon?: React.ReactNode;
+  id: number
+  title: string
+  content: string
+  image?: string
+  video?: string
+  icon?: React.ReactNode
 }
 
 export interface FeaturesProps {
-  collapseDelay?: number;
-  ltr?: boolean;
-  linePosition?: "left" | "right" | "top" | "bottom";
-  data: FeaturesDataProps[];
+  collapseDelay?: number
+  ltr?: boolean
+  linePosition?: "left" | "right" | "top" | "bottom"
+  data: FeaturesDataProps[]
 }
 
 export function Features({
@@ -93,84 +90,75 @@ export function Features({
   linePosition = "left",
   data = [],
 }: FeaturesProps) {
-  const [currentIndex, setCurrentIndex] = useState<number>(-1);
-  const carouselRef = useRef<HTMLUListElement>(null);
-  const ref = useRef(null);
+  const [currentIndex, setCurrentIndex] = useState<number>(-1)
+  const carouselRef = useRef<HTMLUListElement>(null)
+  const ref = useRef(null)
   const isInView = useInView(ref, {
     once: true,
     amount: 0.5,
-  });
+  })
 
   useEffect(() => {
     const timer = setTimeout(() => {
       if (isInView) {
-        setCurrentIndex(0);
+        setCurrentIndex(0)
       } else {
-        setCurrentIndex(-1);
+        setCurrentIndex(-1)
       }
-    }, 100);
+    }, 100)
 
-    return () => clearTimeout(timer);
-  }, [isInView]);
+    return () => clearTimeout(timer)
+  }, [isInView])
 
   const scrollToIndex = (index: number) => {
     if (carouselRef.current) {
-      const card = carouselRef.current.querySelectorAll(".card")[index];
+      const card = carouselRef.current.querySelectorAll(".card")[index]
       if (card) {
-        const cardRect = card.getBoundingClientRect();
-        const carouselRect = carouselRef.current.getBoundingClientRect();
-        const offset =
-          cardRect.left -
-          carouselRect.left -
-          (carouselRect.width - cardRect.width) / 2;
+        const cardRect = card.getBoundingClientRect()
+        const carouselRect = carouselRef.current.getBoundingClientRect()
+        const offset = cardRect.left - carouselRect.left - (carouselRect.width - cardRect.width) / 2
 
         carouselRef.current.scrollTo({
           left: carouselRef.current.scrollLeft + offset,
           behavior: "smooth",
-        });
+        })
       }
     }
-  };
+  }
 
   useEffect(() => {
     const timer = setInterval(() => {
-      setCurrentIndex((prevIndex) =>
-        prevIndex !== undefined ? (prevIndex + 1) % data.length : 0,
-      );
-    }, collapseDelay);
+      setCurrentIndex((prevIndex) => (prevIndex !== undefined ? (prevIndex + 1) % data.length : 0))
+    }, collapseDelay)
 
-    return () => clearInterval(timer);
-  }, [collapseDelay, currentIndex, data.length]);
+    return () => clearInterval(timer)
+  }, [collapseDelay, currentIndex, data.length])
 
   useEffect(() => {
     const handleAutoScroll = () => {
-      const nextIndex =
-        (currentIndex !== undefined ? currentIndex + 1 : 0) % data.length;
-      scrollToIndex(nextIndex);
-    };
+      const nextIndex = (currentIndex !== undefined ? currentIndex + 1 : 0) % data.length
+      scrollToIndex(nextIndex)
+    }
 
-    const autoScrollTimer = setInterval(handleAutoScroll, collapseDelay);
+    const autoScrollTimer = setInterval(handleAutoScroll, collapseDelay)
 
-    return () => clearInterval(autoScrollTimer);
-  }, [collapseDelay, currentIndex, data.length]);
+    return () => clearInterval(autoScrollTimer)
+  }, [collapseDelay, currentIndex, data.length])
 
   useEffect(() => {
-    const carousel = carouselRef.current;
+    const carousel = carouselRef.current
     if (carousel) {
       const handleScroll = () => {
-        const scrollLeft = carousel.scrollLeft;
-        const cardWidth = carousel.querySelector(".card")?.clientWidth || 0;
-        const newIndex = Math.min(
-          Math.floor(scrollLeft / cardWidth),
-          data.length - 1,
-        );
-        setCurrentIndex(newIndex);
-      };
+        const scrollLeft = carousel.scrollLeft
+        const cardWidth = carousel.querySelector(".card")?.clientWidth || 0
+        const newIndex = Math.min(Math.floor(scrollLeft / cardWidth), data.length - 1)
+        setCurrentIndex(newIndex)
+      }
 
-      carousel.addEventListener("scroll", handleScroll);
-      return () => carousel.removeEventListener("scroll", handleScroll);
+      carousel.addEventListener("scroll", handleScroll)
+      return () => carousel.removeEventListener("scroll", handleScroll)
     }
-  }, [data.length]);
+  }, [data.length])
 
   return (
     <section ref={ref} id="features">
@@ -187,9 +175,7 @@ export function Features({
                 type="single"
                 defaultValue={`item-${currentIndex}`}
                 value={`item-${currentIndex}`}
-                onValueChange={(value) =>
-                  setCurrentIndex(Number(value.split("-")[1]))
-                }
+                onValueChange={(value) => setCurrentIndex(Number(value.split("-")[1]))}
               >
                 {data.map((item, index) => (
                   <AccordionItem
@@ -200,9 +186,7 @@ export function Features({
                     {linePosition === "left" || linePosition === "right" ? (
                       <div
                         className={`absolute inset-y-0 h-full w-0.5 overflow-hidden rounded-lg bg-neutral-300/50 dark:bg-neutral-300/30 ${
-                          linePosition === "right"
-                            ? "left-auto right-0"
-                            : "left-0 right-auto"
+                          linePosition === "right" ? "left-auto right-0" : "left-0 right-auto"
                         }`}
                       >
                         <div
@@ -211,9 +195,7 @@ export function Features({
                           } bg-primary origin-top transition-all ease-linear dark:bg-white`}
                           style={{
                             transitionDuration:
-                              currentIndex === index
-                                ? `${collapseDelay}ms`
-                                : "0s",
+                              currentIndex === index ? `${collapseDelay}ms` : "0s",
                           }}
                         ></div>
                       </div>
@@ -233,9 +215,7 @@ export function Features({
                           } bg-primary origin-left transition-all ease-linear dark:bg-white`}
                           style={{
                             transitionDuration:
-                              currentIndex === index
-                                ? `${collapseDelay}ms`
-                                : "0s",
+                              currentIndex === index ? `${collapseDelay}ms` : "0s",
                           }}
                         ></div>
                       </div>
@@ -260,11 +240,7 @@ export function Features({
                 ))}
               </Accordion.Root>
             </div>
-            <div
-              className={`h-[350px] min-h-[200px] w-auto  ${
-                ltr && "lg:order-1"
-              }`}
-            >
+            <div className={`h-[350px] min-h-[200px] w-auto  ${ltr && "lg:order-1"}`}>
               {data[currentIndex]?.image ? (
                 <motion.img
                   key={currentIndex}
@@ -312,15 +288,12 @@ export function Features({
                         currentIndex === index ? "w-full" : "w-0"
                       } bg-primary origin-top transition-all ease-linear`}
                       style={{
-                        transitionDuration:
-                          currentIndex === index ? `${collapseDelay}ms` : "0s",
+                        transitionDuration: currentIndex === index ? `${collapseDelay}ms` : "0s",
                       }}
                     ></div>
                   </div>
                   <h2 className="text-xl font-bold">{item.title}</h2>
-                  <p className="mx-0 max-w-sm text-balance text-sm">
-                    {item.content}
-                  </p>
+                  <p className="mx-0 max-w-sm text-balance text-sm">{item.content}</p>
                 </div>
               ))}
             </ul>
@@ -328,5 +301,5 @@ export function Features({
         </div>
       </div>
     </section>
-  );
+  )
 }

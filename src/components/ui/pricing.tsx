@@ -1,17 +1,19 @@
-"use client";
+"use client"
 
-import { CheckIcon } from "@radix-ui/react-icons";
-import { motion } from "framer-motion";
-import { Loader } from "lucide-react";
-import { useState } from "react";
-import { cn } from "@/lib/utils";
-import { Button } from "@/components/ui/button";
-import { Switch } from "./switch";
+import { useState } from "react"
+import { CheckIcon } from "@radix-ui/react-icons"
+import { motion } from "framer-motion"
+import { Loader } from "lucide-react"
 
-type Interval = "month" | "year";
+import { cn } from "@/lib/utils"
+import { Button } from "@/components/ui/button"
+
+import { Switch } from "./switch"
+
+type Interval = "month" | "year"
 
 export function toHumanPrice(price: number, decimals: number = 2) {
-  return Number(price / 100).toFixed(decimals);
+  return Number(price / 100).toFixed(decimals)
 }
 const demoPrices = [
   {
@@ -46,8 +48,7 @@ const demoPrices = [
   {
     id: "price_5",
     name: "Enterprise",
-    description:
-      "An enterprise plan with advanced features for large organizations",
+    description: "An enterprise plan with advanced features for large organizations",
     features: [
       "Custom AI solutions",
       "24/7 dedicated support",
@@ -76,34 +77,32 @@ const demoPrices = [
     yearlyPrice: 80000,
     isMostPopular: false,
   },
-];
+]
 
 export function PricingSection() {
-  const [interval, setInterval] = useState<Interval>("month");
-  const [isLoading, setIsLoading] = useState(false);
-  const [id, setId] = useState<string | null>(null);
+  const [interval, setInterval] = useState<Interval>("month")
+  const [isLoading, setIsLoading] = useState(false)
+  const [id, setId] = useState<string | null>(null)
 
   const onSubscribeClick = async (priceId: string) => {
-    setIsLoading(true);
-    setId(priceId);
-    await new Promise((resolve) => setTimeout(resolve, 1000)); // Simulate a delay
-    setIsLoading(false);
-  };
+    setIsLoading(true)
+    setId(priceId)
+    await new Promise((resolve) => setTimeout(resolve, 1000)) // Simulate a delay
+    setIsLoading(false)
+  }
 
   return (
     <section id="pricing">
       <div className="mx-auto flex max-w-screen-xl flex-col gap-8 px-4 py-14 md:px-8">
         <div className="mx-auto max-w-5xl text-center">
-          <h4 className="text-xl font-bold tracking-tight text-black dark:text-white">
-            Pricing
-          </h4>
+          <h4 className="text-xl font-bold tracking-tight text-black dark:text-white">Pricing</h4>
         </div>
 
         <div className="flex w-full items-center justify-center space-x-2">
           <Switch
             id="interval"
             onCheckedChange={(checked: boolean) => {
-              setInterval(checked ? "year" : "month");
+              setInterval(checked ? "year" : "month")
             }}
           />
           <span>Annual</span>
@@ -121,14 +120,12 @@ export function PricingSection() {
                 {
                   "border-2 border-[var(--color-one)] dark:border-[var(--color-one)]":
                     price.isMostPopular,
-                },
+                }
               )}
             >
               <div className="flex items-center">
                 <div className="ml-4">
-                  <h2 className="text-base font-semibold leading-7">
-                    {price.name}
-                  </h2>
+                  <h2 className="text-base font-semibold leading-7">{price.name}</h2>
                   <p className="h-12 text-sm leading-5 text-black/70 dark:text-white">
                     {price.description}
                   </p>
@@ -168,20 +165,16 @@ export function PricingSection() {
               <Button
                 className={cn(
                   "group relative w-full gap-2 overflow-hidden text-lg font-semibold tracking-tighter",
-                  "hover:ring-primary transform-gpu ring-offset-current transition-all duration-300 ease-out hover:ring-2 hover:ring-offset-2",
+                  "hover:ring-primary transform-gpu ring-offset-current transition-all duration-300 ease-out hover:ring-2 hover:ring-offset-2"
                 )}
                 disabled={isLoading}
                 onClick={() => void onSubscribeClick(price.id)}
               >
                 <span className="absolute right-0 -mt-12 h-32 w-8 translate-x-12 rotate-12 transform-gpu bg-white opacity-10 transition-all duration-1000 ease-out group-hover:-translate-x-96 dark:bg-black" />
-                {(!isLoading || (isLoading && id !== price.id)) && (
-                  <p>Subscribe</p>
-                )}
+                {(!isLoading || (isLoading && id !== price.id)) && <p>Subscribe</p>}
 
                 {isLoading && id === price.id && <p>Subscribing</p>}
-                {isLoading && id === price.id && (
-                  <Loader className="mr-2 size-4 animate-spin" />
-                )}
+                {isLoading && id === price.id && <Loader className="mr-2 size-4 animate-spin" />}
               </Button>
 
               <hr className="m-0 h-px w-full border-none bg-gradient-to-r from-neutral-200/0 via-neutral-500/30 to-neutral-200/0" />
@@ -203,5 +196,5 @@ export function PricingSection() {
         </div>
       </div>
     </section>
-  );
+  )
 }

@@ -1,11 +1,18 @@
-import { cn } from "@/lib/utils";
 import {
-   Users, Target, Heart, Briefcase, ShieldCheck, Globe, MapPinCheckInside
-} from "lucide-react";
-import { useTranslations } from "next-intl";
+  Briefcase,
+  Globe,
+  Heart,
+  MapPinCheckInside,
+  ShieldCheck,
+  Target,
+  Users,
+} from "lucide-react"
+import { useTranslations } from "next-intl"
+
+import { cn } from "@/lib/utils"
 
 export function FeaturesStrategy() {
-  const t = useTranslations("Strategy");
+  const t = useTranslations("Strategy")
   const features = [
     {
       title: t("list1"),
@@ -13,10 +20,10 @@ export function FeaturesStrategy() {
       icon: <Users />,
     },
     {
-        title: t("list4"),
-        description: t("list4_desc"),
-        icon: <Heart />,
-      },
+      title: t("list4"),
+      description: t("list4_desc"),
+      icon: <Heart />,
+    },
     {
       title: t("list2"),
       description: t("list2_desc"),
@@ -42,19 +49,18 @@ export function FeaturesStrategy() {
       description: t("list7_desc"),
       icon: <Globe />,
     },
-  ];
+  ]
   return (
     <div className="relative z-10 mx-auto grid  max-w-7xl grid-cols-1 py-10 md:grid-cols-2 lg:grid-cols-4">
       {features.map((feature, index) => (
         <Feature key={feature.title} {...feature} index={index} />
       ))}
     </div>
-  );
+  )
 }
 
-
 export function FeaturesIndustry() {
-  const t = useTranslations("Industry");
+  const t = useTranslations("Industry")
   const features = [
     {
       title: t("strong5"),
@@ -62,10 +68,10 @@ export function FeaturesIndustry() {
       icon: <Users />,
     },
     {
-        title: t("strong6"),
-        description: t("list6"),
-        icon: <Heart />,
-      },
+      title: t("strong6"),
+      description: t("list6"),
+      icon: <Heart />,
+    },
     {
       title: t("strong7"),
       description: t("list7"),
@@ -101,14 +107,14 @@ export function FeaturesIndustry() {
     //   description: t("list13"),
     //   icon: <Globe />,
     // },
-  ];
+  ]
   return (
     <div className="relative z-10 mx-auto grid  max-w-7xl grid-cols-1 py-10 md:grid-cols-2 lg:grid-cols-4">
       {features.map((feature, index) => (
         <Feature key={feature.title} {...feature} index={index} />
       ))}
     </div>
-  );
+  )
 }
 
 const Feature = ({
@@ -117,10 +123,10 @@ const Feature = ({
   icon,
   index,
 }: {
-  title: string;
-  description: string;
-  icon: React.ReactNode;
-  index: number;
+  title: string
+  description: string
+  icon: React.ReactNode
+  index: number
 }) => {
   return (
     <div
@@ -149,5 +155,5 @@ const Feature = ({
         {description}
       </p>
     </div>
-  );
-};
+  )
+}

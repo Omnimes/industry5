@@ -5,11 +5,11 @@ export const siteConfig = {
   authorUrl: "https://github.com/PiotrSierant",
   name: "Industry5",
   title: "title",
-  description: 'description',
-  keywords: 'keywords',
+  description: "description",
+  keywords: "keywords",
   theme: "dark",
   siteUrl: process.env.SITE_URL || "http://localhost:3000",
-  socialBanner: '/images/twitter-card.png',
+  socialBanner: "/images/twitter-card.png",
   mainNav: [
     {
       title: "home",
@@ -37,17 +37,17 @@ export const siteConfig = {
     {
       title: "title3",
       href: "/industry",
-      desc: "desc3"
+      desc: "desc3",
     },
     {
       title: "title2",
       href: "/history",
-      desc: "desc2"
+      desc: "desc2",
     },
     {
       title: "title4",
       href: "/future",
-      desc: "desc4"
-    }
-  ]
+      desc: "desc4",
+    },
+  ],
 }

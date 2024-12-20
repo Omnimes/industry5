@@ -1,24 +1,28 @@
-"use client";
+"use client"
 
-import { useRef } from "react";
-import { AnimatePresence, motion, useInView, Variants } from "framer-motion";
+import { useRef } from "react"
+import { AnimatePresence, motion, useInView, Variants } from "framer-motion"
 
 interface BlurFadeProps {
-  children: React.ReactNode;
-  className?: string;
+  children: React.ReactNode
+  className?: string
   variant?: {
-    hidden: { y: number };
-    visible: { y: number };
-  };
-  duration?: number;
-  delay?: number;
-  yOffset?: number;
-  inView?: boolean;
-  inViewMargin?: MarginType;
-  blur?: string;
+    hidden: { y: number }
+    visible: { y: number }
+  }
+  duration?: number
+  delay?: number
+  yOffset?: number
+  inView?: boolean
+  inViewMargin?: MarginType
+  blur?: string
 }
-type MarginValue = `${number}${'px' | '%'}`;
-type MarginType = MarginValue | `${MarginValue} ${MarginValue}` | `${MarginValue} ${MarginValue} ${MarginValue}` | `${MarginValue} ${MarginValue} ${MarginValue} ${MarginValue}`;
+type MarginValue = `${number}${"px" | "%"}`
+type MarginType =
+  | MarginValue
+  | `${MarginValue} ${MarginValue}`
+  | `${MarginValue} ${MarginValue} ${MarginValue}`
+  | `${MarginValue} ${MarginValue} ${MarginValue} ${MarginValue}`
 
 export default function BlurFade({
   children,
@@ -31,14 +35,17 @@ export default function BlurFade({
   inViewMargin = "-50px",
   blur = "6px",
 }: BlurFadeProps) {
-  const ref = useRef<HTMLDivElement>(null);
-  const inViewResult = useInView(ref as React.RefObject<Element>, { once: true, margin: inViewMargin });
-  const isInView = !inView || inViewResult;
+  const ref = useRef<HTMLDivElement>(null)
+  const inViewResult = useInView(ref as React.RefObject<Element>, {
+    once: true,
+    margin: inViewMargin,
+  })
+  const isInView = !inView || inViewResult
   const defaultVariants: Variants = {
     hidden: { y: yOffset, opacity: 0, filter: `blur(${blur})` },
     visible: { y: -yOffset, opacity: 1, filter: `blur(0px)` },
-  };
-  const combinedVariants = variant || defaultVariants;
+  }
+  const combinedVariants = variant || defaultVariants
   return (
     <AnimatePresence>
       <motion.div
@@ -57,5 +64,5 @@ export default function BlurFade({
         {children}
       </motion.div>
     </AnimatePresence>
-  );
+  )
 }

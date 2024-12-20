@@ -1,8 +1,10 @@
-declare module 'rehype-citation' {
-  const rehypeCitation: any;
-  export default rehypeCitation;
+import { MotionProps as OriginalMotionProps } from "framer-motion"
+
+declare module "rehype-citation" {
+  const rehypeCitation: any
+  export default rehypeCitation
 }
-declare module 'remark-html';
+declare module "remark-html"
 
 export interface NavItem {
   title: string
@@ -16,18 +18,16 @@ type Posts = {
 }
 
 type Post = {
-  title: string;
-  description: string;
-  publishedAt: string;
-  status: string;
-  coverImage: string;
-  slug: string;
+  title: string
+  description: string
+  publishedAt: string
+  status: string
+  coverImage: string
+  slug: string
 }
-
-import { MotionProps as OriginalMotionProps } from "framer-motion";
 
 declare module "framer-motion" {
   interface MotionProps extends OriginalMotionProps {
-    className?: string;
+    className?: string
   }
 }
