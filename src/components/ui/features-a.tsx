@@ -2,49 +2,105 @@ import { cn } from "@/lib/utils";
 import {
    Users, Target, Heart, Briefcase, ShieldCheck, Globe, MapPinCheckInside
 } from "lucide-react";
+import { useTranslations } from "next-intl";
 
 export function FeaturesStrategy() {
+  const t = useTranslations("Strategy");
   const features = [
     {
-      title: "Wykorzystanie różnic indywidualnych jako siły organizacyjnej.",
-      description:
-        "Docenianie indywidualnych różnic pracowników i wykorzystywanie ich talentów oraz unikalnych perspektyw jako fundamentu dla innowacyjności i rozwoju organizacji.",
+      title: t("list1"),
+      description: t("list1_desc"),
       icon: <Users />,
     },
     {
-        title: "Uwzględnienie w priorytetach biznesowych zapewnienia zdrowia, bezpieczeństwa i dobrego samopoczucia pracowników.",
-        description: "Priorytetowe traktowanie zdrowia fizycznego i psychicznego pracowników, co przekłada się na ich satysfakcję oraz efektywność pracy.",
+        title: t("list4"),
+        description: t("list4_desc"),
         icon: <Heart />,
       },
     {
-      title: "Zapewnienie użyteczności i dostępności strategicznych celów biznesowych.",
-      description:
-        "Formułowanie celów biznesowych w sposób zrozumiały i dostępny dla wszystkich, co umożliwia ich skuteczną realizację i zaangażowanie całego zespołu.",
+      title: t("list2"),
+      description: t("list2_desc"),
       icon: <Target />,
     },
     {
-      title: "Przyjęcie podejścia systemowego.",
-      description:
-        "Uwzględnianie powiązań między różnymi elementami organizacji, aby osiągnąć spójność działań i efektywnie reagować na zmieniające się warunki.",
+      title: t("list3"),
+      description: t("list3_desc"),
       icon: <MapPinCheckInside />,
     },
     {
-      title: "Docenianie pracowników i tworzenie sensownego środowiska pracy.",
-      description: "Budowanie środowiska, w którym pracownicy czują się doceniani, a ich praca ma dla nich osobiste znaczenie, co zwiększa motywację i zaangażowanie.",
+      title: t("list5"),
+      description: t("list5_desc"),
       icon: <Briefcase />,
     },
     {
-      title: "Wprowadzenie zasady bycia otwartym i godnym zaufania.",
-      description:
-        "Promowanie transparentności w działaniu organizacji, co buduje zaufanie wśród pracowników i interesariuszy oraz sprzyja współpracy.",
+      title: t("list6"),
+      description: t("list6_desc"),
       icon: <ShieldCheck />,
     },
     {
-      title: "Działanie w sposób społecznie odpowiedzialny.",
-      description:
-        "Realizowanie działań zgodnych z zasadami etyki i odpowiedzialności wobec społeczeństwa, środowiska oraz przyszłych pokoleń.",
+      title: t("list7"),
+      description: t("list7_desc"),
       icon: <Globe />,
     },
+  ];
+  return (
+    <div className="relative z-10 mx-auto grid  max-w-7xl grid-cols-1 py-10 md:grid-cols-2 lg:grid-cols-4">
+      {features.map((feature, index) => (
+        <Feature key={feature.title} {...feature} index={index} />
+      ))}
+    </div>
+  );
+}
+
+
+export function FeaturesIndustry() {
+  const t = useTranslations("Industry");
+  const features = [
+    {
+      title: t("strong5"),
+      description: t("list5"),
+      icon: <Users />,
+    },
+    {
+        title: t("strong6"),
+        description: t("list6"),
+        icon: <Heart />,
+      },
+    {
+      title: t("strong7"),
+      description: t("list7"),
+      icon: <Target />,
+    },
+    {
+      title: t("strong8"),
+      description: t("list8"),
+      icon: <MapPinCheckInside />,
+    },
+    {
+      title: t("strong9"),
+      description: t("list9"),
+      icon: <Briefcase />,
+    },
+    {
+      title: t("strong10"),
+      description: t("list10"),
+      icon: <ShieldCheck />,
+    },
+    {
+      title: t("strong11"),
+      description: t("list11"),
+      icon: <Globe />,
+    },
+    {
+      title: t("strong12"),
+      description: t("list12"),
+      icon: <Globe />,
+    },
+    // {
+    //   title: t("strong13"),
+    //   description: t("list13"),
+    //   icon: <Globe />,
+    // },
   ];
   return (
     <div className="relative z-10 mx-auto grid  max-w-7xl grid-cols-1 py-10 md:grid-cols-2 lg:grid-cols-4">

@@ -2,7 +2,6 @@ import { genPageMetadata } from "@/app/seo";
 import { BentoGridEuropenUnion } from "@/components/BentoFeature";
 import { BentoBox1 } from "@/components/ui/bento-grid-e";
 import BlurFade from "@/components/ui/blur-fade";
-import { ArticleHeadingTitle } from "@/components/ui/link-anchor";
 import { TextRevealCard } from "@/components/ui/text-reveal-card";
 import { getBase64 } from "@/lib/base64";
 import { getLocalePrimaryDialects } from "@/lib/locales";
