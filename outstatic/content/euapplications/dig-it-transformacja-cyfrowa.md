@@ -8,8 +8,8 @@ slug: 'dig-it-transformacja-cyfrowa'
 description: 'DIG.IT TRANSFORMACJA CYFROWA POLSKICH MŚP'
 coverImage: '/images/digit.png'
 lang: 'pl'
-dateFrom: 'IV'
-dateTo: 'III'
+dateFrom: '30.09.2024'
+dateTo: '31.12.2024'
 publishedAt: '2024-06-11T16:02:14.908Z'
 ---
 
