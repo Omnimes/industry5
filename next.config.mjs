@@ -3,15 +3,15 @@ const withNextIntl = createNextIntlPlugin('./src/i18n/request.ts');
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  reactStrictMode: true,
+  compress: true,
+  poweredByHeader: false,
+  productionBrowserSourceMaps: true,
   images: {
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "raw.githubusercontent.com",
-      },
-      {
-        protocol: "https",
-        hostname: "avatars.githubusercontent.com",
+        hostname: "**.githubusercontent.com",
       },
       {
         protocol: "https",
@@ -21,6 +21,8 @@ const nextConfig = {
   },
   experimental: {
     authInterrupts: true,
+    nextScriptWorkers: true,
+    webVitalsAttribution: ['CLS', 'LCP'],
   },
 };
 

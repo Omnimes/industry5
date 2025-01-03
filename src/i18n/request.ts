@@ -1,21 +1,28 @@
-import { notFound } from "next/navigation"
 import { getRequestConfig } from "next-intl/server"
 
 import { locales } from "../config"
+import { defaultLocale } from "../middleware"
 
-// Can be imported from a shared config
+export const routing = {
+  locales: locales,
+  defaultLocale: defaultLocale,
+}
 
 export default getRequestConfig(async ({ requestLocale }) => {
   let locale = await requestLocale
-  // Validate that the incoming `locale` parameter is valid
-  if (!locales.includes(locale as any)) notFound()
+
+  if (!locale || !routing.locales.includes(locale as "en" | "pl")) {
+    locale = routing.defaultLocale
+  }
 
   return {
+    locale,
     messages: (
       await (locale === "pl"
-        ? // When using Turbopack, this will enable HMR for `en`
+        ? // W przypadku polskiego, załaduj plik `pl.json`
           import("../../messages/pl.json")
-        : import(`../../messages/${locale}.json`))
+        : // Dla innych języków załaduj odpowiedni plik JSON
+          import(`../../messages/${locale}.json`))
     ).default,
   }
 })
