@@ -1,7 +1,28 @@
 {
-  "commit": "3961c8c6d5924e03ed1069d8d7d3ad31e5ab23e5",
-  "generated": "2024-08-09T11:15:23.566Z",
+  "commit": "2a8142441cc35528c817a44090cdc66581326872",
+  "generated": "Thu, 02 Jan 2025 10:46:01 GMT",
   "metadata": [
+    {
+      "__outstatic": {
+        "commit": "b41259cc005bcd6edbf834f1880a29bcb47f2e1d",
+        "hash": "1908224492",
+        "path": "outstatic/content/euapplications/kredyt-ekologiczny.md"
+      },
+      "author": {
+        "name": "Piotr Sierant",
+        "picture": "https://avatars.githubusercontent.com/u/94246053?v=4"
+      },
+      "collection": "euapplications",
+      "coverImage": "/images/kredyteco.png",
+      "dateFrom": "17.10.2024",
+      "dateTo": "30.12.2024",
+      "description": "Kredyt ekologiczny jest finansowany z Programu Fundusze Europejskie dla Nowoczesnej Gospodarki (FENG) na lata 2021-2027.",
+      "lang": "pl",
+      "publishedAt": "2024-06-11T05:24:42.947Z",
+      "slug": "kredyt-ekologiczny",
+      "status": "published",
+      "title": "Kredyt ekologiczny"
+    },
     {
       "__outstatic": {
         "commit": "53bac80f3b1704a9f2e8d0a93b539e765131e109",
@@ -22,6 +43,27 @@
       "slug": "dzialanie-1-7-opolskie-konkurencyjne",
       "status": "published",
       "title": "Działanie 1.7 Opolskie konkurencyjne"
+    },
+    {
+      "__outstatic": {
+        "commit": "c57111c3583f0f9004de3cd977d1c0b2a9c7425f",
+        "hash": "359927458",
+        "path": "outstatic/content/euapplications/dig-it-transformacja-cyfrowa.md"
+      },
+      "author": {
+        "name": "Piotr Sierant",
+        "picture": "https://avatars.githubusercontent.com/u/94246053?v=4"
+      },
+      "collection": "euapplications",
+      "coverImage": "/images/digit.png",
+      "dateFrom": "30.09.2024",
+      "dateTo": "31.12.2024",
+      "description": "DIG.IT TRANSFORMACJA CYFROWA POLSKICH MŚP",
+      "lang": "pl",
+      "publishedAt": "2024-06-11T16:02:14.908Z",
+      "slug": "dig-it-transformacja-cyfrowa",
+      "status": "published",
+      "title": "DIG.IT Transformacja cyfrowa"
     },
     {
       "__outstatic": {
@@ -86,6 +128,25 @@
     },
     {
       "__outstatic": {
+        "commit": "f1136a6cbeadff6e78d928220dee5cee490f76b9",
+        "hash": "1675046363",
+        "path": "outstatic/content/posts/jak-uzyskac-dofinansowanie-na-robotyzacje-i-automatyzacje-przedsiebiorstwa.md"
+      },
+      "author": {
+        "name": "Piotr Sierant",
+        "picture": "https://avatars.githubusercontent.com/u/94246053?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/webinar--1--Q2Nj.png",
+      "description": "Chcesz zainwestować w rozwój swojego przedsiębiorstwa poprzez robotyzację i automatyzację, ale nie wiesz, jak zdobyć dofinansowanie? Dołącz do naszego webinaru i odkryj, jak pozyskać środki z Unii Europejskiej na innowacyjne projekty!",
+      "lang": "pl",
+      "publishedAt": "2024-08-09T11:25:52.161Z",
+      "slug": "jak-uzyskac-dofinansowanie-na-robotyzacje-i-automatyzacje-przedsiebiorstwa",
+      "status": "published",
+      "title": "Jak uzyskać dofinansowanie na robotyzację i automatyzację przedsiębiorstwa?"
+    },
+    {
+      "__outstatic": {
         "commit": "d89d3400b90f0d11400cfe73d3e5c6461b43572f",
         "hash": "1234174073",
         "path": "outstatic/content/euapplications/wsparcie-rozwoju-i-konkurencyjnosci.md"
@@ -146,67 +207,6 @@
       "slug": "sciezka-smart",
       "status": "published",
       "title": "Ścieżka SMART"
-    },
-    {
-      "__outstatic": {
-        "commit": "e11da3e90aee079d7e5d1cfeaa23ded1a6363805",
-        "hash": "1796238456",
-        "path": "outstatic/content/euapplications/dig-it-transformacja-cyfrowa.md"
-      },
-      "author": {
-        "name": "Piotr Sierant",
-        "picture": "https://avatars.githubusercontent.com/u/94246053?v=4"
-      },
-      "collection": "euapplications",
-      "coverImage": "/images/digit.png",
-      "dateFrom": "IV",
-      "dateTo": "III",
-      "description": "DIG.IT TRANSFORMACJA CYFROWA POLSKICH MŚP",
-      "lang": "pl",
-      "publishedAt": "2024-06-11T16:02:14.908Z",
-      "slug": "dig-it-transformacja-cyfrowa",
-      "status": "published",
-      "title": "DIG.IT Transformacja cyfrowa"
-    },
-    {
-      "__outstatic": {
-        "commit": "736b1242f4586866adf12a6232321da7e217cb5e",
-        "hash": "1908224492",
-        "path": "outstatic/content/euapplications/kredyt-ekologiczny.md"
-      },
-      "author": {
-        "name": "Piotr Sierant",
-        "picture": "https://avatars.githubusercontent.com/u/94246053?v=4"
-      },
-      "collection": "euapplications",
-      "coverImage": "/images/kredyteco.png",
-      "dateFrom": "17.10.2024",
-      "dateTo": "30.12.2024",
-      "description": "Kredyt ekologiczny jest finansowany z Programu Fundusze Europejskie dla Nowoczesnej Gospodarki (FENG) na lata 2021-2027.",
-      "lang": "pl",
-      "publishedAt": "2024-06-11T05:24:42.947Z",
-      "slug": "kredyt-ekologiczny",
-      "status": "published",
-      "title": "Kredyt ekologiczny"
-    },
-    {
-      "__outstatic": {
-        "commit": "3961c8c6d5924e03ed1069d8d7d3ad31e5ab23e5",
-        "hash": "2984725752",
-        "path": "outstatic/content/posts/jak-uzyskac-dofinansowanie-na-robotyzacje-i-automatyzacje-przedsiebiorstwa.md"
-      },
-      "author": {
-        "name": "Piotr Sierant",
-        "picture": "https://avatars.githubusercontent.com/u/94246053?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/images/webinar--1--Q2Nj.png",
-      "description": "Chcesz zainwestować w rozwój swojego przedsiębiorstwa poprzez robotyzację i automatyzację, ale nie wiesz, jak zdobyć dofinansowanie? Dołącz do naszego webinaru i odkryj, jak pozyskać środki z Unii Europejskiej na innowacyjne projekty!",
-      "lang": "pl",
-      "publishedAt": "2024-08-09T11:25:52.161Z",
-      "slug": "jak-uzyskac-dofinansowanie-na-robotyzacje-i-automatyzacje-przedsiebiorstwa",
-      "status": "published",
-      "title": "Jak uzyskać dofinansowanie na robotyzację i automatyzację przedsiębiorstwa?"
     }
   ]
 }
