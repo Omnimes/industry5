@@ -1,5 +1,6 @@
 import {
   Briefcase,
+  Cloud,
   Globe,
   Heart,
   MapPinCheckInside,
@@ -95,21 +96,70 @@ export function FeaturesIndustry() {
     {
       title: t("strong11"),
       description: t("list11"),
-      icon: <Globe />,
+      icon: <Cloud />,
     },
     {
       title: t("strong12"),
       description: t("list12"),
       icon: <Globe />,
     },
-    // {
-    //   title: t("strong13"),
-    //   description: t("list13"),
-    //   icon: <Globe />,
-    // },
   ]
   return (
     <div className="relative z-10 mx-auto grid  max-w-7xl grid-cols-1 py-10 md:grid-cols-2 lg:grid-cols-4">
+      {features.map((feature, index) => (
+        <Feature key={feature.title} {...feature} index={index} />
+      ))}
+    </div>
+  )
+}
+
+export function FeaturesHistory() {
+  const t = useTranslations("History")
+  const features = [
+    {
+      title: t("strong5"),
+      description: t("list5"),
+      icon: <Users />,
+    },
+    {
+      title: t("strong6"),
+      description: t("list6"),
+      icon: <Heart />,
+    },
+    {
+      title: t("strong7"),
+      description: t("list7"),
+      icon: <Target />,
+    },
+    {
+      title: t("strong8"),
+      description: t("list8"),
+      icon: <MapPinCheckInside />,
+    },
+    {
+      title: t("strong9"),
+      description: t("list9"),
+      icon: <Briefcase />,
+    },
+    {
+      title: t("strong10"),
+      description: t("list10"),
+      icon: <ShieldCheck />,
+    },
+    {
+      title: t("strong11"),
+      description: t("list11"),
+      icon: <Cloud />,
+    },
+    {
+      title: t("strong12"),
+      description: t("list12"),
+      icon: <Globe />,
+    },
+  ]
+
+  return (
+    <div className="relative z-10 mx-auto grid max-w-7xl grid-cols-1 pb-10 md:grid-cols-2 lg:grid-cols-4">
       {features.map((feature, index) => (
         <Feature key={feature.title} {...feature} index={index} />
       ))}

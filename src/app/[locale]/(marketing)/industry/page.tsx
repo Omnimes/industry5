@@ -9,7 +9,6 @@ import { EvervaultCard, Icon } from "@/components/ui/evervault-card"
 import { FeaturesIndustry } from "@/components/ui/features-a"
 import { Features } from "@/components/ui/features-e"
 import { GridPattern } from "@/components/ui/grid-pattern"
-import { ArticleHeadingTitle } from "@/components/ui/link-anchor"
 import { TextRevealCard } from "@/components/ui/text-reveal-card"
 import { genPageMetadata } from "@/app/seo"
 

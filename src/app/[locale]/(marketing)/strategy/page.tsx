@@ -58,7 +58,7 @@ export default async function StrategyPage({ params }: { params: Promise<{ local
               <div className="flex size-full flex-col items-center justify-between gap-y-5">
                 <div className="flex aspect-square size-full items-center justify-center rounded-t-xl border-b lg:h-[440px]">
                   <Image
-                    src={"/images/strategia/skoncentrowanie_na_czlowieku.webp"}
+                    src={images[0]}
                     alt={"Skoncentrowanie na człowieku"}
                     width={1024}
                     height={1024}
@@ -82,13 +82,13 @@ export default async function StrategyPage({ params }: { params: Promise<{ local
               <div className="flex size-full flex-col items-center justify-between gap-y-5">
                 <div className="flex size-full items-center justify-center rounded-t-xl border-b lg:h-[440px]">
                   <Image
-                    src={"/images/strategia/odpornosc.webp"}
+                    src={images[1]}
                     alt={"Odporność"}
                     width={1024}
                     height={1024}
                     className="size-full object-cover"
                     placeholder="blur"
-                    blurDataURL={bluredImages[0]}
+                    blurDataURL={bluredImages[1]}
                     priority
                   />
                 </div>
@@ -106,13 +106,13 @@ export default async function StrategyPage({ params }: { params: Promise<{ local
               <div className="flex size-full flex-col items-center justify-between gap-y-5">
                 <div className="flex aspect-square size-full items-center justify-center rounded-t-xl border-b lg:h-[440px]">
                   <Image
-                    src={"/images/strategia/zrownowazony_rozwoj.webp"}
+                    src={images[2]}
                     alt={"Zrównoważony rozwój"}
                     width={1024}
                     height={1024}
                     className="size-full object-cover"
                     placeholder="blur"
-                    blurDataURL={bluredImages[0]}
+                    blurDataURL={bluredImages[2]}
                     priority
                   />
                 </div>
