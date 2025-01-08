@@ -60,7 +60,7 @@ export function useCopyToClipboardEldora({
       setCopiedText(text)
       setIsCopied(true)
       return true
-    } catch (_error) {
+    } catch {
       setCopiedText(null)
       return false
     }

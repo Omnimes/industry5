@@ -3,15 +3,14 @@ import { useId } from "react"
 import { cn } from "@/lib/utils"
 
 interface DotPatternProps {
-  width?: any
-  height?: any
-  x?: any
-  y?: any
-  cx?: any
-  cy?: any
-  cr?: any
+  width?: number
+  height?: number
+  x?: number
+  y?: number
+  cx?: number
+  cy?: number
+  cr?: number
   className?: string
-  [key: string]: any
 }
 export function DotPattern({
   width = 16,
@@ -22,7 +21,6 @@ export function DotPattern({
   cy = 1,
   cr = 1,
   className,
-  ...props
 }: DotPatternProps) {
   const id = useId()
 
@@ -33,7 +31,6 @@ export function DotPattern({
         "pointer-events-none absolute inset-0 size-full fill-neutral-400/80 opacity-40",
         className
       )}
-      {...props}
     >
       <defs>
         <pattern

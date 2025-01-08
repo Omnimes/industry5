@@ -4,7 +4,7 @@ import clsx from "clsx"
 type Props = {
   children?: React.ReactNode
   href: string
-  text: string
+  text?: string
   className?: string
 }
 export const MyLink = ({ href, text, className, ...props }: Props) => {
@@ -37,7 +37,7 @@ export const MyLink = ({ href, text, className, ...props }: Props) => {
   )
 }
 
-export const MyLinkChildren = ({ children, href, text, className, ...props }: Props) => {
+export const MyLinkChildren = ({ children, href, className, ...props }: Props) => {
   return (
     <Link
       href={href}

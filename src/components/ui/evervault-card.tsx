@@ -2,7 +2,7 @@
 
 import React, { useEffect, useState } from "react"
 import Image from "next/image"
-import { motion, useMotionTemplate, useMotionValue } from "framer-motion"
+import { motion, MotionValue, useMotionTemplate, useMotionValue } from "framer-motion"
 
 import { cn } from "@/lib/utils"
 
@@ -15,18 +15,19 @@ export const EvervaultCard = ({
   image: string
   className?: string
 }) => {
-  let mouseX = useMotionValue(0)
-  let mouseY = useMotionValue(0)
+  const mouseX = useMotionValue(0)
+  const mouseY = useMotionValue(0)
 
   const [randomString, setRandomString] = useState("")
 
   useEffect(() => {
-    let str = generateRandomString(1500)
+    const str = generateRandomString(1500)
     setRandomString(str)
   }, [])
 
-  function onMouseMove({ currentTarget, clientX, clientY }: any) {
-    let { left, top } = currentTarget.getBoundingClientRect()
+  function onMouseMove(event: React.MouseEvent<HTMLDivElement>) {
+    const { currentTarget, clientX, clientY } = event
+    const { left, top } = currentTarget.getBoundingClientRect()
     mouseX.set(clientX - left)
     mouseY.set(clientY - top)
 
@@ -58,13 +59,21 @@ export const EvervaultCard = ({
   )
 }
 
-export function CardPattern({ mouseX, mouseY, randomString }: any) {
-  let maskImage = useMotionTemplate`radial-gradient(250px at ${mouseX}px ${mouseY}px, white, transparent)`
-  let style = { maskImage, WebkitMaskImage: maskImage }
+export function CardPattern({
+  mouseX,
+  mouseY,
+  randomString,
+}: {
+  mouseX: MotionValue<number>
+  mouseY: MotionValue<number>
+  randomString: string
+}) {
+  const maskImage = useMotionTemplate`radial-gradient(250px at ${mouseX}px ${mouseY}px, white, transparent)`
+  const style = { maskImage, WebkitMaskImage: maskImage }
 
   return (
     <div className="pointer-events-none">
-      <div className="absolute inset-0 rounded-2xl  [mask-image:linear-gradient(white,transparent)] group-hover/card:opacity-50"></div>
+      <div className="group-hover/card:opacity-50</div> absolute inset-0  rounded-2xl [mask-image:linear-gradient(white,transparent)]"></div>
       <motion.div
         className="absolute inset-0 rounded-2xl bg-gradient-to-r from-green-500 to-blue-700 opacity-0  backdrop-blur-xl transition duration-500 group-hover/card:opacity-100"
         style={style}
@@ -90,7 +99,7 @@ export const generateRandomString = (length: number) => {
   return result
 }
 
-export const Icon = ({ className, ...rest }: any) => {
+export const Icon = ({ className, ...rest }: { className: string }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"

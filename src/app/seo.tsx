@@ -7,7 +7,6 @@ interface PageSEOProps {
   keywords: string
   localeShort: string
   image?: string
-  [key: string]: any
 }
 
 export function genPageMetadata({
@@ -16,7 +15,6 @@ export function genPageMetadata({
   keywords,
   image,
   localeShort,
-  ...rest
 }: PageSEOProps): Metadata {
   return {
     title,
@@ -47,6 +45,5 @@ export function genPageMetadata({
         "max-snippet": -1,
       },
     },
-    ...rest,
   }
 }

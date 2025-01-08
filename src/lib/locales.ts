@@ -48,7 +48,7 @@ const primaryDialects: PrimaryDialects = {
   zh: "zh-CN",
 }
 
-const languageNames = {
+export const languageNames = {
   "af-ZA": ["Afrikaans", "Afrikaans"],
   ar: ["العربية", "Arabic"],
   "bg-BG": ["Български", "Bulgarian"],

@@ -8,7 +8,6 @@ import { useTranslations } from "next-intl"
 import { cn } from "@/lib/utils"
 
 import { Highlight } from "./ui/hero-highlight"
-import { HoverBorderGradient } from "./ui/hover-border-gradient"
 import AnimatedShinyText from "./ui/shiny-text-badge"
 
 export function HeroHighlightDemo() {

@@ -18,9 +18,11 @@ const MDXComponentsMap = {
   code: CustomCode,
 }
 
-type MDXComponentProps = {
+interface MDXComponentProps {
   content: string
-  components?: Record<string, any>
+  components?: {
+    [key: string]: React.ComponentType<unknown>
+  }
 }
 
 export const MDXComponent = ({ content, components = {} }: MDXComponentProps) => {
@@ -32,7 +34,7 @@ export const MDXComponent = ({ content, components = {} }: MDXComponentProps) =>
         {
           ...MDXComponentsMap,
           ...components,
-        } as any
+        } as MDXComponentProps["components"]
       }
     />
   )

@@ -52,11 +52,7 @@ export const Footer = () => {
                   <ul className="space-y-4 transition-all duration-500">
                     {siteConfig.mainNav.map((item) => {
                       return (
-                        <li
-                          key={item.href}
-                          role="listitem"
-                          className="text-muted-foreground relative text-sm"
-                        >
+                        <li key={item.href} className="text-muted-foreground relative text-sm">
                           <Link
                             href={item.href}
                             aria-label={taria("footerAria") + t(item.title)}
@@ -77,11 +73,7 @@ export const Footer = () => {
                   <ul className="space-y-4 transition-all duration-500">
                     {siteConfig.subNav.map((item) => {
                       return (
-                        <li
-                          key={item.href}
-                          role="listitem"
-                          className="text-muted-foreground relative text-sm"
-                        >
+                        <li key={item.href} className="text-muted-foreground relative text-sm">
                           <Link
                             href={item.href}
                             rel="noreferrer noopener"

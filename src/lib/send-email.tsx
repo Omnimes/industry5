@@ -23,7 +23,7 @@ export const sendEmail = async (data: FormData) => {
     if (!message || error || !res.ok) {
       throw new Error(error)
     }
-  } catch (err: any) {
+  } catch (err: unknown) {
     return { message: err, type: "error" }
   }
 }

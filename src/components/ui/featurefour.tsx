@@ -1,10 +1,6 @@
 "use client"
 
-import { useEffect, useState } from "react"
-
 import { cn } from "@/lib/utils"
-
-//TODO : Improve mobile version to display the image down the corresponding text instead of at the full bottom
 
 export function TextComponent({
   number,

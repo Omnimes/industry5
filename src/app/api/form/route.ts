@@ -49,7 +49,7 @@ export async function POST(request: NextRequest) {
   try {
     await sendMailPromise()
     return NextResponse.json({ message: "sent", success: true })
-  } catch (err) {
+  } catch {
     return NextResponse.json({ message: "error", error: true }, { status: 500 })
   }
 }

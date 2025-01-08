@@ -32,17 +32,9 @@ export interface TestimonialCardProps {
   img?: string
   description: React.ReactNode
   className?: string
-  [key: string]: any
 }
 
-export function TestimonialCard({
-  description,
-  name,
-  img,
-  role,
-  className,
-  ...props // Capture the rest of the props
-}: TestimonialCardProps) {
+export function TestimonialCard({ description, name, img, role, className }: TestimonialCardProps) {
   return (
     <div
       className={cn(
@@ -53,7 +45,6 @@ export function TestimonialCard({
         "dark:bg-black dark:[border:1px_solid_rgba(255,255,255,.1)] dark:[box-shadow:0_-20px_80px_-20px_#ffffff1f_inset]",
         className
       )}
-      {...props}
     >
       <div className="select-none text-sm font-normal text-neutral-700 dark:text-neutral-400">
         {description}

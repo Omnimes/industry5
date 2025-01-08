@@ -12,12 +12,12 @@ export const StickyScroll = ({
   content: {
     title: string
     description: string
-    content?: React.ReactNode | any
+    content?: React.ReactNode
   }[]
   contentClassName?: string
 }) => {
   const [activeCard, setActiveCard] = React.useState(0)
-  const ref = useRef<any>(null)
+  const ref = useRef<null | HTMLDivElement>(null)
   const { scrollYProgress } = useScroll({
     // uncomment line 22 and comment line 23 if you DONT want the overflow container and want to have it change on the entire page scroll
     // target: ref
@@ -38,7 +38,7 @@ export const StickyScroll = ({
     setActiveCard(closestBreakpointIndex)
   })
 
-  const backgroundColors = ["var(--slate-900)", "var(--black)", "var(--neutral-900)"]
+  // const backgroundColors = ["var(--slate-900)", "var(--black)", "var(--neutral-900)"]
   const linearGradients = useMemo(
     () => [
       "linear-gradient(to bottom right, var(--cyan-500), var(--emerald-500))",

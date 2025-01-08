@@ -50,14 +50,14 @@ export async function GET(request: Request) {
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
             >
-              <g clip-path="url(#clip0_481_12)">
-                <g clip-path="url(#clip1_481_12)">
+              <g clipPath="url(#clip0_481_12)">
+                <g clipPath="url(#clip1_481_12)">
                   <rect width="1200" height="630" transform="translate(0 0.695312)" fill="white" />
                   <path
                     d="M-220.122 423.117C-178.8 396.191 -141.628 363.078 -100.257 336.12C-75.9935 320.31 -53.007 301.879 -25.2602 291.697C3.95805 280.975 37.614 269.965 75.5643 277.371C102.111 282.552 128.835 292.145 158.567 313.927C181.959 331.064 197.337 352.818 215.553 380.773C248.194 430.867 253.134 483.48 252.008 523.73C250.674 571.423 227.394 595.094 189.809 593.897C154.377 592.769 108.156 574.997 82.7217 509.314C48.4463 420.799 145.015 423.828 181.065 423.251C262.276 421.951 356.043 447.503 448.547 478.649C555.887 514.79 653.916 589.557 775.459 607.698C920.038 643.45 1204.77 584.406 1207.08 339.556"
                     stroke="black"
-                    stroke-width="2.82749"
-                    stroke-linecap="round"
+                    strokeWidth="2.82749"
+                    strokeLinecap="round"
                   />
                 </g>
               </g>
@@ -133,8 +133,9 @@ export async function GET(request: Request) {
         ],
       }
     )
-  } catch (e: any) {
-    console.log(`${e.message}`)
+  } catch (e: unknown) {
+    const error = e as Error
+    console.log(`${error.message}`)
     return new Response(`Failed to generate the image`, {
       status: 500,
     })

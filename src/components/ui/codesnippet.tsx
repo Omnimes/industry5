@@ -7,7 +7,7 @@ import { useCopyToClipboardEldora } from "@/hooks/useCopyToClipboard"
 
 export function CommandCode({ children }: Readonly<{ children: string }>) {
   const [copiedText, copy] = useCopyToClipboardEldora()
-  const handleCopyCode = (_code: string) => {
+  const handleCopyCode = (children: string) => {
     copy(children)
     toast.success(`Command copied: ${copiedText}`)
   }

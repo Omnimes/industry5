@@ -3,12 +3,13 @@ import rehypeAutolinkHeadings from "rehype-autolink-headings"
 import rehypePrettyCode from "rehype-pretty-code"
 import rehypeSlug from "rehype-slug"
 import remarkGfm from "remark-gfm"
+import { Pluggable } from "unified"
 
 export default async function MDXServer(code: string) {
   const result = await bundleMDX({
     source: code,
     mdxOptions(options) {
-      options.remarkPlugins = [...(options.remarkPlugins ?? []), remarkGfm]
+      options.remarkPlugins = [...(options.remarkPlugins ?? []), remarkGfm] as Pluggable[]
       options.rehypePlugins = [
         ...(options.rehypePlugins ?? []),
         rehypeSlug,
@@ -27,7 +28,7 @@ export default async function MDXServer(code: string) {
             },
           },
         ],
-      ] as any
+      ] as Pluggable[]
       return options
     },
   })

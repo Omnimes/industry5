@@ -1,4 +1,3 @@
-import fs from "fs/promises"
 import { locales } from "@/config"
 import { OstDocument } from "outstatic"
 import { create } from "xmlbuilder2"
@@ -58,15 +57,15 @@ export function transformPaths(paths: Paths, excludePaths: string[]): Paths {
 }
 
 export function generateURLObjectsTags(paths: TagsPath, host: string): URLObject[] {
-  let urls: URLObject[] = []
+  const urls: URLObject[] = []
   const pathMapping: { [key: string]: string } = {
     pl: "tagi",
     en: "tags",
   }
 
-  for (let lang in paths) {
+  for (const lang in paths) {
     paths[lang].forEach((tag) => {
-      let pathTag = pathMapping[lang] || pathMapping["pl"]
+      const pathTag = pathMapping[lang] || pathMapping["pl"]
 
       const urlObj: URLObject = {
         url: `${host}${lang ?? "pl"}/${pathTag}/${tag}`,
@@ -86,7 +85,7 @@ export function generateURLObjectsWithoutAlternate(
   paths: OstDocument<{ [key: string]: unknown }>[],
   host: string
 ): URLObject[] {
-  return paths.map((url: any) => {
+  return paths.map((url: OstDocument<{ [key: string]: unknown }>) => {
     return {
       url: `${host}${url.lang ?? "pl"}/${url.slug}`,
       lastModified: url.publishedAt || new Date(),
@@ -100,7 +99,7 @@ export function generateURLObjectsBlog(
   paths: OstDocument<{ [key: string]: unknown }>[],
   host: string
 ): URLObject[] {
-  return paths.map((url: any) => {
+  return paths.map((url: OstDocument<{ [key: string]: unknown }>) => {
     return {
       url: `${host}${url.lang ?? "pl"}/blog/${url.slug}`,
       lastModified: url.publishedAt || new Date(),
@@ -114,7 +113,7 @@ export function generateURLObjectsWnioski(
   paths: OstDocument<{ [key: string]: unknown }>[],
   host: string
 ): URLObject[] {
-  return paths.map((url: any) => {
+  return paths.map((url: OstDocument<{ [key: string]: unknown }>) => {
     const preurl = url.lang == "pl" ? "wnioski-unijne" : "eu-applications"
     return {
       url: `${host}${url.lang ?? "pl"}/${preurl}/${url.slug}`,
@@ -173,13 +172,16 @@ export function generateXML(urlObjects: URLObject[]): string {
   urlObjects.forEach((obj) => {
     const urlElement = root.ele("url")
     urlElement.ele("loc").txt(obj.url)
-    obj.lastModified &&
-      (typeof obj.lastModified == "string"
-        ? urlElement.ele("lastmod").txt(obj.lastModified)
-        : urlElement.ele("lastmod").txt(obj.lastModified.toISOString()))
 
-    obj.changeFrequency && urlElement.ele("changefreq").txt(obj.changeFrequency)
-    obj.priority && urlElement.ele("priority").txt(String(obj.priority))
+    if (obj.lastModified) {
+      const lastModifiedValue =
+        typeof obj.lastModified === "string" ? obj.lastModified : obj.lastModified.toISOString()
+
+      urlElement.ele("lastmod").txt(lastModifiedValue)
+    }
+
+    if (obj.changeFrequency) urlElement.ele("changefreq").txt(obj.changeFrequency)
+    if (obj.priority) urlElement.ele("priority").txt(String(obj.priority))
 
     if (obj.alternates) {
       for (const lang in obj.alternates.languages) {
@@ -195,12 +197,4 @@ export function generateXML(urlObjects: URLObject[]): string {
   })
 
   return root.end({ prettyPrint: true })
-}
-
-export const generateXMLSitemap = async (xmlDoc: any) => {
-  try {
-    await fs.writeFile("public/sitemap.xml", xmlDoc)
-  } catch (error) {
-    console.error("Błąd podczas zapisu pliku search.json:", error)
-  }
 }

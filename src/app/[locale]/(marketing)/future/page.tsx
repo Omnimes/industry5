@@ -1,4 +1,3 @@
-import { useTranslations } from "next-intl"
 import { getTranslations, setRequestLocale } from "next-intl/server"
 
 import { getLocalePrimaryDialects } from "@/lib/locales"

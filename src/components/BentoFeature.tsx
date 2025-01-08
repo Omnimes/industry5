@@ -54,7 +54,7 @@ export function BentoGridEuropenUnion({
           description={item.description}
           header={item.header}
           className={item.className}
-          icon={item.icon}
+          // icon={item.icon}
         />
       ))}
     </BentoGrid>

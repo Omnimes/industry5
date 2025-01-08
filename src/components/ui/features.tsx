@@ -278,6 +278,13 @@ export function Features({
                   key={item.id}
                   className="card relative mr-8 grid h-full max-w-60 shrink-0 items-start justify-center py-4 last:mr-0"
                   onClick={() => setCurrentIndex(index)}
+                  onKeyDown={(e) => {
+                    if (e.key === "Enter" || e.key === " ") {
+                      setCurrentIndex(index)
+                    }
+                  }}
+                  tabIndex={0}
+                  role="button"
                   style={{
                     scrollSnapAlign: "center",
                   }}
