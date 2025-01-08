@@ -62,8 +62,8 @@ module.exports = {
   },
   parser: '@typescript-eslint/parser',
   parserOptions: {
-    "sourceType": "module",
-    "ecmaVersion": "latest",
+    sourceType: "module",
+    ecmaVersion: "latest",
     ecmaFeatures: {
       jsx: true,
     },

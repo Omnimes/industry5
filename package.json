@@ -133,8 +133,8 @@
     "typescript": "^5.7.2"
   },
   "husky": {
-  "hooks": {
-    "pre-commit": "lint-staged"
+    "hooks": {
+      "pre-commit": "lint-staged"
     }
   },
   "lint-staged": {
