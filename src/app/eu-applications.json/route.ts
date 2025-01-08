@@ -2,6 +2,8 @@ import { siteConfig } from "@/data/config/site"
 import { Feed } from "feed"
 import { getDocuments } from "outstatic/server"
 
+export const dynamic = "force-static"
+
 const host = siteConfig.siteUrl
 
 export async function GET() {
@@ -53,6 +55,7 @@ export async function GET() {
       })
     })
 
+  console.log(feed.json1())
   return new Response(feed.json1(), {
     headers: {
       "Content-Type": "application/json; charset=utf-8",
