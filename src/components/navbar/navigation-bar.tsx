@@ -44,13 +44,13 @@ export function NavigationMenuBar() {
                 <NavigationMenuLink asChild>
                   <Link
                     aria-label={taria("footerAria") + t("title")}
-                    className="from-muted/50 to-muted flex size-full select-none flex-col justify-end rounded-md bg-gradient-to-b p-6 no-underline outline-none focus:shadow-md"
+                    className="flex size-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
                     href="/strategy"
                     rel="noreferrer noopener"
                   >
                     <Logo withinLink />
                     <div className="mb-2 mt-4 text-lg font-medium">{t("title")}</div>
-                    <p className="text-muted-foreground text-sm leading-tight">{t("desc")}</p>
+                    <p className="text-sm leading-tight text-muted-foreground">{t("desc")}</p>
                   </Link>
                 </NavigationMenuLink>
               </li>
@@ -116,13 +116,13 @@ const ListItem = forwardRef<ElementRef<"a">, ComponentPropsWithoutRef<"a">>(
           <a
             ref={ref}
             className={cn(
-              "hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors",
+              "block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground",
               className
             )}
             {...props}
           >
             <div className="text-sm font-medium leading-none">{title}</div>
-            <p className="text-muted-foreground line-clamp-3 text-sm leading-snug">{children}</p>
+            <p className="line-clamp-3 text-sm leading-snug text-muted-foreground">{children}</p>
           </a>
         </NavigationMenuLink>
       </li>

@@ -72,7 +72,7 @@ export default async function StrategyPage({ params }: { params: Promise<{ local
                   <h2 className="mb-2 text-xl font-bold text-black dark:text-white">
                     {t("h2_men")}
                   </h2>
-                  <p className="text-muted-foreground text-balance text-base lg:text-lg">
+                  <p className="text-balance text-base text-muted-foreground lg:text-lg">
                     {t("p_desc_men")}
                   </p>
                 </div>
@@ -96,7 +96,7 @@ export default async function StrategyPage({ params }: { params: Promise<{ local
                   <h2 className="mb-2 text-xl font-bold text-black dark:text-white">
                     {t("h2_odpo")}
                   </h2>
-                  <p className="text-muted-foreground text-balance text-base lg:text-lg">
+                  <p className="text-balance text-base text-muted-foreground lg:text-lg">
                     {t("p_desc_odpo")}
                   </p>
                 </div>
@@ -120,7 +120,7 @@ export default async function StrategyPage({ params }: { params: Promise<{ local
                   <h2 className="mb-2 text-xl font-bold text-black dark:text-white">
                     {t("h2_roz")}
                   </h2>
-                  <p className="text-muted-foreground text-balance text-base lg:text-lg">
+                  <p className="text-balance text-base text-muted-foreground lg:text-lg">
                     {t("p_desc_roz")}
                   </p>
                 </div>
@@ -134,42 +134,38 @@ export default async function StrategyPage({ params }: { params: Promise<{ local
           inView
           className="mx-auto mb-16 w-full text-left text-lg md:mb-20 md:text-center md:text-xl"
         >
-          <h2 className="font-heading mb-6 flex flex-wrap text-2xl tracking-normal text-gray-900 sm:text-3xl md:justify-center md:text-4xl md:leading-none md:tracking-tight lg:text-5xl dark:text-white">
+          <h2 className="mb-6 flex flex-wrap font-heading text-2xl tracking-normal text-gray-900 dark:text-white sm:text-3xl md:justify-center md:text-4xl md:leading-none md:tracking-tight lg:text-5xl">
             {t("h2_pod")}&nbsp;
             <span className="block w-fit bg-gradient-to-r from-green-400 to-purple-500 bg-clip-text text-transparent">
               {t("h2span_pod")}
             </span>
           </h2>
-          <p className="text-muted-foreground text-balance px-0 text-lg md:text-xl">
+          <p className="text-balance px-0 text-lg text-muted-foreground md:text-xl">
             {t("p_desc_pod")}
           </p>
         </BlurFade>
         <BlurFade delay={0.2} inView className="mx-auto mb-16 w-full md:mb-20">
-          <p className="text-muted-foreground text-balance px-0 text-lg md:text-center md:text-xl">
+          <p className="text-balance px-0 text-lg text-muted-foreground md:text-center md:text-xl">
             {t("p4")}
           </p>
           <FeaturesStrategy />
-          <p className="text-muted-foreground text-balance px-0 text-lg md:text-center md:text-xl">
+          <p className="text-balance px-0 text-lg text-muted-foreground md:text-center md:text-xl">
             {t("p5")}
           </p>
         </BlurFade>
 
-        <div
-          className="after:bg-background pointer-events-none relative z-[-2] mx-auto my-[-18.8rem] h-[50rem] overflow-hidden 
-                    [mask-image:radial-gradient(ellipse_at_center_center,#000,transparent_50%)] before:absolute before:inset-0 before:size-full before:bg-[radial-gradient(circle_at_bottom_center,#9e7aff,transparent_70%)] before:text-[#9e7aff] before:opacity-20 before:content-[''] after:absolute after:-left-1/2
-                    after:top-1/2 after:aspect-[1/0.7] after:w-[200%] after:rounded-[50%] after:border-t after:border-[hsl(var(--border))] after:[background-image:radial-gradient(circle_at_bottom_center,var(--color),transparent_70%)]"
-        />
+        <div className="pointer-events-none relative z-[-2] mx-auto my-[-18.8rem] h-[50rem] overflow-hidden [mask-image:radial-gradient(ellipse_at_center_center,#000,transparent_50%)] before:absolute before:inset-0 before:size-full before:bg-[radial-gradient(circle_at_bottom_center,#9e7aff,transparent_70%)] before:text-[#9e7aff] before:opacity-20 before:content-[''] after:absolute after:-left-1/2 after:top-1/2 after:aspect-[1/0.7] after:w-[200%] after:rounded-[50%] after:border-t after:border-[hsl(var(--border))] after:bg-background after:[background-image:radial-gradient(circle_at_bottom_center,var(--color),transparent_70%)]" />
 
         <BlurFade
           delay={0.2}
           inView
           className="mx-auto mb-16 w-full text-left text-lg md:mb-20 md:text-center md:text-xl"
         >
-          <h2 className="font-heading mb-6 flex flex-wrap text-2xl tracking-normal text-gray-900 sm:text-3xl md:justify-center md:text-4xl md:leading-none md:tracking-tight lg:text-5xl dark:text-white">
+          <h2 className="mb-6 flex flex-wrap font-heading text-2xl tracking-normal text-gray-900 dark:text-white sm:text-3xl md:justify-center md:text-4xl md:leading-none md:tracking-tight lg:text-5xl">
             {t("text2")}
           </h2>
-          <p className="text-muted-foreground text-balance px-0 text-lg md:text-xl">{t("p6")}</p>
-          <p className="text-muted-foreground mt-10 text-balance px-0 text-lg md:text-xl">
+          <p className="text-balance px-0 text-lg text-muted-foreground md:text-xl">{t("p6")}</p>
+          <p className="mt-10 text-balance px-0 text-lg text-muted-foreground md:text-xl">
             {t("p7")}
           </p>
         </BlurFade>
@@ -191,7 +187,7 @@ export default async function StrategyPage({ params }: { params: Promise<{ local
           inView
           className="mx-auto mb-16 w-full text-left text-lg md:mb-20 md:text-center md:text-xl"
         >
-          <p className="text-muted-foreground mt-10 px-0 text-lg md:text-xl">{t("p12")}</p>
+          <p className="mt-10 px-0 text-lg text-muted-foreground md:text-xl">{t("p12")}</p>
         </BlurFade>
 
         <BlurFade
@@ -199,10 +195,10 @@ export default async function StrategyPage({ params }: { params: Promise<{ local
           inView
           className="mx-auto mb-16 w-full text-left text-lg md:mb-20 md:text-center md:text-xl"
         >
-          <h2 className="font-heading mb-6 flex flex-wrap text-2xl tracking-normal text-gray-900 sm:text-3xl md:justify-center md:text-4xl md:leading-none md:tracking-tight lg:text-5xl dark:text-white">
+          <h2 className="mb-6 flex flex-wrap font-heading text-2xl tracking-normal text-gray-900 dark:text-white sm:text-3xl md:justify-center md:text-4xl md:leading-none md:tracking-tight lg:text-5xl">
             {t("text3")}
           </h2>
-          <p className="text-muted-foreground text-balance px-0 text-lg md:text-xl">{t("p8")}</p>
+          <p className="text-balance px-0 text-lg text-muted-foreground md:text-xl">{t("p8")}</p>
         </BlurFade>
         <ZoomParallax />
         <BlurFade
@@ -210,13 +206,13 @@ export default async function StrategyPage({ params }: { params: Promise<{ local
           inView
           className="mx-auto mb-16 mt-20 w-full text-left text-lg md:mb-20 md:text-center md:text-xl"
         >
-          <p className="text-muted-foreground mt-10 text-balance px-0 text-lg md:text-xl">
+          <p className="mt-10 text-balance px-0 text-lg text-muted-foreground md:text-xl">
             {t("p9")}
           </p>
-          <p className="text-muted-foreground mt-10 text-balance px-0 text-lg md:text-xl">
+          <p className="mt-10 text-balance px-0 text-lg text-muted-foreground md:text-xl">
             {t("p10")}
           </p>
-          <p className="text-muted-foreground mt-10 text-balance px-0 text-lg md:text-xl">
+          <p className="mt-10 text-balance px-0 text-lg text-muted-foreground md:text-xl">
             {t("p11")}
           </p>
         </BlurFade>

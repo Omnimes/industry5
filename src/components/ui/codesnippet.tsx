@@ -17,8 +17,8 @@ export function CommandCode({ children }: Readonly<{ children: string }>) {
       onClick={() => handleCopyCode(children)}
       type="button"
     >
-      <code className=" truncate text-left">{children}</code>
-      <ClipboardIcon className=" size-5" />
+      <code className="truncate text-left">{children}</code>
+      <ClipboardIcon className="size-5" />
     </button>
   )
 }

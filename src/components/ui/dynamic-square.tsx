@@ -27,7 +27,7 @@ export function DynamicSquareBackground({
           <div className="">
             <h3 className="text-balck inline text-xl font-semibold dark:text-white">{title}</h3>
           </div>
-          <p className="text-muted-foreground mt-1 text-base">{description}</p>
+          <p className="mt-1 text-base text-muted-foreground">{description}</p>
         </div>
       </div>
     </>

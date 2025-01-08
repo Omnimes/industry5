@@ -40,7 +40,7 @@ export function TestimonialCard({ description, name, img, role, className }: Tes
       className={cn(
         "mb-4 flex w-full cursor-pointer break-inside-avoid flex-col items-center justify-between gap-6 rounded-xl p-4",
         // light styles
-        " border border-neutral-200 bg-white",
+        "border border-neutral-200 bg-white",
         // dark styles
         "dark:bg-black dark:[border:1px_solid_rgba(255,255,255,.1)] dark:[box-shadow:0_-20px_80px_-20px_#ffffff1f_inset]",
         className
@@ -63,7 +63,7 @@ export function TestimonialCard({ description, name, img, role, className }: Tes
           height={40}
           src={img || ""}
           alt={name}
-          className="ring-border size-10 rounded-full ring-1 ring-offset-4"
+          className="size-10 rounded-full ring-1 ring-border ring-offset-4"
         />
 
         <div>
@@ -206,10 +206,10 @@ const testimonials = [
 export function Testimonials() {
   return (
     <section id="testimonials" className="container py-10">
-      <h2 className="text-foreground mb-4 text-center text-5xl font-bold leading-[1.2] tracking-tighter">
+      <h2 className="mb-4 text-center text-5xl font-bold leading-[1.2] tracking-tighter text-foreground">
         What People Are Saying
       </h2>
-      <h3 className="text-foreground/80 mx-auto mb-8 max-w-lg text-balance text-center text-lg font-medium tracking-tight">
+      <h3 className="mx-auto mb-8 max-w-lg text-balance text-center text-lg font-medium tracking-tight text-foreground/80">
         Don&apos;t just take our word for it. Here&apos;s what{" "}
         <span className="bg-gradient bg-clip-text text-transparent">real people</span> are saying
         about <span className="from-fg-onAccent text-purple-600">Eldora UI</span>
@@ -245,8 +245,8 @@ export function Testimonials() {
               </Marquee>
             ))}
         </div>
-        <div className="from-background pointer-events-none absolute inset-x-0 bottom-0 h-1/4 w-full bg-gradient-to-t from-20%"></div>
-        <div className="from-background pointer-events-none absolute inset-x-0 top-0 h-1/4 w-full bg-gradient-to-b from-20%"></div>
+        <div className="pointer-events-none absolute inset-x-0 bottom-0 h-1/4 w-full bg-gradient-to-t from-background from-20%"></div>
+        <div className="pointer-events-none absolute inset-x-0 top-0 h-1/4 w-full bg-gradient-to-b from-background from-20%"></div>
       </div>
     </section>
   )

@@ -20,7 +20,7 @@ export const Pre = (props: ComponentPropsWithRef<"pre">) => {
           }}
           title="Copy code"
           className={clsx([
-            "hidden rounded px-1 transition-colors md:flex items-center gap-1 text-sm",
+            "hidden items-center gap-1 rounded px-1 text-sm transition-colors md:flex",
             "border border-gray-300 dark:border-gray-600",
             "text-gray-700",
             "bg-gray-50 hover:bg-gray-300",

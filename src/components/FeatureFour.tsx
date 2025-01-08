@@ -57,14 +57,14 @@ export function FeatureFourImages() {
   return (
     <div className="container">
       <div className="mb-20 text-center">
-        <p className=" mb-2 text-sm font-medium uppercase text-neutral-500">How does it work ?</p>
+        <p className="mb-2 text-sm font-medium uppercase text-neutral-500">How does it work ?</p>
 
         <h2 className="mb-4 text-3xl font-semibold tracking-tighter text-neutral-800 dark:text-neutral-300">
           How to use the Easiest component librairy : EldoraUI
         </h2>
       </div>
-      <div className=" grid grid-cols-1 gap-4 md:grid-cols-2">
-        <div className="space-y-6 ">
+      <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
+        <div className="space-y-6">
           {data.map((item, index) => (
             <button
               className="w-full"

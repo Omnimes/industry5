@@ -19,7 +19,7 @@ export default function DocHero(doc: OstDocument) {
         />
       </div>
       <header className="mx-auto max-w-screen-lg px-4 text-center md:px-0">
-        <time dateTime={doc.publishedAt} className="text-muted-foreground block text-sm">
+        <time dateTime={doc.publishedAt} className="block text-sm text-muted-foreground">
           {t("publish")}&nbsp;
           {getFormattedDate(doc.publishedAt, locale)}&nbsp;
           {doc?.author?.name && (
@@ -29,7 +29,7 @@ export default function DocHero(doc: OstDocument) {
           )}
           .
         </time>
-        <h1 className="font-heading mt-4 inline-block text-4xl leading-tight lg:text-5xl">
+        <h1 className="mt-4 inline-block font-heading text-4xl leading-tight lg:text-5xl">
           {doc.title}
         </h1>
       </header>

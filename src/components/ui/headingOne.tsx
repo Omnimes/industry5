@@ -9,7 +9,7 @@ export function SparklesPreview() {
   const theme = useTheme()
   return (
     <div className="flex h-96 w-full flex-col items-center justify-center overflow-hidden rounded-md">
-      <h1 className="relative z-20 text-center text-3xl font-bold text-black md:text-5xl lg:text-7xl dark:text-white">
+      <h1 className="relative z-20 text-center text-3xl font-bold text-black dark:text-white md:text-5xl lg:text-7xl">
         Contact
       </h1>
       <div className="relative h-40 w-[40rem]">
@@ -30,7 +30,7 @@ export function SparklesPreview() {
         />
 
         {/* Radial Gradient to prevent sharp edges */}
-        <div className="bg-background absolute inset-0 size-full [mask-image:radial-gradient(350px_200px_at_top,transparent_20%,white)]"></div>
+        <div className="absolute inset-0 size-full bg-background [mask-image:radial-gradient(350px_200px_at_top,transparent_20%,white)]"></div>
       </div>
     </div>
   )

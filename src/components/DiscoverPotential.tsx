@@ -16,13 +16,13 @@ export const DiscoverPotential = () => {
         inView
         className="mx-auto mb-16 w-full text-left md:mb-20 md:text-center"
       >
-        <h2 className="font-heading mb-6 flex flex-wrap text-2xl tracking-normal text-gray-900 sm:text-3xl md:justify-center md:text-4xl md:leading-none md:tracking-tight lg:text-5xl dark:text-white">
+        <h2 className="mb-6 flex flex-wrap font-heading text-2xl tracking-normal text-gray-900 dark:text-white sm:text-3xl md:justify-center md:text-4xl md:leading-none md:tracking-tight lg:text-5xl">
           {t("head1")}&nbsp;
           <span className="block w-fit bg-gradient-to-r from-green-400 to-purple-500 bg-clip-text text-transparent">
             {t("head1span")}
           </span>
         </h2>
-        <p className="text-muted-foreground text-balance px-0 text-lg md:text-xl">{t("p1")}</p>
+        <p className="text-balance px-0 text-lg text-muted-foreground md:text-xl">{t("p1")}</p>
       </BlurFade>
 
       <BlurFade
@@ -33,10 +33,10 @@ export const DiscoverPotential = () => {
         <BorderBeam size={500} duration={12} delay={9} className="hidden md:block" />
         <div className="grid h-full items-center gap-10 sm:mx-auto lg:grid-cols-2">
           <div className="mx-auto flex w-full flex-col justify-start text-left md:px-6 md:text-center lg:text-left">
-            <p className="text-muted-foreground mb-6 block w-full px-0 text-lg md:text-center md:text-xl lg:text-left">
+            <p className="mb-6 block w-full px-0 text-lg text-muted-foreground md:text-center md:text-xl lg:text-left">
               {t("p2")}
             </p>
-            <div className="text-muted-foreground grid space-y-3 font-bold sm:grid-cols-2 sm:gap-2 sm:space-y-0 ">
+            <div className="grid space-y-3 font-bold text-muted-foreground sm:grid-cols-2 sm:gap-2 sm:space-y-0">
               <ul className="space-y-3">
                 <li className="flex">
                   <Icons.volt className="mr-1 mt-px size-5 text-yellow-500" />

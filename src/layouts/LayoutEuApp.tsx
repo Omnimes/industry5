@@ -99,17 +99,17 @@ export const LayoutEuApp = ({
                       alt={post.title}
                       width={1000}
                       height={667}
-                      className="bg-muted w-full rounded-md border object-cover object-top transition duration-500 group-hover:scale-105"
+                      className="w-full rounded-md border bg-muted object-cover object-top transition duration-500 group-hover:scale-105"
                       priority={index <= 1}
                     />
                   )}
                   <Recruitment dateFrom={post.dateFrom} dateTo={post.dateTo} />
                 </div>
                 <div className="relative mt-6 p-4">
-                  <h3 className="mb-2 text-lg font-bold text-gray-800 md:min-h-[64px] md:text-xl dark:text-white">
+                  <h3 className="mb-2 text-lg font-bold text-gray-800 dark:text-white md:min-h-[64px] md:text-xl">
                     {post.title}
                   </h3>
-                  <p className="line-clamp-3 text-sm text-gray-600 md:text-base dark:text-gray-300">
+                  <p className="line-clamp-3 text-sm text-gray-600 dark:text-gray-300 md:text-base">
                     {post.description}
                   </p>
                 </div>

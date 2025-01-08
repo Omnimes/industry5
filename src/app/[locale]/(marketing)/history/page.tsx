@@ -61,17 +61,17 @@ export default async function HistoryPage({ params }: { params: Promise<{ locale
       >
         <TextRevealCardDouble text={t("titlePart1")} textPart={t("titlePart2")} desc={t("p1")} />
       </BlurFade>
-      <article className="text-muted-foreground mb-6 px-0 lg:text-lg">
+      <article className="mb-6 px-0 text-muted-foreground lg:text-lg">
         <BlurFade
           delay={0.2}
           inView
           className="mx-auto w-full text-left text-lg md:text-center md:text-xl"
         >
-          <p className="mb-12 space-y-1 px-0 ">{t("p2")}</p>
-          <h2 className="font-heading mb-6 flex flex-wrap text-2xl tracking-normal text-gray-900 sm:text-3xl md:justify-center md:text-4xl md:leading-none md:tracking-tight lg:text-5xl dark:text-white">
+          <p className="mb-12 space-y-1 px-0">{t("p2")}</p>
+          <h2 className="mb-6 flex flex-wrap font-heading text-2xl tracking-normal text-gray-900 dark:text-white sm:text-3xl md:justify-center md:text-4xl md:leading-none md:tracking-tight lg:text-5xl">
             {t("head1")}
           </h2>
-          <p className="text-muted-foreground text-balance px-0 text-lg md:text-xl">{t("p3")}</p>
+          <p className="text-balance px-0 text-lg text-muted-foreground md:text-xl">{t("p3")}</p>
         </BlurFade>
 
         <ContainerScroll>
@@ -90,11 +90,11 @@ export default async function HistoryPage({ params }: { params: Promise<{ locale
           inView
           className="mx-auto mb-16 w-full text-left text-lg md:mb-20 md:text-center md:text-xl"
         >
-          <p className="mb-12 space-y-1 px-0 ">{t("p2")}</p>
-          <h2 className="font-heading mb-6 flex flex-wrap text-2xl tracking-normal text-gray-900 sm:text-3xl md:justify-center md:text-4xl md:leading-none md:tracking-tight lg:text-5xl dark:text-white">
+          <p className="mb-12 space-y-1 px-0">{t("p2")}</p>
+          <h2 className="mb-6 flex flex-wrap font-heading text-2xl tracking-normal text-gray-900 dark:text-white sm:text-3xl md:justify-center md:text-4xl md:leading-none md:tracking-tight lg:text-5xl">
             {t("head2")}
           </h2>
-          <p className="text-muted-foreground text-balance px-0 text-lg md:text-xl">{t("p4")}</p>
+          <p className="text-balance px-0 text-lg text-muted-foreground md:text-xl">{t("p4")}</p>
         </BlurFade>
 
         <BlurFade
@@ -121,7 +121,7 @@ export default async function HistoryPage({ params }: { params: Promise<{ locale
                   <h2 className="mb-2 text-xl font-bold text-black dark:text-white">
                     {t("strong1")}
                   </h2>
-                  <p className="text-muted-foreground text-balance text-base lg:text-lg">
+                  <p className="text-balance text-base text-muted-foreground lg:text-lg">
                     {t("list1")}
                   </p>
                 </div>
@@ -145,7 +145,7 @@ export default async function HistoryPage({ params }: { params: Promise<{ locale
                   <h2 className="mb-2 text-xl font-bold text-black dark:text-white">
                     {t("strong2")}
                   </h2>
-                  <p className="text-muted-foreground text-balance text-base lg:text-lg">
+                  <p className="text-balance text-base text-muted-foreground lg:text-lg">
                     {t("list2")}
                   </p>
                 </div>
@@ -169,7 +169,7 @@ export default async function HistoryPage({ params }: { params: Promise<{ locale
                   <h2 className="mb-2 text-xl font-bold text-black dark:text-white">
                     {t("strong3")}
                   </h2>
-                  <p className="text-muted-foreground text-balance text-base lg:text-lg">
+                  <p className="text-balance text-base text-muted-foreground lg:text-lg">
                     {t("list3")}
                   </p>
                 </div>
@@ -193,7 +193,7 @@ export default async function HistoryPage({ params }: { params: Promise<{ locale
                   <h2 className="mb-2 text-xl font-bold text-black dark:text-white">
                     {t("strong4")}
                   </h2>
-                  <p className="text-muted-foreground text-balance text-base lg:text-lg">
+                  <p className="text-balance text-base text-muted-foreground lg:text-lg">
                     {t("list4")}
                   </p>
                 </div>
@@ -207,10 +207,10 @@ export default async function HistoryPage({ params }: { params: Promise<{ locale
           inView
           className="mx-auto mb-16 w-full text-left text-lg md:mb-20 md:text-center md:text-xl"
         >
-          <h2 className="font-heading mb-6 flex flex-wrap text-2xl tracking-normal text-gray-900 sm:text-3xl md:justify-center md:text-4xl md:leading-none md:tracking-tight lg:text-5xl dark:text-white">
+          <h2 className="mb-6 flex flex-wrap font-heading text-2xl tracking-normal text-gray-900 dark:text-white sm:text-3xl md:justify-center md:text-4xl md:leading-none md:tracking-tight lg:text-5xl">
             {t("head3")}
           </h2>
-          <p className="text-muted-foreground text-balance px-0 text-lg md:text-xl">{t("p5")}</p>
+          <p className="text-balance px-0 text-lg text-muted-foreground md:text-xl">{t("p5")}</p>
         </BlurFade>
 
         <BlurFade
@@ -237,7 +237,7 @@ export default async function HistoryPage({ params }: { params: Promise<{ locale
                   <h2 className="mb-2 text-xl font-bold text-black dark:text-white">
                     {t("strong13")}
                   </h2>
-                  <p className="text-muted-foreground text-balance text-base lg:text-lg">
+                  <p className="text-balance text-base text-muted-foreground lg:text-lg">
                     {t("list13")}
                   </p>
                 </div>
@@ -261,7 +261,7 @@ export default async function HistoryPage({ params }: { params: Promise<{ locale
                   <h2 className="mb-2 text-xl font-bold text-black dark:text-white">
                     {t("strong14")}
                   </h2>
-                  <p className="text-muted-foreground text-balance text-base lg:text-lg">
+                  <p className="text-balance text-base text-muted-foreground lg:text-lg">
                     {t("list14")}
                   </p>
                 </div>
@@ -285,7 +285,7 @@ export default async function HistoryPage({ params }: { params: Promise<{ locale
                   <h2 className="mb-2 text-xl font-bold text-black dark:text-white">
                     {t("strong15")}
                   </h2>
-                  <p className="text-muted-foreground text-balance text-base lg:text-lg">
+                  <p className="text-balance text-base text-muted-foreground lg:text-lg">
                     {t("list15")}
                   </p>
                 </div>
@@ -309,7 +309,7 @@ export default async function HistoryPage({ params }: { params: Promise<{ locale
                   <h2 className="mb-2 text-xl font-bold text-black dark:text-white">
                     {t("strong16")}
                   </h2>
-                  <p className="text-muted-foreground text-balance text-base lg:text-lg">
+                  <p className="text-balance text-base text-muted-foreground lg:text-lg">
                     {t("list16")}
                   </p>
                 </div>
@@ -323,10 +323,10 @@ export default async function HistoryPage({ params }: { params: Promise<{ locale
           inView
           className="mx-auto mb-16 w-full text-left text-lg md:mb-20 md:text-center md:text-xl"
         >
-          <h2 className="font-heading mb-6 flex flex-wrap text-2xl tracking-normal text-gray-900 sm:text-3xl md:justify-center md:text-4xl md:leading-none md:tracking-tight lg:text-5xl dark:text-white">
+          <h2 className="mb-6 flex flex-wrap font-heading text-2xl tracking-normal text-gray-900 dark:text-white sm:text-3xl md:justify-center md:text-4xl md:leading-none md:tracking-tight lg:text-5xl">
             {t("head4")}
           </h2>
-          <p className="text-muted-foreground text-balance px-0 text-lg md:text-xl">{t("p6")}</p>
+          <p className="text-balance px-0 text-lg text-muted-foreground md:text-xl">{t("p6")}</p>
         </BlurFade>
 
         <BlurFade
@@ -353,7 +353,7 @@ export default async function HistoryPage({ params }: { params: Promise<{ locale
                   <h2 className="mb-2 text-xl font-bold text-black dark:text-white">
                     {t("strong17")}
                   </h2>
-                  <p className="text-muted-foreground text-balance text-base lg:text-lg">
+                  <p className="text-balance text-base text-muted-foreground lg:text-lg">
                     {t("list17")}
                   </p>
                 </div>
@@ -377,7 +377,7 @@ export default async function HistoryPage({ params }: { params: Promise<{ locale
                   <h2 className="mb-2 text-xl font-bold text-black dark:text-white">
                     {t("strong18")}
                   </h2>
-                  <p className="text-muted-foreground text-balance text-base lg:text-lg">
+                  <p className="text-balance text-base text-muted-foreground lg:text-lg">
                     {t("list18")}
                   </p>
                 </div>
@@ -401,7 +401,7 @@ export default async function HistoryPage({ params }: { params: Promise<{ locale
                   <h2 className="mb-2 text-xl font-bold text-black dark:text-white">
                     {t("strong19")}
                   </h2>
-                  <p className="text-muted-foreground text-balance text-base lg:text-lg">
+                  <p className="text-balance text-base text-muted-foreground lg:text-lg">
                     {t("list19")}
                   </p>
                 </div>
@@ -425,7 +425,7 @@ export default async function HistoryPage({ params }: { params: Promise<{ locale
                   <h2 className="mb-2 text-xl font-bold text-black dark:text-white">
                     {t("strong20")}
                   </h2>
-                  <p className="text-muted-foreground text-balance text-base lg:text-lg">
+                  <p className="text-balance text-base text-muted-foreground lg:text-lg">
                     {t("list20")}
                   </p>
                 </div>
@@ -439,10 +439,10 @@ export default async function HistoryPage({ params }: { params: Promise<{ locale
           inView
           className="mx-auto mb-16 w-full text-left text-lg md:mb-20 md:text-center md:text-xl"
         >
-          <h2 className="font-heading mb-6 flex flex-wrap text-2xl tracking-normal text-gray-900 sm:text-3xl md:justify-center md:text-4xl md:leading-none md:tracking-tight lg:text-5xl dark:text-white">
+          <h2 className="mb-6 flex flex-wrap font-heading text-2xl tracking-normal text-gray-900 dark:text-white sm:text-3xl md:justify-center md:text-4xl md:leading-none md:tracking-tight lg:text-5xl">
             {t("head5")}
           </h2>
-          <p className="text-muted-foreground text-balance px-0 text-lg md:text-xl">{t("p7")}</p>
+          <p className="text-balance px-0 text-lg text-muted-foreground md:text-xl">{t("p7")}</p>
         </BlurFade>
 
         <BlurFade delay={0.2} inView className="mx-auto mb-16 w-full md:mb-20">
@@ -454,11 +454,11 @@ export default async function HistoryPage({ params }: { params: Promise<{ locale
           inView
           className="mx-auto mb-16 w-full text-left text-lg md:mb-20 md:text-center md:text-xl"
         >
-          <h2 className="font-heading mb-6 flex flex-wrap text-2xl tracking-normal text-gray-900 sm:text-3xl md:justify-center md:text-4xl md:leading-none md:tracking-tight lg:text-5xl dark:text-white">
+          <h2 className="mb-6 flex flex-wrap font-heading text-2xl tracking-normal text-gray-900 dark:text-white sm:text-3xl md:justify-center md:text-4xl md:leading-none md:tracking-tight lg:text-5xl">
             {t("head6")}
           </h2>
-          <p className="text-muted-foreground text-balance px-0 text-lg md:text-xl">{t("p8")}</p>
-          <p className="text-muted-foreground mb-8 text-balance px-0 text-lg md:text-xl">
+          <p className="text-balance px-0 text-lg text-muted-foreground md:text-xl">{t("p8")}</p>
+          <p className="mb-8 text-balance px-0 text-lg text-muted-foreground md:text-xl">
             {t("p9")}
           </p>
           <MyLink href="/industry" aria-label={taria("footerAria") + t("link")} text={t("link")} />

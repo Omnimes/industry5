@@ -164,7 +164,7 @@ export function Features({
     <section ref={ref} id="features">
       <div className="mx-auto my-12 grid h-full items-center gap-10 lg:grid-cols-2">
         <div
-          className={` order-1 hidden lg:order-none lg:flex ${
+          className={`order-1 hidden lg:order-none lg:flex ${
             ltr ? "lg:order-2 lg:justify-end" : "justify-start"
           }`}
         >
@@ -190,7 +190,7 @@ export function Features({
                     <div
                       className={`absolute left-0 top-0 w-full ${
                         currentIndex === index ? "h-full" : "h-0"
-                      } bg-primary origin-top transition-all ease-linear dark:bg-white`}
+                      } origin-top bg-primary transition-all ease-linear dark:bg-white`}
                       style={{
                         transitionDuration: currentIndex === index ? `${collapseDelay}ms` : "0s",
                       }}
@@ -209,7 +209,7 @@ export function Features({
                         linePosition === "bottom" ? "bottom-0" : "top-0"
                       } h-full ${
                         currentIndex === index ? "w-full" : "w-0"
-                      } bg-primary origin-left transition-all ease-linear dark:bg-white`}
+                      } origin-left bg-primary transition-all ease-linear dark:bg-white`}
                       style={{
                         transitionDuration: currentIndex === index ? `${collapseDelay}ms` : "0s",
                       }}
@@ -218,7 +218,7 @@ export function Features({
                 ) : null}
 
                 <div className="relative flex items-center">
-                  <div className="item-box bg-primary/10 mx-2 flex size-12 shrink-0 items-center justify-center rounded-full sm:mx-6">
+                  <div className="item-box mx-2 flex size-12 shrink-0 items-center justify-center rounded-full bg-primary/10 sm:mx-6">
                     {item.icon}
                   </div>
 
@@ -245,7 +245,7 @@ export function Features({
             ))}
           </Accordion.Root>
         </div>
-        <div className={`h-[350px] min-h-[200px] w-auto  ${ltr && "lg:order-1"}`}>
+        <div className={`h-[350px] min-h-[200px] w-auto ${ltr && "lg:order-1"}`}>
           {data[currentIndex]?.image ? (
             <motion.img
               key={currentIndex}

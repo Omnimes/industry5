@@ -84,7 +84,7 @@ const CardWithEffect = ({ children }: { children: React.ReactNode }) => {
 
   return (
     <div
-      className="from-muted/20 to-muted relative flex-1 overflow-hidden rounded-xl border border-purple-500 bg-gradient-to-b p-4"
+      className="relative flex-1 overflow-hidden rounded-xl border border-purple-500 bg-gradient-to-b from-muted/20 to-muted p-4"
       onMouseMove={handleMouseMove}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
@@ -136,7 +136,7 @@ export const BentoBox1 = () => {
               <h3 className="mb-2 text-2xl font-bold text-black dark:text-white">
                 {t("l1strong")}
               </h3>
-              <p className="text-muted-foreground text-balance">{t("l1")}</p>
+              <p className="text-balance text-muted-foreground">{t("l1")}</p>
             </div>
           </div>
         </CardWithEffect>
@@ -150,7 +150,7 @@ export const BentoBox1 = () => {
                 <h3 className="mb-2 text-2xl font-bold text-black dark:text-white">
                   {t("l2strong")}
                 </h3>
-                <p className="text-muted-foreground text-balance">{t("l2")}</p>
+                <p className="text-balance text-muted-foreground">{t("l2")}</p>
               </div>
             </div>
           </CardWithEffect>
@@ -161,7 +161,7 @@ export const BentoBox1 = () => {
                 <h3 className="mb-2 text-2xl font-bold text-black dark:text-white">
                   {t("l3strong")}
                 </h3>
-                <p className="text-muted-foreground text-balance">{t("l3")}</p>
+                <p className="text-balance text-muted-foreground">{t("l3")}</p>
               </div>
             </div>
           </CardWithEffect>

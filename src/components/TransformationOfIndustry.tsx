@@ -12,13 +12,13 @@ export const TransformationOfIndustry = () => {
         inView
         className="mx-auto mb-16 w-full text-left md:mb-20 md:text-center"
       >
-        <h2 className="font-heading mb-6 flex flex-wrap text-2xl tracking-normal text-gray-900 sm:text-3xl md:justify-center md:text-4xl md:leading-none md:tracking-tight lg:text-5xl dark:text-white">
+        <h2 className="mb-6 flex flex-wrap font-heading text-2xl tracking-normal text-gray-900 dark:text-white sm:text-3xl md:justify-center md:text-4xl md:leading-none md:tracking-tight lg:text-5xl">
           {t("head1")}&nbsp;
           <span className="block w-fit bg-gradient-to-r from-green-400 to-purple-500 bg-clip-text text-transparent">
             {t("head1span")}
           </span>
         </h2>
-        <p className="text-muted-foreground text-balance px-0 text-lg md:text-xl">{t("p1")}</p>
+        <p className="text-balance px-0 text-lg text-muted-foreground md:text-xl">{t("p1")}</p>
         <p className="mb-6 mt-16 text-balance px-0 text-lg md:text-xl">{t("p2")}</p>
       </BlurFade>
 
@@ -30,7 +30,7 @@ export const TransformationOfIndustry = () => {
                 <Image src={"/images/features/1.png"} alt={t("alt1")} height={337} width={500} />
               </div>
               <h3 className="mb-2 font-semibold leading-5">{t("head2")}</h3>
-              <p className="text-muted-foreground mb-3 text-sm">{t("p3")}</p>
+              <p className="mb-3 text-sm text-muted-foreground">{t("p3")}</p>
             </div>
           </BlurFade>
           <BlurFade delay={0.2} inView className="border-b p-8 lg:border-r">
@@ -39,7 +39,7 @@ export const TransformationOfIndustry = () => {
                 <Image src={"/images/features/2.png"} alt={t("alt2")} height={337} width={500} />
               </div>
               <h3 className="mb-2 font-semibold leading-5">{t("head3")}</h3>
-              <p className="text-muted-foreground mb-3 text-sm">{t("p4")}</p>
+              <p className="mb-3 text-sm text-muted-foreground">{t("p4")}</p>
             </div>
           </BlurFade>
           <BlurFade delay={0.2} inView className="border-b p-8 sm:border-r lg:border-r-0">
@@ -48,7 +48,7 @@ export const TransformationOfIndustry = () => {
                 <Image src={"/images/features/3.png"} alt={t("alt3")} height={337} width={500} />
               </div>
               <h3 className="mb-2 font-semibold leading-5">{t("head4")}</h3>
-              <p className="text-muted-foreground mb-3 text-sm">{t("p5")}</p>
+              <p className="mb-3 text-sm text-muted-foreground">{t("p5")}</p>
             </div>
           </BlurFade>
           <BlurFade delay={0.2} inView className="border-b p-8 lg:border-b-0 lg:border-r">
@@ -57,7 +57,7 @@ export const TransformationOfIndustry = () => {
                 <Image src={"/images/features/4.png"} alt={t("alt4")} height={337} width={500} />
               </div>
               <h3 className="mb-2 font-semibold leading-5">{t("head5")}</h3>
-              <p className="text-muted-foreground mb-3 text-sm">{t("p6")}</p>
+              <p className="mb-3 text-sm text-muted-foreground">{t("p6")}</p>
             </div>
           </BlurFade>
           <BlurFade delay={0.2} inView className="border-b p-8 sm:border-b-0 sm:border-r">
@@ -66,7 +66,7 @@ export const TransformationOfIndustry = () => {
                 <Image src={"/images/features/5.png"} alt={t("alt5")} height={337} width={500} />
               </div>
               <h3 className="mb-2 font-semibold leading-5">{t("head6")}</h3>
-              <p className="text-muted-foreground mb-3 text-sm">{t("p7")}</p>
+              <p className="mb-3 text-sm text-muted-foreground">{t("p7")}</p>
             </div>
           </BlurFade>
           <BlurFade delay={0.2} inView className="p-8">
@@ -75,7 +75,7 @@ export const TransformationOfIndustry = () => {
                 <Image src={"/images/features/6.png"} alt={t("alt6")} height={337} width={500} />
               </div>
               <h3 className="mb-2 font-semibold leading-5">{t("head7")}</h3>
-              <p className="text-muted-foreground mb-3 text-sm">{t("p8")}</p>
+              <p className="mb-3 text-sm text-muted-foreground">{t("p8")}</p>
             </div>
           </BlurFade>
         </div>

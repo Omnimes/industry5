@@ -48,7 +48,7 @@ export const EvervaultCard = ({
       >
         <CardPattern mouseX={mouseX} mouseY={mouseY} randomString={randomString} />
         <div className="relative z-10 flex items-center justify-center">
-          <div className="relative flex size-44  items-center justify-center rounded-full text-4xl font-bold text-white">
+          <div className="relative flex size-44 items-center justify-center rounded-full text-4xl font-bold text-white">
             <div className="absolute size-full rounded-full bg-white/[0.8] blur-sm dark:bg-black/[0.8]" />
             <span className="z-20 text-black dark:text-white">{text}</span>
             <Image src={image} alt="" width={120} height={120} className="z-20" />
@@ -73,13 +73,13 @@ export function CardPattern({
 
   return (
     <div className="pointer-events-none">
-      <div className="group-hover/card:opacity-50</div> absolute inset-0  rounded-2xl [mask-image:linear-gradient(white,transparent)]"></div>
+      <div className="group-hover/card:opacity-50</div> absolute inset-0 rounded-2xl [mask-image:linear-gradient(white,transparent)]"></div>
       <motion.div
-        className="absolute inset-0 rounded-2xl bg-gradient-to-r from-green-500 to-blue-700 opacity-0  backdrop-blur-xl transition duration-500 group-hover/card:opacity-100"
+        className="absolute inset-0 rounded-2xl bg-gradient-to-r from-green-500 to-blue-700 opacity-0 backdrop-blur-xl transition duration-500 group-hover/card:opacity-100"
         style={style}
       />
       <motion.div
-        className="absolute inset-0 rounded-2xl opacity-0 mix-blend-overlay  group-hover/card:opacity-100"
+        className="absolute inset-0 rounded-2xl opacity-0 mix-blend-overlay group-hover/card:opacity-100"
         style={style}
       >
         <p className="absolute inset-x-0 h-full whitespace-pre-wrap break-words font-mono text-xs font-bold text-white transition duration-500">

@@ -40,7 +40,7 @@ export default function LocaleSwitcher() {
     <Select onValueChange={onSelectChange} defaultValue={locale}>
       <SelectTrigger
         className={clsx(
-          "w-[60px] inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none ring-offset-background border-0 px-3 focus:border-0 focus:outline-none focus:ring-0 hover:bg-accent hover:text-accent-foreground shadow-none",
+          "inline-flex w-[60px] items-center justify-center rounded-md border-0 px-3 text-sm font-medium shadow-none ring-offset-background transition-colors hover:bg-accent hover:text-accent-foreground focus:border-0 focus:outline-none focus:ring-0 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50",
           isPending && "transition-opacity [&:disabled]:opacity-30"
         )}
         aria-label="Locale Switcher"

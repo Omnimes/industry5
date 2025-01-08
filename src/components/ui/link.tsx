@@ -14,7 +14,7 @@ export const MyLink = ({ href, text, className, ...props }: Props) => {
       rel="noreferrer noopener"
       {...props}
       className={clsx(
-        "hover:text-foreground inline-flex items-center gap-x-1 decoration-2 transition-colors hover:underline",
+        "inline-flex items-center gap-x-1 decoration-2 transition-colors hover:text-foreground hover:underline",
         className
       )}
     >
@@ -44,7 +44,7 @@ export const MyLinkChildren = ({ children, href, className, ...props }: Props) =
       rel="noreferrer noopener"
       {...props}
       className={clsx(
-        "hover:text-foreground inline-flex items-center gap-x-1 decoration-2 transition-colors ",
+        "inline-flex items-center gap-x-1 decoration-2 transition-colors hover:text-foreground",
         className
       )}
     >

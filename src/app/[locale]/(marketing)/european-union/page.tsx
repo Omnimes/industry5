@@ -68,7 +68,7 @@ export default async function EuropeanUnionPage({
       >
         <TextRevealCard text={t("title")} desc={t("desc")} />
       </BlurFade>
-      <article className="text-muted-foreground mb-6 px-0 lg:text-lg">
+      <article className="mb-6 px-0 text-muted-foreground lg:text-lg">
         <BlurFade
           delay={0.3}
           inView
@@ -84,13 +84,13 @@ export default async function EuropeanUnionPage({
           inView
           className="mx-auto mb-16 w-full text-left text-lg md:mb-20 md:text-center md:text-xl"
         >
-          <h2 className="font-heading mb-6 flex flex-wrap text-2xl tracking-normal text-gray-900 sm:text-3xl md:justify-center md:text-4xl md:leading-none md:tracking-tight lg:text-5xl dark:text-white">
+          <h2 className="mb-6 flex flex-wrap font-heading text-2xl tracking-normal text-gray-900 dark:text-white sm:text-3xl md:justify-center md:text-4xl md:leading-none md:tracking-tight lg:text-5xl">
             {t("h1")}&nbsp;
             <span className="block w-fit bg-gradient-to-r from-green-400 to-purple-500 bg-clip-text text-transparent">
               {t("h1span")}
             </span>
           </h2>
-          <p className="text-muted-foreground text-balance px-0 text-lg md:text-xl">{t("p3")}</p>
+          <p className="text-balance px-0 text-lg text-muted-foreground md:text-xl">{t("p3")}</p>
           <BentoBox1 />
         </BlurFade>
 
@@ -99,13 +99,13 @@ export default async function EuropeanUnionPage({
           inView
           className="mx-auto mb-16 w-full text-left text-lg md:mb-20 md:text-center md:text-xl"
         >
-          <h2 className="font-heading mb-6 flex flex-wrap text-2xl tracking-normal text-gray-900 sm:text-3xl md:justify-center md:text-4xl md:leading-none md:tracking-tight lg:text-5xl dark:text-white">
+          <h2 className="mb-6 flex flex-wrap font-heading text-2xl tracking-normal text-gray-900 dark:text-white sm:text-3xl md:justify-center md:text-4xl md:leading-none md:tracking-tight lg:text-5xl">
             {t("h2")}&nbsp;
             <span className="block w-fit bg-gradient-to-r from-green-400 to-purple-500 bg-clip-text text-transparent">
               {t("h2span")}
             </span>
           </h2>
-          <p className="text-muted-foreground text-balance px-0 text-lg md:text-xl">{t("p4")}</p>
+          <p className="text-balance px-0 text-lg text-muted-foreground md:text-xl">{t("p4")}</p>
         </BlurFade>
 
         <BlurFade
@@ -115,13 +115,13 @@ export default async function EuropeanUnionPage({
         >
           {feature.map((item, i) => (
             <div key={i} className={cn(i == 2 && "md:col-span-2 lg:col-span-1")}>
-              <div className="text-card-foreground bg-background rounded-lg border border-none shadow-none">
+              <div className="rounded-lg border border-none bg-background text-card-foreground shadow-none">
                 <div className="space-y-4">
-                  <div className="bg-primary/10 flex size-12 items-center justify-center rounded-full">
+                  <div className="flex size-12 items-center justify-center rounded-full bg-primary/10">
                     {item.icon}
                   </div>
                   <h3 className="text-left text-xl font-semibold">{item.heading}</h3>
-                  <p className="text-muted-foreground text-balance text-left">{item.paragrapgh}</p>
+                  <p className="text-balance text-left text-muted-foreground">{item.paragrapgh}</p>
                 </div>
               </div>
             </div>
@@ -133,13 +133,13 @@ export default async function EuropeanUnionPage({
           inView
           className="mx-auto mb-16 w-full text-left text-lg md:mb-20 md:text-center md:text-xl"
         >
-          <h2 className="font-heading mb-6 flex flex-wrap text-2xl tracking-normal text-gray-900 sm:text-3xl md:justify-center md:text-4xl md:leading-none md:tracking-tight lg:text-5xl dark:text-white">
+          <h2 className="mb-6 flex flex-wrap font-heading text-2xl tracking-normal text-gray-900 dark:text-white sm:text-3xl md:justify-center md:text-4xl md:leading-none md:tracking-tight lg:text-5xl">
             {t("h6")}&nbsp;
             <span className="block w-fit bg-gradient-to-r from-green-400 to-purple-500 bg-clip-text text-transparent">
               {t("h6span")}
             </span>
           </h2>
-          <p className="text-muted-foreground text-balance px-0 text-lg md:text-xl">{t("p8")}</p>
+          <p className="text-balance px-0 text-lg text-muted-foreground md:text-xl">{t("p8")}</p>
         </BlurFade>
 
         <BlurFade
@@ -155,11 +155,11 @@ export default async function EuropeanUnionPage({
           inView
           className="mx-auto mb-16 w-full text-left text-lg md:mb-20 md:text-center md:text-xl"
         >
-          <h2 className="font-heading mb-6 flex flex-wrap text-2xl tracking-normal text-gray-900 sm:text-3xl md:justify-center md:text-4xl md:leading-none md:tracking-tight lg:text-5xl dark:text-white">
+          <h2 className="mb-6 flex flex-wrap font-heading text-2xl tracking-normal text-gray-900 dark:text-white sm:text-3xl md:justify-center md:text-4xl md:leading-none md:tracking-tight lg:text-5xl">
             {t("h7")}&nbsp;
           </h2>
-          <p className="text-muted-foreground text-balance px-0 text-lg md:text-xl">{t("p9")}</p>
-          <p className="text-muted-foreground text-balance px-0 text-lg md:text-xl">{t("p10")}</p>
+          <p className="text-balance px-0 text-lg text-muted-foreground md:text-xl">{t("p9")}</p>
+          <p className="text-balance px-0 text-lg text-muted-foreground md:text-xl">{t("p10")}</p>
         </BlurFade>
       </article>
     </section>
