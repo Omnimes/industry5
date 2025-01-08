@@ -36,7 +36,7 @@ export default async function ContactPage({ params }: { params: Promise<{ locale
           <div className="text-center text-gray-500 dark:text-gray-400">
             <Image
               className="mx-auto mb-4 size-36 rounded-full"
-              src="/images/ceo.jfif"
+              src="/images/ceo.jpg"
               alt={t("ggPhoto")}
               width={144}
               height={144}
