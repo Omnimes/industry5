@@ -43,7 +43,7 @@ export async function GET() {
 
   euapplications
     .sort((a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime())
-    .map((item) => {
+    .forEach((item) => {
       const lang = (item.lang ?? "pl") as "en" | "pl"
       feed.addItem({
         title: item.title,
@@ -55,7 +55,6 @@ export async function GET() {
       })
     })
 
-  console.log(feed.json1())
   return new Response(feed.json1(), {
     headers: {
       "Content-Type": "application/json; charset=utf-8",

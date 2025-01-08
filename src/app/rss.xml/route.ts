@@ -4,6 +4,8 @@ import RSS from "rss"
 
 const host = siteConfig.siteUrl
 
+export const dynamic = "force-static"
+
 export async function GET() {
   const feedOptions = {
     id: host,
