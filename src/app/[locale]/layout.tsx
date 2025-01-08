@@ -53,7 +53,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
       url: "./",
       siteName: t(siteConfig.title),
       images: [siteConfig.socialBanner],
-      locale: locale,
+      locale,
       type: "website",
     },
     alternates: {

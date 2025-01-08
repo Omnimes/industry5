@@ -4,8 +4,8 @@ import { locales } from "../config"
 import { defaultLocale } from "../middleware"
 
 export const routing = {
-  locales: locales,
-  defaultLocale: defaultLocale,
+  locales,
+  defaultLocale,
 }
 
 export default getRequestConfig(async ({ requestLocale }) => {

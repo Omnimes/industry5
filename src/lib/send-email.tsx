@@ -15,7 +15,7 @@ export const sendEmail = async (data: FormData) => {
     const { error, status, message } = await res.json()
 
     if (message) {
-      return { message: message, type: "success" }
+      return { message, type: "success" }
     }
     if (status == 500) {
       throw new Error(error)

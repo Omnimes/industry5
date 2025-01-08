@@ -5,7 +5,7 @@ import { localeDetection, localePrefix, locales, pathnames } from "./config"
 export const defaultLocale = "pl" as const
 export const excludePaths = ["/blog/[slug]", "/eu-applications/[slug]"]
 export default createMiddleware({
-  defaultLocale: defaultLocale,
+  defaultLocale,
   locales,
   pathnames,
   localeDetection,

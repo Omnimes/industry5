@@ -22,7 +22,7 @@ export function genPageMetadata({
     keywords,
     openGraph: {
       title: `${title}`,
-      description: description,
+      description,
       url: "./",
       siteName: siteConfig.title,
       images: image ? [image] : [siteConfig.socialBanner],
