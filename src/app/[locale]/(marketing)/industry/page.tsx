@@ -39,28 +39,28 @@ export default async function IndustryPage({ params }: { params: Promise<{ local
       title: t("strong1"),
       content: t("list1"),
       image: "/images/industry/f4.png",
-      icon: <User className="size-6 text-primary" />,
+      icon: <User className="text-primary size-6" />,
     },
     {
       id: 2,
       title: t("strong2"),
       content: t("list2"),
       image: "/images/industry/f3.png",
-      icon: <Settings className="size-6 text-primary" />,
+      icon: <Settings className="text-primary size-6" />,
     },
     {
       id: 3,
       title: t("strong3"),
       content: t("list3"),
       image: "/images/industry/f2.png",
-      icon: <ScanFace className="size-6 text-primary" />,
+      icon: <ScanFace className="text-primary size-6" />,
     },
     {
       id: 4,
       title: t("strong4"),
       content: t("list4"),
       image: "/images/industry/f1.png",
-      icon: <ShieldCheck className="size-6 text-primary" />,
+      icon: <ShieldCheck className="text-primary size-6" />,
     },
   ]
 
@@ -73,19 +73,19 @@ export default async function IndustryPage({ params }: { params: Promise<{ local
       >
         <TextRevealCard text={t("title")} desc={t("p1")} />
       </BlurFade>
-      <article className="mb-6 px-0 text-muted-foreground lg:text-lg">
+      <article className="text-muted-foreground mb-6 px-0 lg:text-lg">
         <BlurFade
           delay={0.2}
           inView
           className="mx-auto mb-16 w-full text-left text-lg md:mb-20 md:text-center md:text-xl"
         >
-          <h2 className="mb-6 flex flex-wrap font-heading text-2xl tracking-normal text-gray-900 dark:text-white sm:text-3xl md:justify-center md:text-4xl md:leading-none md:tracking-tight lg:text-5xl">
+          <h2 className="font-heading mb-6 flex flex-wrap text-2xl tracking-normal text-gray-900 sm:text-3xl md:justify-center md:text-4xl md:leading-none md:tracking-tight lg:text-5xl dark:text-white">
             {t("head1")}&nbsp;
             <span className="block w-fit bg-gradient-to-r from-green-400 to-purple-500 bg-clip-text text-transparent">
               {t("headspan")}
             </span>
           </h2>
-          <p className="text-balance px-0 text-lg text-muted-foreground md:text-xl">{t("p2")}</p>
+          <p className="text-muted-foreground text-balance px-0 text-lg md:text-xl">{t("p2")}</p>
         </BlurFade>
 
         <BlurFade
@@ -107,7 +107,7 @@ export default async function IndustryPage({ params }: { params: Promise<{ local
               </div>
             </div>
             <div className="relative z-10 space-y-4">
-              <p className="text-balance px-0 text-left text-lg text-muted-foreground md:text-xl">
+              <p className="text-muted-foreground text-balance px-0 text-left text-lg md:text-xl">
                 {t("p3")}
               </p>
             </div>
@@ -129,7 +129,7 @@ export default async function IndustryPage({ params }: { params: Promise<{ local
           inView
           className="mx-auto mb-16 w-full text-left text-lg md:mb-20 md:text-center md:text-xl"
         >
-          <h2 className="mb-6 flex flex-wrap font-heading text-2xl tracking-normal text-gray-900 dark:text-white sm:text-3xl md:justify-center md:text-4xl md:leading-none md:tracking-tight lg:text-5xl">
+          <h2 className="font-heading mb-6 flex flex-wrap text-2xl tracking-normal text-gray-900 sm:text-3xl md:justify-center md:text-4xl md:leading-none md:tracking-tight lg:text-5xl dark:text-white">
             {t("head2")}&nbsp;
             <span className="block w-fit bg-gradient-to-r from-green-400 to-purple-500 bg-clip-text text-transparent">
               {t("headspan")}
@@ -157,14 +157,14 @@ export default async function IndustryPage({ params }: { params: Promise<{ local
           inView
           className="mx-auto mb-16 w-full text-left text-lg md:mb-20 md:text-center md:text-xl"
         >
-          <h2 className="mb-6 flex flex-wrap font-heading text-2xl tracking-normal text-gray-900 dark:text-white sm:text-3xl md:justify-center md:text-4xl md:leading-none md:tracking-tight lg:text-5xl">
+          <h2 className="font-heading mb-6 flex flex-wrap text-2xl tracking-normal text-gray-900 sm:text-3xl md:justify-center md:text-4xl md:leading-none md:tracking-tight lg:text-5xl dark:text-white">
             {t("head3")}&nbsp;
             <span className="block w-fit bg-gradient-to-r from-green-400 to-purple-500 bg-clip-text text-transparent">
               {t("headspan")}
             </span>
             &nbsp;{t("headspanex")}
           </h2>
-          <p className="text-balance px-0 text-lg text-muted-foreground md:text-xl">{t("p4")}</p>
+          <p className="text-muted-foreground text-balance px-0 text-lg md:text-xl">{t("p4")}</p>
         </BlurFade>
 
         <BlurFade
@@ -172,13 +172,13 @@ export default async function IndustryPage({ params }: { params: Promise<{ local
           inView
           className="mx-auto mb-16 w-full text-left text-lg md:mb-20 md:text-center md:text-xl"
         >
-          <h2 className="mb-6 flex flex-wrap font-heading text-2xl tracking-normal text-gray-900 dark:text-white sm:text-3xl md:justify-center md:text-4xl md:leading-none md:tracking-tight lg:text-5xl">
+          <h2 className="font-heading mb-6 flex flex-wrap text-2xl tracking-normal text-gray-900 sm:text-3xl md:justify-center md:text-4xl md:leading-none md:tracking-tight lg:text-5xl dark:text-white">
             {t("head4")}&nbsp;
             <span className="block w-fit bg-gradient-to-r from-green-400 to-purple-500 bg-clip-text text-transparent">
               {t("headspan1")}
             </span>
           </h2>
-          <p className="text-balance px-0 text-lg text-muted-foreground md:text-xl">{t("p5")}</p>
+          <p className="text-muted-foreground text-balance px-0 text-lg md:text-xl">{t("p5")}</p>
         </BlurFade>
 
         <BlurFade delay={0.2} inView className="mx-auto mb-16 w-full md:mb-20">
@@ -190,10 +190,10 @@ export default async function IndustryPage({ params }: { params: Promise<{ local
           inView
           className="mx-auto mb-16 w-full text-left text-lg md:mb-20 md:text-center md:text-xl"
         >
-          <h2 className="mb-6 flex flex-wrap font-heading text-2xl tracking-normal text-gray-900 dark:text-white sm:text-3xl md:justify-center md:text-4xl md:leading-none md:tracking-tight lg:text-5xl">
+          <h2 className="font-heading mb-6 flex flex-wrap text-2xl tracking-normal text-gray-900 sm:text-3xl md:justify-center md:text-4xl md:leading-none md:tracking-tight lg:text-5xl dark:text-white">
             {t("head5")}
           </h2>
-          <p className="text-balance px-0 text-lg text-muted-foreground md:text-xl">{t("p6")}</p>
+          <p className="text-muted-foreground text-balance px-0 text-lg md:text-xl">{t("p6")}</p>
         </BlurFade>
 
         <BlurFade
@@ -246,13 +246,13 @@ export default async function IndustryPage({ params }: { params: Promise<{ local
                   <EvervaultCard text="" image={item.image} />
                   <div className="mt-auto">
                     <h2 className="mt-4 text-black dark:text-white">{item.heading}</h2>
-                    <p className="mt-4 text-balance text-base text-muted-foreground">{item.text}</p>
+                    <p className="text-muted-foreground mt-4 text-balance text-base">{item.text}</p>
                   </div>
                 </div>
               )
             })}
           </div>
-          <p className="mt-20 text-balance px-0 text-lg text-muted-foreground md:text-center md:text-xl">
+          <p className="text-muted-foreground mt-20 text-balance px-0 text-lg md:text-center md:text-xl">
             {t("p7")}
           </p>
         </BlurFade>

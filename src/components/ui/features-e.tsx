@@ -190,7 +190,7 @@ export function Features({
                     <div
                       className={`absolute left-0 top-0 w-full ${
                         currentIndex === index ? "h-full" : "h-0"
-                      } origin-top bg-primary transition-all ease-linear dark:bg-white`}
+                      } bg-primary origin-top transition-all ease-linear dark:bg-white`}
                       style={{
                         transitionDuration: currentIndex === index ? `${collapseDelay}ms` : "0s",
                       }}
@@ -209,7 +209,7 @@ export function Features({
                         linePosition === "bottom" ? "bottom-0" : "top-0"
                       } h-full ${
                         currentIndex === index ? "w-full" : "w-0"
-                      } origin-left bg-primary transition-all ease-linear dark:bg-white`}
+                      } bg-primary origin-left transition-all ease-linear dark:bg-white`}
                       style={{
                         transitionDuration: currentIndex === index ? `${collapseDelay}ms` : "0s",
                       }}
@@ -218,7 +218,7 @@ export function Features({
                 ) : null}
 
                 <div className="relative flex items-center">
-                  <div className="item-box mx-2 flex size-12 shrink-0 items-center justify-center rounded-full bg-primary/10 sm:mx-6">
+                  <div className="item-box bg-primary/10 mx-2 flex size-12 shrink-0 items-center justify-center rounded-full sm:mx-6">
                     {item.icon}
                   </div>
 

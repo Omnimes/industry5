@@ -63,7 +63,7 @@ export function TestimonialCard({ description, name, img, role, className }: Tes
           height={40}
           src={img || ""}
           alt={name}
-          className="size-10 rounded-full ring-1 ring-border ring-offset-4"
+          className="ring-border size-10 rounded-full ring-1 ring-offset-4"
         />
 
         <div>
@@ -206,10 +206,10 @@ const testimonials = [
 export function Testimonials() {
   return (
     <section id="testimonials" className="container py-10">
-      <h2 className="mb-4 text-center text-5xl font-bold leading-[1.2] tracking-tighter text-foreground">
+      <h2 className="text-foreground mb-4 text-center text-5xl font-bold leading-[1.2] tracking-tighter">
         What People Are Saying
       </h2>
-      <h3 className="mx-auto mb-8 max-w-lg text-balance text-center text-lg font-medium tracking-tight text-foreground/80">
+      <h3 className="text-foreground/80 mx-auto mb-8 max-w-lg text-balance text-center text-lg font-medium tracking-tight">
         Don&apos;t just take our word for it. Here&apos;s what{" "}
         <span className="bg-gradient bg-clip-text text-transparent">real people</span> are saying
         about <span className="from-fg-onAccent text-purple-600">Eldora UI</span>
@@ -245,8 +245,8 @@ export function Testimonials() {
               </Marquee>
             ))}
         </div>
-        <div className="pointer-events-none absolute inset-x-0 bottom-0 h-1/4 w-full bg-gradient-to-t from-background from-20%"></div>
-        <div className="pointer-events-none absolute inset-x-0 top-0 h-1/4 w-full bg-gradient-to-b from-background from-20%"></div>
+        <div className="from-background pointer-events-none absolute inset-x-0 bottom-0 h-1/4 w-full bg-gradient-to-t from-20%"></div>
+        <div className="from-background pointer-events-none absolute inset-x-0 top-0 h-1/4 w-full bg-gradient-to-b from-20%"></div>
       </div>
     </section>
   )

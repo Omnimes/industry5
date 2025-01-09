@@ -79,18 +79,18 @@ export const LayoutPosts = ({
                   alt={post.title}
                   width={804}
                   height={452}
-                  className="mb-4 rounded-md border bg-muted transition-colors"
+                  className="bg-muted mb-4 rounded-md border transition-colors"
                   priority={index <= 1}
                 />
               )}
               <h2 className="text-2xl font-extrabold">{post.title}</h2>
               {post.description && (
-                <p className="line-clamp-3 text-balance text-muted-foreground">
+                <p className="text-muted-foreground line-clamp-3 text-balance">
                   {post.description}
                 </p>
               )}
               {post.publishedAt && (
-                <p className="text-sm text-muted-foreground">
+                <p className="text-muted-foreground text-sm">
                   {getFormattedDate(post.publishedAt, lang)}
                 </p>
               )}

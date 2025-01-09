@@ -15,15 +15,15 @@ export const TextRevealCard = ({
   className?: string
 }) => {
   return (
-    <div className={cn("relative w-full overflow-hidden bg-background", className)}>
+    <div className={cn("bg-background relative w-full overflow-hidden", className)}>
       <div className="w-fit max-w-screen-xl overflow-hidden [mask-image:linear-gradient(to_bottom,transparent,white,transparent)] md:mx-auto md:mb-2">
-        <h1 className="bg-[#111827] bg-clip-text py-5 font-heading text-2xl tracking-normal text-transparent dark:bg-white sm:text-3xl md:text-center md:text-4xl md:leading-none md:tracking-tight lg:text-5xl">
+        <h1 className="font-heading bg-[#111827] bg-clip-text py-5 text-2xl tracking-normal text-transparent sm:text-3xl md:text-center md:text-4xl md:leading-none md:tracking-tight lg:text-5xl dark:bg-white">
           {text}
         </h1>
         <MemoizedStars />
       </div>
       {desc && (
-        <p className="mx-auto mb-8 max-w-screen-xl px-0 pb-3 text-lg text-muted-foreground md:text-center md:text-xl">
+        <p className="text-muted-foreground mx-auto mb-8 max-w-screen-xl px-0 pb-3 text-lg md:text-center md:text-xl">
           {desc}
         </p>
       )}
@@ -44,9 +44,9 @@ export const TextRevealCardDouble = ({
   className?: string
 }) => {
   return (
-    <div className={cn("relative w-full overflow-hidden bg-background py-10", className)}>
+    <div className={cn("bg-background relative w-full overflow-hidden py-10", className)}>
       <div className="w-fit max-w-screen-xl overflow-hidden [mask-image:linear-gradient(to_bottom,transparent,white,transparent)] md:mx-auto md:mb-2">
-        <h1 className="bg-[#111827] bg-clip-text py-5 font-heading text-2xl tracking-normal text-transparent dark:bg-white sm:text-3xl md:text-center md:text-4xl md:leading-none md:tracking-tight lg:text-5xl">
+        <h1 className="font-heading bg-[#111827] bg-clip-text py-5 text-2xl tracking-normal text-transparent sm:text-3xl md:text-center md:text-4xl md:leading-none md:tracking-tight lg:text-5xl dark:bg-white">
           <span>{text}</span>
           <br />
           {textPart}
@@ -54,7 +54,7 @@ export const TextRevealCardDouble = ({
         <MemoizedStars />
       </div>
       {desc && (
-        <p className="mx-auto max-w-screen-xl px-0 pb-3 text-lg text-muted-foreground md:text-center md:text-xl">
+        <p className="text-muted-foreground mx-auto max-w-screen-xl px-0 pb-3 text-lg md:text-center md:text-xl">
           {desc}
         </p>
       )}

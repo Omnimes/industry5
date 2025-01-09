@@ -28,7 +28,7 @@ export function HeroHighlightDemo() {
           duration: 0.5,
           ease: [0.4, 0.0, 0.2, 1],
         }}
-        className="bg-gradient-to-r from-neutral-300 to-stone-400 bg-clip-text font-heading text-4xl font-bold tracking-normal text-transparent drop-shadow-xl sm:text-6xl"
+        className="font-heading bg-gradient-to-r from-neutral-300 to-stone-400 bg-clip-text text-4xl font-bold tracking-normal text-transparent drop-shadow-xl sm:text-6xl"
       >
         {t("title")}
         <Highlight className="text-white">{t("title-highlight")}</Highlight>
@@ -86,7 +86,7 @@ export function HeroHighlightDemo() {
           rel="noreferrer noopener"
           aria-label={taria("heroEuAria")}
           className={cn(
-            "inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50",
+            "ring-offset-background focus-visible:ring-ring inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50",
             "text-white underline-offset-4 hover:underline",
             "h-10 px-4 py-2"
           )}

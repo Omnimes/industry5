@@ -98,7 +98,7 @@ export default async function PostPage({
   if (!post) {
     return (
       <article className="mx-auto mt-32 max-w-screen-lg px-4 text-center md:px-0">
-        <h1 className="my-2 inline-block font-heading text-4xl leading-tight lg:text-5xl">
+        <h1 className="font-heading my-2 inline-block text-4xl leading-tight lg:text-5xl">
           {t("postNotFound")}
         </h1>
         <p>{t("postNotFoundDesc")}</p>
@@ -121,7 +121,7 @@ export default async function PostPage({
     <article className="mb-32">
       <DocHero {...post} />
       <div className="mx-auto max-w-screen-xl px-4 xl:px-0">
-        <div className="prose-outstatic prose max-w-none text-muted-foreground dark:prose-invert">
+        <div className="prose-outstatic prose text-muted-foreground dark:prose-invert max-w-none">
           <MDXComponent content={post.content} />
         </div>
       </div>

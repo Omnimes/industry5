@@ -181,9 +181,9 @@ const Feature = ({
   return (
     <div
       className={cn(
-        "group/feature relative flex flex-col py-10 dark:border-neutral-800 lg:border-r",
-        (index === 0 || index === 4) && "dark:border-neutral-800 lg:border-l",
-        index < 4 && "dark:border-neutral-800 lg:border-b"
+        "group/feature relative flex flex-col py-10 lg:border-r dark:border-neutral-800",
+        (index === 0 || index === 4) && "lg:border-l dark:border-neutral-800",
+        index < 4 && "lg:border-b dark:border-neutral-800"
       )}
     >
       {index < 4 && (
@@ -192,7 +192,7 @@ const Feature = ({
       {index >= 4 && (
         <div className="pointer-events-none absolute inset-0 size-full bg-gradient-to-b from-neutral-100 to-transparent opacity-0 transition duration-200 group-hover/feature:opacity-100 dark:from-neutral-800" />
       )}
-      <div className="relative z-10 mb-4 text-balance px-6 text-muted-foreground group-hover/feature:text-purple-500">
+      <div className="text-muted-foreground relative z-10 mb-4 text-balance px-6 group-hover/feature:text-purple-500">
         {icon}
       </div>
       <div className="relative z-10 mb-2 px-6 text-lg font-bold">
@@ -201,7 +201,7 @@ const Feature = ({
           {title}
         </span>
       </div>
-      <p className="relative z-10 text-balance px-6 text-sm text-muted-foreground md:text-base lg:text-lg">
+      <p className="text-muted-foreground relative z-10 text-balance px-6 text-sm md:text-base lg:text-lg">
         {description}
       </p>
     </div>

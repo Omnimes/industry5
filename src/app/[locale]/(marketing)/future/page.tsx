@@ -26,7 +26,7 @@ export default async function FuturePage({ params }: { params: Promise<{ locale:
   return (
     <main className="mx-auto w-full max-w-screen-xl px-4 py-12 md:py-24">
       <TextRevealCard text={t("title")} />
-      <article className="mb-6 px-0 text-muted-foreground lg:text-lg"></article>
+      <article className="text-muted-foreground mb-6 px-0 lg:text-lg"></article>
     </main>
   )
 }

@@ -12,7 +12,7 @@ export const Hero = () => {
           loop
         />
         <div className="absolute z-[1] size-full bg-black/65" />
-        <div className="pointer-events-none absolute inset-x-0 bottom-0 z-[1] h-60 w-full bg-gradient-to-t from-background via-background/30 to-transparent" />
+        <div className="from-background via-background/30 pointer-events-none absolute inset-x-0 bottom-0 z-[1] h-60 w-full bg-gradient-to-t to-transparent" />
       </div>
       <div className="z-[2] space-y-2">
         <div className="mx-auto max-w-screen-xl text-center">

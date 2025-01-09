@@ -30,7 +30,7 @@ export const Footer = () => {
         <div className="absolute left-0 top-0 flex w-full items-center justify-center xl:-top-20 2xl:-top-48">
           <TextHoverEffect text="INDUSTRY5" />
         </div>
-        <div className="bg-gradient-to-b from-gray-100 to-transparent pt-1 dark:from-gray-900 dark:to-transparent md:px-12 lg:px-28">
+        <div className="bg-gradient-to-b from-gray-100 to-transparent pt-1 md:px-12 lg:px-28 dark:from-gray-900 dark:to-transparent">
           <section className="mx-auto max-w-screen-xl px-4 py-12 md:py-24">
             <div className="flex flex-col justify-between gap-8 md:flex-row">
               <div className="flex flex-col">
@@ -52,12 +52,12 @@ export const Footer = () => {
                   <ul className="space-y-4 transition-all duration-500">
                     {siteConfig.mainNav.map((item) => {
                       return (
-                        <li key={item.href} className="relative text-sm text-muted-foreground">
+                        <li key={item.href} className="text-muted-foreground relative text-sm">
                           <Link
                             href={item.href}
                             aria-label={taria("footerAria") + t(item.title)}
                             rel="noreferrer noopener"
-                            className="z-10 hover:text-primary"
+                            className="hover:text-primary z-10"
                           >
                             {t(item.title)}
                           </Link>
@@ -73,12 +73,12 @@ export const Footer = () => {
                   <ul className="space-y-4 transition-all duration-500">
                     {siteConfig.subNav.map((item) => {
                       return (
-                        <li key={item.href} className="relative text-sm text-muted-foreground">
+                        <li key={item.href} className="text-muted-foreground relative text-sm">
                           <Link
                             href={item.href}
                             rel="noreferrer noopener"
                             aria-label={taria("footerAria") + t(item.title)}
-                            className="z-10 hover:text-primary"
+                            className="hover:text-primary z-10"
                           >
                             {t(item.title)}
                           </Link>
